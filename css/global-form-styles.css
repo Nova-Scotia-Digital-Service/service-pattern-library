@@ -1,0 +1,28 @@
+.ns-fieldset__heading {
+    margin: 0;
+}
+
+legend.label{
+    margin-bottom: 5px;
+    font-size: 1em;
+    line-height: inherit;
+    color: inherit;
+    font-weight: 600;
+	border-bottom: 0;
+	color: #444;
+	font-family: "open_sansbold",Helvetica,Arial,Tahoma,sans-serif;
+}
+
+legend.noBorder{
+	border-bottom: 0 !important;
+}
+
+.ns-hint {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  margin-bottom: 15px; }
+  
+.ns-fieldset__legend+.ns-hint {
+    margin-top: -1.5em;
+} 

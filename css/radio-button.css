@@ -1,0 +1,198 @@
+.ns-radios__item {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.25;
+    display: block;
+    position: relative;
+    min-height: 40px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    clear: left;
+}
+
+.ns-radios__item.inline {
+  display: inline-block; 
+}
+
+.ns-radios__item:last-child,
+.ns-radios__item:last-of-type {
+	margin-bottom: 0;
+}
+
+
+.ns-radios__input {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  left: -2px;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  opacity: 0;
+  flex: 0 0 auto;
+}
+
+.ns-radios__label {
+  display: inline-flex;
+  margin-bottom: 0;
+  padding: 7px 15px 5px;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation; 
+}
+
+.ns-label-span {
+    padding: 3px 12px;
+    position: relative;
+    left: -15px;
+	flex: 1 1 auto;
+}
+
+.ns-radios__item:hover .ns-label-span  {
+	background-color: #f8d44c;
+	transition: 0.3s;  
+}
+	
+.ns-radios__item:hover .ns-radios__input + .ns-radios__label:before {
+  box-shadow: 0 0 0 6px #f8d44c;
+  transition: 0.3s; 
+}
+
+.ns-radios__item:hover .ns-radios__item .ns-radios__input:focus + .ns-radios__label:before {
+  box-shadow: 0 0 0 4px #f8d44c, 0 0 0 10px #f8d44c; 
+}
+  
+@media (hover: none), (pointer: coarse) {
+	.ns-radios__item:hover .ns-radios__item .ns-radios__input + .ns-radios__label:before  {
+		box-shadow: none; 
+	}
+	
+	.ns-radios__item:hover .ns-radios__item .ns-radios__input:focus + .ns-radios__label:before {
+		box-shadow: 0 0 0 4px #f8d44c; 
+	} 
+}
+
+.ns-radios__label:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #a2a2a2;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0); }
+
+.ns-radios__label:after {
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 38px;
+	height: 38px;
+	border: 10px solid #0058a4;
+	border-radius: 50%;
+	opacity: 0;
+	background: #0058a4; 
+}
+
+.ns-radios__hint {
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px; 
+}
+
+.ns-radios__input:focus + .ns-radios__label:before {
+  border-width: 4px;
+  box-shadow: 0 0 0 4px #f8d44c
+  /* Is box shadow needed? investigate further */
+}
+
+.ns-radios__input:checked + .ns-radios__label:after {
+  opacity: 1; 
+}
+
+.ns-radios--inline.ns-radios--conditional .ns-radios__item {
+  margin-right: 0;
+  float: none; 
+}
+
+.ns-radios__divider {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 40px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+.ns-radios--small .ns-radios__item {
+  min-height: 0;
+  margin-bottom: 0;
+  padding-left: 34px;
+  float: left; 
+}
+  
+.ns-radios--small .ns-radios__item .ns-label-span {
+    padding: 4px 12px;
+		/* padding: 0px 12px;  included in Caroly's file, not sure which is correct*/
+    position: relative;
+    left: -10px; 
+}
+
+.ns-radios--small .ns-radios__item:after {
+  content: "";
+  display: block;
+  clear: both; 
+}
+
+.ns-radios--small .ns-radios__input {
+  left: -10px; }
+
+.ns-radios--small .ns-radios__label {
+  margin-top: -2px;
+  padding: 13px 15px 13px 1px;
+  float: left; 
+}
+
+.ns-radios--small .ns-radios__label:before {
+  top: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.ns-radios--small .ns-radios__label:after {
+  top: 10px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-width: 10px;
+  color: #0058a4;
+}
+
+.ns-radios--small .ns-radios__hint {
+  padding: 0;
+  clear: both;
+  pointer-events: none; 
+}
+
+.ns-radios--small .ns-radios__conditional {
+  margin-left: 10px;
+  padding-left: 20px;
+  clear: both; 
+}
+
+.ns-radios--small .ns-radios__divider {
+  width: 24px;
+  margin-bottom: 5px; 
+}
+
+.ns-error-message {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.25;
+    display: block;
+    margin-bottom: 15px;
+    clear: both;
+    color: #d4351c;
+}
