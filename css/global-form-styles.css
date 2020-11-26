@@ -21,7 +21,7 @@ legend.noBorder{
 	border-bottom: 0 !important;
 }
 
-legend h1, legend h2, legend h3, legend h4, legend h5, legend h6, h1.label, h2.label, h3.label, h4.label, h5.label  {
+/* legend h1, legend h2, legend h3, legend h4, legend h5, legend h6, h1.label, h2.label, h3.label, h4.label, h5.label  {
     margin: 0;
     font-size: 1em;
     line-height: 1.6875;
@@ -31,11 +31,19 @@ legend h1, legend h2, legend h3, legend h4, legend h5, legend h6, h1.label, h2.l
 	color: #444;
 	font-family: "open_sansbold",Helvetica,Arial,Tahoma,sans-serif;
 	
-}
+} */
 
 .ns-label.noBold{
 	font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
 	font-weight: normal;
+}
+
+.ns-label-span {
+    padding: 3px 12px;
+    position: relative;
+    left: -15px;
+	flex: 1 1 auto;
+	font-size: 1rem;
 }
 
 /* -------------------------------------------- end legend ----------------------------------------------------- */

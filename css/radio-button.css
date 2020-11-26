@@ -42,13 +42,6 @@
   touch-action: manipulation; 
 }
 
-.ns-label-span {
-    padding: 3px 12px;
-    position: relative;
-    left: -15px;
-	flex: 1 1 auto;
-}
-
 .ns-radios__item:hover .ns-label-span  {
 	background-color: #f8d44c;
 	transition: 0.3s;  
