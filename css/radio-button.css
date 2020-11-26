@@ -125,6 +125,24 @@
   width: 40px;
   margin-bottom: 10px;
   text-align: center; }
+  
+.ns-radios__conditional {
+    margin-bottom: 15px;
+    margin-left: 18px;
+    padding-left: 33px;
+    border-left: 4px solid #b1b4b6;
+}
+@media (min-width: 40.0625em) {
+    .ns-radios__conditional {
+        margin-bottom: 20px;
+    }
+}
+.js-enabled .ns-radios__conditional--hidden {
+    display: none;
+}
+.ns-radios__conditional > :last-child {
+    margin-bottom: 0;
+}
 
 .ns-radios--small .ns-radios__item {
   min-height: 0;
@@ -185,14 +203,4 @@
 .ns-radios--small .ns-radios__divider {
   width: 24px;
   margin-bottom: 5px; 
-}
-
-.ns-error-message {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1.25;
-    display: block;
-    margin-bottom: 15px;
-    clear: both;
-    color: #d4351c;
 }
