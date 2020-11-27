@@ -1,12 +1,8 @@
   /* Start Check Box */
 
 .ns-checkboxes__item {
-    font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-    font-size: 16px;
-    font-size: 1rem;
     line-height: 1.25;
     display: block;
     position: relative;
@@ -20,13 +16,7 @@
         font-family: sans-serif;
     }
 }
-@media (min-width: 40.0625em) {
-    .ns-checkboxes__item {
-        font-size: 19px;
-        font-size: 1.1875rem;
-        line-height: 1.31579;
-    }
-}
+
 @media print {
     .ns-checkboxes__item {
         font-size: 14pt;
@@ -36,6 +26,10 @@
 .ns-checkboxes__item:last-child,
 .ns-checkboxes__item:last-of-type {
     margin-bottom: 0;
+}
+.ns-checkboxes__item:hover .ns-label-span  {
+	background-color: #f8d44c;
+	transition: 0.3s;  
 }
 .ns-checkboxes__input {
     cursor: pointer;
@@ -49,7 +43,7 @@
     opacity: 0;
 }
 .ns-checkboxes__label {
-    display: inline-block;
+    display: inline-flex;
     margin-bottom: 0;
     padding: 8px 15px 5px;
     cursor: pointer;
@@ -70,7 +64,7 @@ label.ns-checkboxes__label.noBold{
     width: 40px;
     height: 40px;
     border: 1px solid #A2A2A2;
-    background: transparent;
+    background: #fff;
 	transition: 0.2s ease;
 }
 .ns-checkboxes__input:checked + .ns-checkboxes__label:before {
@@ -99,10 +93,10 @@ label.ns-checkboxes__label.noBold{
     display: block;
     padding-right: 15px;
     padding-left: 15px;
+	line-height: 1.5rem;
 }
 
 .ns-checkboxes__input:focus + .ns-checkboxes__label:before, .ns-checkboxes__input:hover + .ns-checkboxes__label:before  {
-    /* border-width: 4px; */
     -webkit-box-shadow: 0 0 0 3px #F8D44C;
     box-shadow: 0 0 0 3px #F8D44C;
 }
@@ -151,6 +145,11 @@ label.ns-checkboxes__label.noBold{
     margin-top: -2px;
     padding: 13px 15px 13px 1px;
     float: left;
+}
+.ns-checkboxes--small .ns-checkboxes__item .ns-label-span {
+	padding: 0px 12px;
+    position: relative;
+    left: -10px; 
 }
 @media (min-width: 40.0625em) {
     .ns-checkboxes--small .ns-checkboxes__label {

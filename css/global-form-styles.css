@@ -1,3 +1,59 @@
+/* -------------------------------------------- Start fixed widths ----------------------------------------------------- */
+
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea, input[list] {
+    width:100%;
+}
+
+.fw-2 {
+    max-width: 2em;
+    width: 100%;
+}
+.fw-4 {
+    max-width: 4em;
+    width: 100%;
+}
+.fw-6 {
+    max-width: 6em;
+    width: 100%;
+}
+.fw-8 {
+    max-width: 8em;
+    width: 100%;
+}
+.fw-10 {
+    max-width: 10em;
+    width: 100%;
+}
+.fw-15 {
+    max-width: 15em;
+    width: 100%;
+}
+.fw-20 {
+    max-width: 20em;
+    width: 100%;
+}
+.fw-25 {
+    max-width: 25em;
+    width: 100%;
+}
+.fw-30 {
+    max-width: 30em;
+    width: 100%;
+}
+.fw-35 {
+    max-width: 35em;
+    width: 100%;
+}
+.fw-40 {
+    max-width: 40em;
+    width: 100%;
+}
+.fw-50 {
+    max-width: 50em;
+    width: 100%;
+}
+
+/* -------------------------------------------- End fixed widths ----------------------------------------------------- */
 
 /* -------------------------------------------- start fieldset ----------------------------------------------------- */
 .ns-fieldset__heading {
@@ -6,8 +62,11 @@
 /* -------------------------------------------- end fieldset ----------------------------------------------------- */
 
 /* -------------------------------------------- start legend ----------------------------------------------------- */
+legend{
+	margin-bottom: 0.5em;
+}
 legend.label{
-    margin-bottom: 5px;
+    margin-bottom: 1;
     font-size: 1em;
     line-height: inherit;
     color: inherit;
@@ -21,17 +80,22 @@ legend.noBorder{
 	border-bottom: 0 !important;
 }
 
-/* legend h1, legend h2, legend h3, legend h4, legend h5, legend h6, h1.label, h2.label, h3.label, h4.label, h5.label  {
+legend.label .ns-fieldset__heading{
+	font-size: inherit;
+    font-weight: inherit;
+}
+
+/* -------------------------------------------- end legend ----------------------------------------------------- */
+
+/* -------------------------------------------- start label ----------------------------------------------------- */
+.ns-label-wrapper {
     margin: 0;
-    font-size: 1em;
-    line-height: 1.6875;
-    color: inherit;
-    font-weight: bold;
-	border-bottom: 0;
-	color: #444;
-	font-family: "open_sansbold",Helvetica,Arial,Tahoma,sans-serif;
-	
-} */
+}
+h1.ns-label-wrapper label, h2.ns-label-wrapper label, h3.ns-label-wrapper label, h4.ns-label-wrapper label, h5.ns-label-wrapper label{
+	font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
+    font-weight: 400;
+	margin-bottom: .5em;
+}
 
 .ns-label.noBold{
 	font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
@@ -39,14 +103,14 @@ legend.noBorder{
 }
 
 .ns-label-span {
-    padding: 3px 12px;
+    padding: 0px 15px;
     position: relative;
     left: -15px;
 	flex: 1 1 auto;
 	font-size: 1rem;
 }
 
-/* -------------------------------------------- end legend ----------------------------------------------------- */
+/* -------------------------------------------- end label ----------------------------------------------------- */
 
 /* -------------------------------------------- start form hint ----------------------------------------------------- */
 .ns-hint {
@@ -55,11 +119,27 @@ legend.noBorder{
   display: block;
   margin-bottom: 15px; }
   
-.ns-fieldset__legend+.ns-hint {
-    margin-top: -1.5em;
+.ns-fieldset__legend + .ns-hint, .ns-label-wrapper + .ns-hint {
+    margin-top: -0.5em;
 } 
 
 /* -------------------------------------------- end form hint ----------------------------------------------------- */
+
+
+/* -------------------------------------------- start general input styles ----------------------------------------------------- */
+
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea, input[list] {
+    border: 1px solid #a2a2a2;
+}
+input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover, input[type="tel"]:hover, textarea:hover, input[list]:hover {
+    outline: 4px solid #F8D44C;
+	transition: outline-width 0.2s ease;
+}
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[list] {
+    height:2.3em
+}
+/* -------------------------------------------- end general input styles ----------------------------------------------------- */
+
 
 /* -------------------------------------------- start form group error ----------------------------------------------------- */
 .ns-form-group--error {
@@ -78,5 +158,8 @@ legend.noBorder{
     margin-bottom: 15px;
     clear: both;
     color: #a94442;
+}
+input[type="text"].ns-input--error, input[type="email"].ns-input--error, input[type="number"].ns-input--error, input[type="tel"].ns-input--error, textarea.ns-input--error, input[list].ns-input--error {
+    border: 2px solid #a94442;
 }
 /* -------------------------------------------- end form group error ----------------------------------------------------- */

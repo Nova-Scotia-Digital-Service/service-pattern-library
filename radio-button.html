@@ -18,6 +18,10 @@
 		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
 		<link rel="stylesheet" media="all" href="css/global-form-styles.css">
 		<link rel="stylesheet" media="all" href="css/radio-button.css">
+		<link rel="stylesheet" media="all" href="css/toggle.css">
+		<link rel="stylesheet" media="all" href="css/checkboxes.css">
+		<link rel="stylesheet" media="all" href="css/slider.css">
+		<link rel="stylesheet" media="all" href="css/input-field-group.css">
 	<!--[if lte IE 8]>
 	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
 	<![endif]-->
@@ -55,6 +59,7 @@
 						<nav class="sidebar_first hidden-xs nav-top-margin">
 							<ul class="menu">
 								<li class="first"><a href="index.html">Index</a></li>
+								<li><a href="input-field-group.html">Input Form Group</a></li>
 								<li class="active-trail active"><a  class="active-trail active" href="radio-button.html">Radio Button</a></li>
 								<li><a href="checkboxes.html">Checkboxes</a></li>
 								<li><a href="toggle.html">Toggle</a></li>
@@ -181,7 +186,7 @@
 									<fieldset class="ns-fieldset">
 										<legend class="ns-fieldset__legend noBorder">
 										  <h3 class="ns-fieldset__heading ">
-											<span class="ns-label-span">Radio items with a text divider example</span>
+											Radio items with a text divider example
 										  </h3>
 										</legend>
 										<div class="ns-radios">
@@ -228,7 +233,7 @@
 										</div>
 										<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
 										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+											<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
 											<label class="ns-label ns-radios__label" for="contact">
 											  <span class="ns-label-span">Email</span>
 											</label>
@@ -293,13 +298,13 @@
 										  <div class="ns-radios__item">
 											<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
 											<label class="ns-label ns-radios__label" for="changed-name">
-											  Small radio 1
+											  <span class="ns-label-span">Small radio 1</span>
 											</label>
 										  </div>
 										  <div class="ns-radios__item">
 											<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
 											<label class="ns-label ns-radios__label" for="changed-name-2">
-											  Small radio 2
+											  <span class="ns-label-span">Small radio 2</span>
 											</label>
 										  </div>
 										</div>

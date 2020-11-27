@@ -23,6 +23,7 @@
 		<link rel="stylesheet" media="all" href="css/toggle.css">
 		<link rel="stylesheet" media="all" href="css/checkboxes.css">
 		<link rel="stylesheet" media="all" href="css/slider.css">
+		<link rel="stylesheet" media="all" href="css/input-field-group.css">
 	<!--[if lte IE 8]>
 	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
 	<![endif]-->
@@ -60,6 +61,7 @@
 						<nav class="sidebar_first hidden-xs nav-top-margin">
 							<ul class="menu">
 								<li class="first"><a href="index.html">Index</a></li>
+								<li><a href="input-field-group.html">Input Form Group</a></li>
 								<li><a href="radio-button.html">Radio Button</a></li>
 								<li><a href="checkboxes.html">Checkboxes</a></li>
 								<li><a href="toggle.html">Toggle</a></li>
@@ -77,7 +79,16 @@
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Sliders</h2>
-								<p>Let users select one or more options by using the checkboxes component.</p>
+								<p>Use a slider only when the precise value won’t matter to the user, but rather only the approximate range.</p>
+								<h3>Sliders can be used when:</h3>
+								<ul>
+									<li><strong>You want to take input in touch devices</strong><br>
+									Since sliders can be given input by touch, It doesn't have to open keyboard in mobile. Also it becomes faster to input in mobile devices.</li><br>
+									<li><strong>You have start & end points</strong><br>
+									All sliders have starting and ending point which show the broadness of value user can input.</li><br>
+									<li><strong>User can skip in between values</strong><br>
+									In some cases, user feels good to enter approximate values. For example in ratings, user don't prefer to put 3.45 out of 5. While in case of brightness or volume control, user don't even need the values.</li><br>
+								</ul>
 								<div class="ns-form-group exampleDisplay">
 									<label class="ns-fieldset__legend noBorder" for="slider">
 									  <h3 class="ns-fieldset__heading mb-4">

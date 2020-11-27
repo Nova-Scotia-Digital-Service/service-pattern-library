@@ -1,0 +1,65 @@
+.ns-form-group {
+    margin-bottom: 20px;
+}
+.ns-form-group:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+@media (min-width: 40.0625em) {
+    .ns-form-group {
+        margin-bottom: 30px;
+    }
+}
+.ns-form-group .ns-form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+
+
+/* -------------------------------------------- start prefix and suffix  ----------------------------------------------------- */
+.ns-input__wrapper.inline {
+    display: inline-flex;
+}
+
+.ns-input__prefix,
+.ns-input__suffix {
+    font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.2;
+    min-width: 40px;
+    min-width: 2.5rem;
+    padding: 5px;
+    border: 1px solid #a2a2a2;
+    background-color: #f1f1f0;
+    text-align: center;
+    white-space: nowrap;
+    cursor: default;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.ns-input__prefix {
+    border-right:0;
+}
+
+.ns-input__suffix {
+	border-left:0;
+}
+.ns-input__prefix + input {
+    position: relative;
+    z-index: 1;
+}
+
+input + .ns-input__suffix {
+    position: relative;
+    z-index: -1;
+}
+/* -------------------------------------------- end prefix and suffix  ----------------------------------------------------- */
+

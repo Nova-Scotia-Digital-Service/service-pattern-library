@@ -36,7 +36,7 @@
 .ns-radios__label {
   display: inline-flex;
   margin-bottom: 0;
-  padding: 7px 15px 5px;
+  padding: 10px 15px 5px;
   cursor: pointer;
   -ms-touch-action: manipulation;
   touch-action: manipulation; 
@@ -96,6 +96,7 @@
   display: block;
   padding-right: 15px;
   padding-left: 15px; 
+  line-height: 1.5rem;
 }
 
 .ns-radios__input:focus + .ns-radios__label:before {
@@ -146,8 +147,7 @@
 }
   
 .ns-radios--small .ns-radios__item .ns-label-span {
-    padding: 4px 12px;
-		/* padding: 0px 12px;  included in Caroly's file, not sure which is correct*/
+	padding: 0px 12px;
     position: relative;
     left: -10px; 
 }

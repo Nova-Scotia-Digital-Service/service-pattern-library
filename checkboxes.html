@@ -20,6 +20,8 @@
 		<link rel="stylesheet" media="all" href="css/radio-button.css">
 		<link rel="stylesheet" media="all" href="css/toggle.css">
 		<link rel="stylesheet" media="all" href="css/checkboxes.css">
+		<link rel="stylesheet" media="all" href="css/slider.css">
+		<link rel="stylesheet" media="all" href="css/input-field-group.css">
 	<!--[if lte IE 8]>
 	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
 	<![endif]-->
@@ -57,6 +59,7 @@
 						<nav class="sidebar_first hidden-xs nav-top-margin">
 							<ul class="menu">
 								<li class="first"><a href="index.html">Index</a></li>
+								<li><a href="input-field-group.html">Input Form Group</a></li>
 								<li><a href="radio-button.html">Radio Button</a></li>
 								<li><a href="checkboxes.html" class="active-trail active">Checkboxes</a></li>
 								<li><a href="toggle.html">Toggle</a></li>
@@ -77,16 +80,177 @@
 								<p>Let users select one or more options by using the checkboxes component.</p>
 								<div class="ns-form-group exampleDisplay">
 								  <fieldset class="ns-fieldset">
-									<legend class="ns-fieldset__legend label noBorder mb-0">
-									  <h3 class="ns-fieldset__heading mb-3">
+									<legend class="ns-fieldset__legend noBorder">
+									  <h3 class="ns-fieldset__heading">
 										Basic checkbox example
+									  </h3>
+									</legend>
+									<div id="waste-hint" class="ns-hint">
+									  Select all that apply.
+									</div>
+									<div class="ns-checkboxes">
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+										<label class="ns-label ns-checkboxes__label" for="waste">
+										  <span class="ns-label-span">Waste from animal carcasses</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+										<label class="ns-label ns-checkboxes__label" for="waste-2">
+										  <span class="ns-label-span">Waste from mines or quarries</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+										<label class="ns-label ns-checkboxes__label" for="waste-3">
+										  <span class="ns-label-span">Farm or agricultural waste</span>
+										</label>
+									  </div>
+									</div>
+								  </fieldset>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Checkbox items with hints</h2>
+								<p>You can add hints to checkbox items to provide additional information about the options.</p>
+								<div class="ns-form-group exampleDisplay">
+								  <fieldset class="ns-fieldset">
+									<legend class="ns-fieldset__legend noBorder">
+									  <h3 class="ns-fieldset__heading">
+										Checkbox items with hints example
+									  </h3>
+									</legend>
+									<div id="waste-hint" class="ns-hint">
+									  If you have dual nationality, select all options that are relevant to you.
+									</div>
+									<div class="ns-checkboxes">
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
+										<label class="ns-label ns-checkboxes__label" for="nationality">
+										  <span class="ns-label-span">British</span>
+										</label>
+										<div id="nationality-item-hint" class="ns-hint ns-checkboxes__hint">
+										  including English, Scottish, Welsh and Northern Irish
+										</div>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+										<label class="ns-label ns-checkboxes__label" for="nationality-2">
+										  <span class="ns-label-span">Irish</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+										<label class="ns-label ns-checkboxes__label" for="nationality-3">
+										  <span class="ns-label-span">Citizen of another country</span>
+										</label>
+									  </div>
+									</div>
+								  </fieldset>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Conditionally revealing content</h2>
+								<p>You can conditionally reveal content when the user selects a particular checkbox, so they only see content when it’s relevant to them.</p>
+								<p>For example, you could reveal a phone number input when the user selects the ‘Contact me by phone’ option.</p>
+								<div class="ns-form-group exampleDisplay">
+								  <fieldset class="ns-fieldset">
+									<legend class="ns-fieldset__legend noBorder">
+									  <h3 class="ns-fieldset__heading">
+										Conditionally revealing content example
+									  </h3>
+									</legend>
+									<div id="waste-hint" class="ns-hint">
+									  Select all options that are relevant to you.
+									</div>
+									<div class="ns-checkboxes" data-module="ns-checkboxes">
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact" checked="checked">
+										<label class="ns-label ns-checkboxes__label" for="contact">
+										  <span class="ns-label-span">Email</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__conditional" id="conditional-contact">
+										<div class="ns-form-group">
+										  <label class="ns-label" for="contact-by-email">
+											Email address
+										  </label>
+										  <input class="ns-input ns-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
+
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone" data-aria-controls="conditional-contact-2">
+										<label class="ns-label ns-checkboxes__label" for="contact-2">
+										  <span class="ns-label-span">Phone</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__conditional ns-checkboxes__conditional--hidden" id="conditional-contact-2">
+										<div class="ns-form-group">
+										  <label class="ns-label" for="contact-by-phone">
+											Phone number
+										  </label>
+										  <input class="ns-input ns-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel"></div>
+
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="text message" data-aria-controls="conditional-contact-3">
+										<label class="ns-label ns-checkboxes__label" for="contact-3">
+										  <span class="ns-label-span">Text message</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__conditional ns-checkboxes__conditional--hidden" id="conditional-contact-3">
+										<div class="ns-form-group">
+										  <label class="ns-label" for="contact-by-text">
+											Cell phone number
+										  </label>
+										  <input class="ns-input ns-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+
+									  </div>
+									</div>
+								  </fieldset>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Smaller checkboxes</h2>
+								<p>Use standard-sized checkboxes in nearly all cases. However, smaller versions work well on pages where it’s helpful to make them less visually prominent.</p>
+								<p>For example, on a page of search results, the primary user need is to see the results. Using smaller checkboxes lets users see and change search filters without distracting them from the main content.</p>
+								<div class="ns-form-group exampleDisplay">
+								  <fieldset class="ns-fieldset">
+									<legend class="ns-fieldset__legend noBorder">
+									  <h3 class="ns-fieldset__heading">
+										Smaller checkboxes example
 									  </h3>
 									</legend>
 									<div class="ns-checkboxes ns-checkboxes--small">
 									  <div class="ns-checkboxes__item">
-										<input class="ns-checkboxes__input" id="processing" name="processing" type="checkbox" value="carcasses">
-										<label class="ns-label ns-checkboxes__label noBold" for="processing">
-										  <span class="ns-label-span">Check this to automatically return to the search page after status changes.</span>
+										<input class="ns-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+										<label class="ns-label ns-checkboxes__label" for="organisation">
+										  <span class="ns-label-span">HM Revenue and Customs (HMRC)</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+										<label class="ns-label ns-checkboxes__label" for="organisation-2">
+										  <span class="ns-label-span">Employment Tribunal</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+										<label class="ns-label ns-checkboxes__label" for="organisation-3">
+										  <span class="ns-label-span">Ministry of Defence</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+										<label class="ns-label ns-checkboxes__label" for="organisation-4">
+										  <span class="ns-label-span">Department for Transport</span>
 										</label>
 									  </div>
 									</div>
