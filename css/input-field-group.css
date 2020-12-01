@@ -55,6 +55,12 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
     margin-top: 0;
     padding: 10px;
     border-radius: 0;
+		border-radius: 0;
+	-webkit-border-radius: 0px;
+	/* Disable default styling on ff */
+	-moz-appearance: none;
+	/* Disable default styling on webkit browsers */
+	-webkit-appearance: none;
 }
 
 /* -------------------------------------------- end general input styles ----------------------------------------------------- */
