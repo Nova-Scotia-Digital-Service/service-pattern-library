@@ -33,6 +33,7 @@ input[type="text"]:active, input[type="email"]:active, input[type="number"]:acti
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+
 }
 
 input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[list] {
@@ -60,6 +61,10 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
 	-moz-appearance: none;
 	/* Disable default styling on webkit browsers */
 	-webkit-appearance: none;
+		-webkit-appearance: none;
+    -webkit-box-shadow: 0 0 0 1px #a2a2a2;
+    box-shadow: 0 0 0 1px #a2a2a2;
+	outline: none;
 }
 
 /* -------------------------------------------- end general input styles ----------------------------------------------------- */
