@@ -23,17 +23,18 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
 }
 input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover, input[type="tel"]:hover, textarea:hover, input[list]:hover,
 input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="tel"]:focus, textarea:focus, input[list]:focus, 
-input[type="text"]:active, input[type="email"]:active, input[type="number"]:active, input[type="tel"]:active, textarea:active, input[list]:active,{
-	-webkit-box-shadow:0 0 6px #f8d44c;
-	-moz-box-shadow:0 0 6px #f8d44c;
-	-o-box-shadow:0 0 6px #f8d44c;
-	box-shadow:0 0 6px #f8d44c;
+input[type="text"]:active, input[type="email"]:active, input[type="number"]:active, input[type="tel"]:active, textarea:active, input[list]:active {
+	-webkit-box-shadow:0 0 0 4px #f8d44c;
+	-moz-box-shadow:0 0 0 4px #f8d44c;
+	-o-box-shadow:0 0 0 4px #f8d44c;
+	box-shadow:0 0 0 4px #f8d44c;
 	transition: box-shadow 0.2s ease;
     border-radius: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
+
 input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[list] {
     height:2.5em
 }
