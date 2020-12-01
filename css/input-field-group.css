@@ -62,8 +62,8 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
 	/* Disable default styling on webkit browsers */
 	-webkit-appearance: none;
 		-webkit-appearance: none;
-    -webkit-box-shadow: 0 0 0 1px #a2a2a2;
-    box-shadow: 0 0 0 1px #a2a2a2;
+    -webkit-box-shadow: 0 0 0 0 #a2a2a2;
+    box-shadow: 0 0 0 0 #a2a2a2;
 	outline: none;
 }
 

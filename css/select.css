@@ -62,8 +62,8 @@
 	-moz-appearance: none;
 	/* Disable default styling on webkit browsers */
 	-webkit-appearance: none;
-    -webkit-box-shadow: 0 0 0 1px #a2a2a2;
-    box-shadow: 0 0 0 1px #a2a2a2;
+    -webkit-box-shadow: 0 0 0 0 #a2a2a2;
+    box-shadow: 0 0 0 0 #a2a2a2;
 	outline: none;
 	transition: 0.2s ease;
 }
