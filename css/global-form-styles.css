@@ -126,20 +126,6 @@ h1.ns-label-wrapper .ns-label, h2.ns-label-wrapper .ns-label, h3.ns-label-wrappe
 /* -------------------------------------------- end form hint ----------------------------------------------------- */
 
 
-/* -------------------------------------------- start general input styles ----------------------------------------------------- */
-
-input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea, input[list] {
-    border: 1px solid #a2a2a2;
-}
-input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover, input[type="tel"]:hover, textarea:hover, input[list]:hover {
-    outline: 4px solid #F8D44C;
-	transition: outline-width 0.2s ease;
-}
-input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[list] {
-    height:2.3em
-}
-/* -------------------------------------------- end general input styles ----------------------------------------------------- */
-
 
 /* -------------------------------------------- start form group error ----------------------------------------------------- */
 
