@@ -97,6 +97,11 @@ h1.ns-label-wrapper .ns-label, h2.ns-label-wrapper .ns-label, h3.ns-label-wrappe
 	margin-bottom: .5em;
 }
 
+label.ns-label{
+	font-family: "open_sansbold",Helvetica,Arial,Tahoma,sans-serif;
+	font-weight: 400;
+}
+
 .ns-label.noBold{
 	font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
 	font-weight: normal;

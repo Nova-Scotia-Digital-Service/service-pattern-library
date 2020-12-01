@@ -100,9 +100,7 @@
 }
 
 .ns-radios__input:focus + .ns-radios__label:before {
-  border-width: 4px;
   box-shadow: 0 0 0 4px #f8d44c
-  /* Is box shadow needed? investigate further */
 }
 
 .ns-radios__input:checked + .ns-radios__label:after {
