@@ -40,7 +40,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
     height:2.5em
 }
 
-.ns-input {
+.ns-input, input[list]{
     font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
