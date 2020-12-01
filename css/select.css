@@ -1,0 +1,115 @@
+
+.select {
+	position: relative;
+    height: 40px;
+    height: 2.5rem;
+	background: white;
+	box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.select:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 0;
+	height: 0;
+	right: 10px;
+	bottom: 0;
+	margin: auto;
+	border-style: solid;
+	border-width: 5px 5px 0 5px;
+	border-color: #444 transparent transparent transparent;
+	pointer-events: none;
+}
+
+.select:before {
+	width: 30px;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	background: #fff;
+	content: '';
+	pointer-events: none;
+}
+
+/* .select:hover::before {
+	background: #F8D44C;
+} */
+
+.select select, .select datalist {
+    font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	position: relative;
+	background: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+	box-shadow: none;
+	border-radius: 0;
+    height: 40px;
+    height: 2.5rem;
+	width: 100%;
+	cursor: pointer;
+	outline: none;
+	padding: 5px;
+	border: 1px solid #a2a2a2;
+	border-radius: 0;
+	-webkit-border-radius: 0px;
+	/* Disable default styling on ff */
+	-moz-appearance: none;
+	/* Disable default styling on webkit browsers */
+	-webkit-appearance: none;
+	transition: 0.2s ease;
+}
+.select input[list]{
+	padding: 10px;
+}
+
+/* Disable ugly ass outline on firefox  */
+.select select:-moz-focusring, .select datalist:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 #000;
+}
+
+/* Disable default arrow on IE 11+ */
+.select select::-ms-expand, .select datalist::-ms-expand {
+	display: none;
+}
+
+.select select:focus, .select select:hover, .select select:active, .select datalist:focus, .select datalist:hover, .select datalist:active {
+    -webkit-box-shadow: 0 0 0 3px #F8D44C;
+    box-shadow: 0 0 0 3px #F8D44C;
+	outline: none;
+}
+
+/* IE 9 only */
+@media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+	.select select {
+		padding-right: 0;
+	}
+
+	.select:after, .select:before {
+		display: none;
+	}
+}
+
+/* .ns-select:focus, .ns-select:hover, .ns-select:active {
+    -webkit-box-shadow: 0 0 0 3px #F8D44C;
+    box-shadow: 0 0 0 3px #F8D44C;
+	outline: none;
+} */
+/* .ns-select option:active,
+.ns-select option:checked,
+.ns-select:focus::-ms-value {
+    color: #fff;
+    background-color: #1d70b8;
+} */
+.ns-select--error {
+    border: 2px solid #d4351c;
+}
+.ns-select--error:focus {
+    border-color: #0b0c0c;
+}

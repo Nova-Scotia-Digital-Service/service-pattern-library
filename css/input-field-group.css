@@ -39,8 +39,6 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
     height:2.5em
 }
 
-/* -------------------------------------------- end general input styles ----------------------------------------------------- */
-
 .ns-input {
     font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -55,16 +53,11 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
     height: 40px;
     height: 2.5rem;
     margin-top: 0;
-    padding: 5px;
+    padding: 10px;
     border-radius: 0;
 }
 
-/* .ns-input:focus {
-    outline: 3px solid #fd0;
-    outline-offset: 0;
-    -webkit-box-shadow: inset 0 0 0 2px;
-    box-shadow: inset 0 0 0 2px;
-} */
+/* -------------------------------------------- end general input styles ----------------------------------------------------- */
 
 /* -------------------------------------------- start prefix and suffix  ----------------------------------------------------- */
 .ns-input__wrapper.inline {

@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
-	<title>Slider - Service Patter Library - Government of Nova Scotia</title>
+	<title>Select - Service Patter Library - Government of Nova Scotia</title>
 		
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
@@ -66,8 +66,8 @@
 								<li><a href="radio-button.html">Radio Button</a></li>
 								<li><a href="checkboxes.html">Checkboxes</a></li>
 								<li><a href="toggle.html">Toggle</a></li>
-								<li><a href="select.html">Select</a></li>
-								<li class="last"><a href="slider.html" class="active-trail active">Slider</a></li>
+								<li><a href="select.html" class="active-trail active" href="select.html">Select</a></li>
+								<li class="last"><a>Slider</a></li>
 		<!-- 						<li class="last expanded active-trail active"><a href="#" class="active-trail active">Sub Page Title</a>
 									<ul class="submenu">
 										<li class="first last"><a href="#">Sub Sub Page Title</a></li>
@@ -77,32 +77,82 @@
 						</nav>
 					</div>
 					<div class="col-sm-9 col-xs-12">
-						<h1>Slider examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<h1>Select examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<p>The select component should only be used as a last resort in public-facing services because research shows that some users find selects very difficult to use.</p>
+						<p>The select component allows users to choose an option from a long list. Before using the select component, try asking users questions which will allow you to present them with fewer options.</p>
+						<p>Asking questions means you’re less likely to need to use the select component, and can consider using a different solution, such as radios.</p>
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<h2>Sliders</h2>
-								<p>Use a slider only when the precise value won’t matter to the user, but rather only the approximate range.</p>
-								<h3>Sliders can be used when:</h3>
-								<ul>
-									<li><strong>You want to take input in touch devices</strong><br>
-									Since sliders can be given input by touch, It doesn't have to open keyboard in mobile. Also it becomes faster to input in mobile devices.</li><br>
-									<li><strong>You have start & end points</strong><br>
-									All sliders have starting and ending point which show the broadness of value user can input.</li><br>
-									<li><strong>User can skip in between values</strong><br>
-									In some cases, user feels good to enter approximate values. For example in ratings, user don't prefer to put 3.45 out of 5. While in case of brightness or volume control, user don't even need the values.</li><br>
-								</ul>
+								<h2>Select with header as a Label</h2>
+								<p>If you’re asking just one question per page as recommended, you can set the contents of the label as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.</p>
 								<div class="ns-form-group exampleDisplay">
-									<label class="ns-fieldset__legend noBorder" for="slider">
-									  <h3 class="ns-fieldset__heading mb-4">
-										Slider Example
+									<div class="ns-form-group">
+									  <h3 class="ns-label-wrapper">
+										<label class="ns-label" for="select1">
+										  What would you like to select?
+										</label>
 									  </h3>
-									</label>
-									<input class="slider ns-slider__Item" type="range" name="slider" id="slider" min="0" max="2000" value="0" step="25" aria-valuemin="0" aria-valuemax="2000" aria-valuenow="">
+										<div class="select fw-20">
+											<select id="select1" name="select1">
+											  <option>Aw yeah.</option>
+											  <option>You should pick me instead.</option>
+											  <option>I think I'm the better option!</option>
+											</select>
+										 </div>
+									</div>
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Typeahead searchable dropdown</h2>
+								<p>As a general practice searchable dropdowns are used when there are a lot of dropdown options or the options are categorized.</p>
+								<p>Another thing to consider is the context of the user, typeahead in dropdown menus are good if the user knows what he is searching for. It makes it easier to search and select the Option required.</p>
+								<div class="ns-form-group exampleDisplay">
+									<div class="ns-form-group">
 
+										<label class="ns-label" for="typeahead1">
+										  Type something to narrow down options
+										</label>
 
+										<div class="select fw-20">
+											<input type="list" id="typeahead1" list="typeahead1List" name="typeahead1">
+												<datalist id="typeahead1List">
+												  <option>Aw yeah.</option>
+												  <option>You should pick me instead.</option>
+												  <option>I think I'm the better option!</option>
+												</datalist>	
+										 </div>
+									</div>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->		
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Typeahead searchable dropdown with errors</h2>
+								<div class="ns-form-group exampleDisplay">
+									<div class="ns-form-group  ns-form-group-message-error">
+										<h3 class="ns-label-wrapper">
+											<label class="ns-label" for="typeahead2">
+											  What would you like to select?
+											</label>
+										</h3>
+										<span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+										  <span class="ns-visually-hidden">Error:</span> Select an option
+										</span>
+										<div class="select fw-20">
+											<input type="list" id="typeahead2" list="typeahead1List2" name="typeahead2" class="ns-input--error">
+												<datalist id="typeahead1List2">
+												  <option>Aw yeah.</option>
+												  <option>You should pick me instead.</option>
+												  <option>I think I'm the better option!</option>
+												</datalist>	
+										 </div>
+									</div>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->						
 					</div><!-- /col-xs-8 -->
 				</div><!--/row-->
 			</form>
