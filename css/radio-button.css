@@ -44,12 +44,12 @@
 
 .ns-radios__item:hover .ns-label-span  {
 	background-color: #f8d44c;
-	transition: 0.3s;  
+	transition: 0.2s ease;
 }
 	
 .ns-radios__item:hover .ns-radios__input + .ns-radios__label:before {
   box-shadow: 0 0 0 6px #f8d44c;
-  transition: 0.3s; 
+  transition: 0.2s ease; 
 }
 
 .ns-radios__item:hover .ns-radios__item .ns-radios__input:focus + .ns-radios__label:before {

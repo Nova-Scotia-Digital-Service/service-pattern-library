@@ -29,7 +29,7 @@
 }
 .ns-checkboxes__item:hover .ns-label-span  {
 	background-color: #f8d44c;
-	transition: 0.3s;  
+	transition: 0.2s ease;
 }
 .ns-checkboxes__input {
     cursor: pointer;

@@ -8,7 +8,7 @@
 	
 	<title>Checkboxes - Service Patter Library - Government of Nova Scotia</title>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
@@ -256,6 +256,47 @@
 									</div>
 
 								  </fieldset>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Basic checkbox with error</h2>
+								<p>Let users select one or more options by using the checkboxes component.</p>
+								<div class="exampleDisplay">					
+									<div class="ns-form-group ns-form-group-message-error " >
+									  <fieldset class="ns-fieldset">
+										<legend class="ns-fieldset__legend noBorder">
+										  <h3 class="ns-fieldset__heading">
+											Basic checkbox example
+										  </h3>
+										</legend>
+										<span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+										  <span class="ns-visually-hidden">Error:</span> Select options
+										</span>
+										<div class="ns-checkboxes">
+										  <div class="ns-checkboxes__item">
+											<input class="ns-checkboxes__input" id="waste2" name="waste11" type="checkbox" value="carcasses">
+											<label class="ns-label ns-checkboxes__label" for="waste2">
+											  <span class="ns-label-span">Waste from animal carcasses</span>
+											</label>
+										  </div>
+										  <div class="ns-checkboxes__item">
+											<input class="ns-checkboxes__input" id="waste3" name="waste11" type="checkbox" value="mines">
+											<label class="ns-label ns-checkboxes__label" for="waste3">
+											  <span class="ns-label-span">Waste from mines or quarries</span>
+											</label>
+										  </div>
+										  <div class="ns-checkboxes__item">
+											<input class="ns-checkboxes__input" id="waste4" name="waste11" type="checkbox" value="farm">
+											<label class="ns-label ns-checkboxes__label" for="waste4">
+											  <span class="ns-label-span">Farm or agricultural waste</span>
+											</label>
+										  </div>
+										</div>
+									  </fieldset>	
+								  </div>
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->

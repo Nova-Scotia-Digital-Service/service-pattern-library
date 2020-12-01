@@ -8,7 +8,7 @@
 	
 	<title>Radio Button - Service Patter Library - Government of Nova Scotia</title>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
@@ -350,8 +350,8 @@
 							<div class="col-md-12 col-xs-12">
 								<h2>Error messages</h2>
 								<p>Display an error message if none of the radios are selected.</p>
-								<div class="ns-form-group exampleDisplay">
-									<div class="ns-form-group ns-form-group--error">
+								<div class="exampleDisplay">
+									<div class="ns-form-group ns-form-group-message-error">
 									  <fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
 										<legend class="ns-fieldset__legend noBorder">
 										  <h3 class="ns-fieldset__heading ">
@@ -361,9 +361,9 @@
 										<div id="changed-name-hint" class="ns-hint">
 										  This includes changing your last name or spelling your name differently.
 										</div>
-										<span id="changed-name-error" class="ns-error-message field-validation-error">
+										<span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
 										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Error:</span> Select yes if you have changed your name
+										  <span class="ns-visually-hidden">Error:</span> Select yes or no before you continue
 										</span>
 										<div class="ns-radios ns-radios--inline">
 										  <div class="ns-radios__item">

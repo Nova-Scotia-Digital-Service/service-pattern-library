@@ -91,7 +91,7 @@ legend.label .ns-fieldset__heading{
 .ns-label-wrapper {
     margin: 0;
 }
-h1.ns-label-wrapper label, h2.ns-label-wrapper label, h3.ns-label-wrapper label, h4.ns-label-wrapper label, h5.ns-label-wrapper label{
+h1.ns-label-wrapper .ns-label, h2.ns-label-wrapper .ns-label, h3.ns-label-wrapper .ns-label, h4.ns-label-wrapper .ns-label, h5.ns-label-wrapper .ns-label{
 	font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
     font-weight: 400;
 	margin-bottom: .5em;
@@ -142,13 +142,27 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
 
 
 /* -------------------------------------------- start form group error ----------------------------------------------------- */
-.ns-form-group--error {
+
+.ns-form-group-message-error {
     padding-left: 15px;
     border-left: 5px solid #a94442;
 }
+.ns-form-group-message-warning {
+    padding-left: 15px;
+    border-left: 5px solid #8a6d3b;
+}
+
 .ns-form-group--error .ns-form-group {
     padding: 0;
     border: 0;
+}
+.ns--message {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.25;
+    display: block;
+    margin-bottom: 15px;
+    clear: both;
 }
 .ns-error-message {
     -webkit-font-smoothing: antialiased;
@@ -158,6 +172,9 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
     margin-bottom: 15px;
     clear: both;
     color: #a94442;
+}
+.ns-warning-message {
+    color: #8a6d3b;
 }
 input[type="text"].ns-input--error, input[type="email"].ns-input--error, input[type="number"].ns-input--error, input[type="tel"].ns-input--error, textarea.ns-input--error, input[list].ns-input--error {
     border: 2px solid #a94442;

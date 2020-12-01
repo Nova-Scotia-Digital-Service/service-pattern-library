@@ -8,7 +8,7 @@
 	
 	<title>Toggle Switch - Service Patter Library - Government of Nova Scotia</title>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
@@ -76,20 +76,46 @@
 						<h1>Toggle switch examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<h2>Basic toggle switch</h2>
+								<h2>Toggle switch</h2>
 								<p>Toggle switches should change the state of something and take immediate effect and should not require the user to click Save or Submit to apply the new state.</p>
 								<p>They are great used for on and off options.</p>
 								<div class="ns-form-group exampleDisplay">
-								  <!-- start NS toggle -->
-								  <fieldset class="ns-toggle--ui-switch ns-fieldset">
-									<legend class="ns-fieldset__legend noBorder">
-									  <h3 class="ns-fieldset__heading ">
-										Basic toggle switch example
+									<div class="ns-form-group ns-toggle--ui-switch">
+									  <h3 class="ns-label-wrapper">
+										<div class="ns-label" for="event-name">
+										  Automatic text notifications
+										</div>
 									  </h3>
-									</legend>
-									<input type="checkbox" id="demo5" class="ns-toggle__input">
-									<label class="ns-toggle__label" for="demo5">
-									  <div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed" style="font-size:10px;"></div>
+										<input type="checkbox" id="demo5" class="ns-toggle__input">
+										<label class="ns-toggle__label" for="demo5">
+										  <div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
+										  <span class="ns-toggle__screenreader">Automatic text notifications</span>
+										  <div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+											On 
+										  </div>
+										  <div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+										  <div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+											Off     
+										  </div>
+										</label>
+									 </div>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Toggle switch disabled</h2>
+								<p>The disabled state of the toggle switch displays a mesage text depending on the toggle state.</p>
+								<div class="ns-form-group exampleDisplay">
+									<div class="ns-form-group ns-toggle--ui-switch">
+									  <h3 class="ns-label-wrapper">
+										<div class="ns-label" for="event-name">
+										  Automatic text notifications
+										</div>
+									  </h3>
+									<input type="checkbox" id="demo6" class="ns-toggle__input" disabled>
+									<label class="ns-toggle__label" for="demo6">
+									  <div class="ns-toggle__disabled-msg" data-checked="This switch is turned off and disabled" data-unchecked="This switch is turned on and disabled"></div>
 									  <span class="ns-toggle__screenreader">View dashboard as activity stream</span>
 									  <div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
 										On 
@@ -105,33 +131,34 @@
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
+										
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<h2>Basic toggle switch disabled</h2>
-								<p>The disabled state of the toggle switch displays a mesage text depending on the toggle state.</p>
+								<h2>Toggle switch with error</h2>
 								<div class="ns-form-group exampleDisplay">
-								  <!-- start NS toggle -->
-								  <fieldset class="ns-toggle--ui-switch ns-fieldset">
-									<legend class="ns-fieldset__legend noBorder">
-									  <h3 class="ns-fieldset__heading ">
-										Basic toggle switch disabled example
+									<div class="ns-form-group ns-form-group-message-warning ns-toggle--ui-switch">
+									  <h3 class="ns-label-wrapper">
+										<div class="ns-label" for="event-name">
+										  Automatic text notifications
+										</div>
 									  </h3>
-									</legend>
-									<input type="checkbox" id="demo5" class="ns-toggle__input" disabled>
-									<label class="ns-toggle__label" for="demo5">
-									  <div class="ns-toggle__disabled-msg" data-checked="Off" data-unchecked="This switch is turned on and disabled"></div>
-									  <span class="ns-toggle__screenreader">View dashboard as activity stream</span>
-									  <div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
-										On 
-
-									  </div>
-									  <div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
-									  <div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
-										Off     
-									  </div>
-									 </label>
-								   </fieldset>
-								   <!-- end NS toggle -->
+										<span id="changed-name-error" class="ns--message ns-warning-message field-validation-error has-warning">
+										  <i class="fa fa-exclamation-triangle error-indicator errorAlert" aria-hidden="true"></i>
+										  <span class="ns-visually-hidden">Error:</span> You will not be notified when changes occure
+										</span>
+										<input type="checkbox" id="demo7" class="ns-toggle__input" checked="checked">
+										<label class="ns-toggle__label" for="demo7">
+										  <div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
+										  <span class="ns-toggle__screenreader">Automatic text notifications</span>
+										  <div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+											On 
+										  </div>
+										  <div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+										  <div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+											Off     
+										  </div>
+										</label>
+									 </div>
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
