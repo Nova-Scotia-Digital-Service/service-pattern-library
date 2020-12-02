@@ -20,7 +20,7 @@
 	border-width: 5px 5px 0 5px;
 	border-color: #444 transparent transparent transparent;
 	pointer-events: none;
-	z-index:98;
+	z-index:2;
 }
 
 .select:before {
@@ -32,7 +32,7 @@
 	background: #fff;
 	content: '';
 	pointer-events: none;
-	z-index:99;
+	z-index:1;
 }
 
 /* .select:hover::before {
@@ -57,7 +57,7 @@
 	cursor: pointer;
 	outline: none;
 	padding: 5px;
-	border: 1px solid green;
+	border: 1px solid pink;
 	border-radius: 0;
 	appearance: none;
 	-webkit-border-radius: 0px;
