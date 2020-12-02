@@ -4,7 +4,7 @@
     height: 40px;
     height: 2.5rem;
 	background: white;
-	box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
+	/* box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05); */
 }
 
 .select:after {
@@ -50,21 +50,20 @@
     font-size: 1rem;
     line-height: 1.25;
 	box-shadow: none;
-	border-radius: 0;
     height: 40px;
     height: 2.5rem;
 	width: 100%;
 	cursor: pointer;
-	outline: none;
 	padding: 5px;
-	border: 1px solid pink;
+	border: 1px solid green;
 	border-radius: 0;
-	appearance: none;
 	-webkit-border-radius: 0px;
 	/* Disable default styling on ff */
+	border-radius: 0;
 	-moz-appearance: none;
 	/* Disable default styling on webkit browsers */
 	-webkit-appearance: none;
+	appearance: none;
     -webkit-box-shadow: 0 0 0 0 #a2a2a2;
     box-shadow: 0 0 0 0 #a2a2a2;
 	outline: none;
