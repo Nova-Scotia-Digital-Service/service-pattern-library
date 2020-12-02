@@ -32,26 +32,26 @@
 }
 
 .select select, input[list] {
-    font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
+/*     font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-	position: relative;
-	background: #fff;
-    line-height: 1.25;
-    height: 40px;
-    height: 2.5rem;
-	width: 100%;
-	padding: 10px;
-	border: 1px solid blue;
-	-webkit-border-radius: 0px;
+    -moz-osx-font-smoothing: grayscale; */
+/* 	position: relative;
+	background: #fff; */
+/*     line-height: 1.25; */
+/*     height: 40px;
+    height: 2.5rem; */
+	/* width: 100%; */
+	/* padding: 10px; */
+	/* border: 1px solid #a2a2a2; */
+/* 	-webkit-border-radius: 0px;
 	border-radius: 0;
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
     -webkit-box-shadow: 0 0 0 0 #a2a2a2;
     box-shadow: 0 0 0 0 #a2a2a2;
-	outline: none;
-	transition: 0.2s ease;
+	outline: none; */
+/* 	transition: 0.2s ease; */
 }
 
 /* Disable ugly outline on firefox  */
@@ -65,11 +65,11 @@
 	display: none;
 }
 
-.select select:focus, .select select:hover, .select select:active, input[list]:focus, input[list]:hover, input[list]:active {
+/* .select select:focus, .select select:hover, .select select:active, input[list]:focus, input[list]:hover, input[list]:active {
     -webkit-box-shadow: 0 0 0 3px #F8D44C;
     box-shadow: 0 0 0 3px #F8D44C;
 	outline: none;
-}
+} */
 
 /* IE 9 only */
 @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
