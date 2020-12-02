@@ -76,7 +76,7 @@
 	  position: relative;
 	  overflow: hidden;
 	}
-	.select select {
+	.select select,.select datalist {
 	  width: 110%;
 	  background-position: right 30px center !important;
 	  border: none !important;
