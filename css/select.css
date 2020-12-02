@@ -31,14 +31,13 @@
 	background: #fff;
 	content: '';
 	pointer-events: none;
-	width: 100%
 }
 
 /* .select:hover::before {
 	background: #F8D44C;
 } */
 
-.select select, .select datalist {
+.select select, .select input[list] {
     font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -69,9 +68,9 @@
 	outline: none;
 	transition: 0.2s ease;
 }
-input::-webkit-calendar-picker-indicator {
-  display: none;
-}
+[list]::-webkit-calendar-picker-indicator {
+	opacity: 0;
+  }
 	
 @-moz-document url-prefix() {
 	.select {
@@ -79,7 +78,7 @@ input::-webkit-calendar-picker-indicator {
 	  position: relative;
 	  overflow: hidden;
 	}
-	.select select,.select datalist {
+	.select select,.select input[list] {
 	  width: 110%;
 	  background-position: right 30px center !important;
 	  border: none !important;
@@ -91,17 +90,17 @@ input::-webkit-calendar-picker-indicator {
 }
 
 /* Disable ugly ass outline on firefox  */
-.select select:-moz-focusring, .select datalist:-moz-focusring {
+.select select:-moz-focusring, input[list] datalist:-moz-focusring {
 	color: transparent;
 	text-shadow: 0 0 0 #000;
 }
 
 /* Disable default arrow on IE 11+ */
-.select select::-ms-expand, .select datalist::-ms-expand {
+.select select::-ms-expand, input[list] datalist::-ms-expand {
 	display: none;
 }
 
-.select select:focus, .select select:hover, .select select:active, .select datalist:focus, .select datalist:hover, .select datalist:active {
+.select select:focus, .select select:hover, .select select:active, input[list] datalist:focus, input[list] datalist:hover, input[list] datalist:active {
     -webkit-box-shadow: 0 0 0 3px #F8D44C;
     box-shadow: 0 0 0 3px #F8D44C;
 	outline: none;
