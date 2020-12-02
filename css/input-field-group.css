@@ -19,7 +19,7 @@
 /* -------------------------------------------- start general input styles ----------------------------------------------------- */
 
 input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea, input[list], select {
-    border: 1px solid red;
+    border: 1px solid #a2a2a2;
 }
 input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover, input[type="tel"]:hover, textarea:hover, input[list]:hover, .select select:hover,
 input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="tel"]:focus, textarea:focus, input[list]:focus, .select select:focus,
@@ -45,7 +45,6 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
     font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* font-weight: 400; */
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.25;
@@ -53,8 +52,6 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
     box-sizing: border-box;
 	position: relative;
 	background: #fff;
-    width: 100%;
-/*     margin-top: 0; */
     padding: 10px;
     border-radius: 0;
 	-webkit-border-radius: 0px;
@@ -66,9 +63,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
     -webkit-box-shadow: 0 0 0 0 #a2a2a2;
     box-shadow: 0 0 0 0 #a2a2a2;
 	outline: none;
-/* 	transition: 0.2s ease; */
 }
-
 
 /* -------------------------------------------- end general input styles ----------------------------------------------------- */
 

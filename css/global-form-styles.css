@@ -1,6 +1,6 @@
 /* -------------------------------------------- Start fixed widths ----------------------------------------------------- */
 
-input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea, input[list] {
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea, input[list], select {
     width:100%;
 }
 
