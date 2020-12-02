@@ -49,13 +49,13 @@
 /*     font-size: 16px; */
 /*     font-size: 1rem; */
     line-height: 1.25;
-	box-shadow: none;
+/* 	box-shadow: none; */
     height: 40px;
     height: 2.5rem;
 	width: 100%;
 /* 	cursor: pointer; */
 	padding: 10px;
-	border: 1px solid teal;
+	border: 1px solid blue;
 /* 	border-radius: 0; */
 	-webkit-border-radius: 0px;
 	/* Disable default styling on ff */
@@ -69,9 +69,9 @@
 	outline: none;
 	transition: 0.2s ease;
 }
-input::-webkit-calendar-picker-indicator {
+/* input::-webkit-calendar-picker-indicator {
 	opacity: 0;
-  }
+  } */
 	
 /* @-moz-document url-prefix() {
 	.select {
@@ -90,7 +90,7 @@ input::-webkit-calendar-picker-indicator {
 	padding: 10px;
 }
  */
-/* Disable ugly ass outline on firefox  */
+/* Disable ugly outline on firefox  */
 .select select:-moz-focusring, input[list] datalist:-moz-focusring {
 	color: transparent;
 	text-shadow: 0 0 0 #000;
