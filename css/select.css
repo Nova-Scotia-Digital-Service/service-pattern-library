@@ -1,9 +1,9 @@
 
 .select {
 	position: relative;
-    height: 40px;
-    height: 2.5rem;
-	background: white;
+    /* height: 40px; */
+    /* height: 2.5rem; */
+	/* background: white; */
 	/* box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05); */
 }
 
@@ -45,18 +45,18 @@
     -moz-osx-font-smoothing: grayscale;
 	position: relative;
 	background: #fff;
-    font-weight: 400;
-    font-size: 16px;
-    font-size: 1rem;
+/*     font-weight: 400; */
+/*     font-size: 16px; */
+/*     font-size: 1rem; */
     line-height: 1.25;
 	box-shadow: none;
     height: 40px;
     height: 2.5rem;
 	width: 100%;
-	cursor: pointer;
+/* 	cursor: pointer; */
 	padding: 10px;
-	border: 1px solid orange;
-	border-radius: 0;
+	border: 1px solid teal;
+/* 	border-radius: 0; */
 	-webkit-border-radius: 0px;
 	/* Disable default styling on ff */
 	border-radius: 0;
