@@ -37,7 +37,7 @@
 	background: #F8D44C;
 } */
 
-.select select, .select input[list] {
+.select select, input[list] {
     font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -55,7 +55,7 @@
 	cursor: pointer;
 	outline: none;
 	padding: 5px;
-	border: 1px solid #a2a2a2;
+	border: 1px solid green;
 	border-radius: 0;
 	appearance: none;
 	-webkit-border-radius: 0px;
@@ -68,7 +68,7 @@
 	outline: none;
 	transition: 0.2s ease;
 }
-[list]::-webkit-calendar-picker-indicator {
+input::-webkit-calendar-picker-indicator {
 	opacity: 0;
   }
 	
@@ -78,7 +78,7 @@
 	  position: relative;
 	  overflow: hidden;
 	}
-	.select select,.select input[list] {
+	.select select, input[list] {
 	  width: 110%;
 	  background-position: right 30px center !important;
 	  border: none !important;
@@ -100,7 +100,7 @@
 	display: none;
 }
 
-.select select:focus, .select select:hover, .select select:active, input[list] datalist:focus, input[list] datalist:hover, input[list] datalist:active {
+.select select:focus, .select select:hover, .select select:active, input[list]:focus, input[list]:hover, input[list]:active {
     -webkit-box-shadow: 0 0 0 3px #F8D44C;
     box-shadow: 0 0 0 3px #F8D44C;
 	outline: none;
