@@ -182,18 +182,18 @@ label.ns-checkboxes__label.noBold{
     box-shadow: 0 0 0 5px #F8D44C;
 }
 .ns-checkboxes--small .ns-checkboxes__item:hover .ns-checkboxes__input:focus + .ns-checkboxes__label:before {
-    -webkit-box-shadow: 0 0 0 3px #F8D44C, 0 0 0 10px #F8D44C;
+    -webkit-box-shadow: 0 0 0 3px #F8D44C, 0 0 0 5px #F8D44C;
     box-shadow: 0 0 0 3px #F8D44C, 0 0 0 5px #F8D44C;
 }
-@media (hover: none), (pointer: coarse) {
+/* @media (hover: none), (pointer: coarse) {
     .ns-checkboxes--small .ns-checkboxes__item:hover .ns-checkboxes__input:not(:disabled) + .ns-checkboxes__label:before {
         -webkit-box-shadow: initial;
         box-shadow: initial;
     }
     .ns-checkboxes--small .ns-checkboxes__item:hover .ns-checkboxes__input:focus + .ns-checkboxes__label:before {
-        -webkit-box-shadow: 0 0 0 3px #F8D44C;
-        box-shadow: 0 0 0 3px #F8D44C;
+    -webkit-box-shadow: 0 0 0 3px #F8D44C, 0 0 0 5px #F8D44C;
+    box-shadow: 0 0 0 3px #F8D44C, 0 0 0 5px #F8D44C;
     }
-}
+} */
 
   /* end Check Box */
