@@ -31,6 +31,7 @@
 	background: #fff;
 	content: '';
 	pointer-events: none;
+	width: 100%
 }
 
 /* .select:hover::before {
@@ -57,6 +58,7 @@
 	padding: 5px;
 	border: 1px solid #a2a2a2;
 	border-radius: 0;
+	appearance: none;
 	-webkit-border-radius: 0px;
 	/* Disable default styling on ff */
 	-moz-appearance: none;
@@ -67,6 +69,20 @@
 	outline: none;
 	transition: 0.2s ease;
 }
+	
+@-moz-document url-prefix() {
+	.select {
+	  box-sizing: border-box;
+	  position: relative;
+	  overflow: hidden;
+	}
+	.select select {
+	  width: 110%;
+	  background-position: right 30px center !important;
+	  border: none !important;
+	}
+}
+	  
 .select input[list]{
 	padding: 10px;
 }
