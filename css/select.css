@@ -54,8 +54,8 @@
     height: 2.5rem;
 	width: 100%;
 	cursor: pointer;
-	padding: 5px;
-	border: 1px solid green;
+	padding: 10px;
+	border: 1px solid orange;
 	border-radius: 0;
 	-webkit-border-radius: 0px;
 	/* Disable default styling on ff */
@@ -73,7 +73,7 @@ input::-webkit-calendar-picker-indicator {
 	opacity: 0;
   }
 	
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
 	.select {
 	  box-sizing: border-box;
 	  position: relative;
@@ -84,12 +84,12 @@ input::-webkit-calendar-picker-indicator {
 	  background-position: right 30px center !important;
 	  border: none !important;
 	}
-}
+} */
 	  
-.select input[list]{
+/* .select input[list]{
 	padding: 10px;
 }
-
+ */
 /* Disable ugly ass outline on firefox  */
 .select select:-moz-focusring, input[list] datalist:-moz-focusring {
 	color: transparent;
