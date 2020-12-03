@@ -5,7 +5,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
 }
 
 .fw-2 {
-    max-width: 2em;
+    max-width: 3em;
     width: 100%;
 }
 .fw-4 {

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortlink" href="https://beta.novascotia.ca/">
+	
+	<title>Buttons - Service Patter Library - Government of Nova Scotia</title>
+		
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">		
+		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_9m8-tA3IQf8ThlLQYTTZUyEweCvyR908Tg0XCbKYOfY.css">
+		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_uIYN0sQV7NwuNKcH6_K57Yo4Nz26oGTDZHKB7WNNOwg.css">
+		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
+		<link rel="stylesheet" media="all" href="css/global-form-styles.css">
+		<link rel="stylesheet" media="all" href="css/radio-button.css">
+		<link rel="stylesheet" media="all" href="css/toggle.css">
+		<link rel="stylesheet" media="all" href="css/checkboxes.css">
+		<link rel="stylesheet" media="all" href="css/slider.css">
+		<link rel="stylesheet" media="all" href="css/input-field-group.css">
+		<link rel="stylesheet" media="all" href="css/select.css">
+		<link rel="stylesheet" media="all" href="css/buttons.css">
+	<!--[if lte IE 8]>
+	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+<div class="Site js-enabled" id="container">
+
+<!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
+
+<header>
+<!-- START SALTIRE NS MOTHERSHIP RIBBON w FR -->
+	<nav id="navigation" class="ribbon" role="navigation" aria-label="Main navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<a href="https://novascotia.ca/" hreflang="en"><img class="ribbon-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Province of Nova Scotia" /></a>
+				</div>
+			</div>
+		</div>
+	</nav>	
+<!-- END SALTIRE NS MOTHERSHIP RIBBON w FR -->
+</header>
+
+<!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
+
+<!--A basic page has a primary content area and an optional column for secondary information like related content.-->
+<div class="container Site-content">
+	<main><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
+		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
+			<form name="parameters" method="GET" target="_parent">
+				<div class="row">
+					<div class="col-sm-3 col-xs-12">
+						<nav class="sidebar_first hidden-xs nav-top-margin">
+							<ul class="menu">
+								<li class="first"><a href="index.html">Home</a></li>
+								<li><a href="buttons.html">Buttons</a></li>
+								<li><a href="checkboxes.html">Checkboxes</a></li>
+								<li><a href="date-fields.html">Date Fields</a></li>
+								<li><a href="input-field-group.html">Input Form Group</a></li>
+								<li><a href="radio-button.html">Radio Button</a></li>
+								<li><a href="select.html">Select</a></li>
+								<li><a class="active-trail active" href="slider.html">Slider</a></li>
+								<li class="last"><a href="toggle.html">Toggle</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-9 col-xs-12">
+						<h1>Button Examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Default button</h2>
+								<p>Use a default button for the main call to action on a page.</p>
+								<p>Avoid using multiple default buttons on a single page. Having more than one main call to action reduces their impact, and makes it harder for users to know what to do next.</p>
+								<div class="exampleDisplay">
+									<button class="btn-lg btn-default">Default button</button>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Secondary button</h2>
+								<p>Use a default button for the main call to action on a page.</p>
+								<p>Avoid using multiple default buttons on a single page. Having more than one main call to action reduces their impact, and makes it harder for users to know what to do next.</p>
+								<div class="exampleDisplay">
+									<button class="btn-lg btn-2nd">Secondary button</button>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Combination default and secondary buttons</h2>
+								<p>You can use secondary buttons in combination with default buttons.</p>
+								<div class="exampleDisplay">
+								<section class="row">
+									<div class="col-auto">
+										<button class="btn-lg btn-default" type="button">Continue</button>
+									</div>
+									<div class="col-auto">
+										<button class="btn-lg btn-2nd" type="button">Cancel</button>
+									</div>
+								</section>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Start buttons</h2>
+								<p>Use a start button for the main call to action on your service’s start page. Start buttons don’t submit form data, so they use a link tag rather than a button tag.</p>
+								<p>Only use warning buttons for actions with serious destructive consequences that cannot be easily undone by a user. For example, permanently deleting an account.</p>
+								<div class="exampleDisplay">
+									<a class="btn-lg btn-success mt-4 mb-4">Start now<i class="fa fa-arrow-right ml-2 mr-0" aria-hidden="true"></i></a>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Warning buttons</h2>
+								<p>Warning buttons are designed to make users think carefully before they use them. They only work if used very sparingly. Most services should not need one.</p>
+								<p>When letting users carry out an action like this, it’s a good idea to include an additional step which asks them to confirm it.</p>
+								<p>In this instance, use another style of button for the initial call to action, and a warning button for the final confirmation.</p>
+								<p>Do not only rely on the red colour of a warning button to communicate the serious nature of the action. This is because not all users will be able to see the colour or will understand what it signifies. Make sure the context and button text make clear what will happen if the user selects it.</p>
+								<div class="exampleDisplay">
+									<button class="btn-lg btn-warning" type="button">Delete account</button>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Disabled buttons</h2>
+								<p>Disabled buttons have poor contrast and can confuse some users, so avoid them if possible.</p>
+								<p>Only use disabled buttons if research shows it makes the user interface easier to understand.</p>
+								<div class="exampleDisplay">
+									<button class="btn-lg btn-disabled" type="button">Disabled button</button>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h3>Stop users from accidentally sending information more than once</h3>
+								<p>Sometimes, users double click buttons because they:</p>
+								<ul>
+								<li>have used operating systems where they have to double click items to make them work</li>
+								<li>are experiencing a slow connection which means they are not given feedback on their action quickly enough</li>
+								<li>have motor impairments such as hand tremors which cause them to click the button involuntarily</li>
+								</ul>
+								<p>In some cases, this can mean their information is sent twice.</p>
+								<p>If you are working in production and research shows that users are frequently sending information twice, you can configure the button to ignore the second click.</p>
+								<p>To do this, set the <code>data-prevent-double-click</code> attribute to <code>true</code>. You can do this directly in the HTML.</p>
+								<div class="exampleDisplay">
+									<pre><code><textarea rows="4" readonly="readonly">
+<button data-prevent-double-click="true" class="btn-lg btn-disabled" type="button">
+    Submit
+</button>
+									</textarea></code></pre>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+
+					</div><!-- /col-xs-8 -->
+				</div><!--/row-->
+			</form>
+		</article>
+	</main>
+</div><!-- /container -->
+
+<!-- START FOOTER -->
+	<footer id="footer" class="footer" role="contentinfo">
+		<div class="container">
+
+		</div>
+	</footer>
+<!-- END FOOTER -->
+</div>
+</body>
+	<script src="js/bootstrap.min.js"></script>
+</html>

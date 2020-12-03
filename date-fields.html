@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortlink" href="https://beta.novascotia.ca/">
+	
+	<title>Date Fields - Service Patter Library - Government of Nova Scotia</title>
+		
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">		
+		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_9m8-tA3IQf8ThlLQYTTZUyEweCvyR908Tg0XCbKYOfY.css">
+		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_uIYN0sQV7NwuNKcH6_K57Yo4Nz26oGTDZHKB7WNNOwg.css">
+		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
+		<link rel="stylesheet" media="all" href="css/global-form-styles.css">
+		<link rel="stylesheet" media="all" href="css/radio-button.css">
+		<link rel="stylesheet" media="all" href="css/toggle.css">
+		<link rel="stylesheet" media="all" href="css/checkboxes.css">
+		<link rel="stylesheet" media="all" href="css/slider.css">
+		<link rel="stylesheet" media="all" href="css/input-field-group.css">
+		<link rel="stylesheet" media="all" href="css/select.css">
+		<link rel="stylesheet" media="all" href="css/buttons.css">
+	<!--[if lte IE 8]>
+	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+<div class="Site js-enabled" id="container">
+
+<!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
+
+<header>
+<!-- START SALTIRE NS MOTHERSHIP RIBBON w FR -->
+	<nav id="navigation" class="ribbon" role="navigation" aria-label="Main navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<a href="https://novascotia.ca/" hreflang="en"><img class="ribbon-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Province of Nova Scotia" /></a>
+				</div>
+			</div>
+		</div>
+	</nav>	
+<!-- END SALTIRE NS MOTHERSHIP RIBBON w FR -->
+</header>
+
+<!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
+
+<!--A basic page has a primary content area and an optional column for secondary information like related content.-->
+<div class="container Site-content">
+	<main><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
+		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
+			<form name="parameters" method="GET" target="_parent">
+				<div class="row">
+					<div class="col-sm-3 col-xs-12">
+						<nav class="sidebar_first hidden-xs nav-top-margin">
+							<ul class="menu">
+								<li class="first"><a href="index.html">Home</a></li>
+								<li><a href="buttons.html">Buttons</a></li>
+								<li><a href="checkboxes.html">Checkboxes</a></li>
+								<li><a href="date-fields.html"  class="active-trail active">Date Fields</a></li>
+								<li><a href="input-field-group.html">Input Form Group</a></li>
+								<li><a href="radio-button.html">Radio Button</a></li>
+								<li><a href="select.html">Select</a></li>
+								<li><a href="slider.html">Slider</a></li>
+								<li class="last"><a href="toggle.html">Toggle</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-9 col-xs-12">
+						<h1>Date Fields</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<p>Use the date input component when you’re asking users for a date they’ll already know, or can look up without using a calendar.</p>
+								<h2>When not to use this component</h2>
+								<p>Do not use the date input component if users are unlikely to know the exact date of the event you’re asking about.</p>
+								<h2>How it works</h2>
+								<p>The date input component consists of 3 fields to let users enter a day, month and year.</p>
+								<p>The 3 date fields are grouped together in a <code>&lt;fieldset&gt;</code> with a <code>&lt;legend&gt;</code> that describes them, as shown in the examples on this page. This is usually a question, like ‘What is your date of birth?’.</p>
+								<p>If you’re asking one question per page, you can set the contents of the <code>&lt;legend&gt;</code> as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.</p>
+								<p>Make sure that any example dates you use in hint text are valid for the question being asked.</p>
+								<p>Never automatically tab users between the fields of the date input because this can be confusing and may clash with normal keyboard controls.</p>
+								<h2>Example date fields with legend as a title</h2>
+								<div class="exampleDisplay">
+									<div class="ns-form-group">
+										<fieldset class="form-group" aria-describedby="fieldset-hint">
+											<legend class="ns-fieldset__legend noBorder">
+											  <h3 class="ns-fieldset__heading h3">
+												When was your passport issued?
+											  </h3>
+											</legend>
+
+											<div id="fieldset-hint" class="ns-hint">
+											  Enter Day Month Year. For example, 17 11 2007.
+											</div>
+											<div class="row">
+												<div class="col-auto pr-0"><label for="day">DD</label><input type="text" id="day" name="day" class="fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+												<div class="col-auto pr-0"><label for="month">MM</label><input type="text" id="month" name="month" class="fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+												<div class="col-auto"><label for="year">YYYY</label><input type="text" id="year" name="year" class="fw-4" pattern="[0-9]*" inputmode="numeric"></input></div>
+											</div>
+										</fieldset>
+									</div>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Example date fields with legend as a label</h2>
+								<p>Sometime when a date fields are part of a larger form you may want to make the legend blend in with the surounding form. In this case you can apply a <code>.label</code> class to the legend.
+								<div class="exampleDisplay">
+									<div class="ns-form-group">
+										<fieldset aria-describedby="fieldset-hint2">
+											<legend class="ns-fieldset__legend noBorder label">
+												Date recieved
+											</legend>
+
+											<div id="fieldset-hint2" class="ns-hint">
+											  Enter Day Month Year. For example, 17 11 2020.
+											</div>
+											<div class="row">
+												<div class="col-auto pr-0"><label for="day2">DD</label><input type="text" id="day2" name="day" class="fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+												<div class="col-auto pr-0"><label for="month2">MM</label><input type="text" id="month2" name="month" class="fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+												<div class="col-auto"><label for="year2">YYYY</label><input type="text" id="year2" name="year" class="fw-4" pattern="[0-9]*" inputmode="numeric"></input></div>
+											</div>
+										</fieldset>
+									</div>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2 id="use-the-autocomplete-attribute-for-a-date-of-birth">Use the autocomplete attribute for a date of birth</h2>
+								<p>Use the <code>autocomplete</code> attribute on the date input component when you’re asking for a date of birth. This lets browsers autofill the information on a user’s behalf if they’ve entered it previously.</p>
+								<p>To do this, set the <code>autocomplete</code> attribute on the 3 fields to <code>bday-day</code>, <code>bday-month</code> and <code>bday-year</code>. See how to do this in the HTML and Nunjucks tabs in the following example. </p>								<div class="ns-form-group exampleDisplay">
+
+								<pre><code><textarea rows="10" readonly="readonly">
+<div class="row">
+	<div class="col-auto pr-0"><label for="bday-day">DD</label><input type="text" id="bday-day" name="bday-day" class="fw-2" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric"></input></div>
+	<div class="col-auto pr-0"><label for="bday-month">MM</label><input type="text" id="bday-month" name="bday-month" class="fw-2" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric"></input></div>
+	<div class="col-auto"><label for="bday-year">YYYY</label><input type="text" id="bday-year" name="bday-year" autocomplete="bday-year" class="fw-4" pattern="[0-9]*" inputmode="numeric"></input></div>
+</div>
+								</textarea></code></pre>
+
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Error messages</h2>
+								<p>If you’re highlighting the whole date, style all the fields like this</p>
+							<div class="exampleDisplay">
+								<div class="ns-form-group ns-form-group-message-error">
+									<fieldset aria-describedby="fieldset-hint2">
+										<legend class="ns-fieldset__legend noBorder">
+										  <h3 class="ns-fieldset__heading h3">
+											When was your passport issued?
+										  </h3>
+										</legend>
+
+										<div id="fieldset-hint2" class="ns-hint">
+										  For example, 17 11 2007
+										</div>
+										<span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+										  <span class="ns-visually-hidden">Error:</span> The date your passport was issued must be in the past
+										</span>
+										<div class="row">
+											<div class="col-auto pr-0"><label for="day2">DD</label><input type="text" id="day2" name="day" class="fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
+											<div class="col-auto pr-0"><label for="month2">MM</label><input type="text" id="month2" name="month" class="fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
+											<div class="col-auto"><label for="year2">YYYY</label><input type="text" id="year2" name="year" class="fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
+										</div>
+									</fieldset>
+								</div>
+								<p>If you’re highlighting just one field - either the day, month or year - only style the field that has an error. The error message must say which field has an error, like this:</p>
+								<div class="ns-form-group ns-form-group-message-error">
+									<fieldset aria-describedby="fieldset-hint3">
+										<legend class="ns-fieldset__legend noBorder">
+										  <h3 class="ns-fieldset__heading h3">
+											When was your passport issued?
+										  </h3>
+										</legend>
+
+										<div id="fieldset-hint3" class="ns-hint">
+										  For example, 17 11 2007
+										</div>
+										<span id="date-field-error" class="ns--message ns-error-message field-validation-error">
+										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+										  <span class="ns-visually-hidden">Error:</span> The date your passport was issued must include a year (YYYY)
+										</span>
+										<div class="row">
+											<div class="col-auto pr-0"><label for="day3">DD</label><input type="text" id="day3" name="day3" class="fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+											<div class="col-auto pr-0"><label for="month3">MM</label><input type="text" id="month3" name="month3" class="fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+											<div class="col-auto"><label for="year3">YYYY</label><input type="text" id="year3" name="year3" class="fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
+										</div>
+									</fieldset>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+
+
+					</div><!-- /col-xs-8 -->
+				</div><!--/row-->
+			</form>
+		</article>
+	</main>
+</div><!-- /container -->
+
+<!-- START FOOTER -->
+	<footer id="footer" class="footer" role="contentinfo">
+		<div class="container">
+
+		</div>
+	</footer>
+<!-- END FOOTER -->
+</div>
+</body>
+	<script src="js/bootstrap.min.js"></script>
+</html>

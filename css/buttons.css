@@ -1,0 +1,51 @@
+button:focus {
+	-webkit-box-shadow:0 0 0 4px #f8d44c;
+	-moz-box-shadow:0 0 0 4px #f8d44c;
+	-o-box-shadow:0 0 0 4px #f8d44c;
+	box-shadow:0 0 0 4px #f8d44c;
+	transition: box-shadow 0.2s ease;
+    border-radius: 4;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-decoration: none;
+}
+
+.btn-lg{
+    margin: 1em auto;	
+}
+.btn-default {
+	transition: 0.2s ease;
+}
+.btn-2nd {
+    color: #0058a4;
+    background-color: #fff;
+    border-color: transparent;
+	transition: 0.2s ease;
+}
+.btn-2nd:hover {
+    color: #0058a4;
+    background-color: #d4d4d4;
+    border-color: rgba(0,0,0,0);
+	transition: 0.2s ease;
+}
+.btn-success {
+	transition: 0.2s ease;
+	display: inline-block;
+	cursor: pointer;
+}
+.btn-warning{
+    color: #fff;
+    background-color: #a94442;
+    border-color: transparent;
+	transition: 0.2s ease;
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active{
+    color: #fff;
+    background-color: #821c1b;
+    border-color: transparent;
+	transition: 0.2s ease;
+}
+a.btn-success:not([href]):not([tabindex]) {
+    color: #fff;
+}
