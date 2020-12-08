@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
@@ -8,12 +7,12 @@
 	
 	<title>Home - Service Patter Library - Government of Nova Scotia</title>
 		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">		
-		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_9m8-tA3IQf8ThlLQYTTZUyEweCvyR908Tg0XCbKYOfY.css">
-		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_uIYN0sQV7NwuNKcH6_K57Yo4Nz26oGTDZHKB7WNNOwg.css">
+		<link rel="stylesheet" media="all" href="css/saltire.css">
 		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
 		<link rel="stylesheet" media="all" href="css/global-form-styles.css">
 		<link rel="stylesheet" media="all" href="css/radio-button.css">
@@ -58,50 +57,21 @@
 				<div class="row mb-4">
 					<div class="col-sm-4 col-xs-12">
 						<div id="nav-placeholder">
-
 						</div>
-
 						<script>
 						$(function(){
 						  $("#nav-placeholder").load("nav.html");
 						});
 						</script>
-<!-- 						<nav class="sidebar_first hidden-xs nav-top-margin">
-							<ul class="menu">
-								<li class="first"><a class="active-trail active" href="index.html">Home</a></li>
-								<li><a href="buttons.html">Buttons</a></li>
-								<li><a href="checkboxes.html">Checkboxes</a></li>
-								<li><a href="date-fields.html">Date Fields</a></li>
-								<li><a href="input-field-group.html">Input Form Group</a></li>
-								<li><a href="radio-button.html">Radio Button</a></li>
-								<li><a href="select.html">Select</a></li>
-								<li><a href="slider.html">Slider</a></li>
-								<li class="last"><a href="toggle.html">Toggle</a></li>
-							</ul>
-						</nav> -->
-<!-- 						<h2>Page Temaplates</h2>
-						<nav class="sidebar_first hidden-xs nav-top-margin">
-							<ul class="menu">
-								<li class="first"><a class="active-trail active" href="#">Home</a></li>
-								<li><a href="buttons.html">Buttons</a></li>
-								<li><a href="checkboxes.html">Checkboxes</a></li>
-								<li><a href="date-fields.html">Date Fields</a></li>
-								<li><a href="input-field-group.html">Input Form Group</a></li>
-								<li><a href="radio-button.html">Radio Button</a></li>
-								<li><a href="select.html">Select</a></li>
-								<li><a href="slider.html">Slider</a></li>
-								<li class="last"><a href="toggle.html">Toggle</a></li>
-							</ul>
-						</nav> -->
 					</div>
 					<div class="col-sm-8 col-xs-12">
 						<h1>Service Pattern Library</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
-						<div id="summary">This is a suplimentary library of patterns and components that can be used to create services within the <a href="https://cns.pages.novascotia.ca/patternlab/">CNS Saltier framework<a/>.</div>
+						<div id="summary">This is a suplimentary library of patterns and components that can be used to create services within the <a href="https://cns.pages.novascotia.ca/patternlab/">CNS Saltire framework<a/>.</div>
 						<h2 class="h3 mb-4">Click on a box below to see more examples of each element.</h2>
 						<section class="row mb-4">
 							<div class="col-md-12 col-xs-12">
-								<button class="ns-form-group exampleDisplay displayButton" onclick="location.href='input-field-group.html'" type="button">
-									<div class="ns-form-group">
+								<button class="ns-fieldset exampleDisplay displayButton" onclick="location.href='input-field-group.html'" type="button">
+									<div class="ns-fieldset">
 									  <h3 class="ns-label-wrapper">
 										<label class="ns-label" for="event-name2">
 										  Input form group example 
@@ -114,7 +84,7 @@
 						</section><!--/row-->
 						<section class="row mb-4">
 							<div class="col-md-12 col-xs-12">
-								<button class="ns-form-group exampleDisplay displayButton" onclick="location.href='radio-button.html'" type="button">
+								<button class="ns-fieldset exampleDisplay displayButton" onclick="location.href='radio-button.html'" type="button">
 									<fieldset class="ns-fieldset">
 										<legend class="ns-fieldset__legend noBorder">
 										  <h3 class="ns-fieldset__heading ">
@@ -144,7 +114,7 @@
 						</section><!--/row-->
 						<section class="row mb-4">
 							<div class="col-md-12 col-xs-12">
-								<button class="ns-form-group exampleDisplay displayButton" onclick="location.href='checkboxes.html'" type="button">
+								<button class="ns-fieldset exampleDisplay displayButton" onclick="location.href='checkboxes.html'" type="button">
 								  <fieldset class="ns-fieldset">
 									<legend class="ns-fieldset__legend noBorder">
 									  <h3 class="ns-fieldset__heading">
@@ -168,8 +138,8 @@
 						</section><!--/row-->
 						<section class="row mb-4">
 							<div class="col-md-12 col-xs-12">
-								<button class="ns-form-group exampleDisplay displayButton" onclick="location.href='select.html'" type="button">
-									<div class="ns-form-group">
+								<button class="ns-fieldset exampleDisplay displayButton" onclick="location.href='select.html'" type="button">
+									<div class="ns-fieldset">
 									  <h3 class="ns-label-wrapper">
 										<label class="ns-label" for="select1">
 										  Select dropdown & searchable dropdown
@@ -188,7 +158,7 @@
 						</section><!--/row-->
 						<section class="row mb-4">
 							<div class="col-md-12 col-xs-12">
-								<button class="ns-form-group exampleDisplay displayButton" onclick="location.href='toggle.html'" type="button">
+								<button class="ns-fieldset exampleDisplay displayButton" onclick="location.href='toggle.html'" type="button">
 								  <!-- start NS toggle -->
 								  <fieldset class="ns-toggle--ui-switch ns-fieldset">
 									<legend class="ns-fieldset__legend noBorder">
@@ -216,7 +186,7 @@
 						</section><!--/row-->
 						<section class="row mb-4">
 							<div class="col-md-12 col-xs-12">
-								<button class="ns-form-group exampleDisplay displayButton" onclick="location.href='slider.html'" type="button">
+								<button class="ns-fieldset exampleDisplay displayButton" onclick="location.href='slider.html'" type="button">
 									<label class="ns-fieldset__legend noBorder" for="slider">
 									  <h3 class="ns-fieldset__heading mb-4">
 										Slider Example
@@ -247,20 +217,5 @@
 	</footer>
 <!-- END FOOTER -->
 </div>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-						<script>
-$(function(){
-    var current = location.pathname;
-    $('#nav li a').each(function(){
-        var $this = $(this);
-        // if the current path is like this link, make it active
-        if($this.attr('href').indexOf(current) !== -1){
-            $this.addClass('active');
-        }
-    })
-})
-						</script>
 </body>
 </html>

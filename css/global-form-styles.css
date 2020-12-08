@@ -134,16 +134,16 @@ label.ns-label{
 
 /* -------------------------------------------- start form group error ----------------------------------------------------- */
 
-.ns-form-group-message-error {
+.ns-fieldset-message-error {
     padding-left: 15px;
     border-left: 5px solid #a94442;
 }
-.ns-form-group-message-warning {
+.ns-fieldset-message-warning {
     padding-left: 15px;
     border-left: 5px solid #8a6d3b;
 }
 
-.ns-form-group--error .ns-form-group {
+.ns-fieldset--error .ns-fieldset {
     padding: 0;
     border: 0;
 }

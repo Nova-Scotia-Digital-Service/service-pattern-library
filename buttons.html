@@ -7,13 +7,12 @@
 	
 	<title>Buttons - Service Patter Library - Government of Nova Scotia</title>
 		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">		
-		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_9m8-tA3IQf8ThlLQYTTZUyEweCvyR908Tg0XCbKYOfY.css">
-		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_uIYN0sQV7NwuNKcH6_K57Yo4Nz26oGTDZHKB7WNNOwg.css">
+		<link rel="stylesheet" media="all" href="css/saltire.css">
 		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
 		<link rel="stylesheet" media="all" href="css/global-form-styles.css">
 		<link rel="stylesheet" media="all" href="css/radio-button.css">
@@ -58,9 +57,7 @@
 				<div class="row">
 					<div class="col-sm-3 col-xs-12">
 						<div id="nav-placeholder">
-
 						</div>
-
 						<script>
 						$(function(){
 						  $("#nav-placeholder").load("nav.html");
@@ -76,6 +73,37 @@
 								<p>Avoid using multiple default buttons on a single page. Having more than one main call to action reduces their impact, and makes it harder for users to know what to do next.</p>
 								<div class="exampleDisplay">
 									<button class="btn-lg btn-default">Default button</button>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Button sizes</h2>
+								<p>There are three different sizes of buttons available. The large button should be used in almost all cases. Only use smaller buttons if it has been shown to improve usability.</p>
+								<div class="exampleDisplay" >
+									<section class="row align-items-center">
+										<div class="col-auto">
+											<button class="btn-lg btn-default">Large button</button>
+										</div>
+										<div class="col-auto">
+											<button class="btn-sm btn-default">Small button</button>
+										</div>
+										<div class="col-auto">
+											<button class="btn-xs btn-default">Extra small button</button>
+										</div>
+									</section>
+
+									<section class="row align-items-center">
+										<div class="col-auto">
+											<button class="btn-lg btn-2nd">Large button</button>
+										</div>
+										<div class="col-auto">
+											<button class="btn-sm btn-2nd">Small button</button>
+										</div>
+										<div class="col-auto">
+											<button class="btn-xs btn-2nd">Extra small button</button>
+										</div>
+									</section>
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
@@ -109,7 +137,6 @@
 							<div class="col-md-12 col-xs-12">
 								<h2>Start buttons</h2>
 								<p>Use a start button for the main call to action on your service’s start page. Start buttons don’t submit form data, so they use a link tag rather than a button tag.</p>
-								<p>Only use warning buttons for actions with serious destructive consequences that cannot be easily undone by a user. For example, permanently deleting an account.</p>
 								<div class="exampleDisplay">
 									<a class="btn-lg btn-success mt-4 mb-4">Start now<i class="fa fa-arrow-right ml-2 mr-0" aria-hidden="true"></i></a>
 								</div>
@@ -119,6 +146,7 @@
 							<div class="col-md-12 col-xs-12">
 								<h2>Warning buttons</h2>
 								<p>Warning buttons are designed to make users think carefully before they use them. They only work if used very sparingly. Most services should not need one.</p>
+								<p>Only use warning buttons for actions with serious destructive consequences that cannot be easily undone by a user. For example, permanently deleting an account.</p>
 								<p>When letting users carry out an action like this, it’s a good idea to include an additional step which asks them to confirm it.</p>
 								<p>In this instance, use another style of button for the initial call to action, and a warning button for the final confirmation.</p>
 								<p>Do not only rely on the red colour of a warning button to communicate the serious nature of the action. This is because not all users will be able to see the colour or will understand what it signifies. Make sure the context and button text make clear what will happen if the user selects it.</p>
@@ -175,5 +203,4 @@
 <!-- END FOOTER -->
 </div>
 </body>
-	<script src="js/bootstrap.min.js"></script>
 </html>

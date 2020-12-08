@@ -1,7 +1,4 @@
-
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
@@ -10,13 +7,12 @@
 	
 	<title>Select - Service Patter Library - Government of Nova Scotia</title>
 		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">		
-		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_9m8-tA3IQf8ThlLQYTTZUyEweCvyR908Tg0XCbKYOfY.css">
-		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_uIYN0sQV7NwuNKcH6_K57Yo4Nz26oGTDZHKB7WNNOwg.css">
+		<link rel="stylesheet" media="all" href="css/saltire.css">
 		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
 		<link rel="stylesheet" media="all" href="css/global-form-styles.css">
 		<link rel="stylesheet" media="all" href="css/radio-button.css">
@@ -61,9 +57,7 @@
 				<div class="row">
 					<div class="col-sm-3 col-xs-12">
 						<div id="nav-placeholder">
-
 						</div>
-
 						<script>
 						$(function(){
 						  $("#nav-placeholder").load("nav.html");
@@ -79,8 +73,8 @@
 							<div class="col-md-12 col-xs-12">
 								<h2>Select with header as a Label</h2>
 								<p>If you’re asking just one question per page as recommended, you can set the contents of the label as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.</p>
-								<div class="ns-form-group exampleDisplay">
-									<div class="ns-form-group">
+								<div class="ns-fieldset exampleDisplay">
+									<div class="ns-fieldset">
 									  <h3 class="ns-label-wrapper">
 										<label class="ns-label" for="select1">
 										  What would you like to select?
@@ -102,8 +96,8 @@
 								<h2>Typeahead searchable dropdown</h2>
 								<p>As a general practice searchable dropdowns are used when there are a lot of dropdown options or the options are categorized.</p>
 								<p>Another thing to consider is the context of the user, typeahead in dropdown menus are good if the user knows what he is searching for. It makes it easier to search and select the Option required.</p>
-								<div class="ns-form-group exampleDisplay">
-									<div class="ns-form-group">
+								<div class="ns-fieldset exampleDisplay">
+									<div class="ns-fieldset">
 
 										<label class="ns-label" for="typeahead1">
 										  Type something to narrow down options
@@ -124,8 +118,8 @@
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Typeahead searchable dropdown with errors</h2>
-								<div class="ns-form-group exampleDisplay">
-									<div class="ns-form-group  ns-form-group-message-error">
+								<div class="ns-fieldset exampleDisplay">
+									<div class="ns-fieldset  ns-fieldset-message-error">
 										<h3 class="ns-label-wrapper">
 											<label class="ns-label" for="typeahead2">
 											  What would you like to select?
@@ -163,5 +157,4 @@
 <!-- END FOOTER -->
 </div>
 </body>
-	<script src="js/bootstrap.min.js"></script>
 </html>

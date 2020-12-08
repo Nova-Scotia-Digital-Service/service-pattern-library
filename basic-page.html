@@ -1,14 +1,11 @@
-
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
-	<title>Slider - Service Patter Library - Government of Nova Scotia</title>
+	<title>Select - Service Patter Library - Government of Nova Scotia</title>
 		
 <!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
@@ -66,34 +63,27 @@
 						  $("#nav-placeholder").load("nav.html");
 						});
 						</script>
+
 					</div>
-					<div class="col-sm-9 col-xs-12">
-						<h1>Slider examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
-						<section class="row">
-							<div class="col-md-12 col-xs-12">
-								<h2>Sliders</h2>
-								<p>Use a slider only when the precise value won’t matter to the user, but rather only the approximate range.</p>
-								<h3>Sliders can be used when:</h3>
-								<ul>
-									<li><strong>You want to take input in touch devices</strong><br>
-									Since sliders can be given input by touch, It doesn't have to open keyboard in mobile. Also it becomes faster to input in mobile devices.</li><br>
-									<li><strong>You have start & end points</strong><br>
-									All sliders have starting and ending point which show the broadness of value user can input.</li><br>
-									<li><strong>User can skip in between values</strong><br>
-									In some cases, user feels good to enter approximate values. For example in ratings, user don't prefer to put 3.45 out of 5. While in case of brightness or volume control, user don't even need the values.</li><br>
-								</ul>
-								<div class="ns-fieldset exampleDisplay">
-									<label class="ns-fieldset__legend noBorder" for="slider">
-									  <h3 class="ns-fieldset__heading mb-4">
-										Slider Example
-									  </h3>
-									</label>
-									<input class="slider ns-slider__Item" type="range" name="slider" id="slider" min="0" max="2000" value="0" step="25" aria-valuemin="0" aria-valuemax="2000" aria-valuenow="">
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
-
-
+					<div class="col-sm-9 col-xs-12"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
+						<h1>Basic page template</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<p>Make sure your main content area is not too wide. If you do not have a side bar, do not set the column width to full width <code>col-12</code> instead use <code>col-8</code> to restrict the column to a readable length.</p>
+						<h2>Page heading</h2>
+						<p>Do not use the same page heading across multiple pages.</p>
+						<p>The page heading should relate specifically to the information being asked for on the current page, not any higher-level section the page is part of.</p>
+						
+						<h2>Split it up</H2>
+						<p>When building a service it's not enough to just "put your form online." People do not read or understand content the same way when reading from a screen or paper. Think about splitting your content up. It's best to display one topic per page. This allows people to easily undsertand the content of the page and focus on the topic.</p>
+						<h2>Start by asking one question per page</h2>
+						<p>Asking just one question per question page helps users understand what you’re asking them to do, and focus on the specific question and its answer.</p>
+						<p>To help you follow this approach, you can set the contents of a <code>&lt;legend&gt;</code> or <code>&lt;label&gt;</code> for a page’s input as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.</p>
+						<div >
+							<iframe src="pages/question-page.html"  frameborder="0"></iframe>
+						</div>
+						<h2>Asking multiple questions on a page</h2>
+						<p>Sometimes it makes sense to group a number of related questions on the same page.</p>
+						<p>User research will tell you when you can group pages together. For example, if you’re designing an internal service for government users who need to repeat and switch between tasks quickly.</p>
+						<p>If you need to ask for multiple related things on a page, use a statement as the heading.</p>
 					</div><!-- /col-xs-8 -->
 				</div><!--/row-->
 			</form>

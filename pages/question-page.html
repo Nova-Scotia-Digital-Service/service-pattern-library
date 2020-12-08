@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
+	<meta name="viewport" content="width=device-width, initial-scale=.5">
+	<link rel="shortlink" href="https://beta.novascotia.ca/">
+	
+	<title>Question Page Example - Service Patter Library - Government of Nova Scotia</title>
+		
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">		
+		<link rel="stylesheet" media="all" href="../css/saltire.css">
+		<link rel="stylesheet" media="all" href="../css/supplimentary-page-styles.css">
+		<link rel="stylesheet" media="all" href="../css/global-form-styles.css">
+		<link rel="stylesheet" media="all" href="../css/radio-button.css">
+		<link rel="stylesheet" media="all" href="../css/toggle.css">
+		<link rel="stylesheet" media="all" href="../css/checkboxes.css">
+		<link rel="stylesheet" media="all" href="../css/slider.css">
+		<link rel="stylesheet" media="all" href="../css/input-field-group.css">
+		<link rel="stylesheet" media="all" href="../css/select.css">
+		<link rel="stylesheet" media="all" href="../css/buttons.css">
+	<!--[if lte IE 8]>
+	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+<div class="Site js-enabled" id="container">
+
+<!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
+
+<header>
+<!-- START SALTIRE NS MOTHERSHIP RIBBON w FR -->
+	<nav id="navigation" class="ribbon" role="navigation" aria-label="Main navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<a href="https://novascotia.ca/" hreflang="en"><img class="ribbon-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Province of Nova Scotia" /></a>
+				</div>
+			</div>
+		</div>
+	</nav>	
+<!-- END SALTIRE NS MOTHERSHIP RIBBON w FR -->
+</header>
+
+<!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
+
+<!--A basic page has a primary content area and an optional column for secondary information like related content.-->
+<div class="container Site-content">
+	<a href="#" class="ns-back-link pr-2">Back</a><!-- backlink should be located above the main content of the page -->	
+	<main><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
+		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
+				<div class="row">
+					<div class="col-sm-8 col-xs-12"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
+						<form name="parameters" method="GET" target="_parent">
+							<fieldset class="ns-fieldset" aria-describedby="income-radios-hint"><!-- Add aria-describedby to fieldset if there is hint text that applies to the set -->
+								<legend class="ns-fieldset__legend noBorder">
+								  <h1 class="ns-fieldset__heading">
+									What is your total household income?
+								  </h1><!-- SEMANTIC H1 TAG SET AS LEGEND FOR RADIO BUTTON QUESTIONS. ONLY 1 H1 PER PAGE-->
+								</legend>
+								<div id="income-radios-hint" class="ns-hint"><!-- This hint should be described by the aria-describedby located in the fieldset -->
+								  Select the income range that applies to your total household income
+								</div>
+								<div class="ns-radios">
+								  <div class="ns-radios__item">
+									<input class="ns-radios__input" id="income-radios" name="income-radios" type="radio" value="income radio 1" checked>
+									<label class="ns-label ns-radios__label" for="income-radios">
+									  <span class="ns-label-span">$0 to $50,000</span>
+									</label>
+								  </div>
+								  <div class="ns-radios__item income">
+									<input class="ns-radios__input" id="income-radios-2" name="income-radios" type="radio" value="income radio 2">
+									<label class="ns-label ns-radios__label" for="income-radios-2">
+									  <span class="ns-label-span">$50,000 to $150,000</span>
+									</label>
+								  </div>
+								  <div class="ns-radios__item income">
+									<input class="ns-radios__input" id="income-radios-3" name="income-radios" type="radio" value="income radio 3">
+									<label class="ns-label ns-radios__label" for="income-radios-3">
+									  <span class="ns-label-span">Other</span>
+									</label>
+								  </div>
+								</div>
+							</fieldset>
+							<section class="row">
+								<div class="col-auto">
+									<button class="btn-lg btn-default">Continue</button>
+								</div>
+							</section>
+						</form>
+					</div><!-- /col-xs-8 -->
+				</div><!--/row-->
+		</article>
+	</main>
+</div><!-- /container -->
+
+<!-- START FOOTER -->
+	<footer id="footer" class="footer" role="contentinfo">
+		<div class="container">
+
+		</div>
+	</footer>
+<!-- END FOOTER -->
+</div>
+</body>
+</html>

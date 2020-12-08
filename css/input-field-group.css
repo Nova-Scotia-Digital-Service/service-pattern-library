@@ -1,17 +1,17 @@
-.ns-form-group {
+.ns-fieldset {
     margin-bottom: 20px;
 }
-.ns-form-group:after {
+.ns-fieldset:after {
     content: "";
     display: block;
     clear: both;
 }
 @media (min-width: 40.0625em) {
-    .ns-form-group {
+    .ns-fieldset {
         margin-bottom: 30px;
     }
 }
-.ns-form-group .ns-form-group:last-of-type {
+.ns-fieldset .ns-fieldset:last-of-type {
     margin-bottom: 0;
 }
 

@@ -11,8 +11,8 @@ button:focus {
     text-decoration: none;
 }
 
-.btn-lg{
-    margin: 1em auto;	
+.btn-lg, .btn-sm, .btn-xs {
+    margin: 1rem auto;
 }
 .btn-default {
 	transition: 0.2s ease;

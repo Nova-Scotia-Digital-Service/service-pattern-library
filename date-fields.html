@@ -5,15 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
-	<title>Date Fields - Service Patter Library - Government of Nova Scotia</title>
+	<title>Date fields - Service Patter Library - Government of Nova Scotia</title>
 		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">		
-		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_9m8-tA3IQf8ThlLQYTTZUyEweCvyR908Tg0XCbKYOfY.css">
-		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_uIYN0sQV7NwuNKcH6_K57Yo4Nz26oGTDZHKB7WNNOwg.css">
+		<link rel="stylesheet" media="all" href="css/saltire.css">
 		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
 		<link rel="stylesheet" media="all" href="css/global-form-styles.css">
 		<link rel="stylesheet" media="all" href="css/radio-button.css">
@@ -58,9 +57,7 @@
 				<div class="row">
 					<div class="col-sm-3 col-xs-12">
 						<div id="nav-placeholder">
-
 						</div>
-
 						<script>
 						$(function(){
 						  $("#nav-placeholder").load("nav.html");
@@ -82,7 +79,7 @@
 								<p>Never automatically tab users between the fields of the date input because this can be confusing and may clash with normal keyboard controls.</p>
 								<h2>Example date fields with legend as a title</h2>
 								<div class="exampleDisplay">
-									<div class="ns-form-group">
+									<div class="ns-fieldset">
 										<fieldset class="form-group" aria-describedby="fieldset-hint">
 											<legend class="ns-fieldset__legend noBorder">
 											  <h3 class="ns-fieldset__heading h3">
@@ -108,7 +105,7 @@
 								<h2>Example date fields with legend as a label</h2>
 								<p>Sometime when a date fields are part of a larger form you may want to make the legend blend in with the surounding form. In this case you can apply a <code>.label</code> class to the legend.
 								<div class="exampleDisplay">
-									<div class="ns-form-group">
+									<div class="ns-fieldset">
 										<fieldset aria-describedby="fieldset-hint2">
 											<legend class="ns-fieldset__legend noBorder label">
 												Date recieved
@@ -131,7 +128,7 @@
 							<div class="col-md-12 col-xs-12">
 								<h2 id="use-the-autocomplete-attribute-for-a-date-of-birth">Use the autocomplete attribute for a date of birth</h2>
 								<p>Use the <code>autocomplete</code> attribute on the date input component when you’re asking for a date of birth. This lets browsers autofill the information on a user’s behalf if they’ve entered it previously.</p>
-								<p>To do this, set the <code>autocomplete</code> attribute on the 3 fields to <code>bday-day</code>, <code>bday-month</code> and <code>bday-year</code>. See how to do this in the HTML and Nunjucks tabs in the following example. </p>								<div class="ns-form-group exampleDisplay">
+								<p>To do this, set the <code>autocomplete</code> attribute on the 3 fields to <code>bday-day</code>, <code>bday-month</code> and <code>bday-year</code>. See how to do this in the HTML and Nunjucks tabs in the following example. </p>								<div class="ns-fieldset exampleDisplay">
 
 								<pre><code><textarea rows="10" readonly="readonly">
 <div class="row">
@@ -148,7 +145,7 @@
 								<h2>Error messages</h2>
 								<p>If you’re highlighting the whole date, style all the fields like this</p>
 							<div class="exampleDisplay">
-								<div class="ns-form-group ns-form-group-message-error">
+								<div class="ns-fieldset ns-fieldset-message-error">
 									<fieldset aria-describedby="fieldset-hint2">
 										<legend class="ns-fieldset__legend noBorder">
 										  <h3 class="ns-fieldset__heading h3">
@@ -171,7 +168,7 @@
 									</fieldset>
 								</div>
 								<p>If you’re highlighting just one field - either the day, month or year - only style the field that has an error. The error message must say which field has an error, like this:</p>
-								<div class="ns-form-group ns-form-group-message-error">
+								<div class="ns-fieldset ns-fieldset-message-error">
 									<fieldset aria-describedby="fieldset-hint3">
 										<legend class="ns-fieldset__legend noBorder">
 										  <h3 class="ns-fieldset__heading h3">
@@ -213,5 +210,4 @@
 <!-- END FOOTER -->
 </div>
 </body>
-	<script src="js/bootstrap.min.js"></script>
 </html>

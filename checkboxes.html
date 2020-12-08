@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
@@ -8,13 +7,12 @@
 	
 	<title>Checkboxes - Service Patter Library - Government of Nova Scotia</title>
 		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">		
-		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_9m8-tA3IQf8ThlLQYTTZUyEweCvyR908Tg0XCbKYOfY.css">
-		<link rel="stylesheet" media="all" href="https://beta.novascotia.ca/sites/default/files/css/css_uIYN0sQV7NwuNKcH6_K57Yo4Nz26oGTDZHKB7WNNOwg.css">
+		<link rel="stylesheet" media="all" href="css/saltire.css">
 		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
 		<link rel="stylesheet" media="all" href="css/global-form-styles.css">
 		<link rel="stylesheet" media="all" href="css/radio-button.css">
@@ -59,9 +57,7 @@
 				<div class="row">
 					<div class="col-sm-3 col-xs-12">
 						<div id="nav-placeholder">
-
 						</div>
-
 						<script>
 						$(function(){
 						  $("#nav-placeholder").load("nav.html");
@@ -74,7 +70,7 @@
 							<div class="col-md-12 col-xs-12">
 								<h2>Basic checkbox</h2>
 								<p>Let users select one or more options by using the checkboxes component.</p>
-								<div class="ns-form-group exampleDisplay">
+								<div class="ns-fieldset exampleDisplay">
 								  <fieldset class="ns-fieldset">
 									<legend class="ns-fieldset__legend noBorder">
 									  <h3 class="ns-fieldset__heading">
@@ -112,7 +108,7 @@
 							<div class="col-md-12 col-xs-12">
 								<h2>Checkbox items with hints</h2>
 								<p>You can add hints to checkbox items to provide additional information about the options.</p>
-								<div class="ns-form-group exampleDisplay">
+								<div class="ns-fieldset exampleDisplay">
 								  <fieldset class="ns-fieldset">
 									<legend class="ns-fieldset__legend noBorder">
 									  <h3 class="ns-fieldset__heading">
@@ -154,7 +150,7 @@
 								<h2>Conditionally revealing content</h2>
 								<p>You can conditionally reveal content when the user selects a particular checkbox, so they only see content when it’s relevant to them.</p>
 								<p>For example, you could reveal a phone number input when the user selects the ‘Contact me by phone’ option.</p>
-								<div class="ns-form-group exampleDisplay">
+								<div class="ns-fieldset exampleDisplay">
 								  <fieldset class="ns-fieldset">
 									<legend class="ns-fieldset__legend noBorder">
 									  <h3 class="ns-fieldset__heading">
@@ -172,7 +168,7 @@
 										</label>
 									  </div>
 									  <div class="ns-checkboxes__conditional" id="conditional-contact">
-										<div class="ns-form-group">
+										<div class="ns-fieldset">
 										  <label class="ns-label" for="contact-by-email">
 											Email address
 										  </label>
@@ -186,7 +182,7 @@
 										</label>
 									  </div>
 									  <div class="ns-checkboxes__conditional ns-checkboxes__conditional--hidden" id="conditional-contact-2">
-										<div class="ns-form-group">
+										<div class="ns-fieldset">
 										  <label class="ns-label" for="contact-by-phone">
 											Phone number
 										  </label>
@@ -200,7 +196,7 @@
 										</label>
 									  </div>
 									  <div class="ns-checkboxes__conditional ns-checkboxes__conditional--hidden" id="conditional-contact-3">
-										<div class="ns-form-group">
+										<div class="ns-fieldset">
 										  <label class="ns-label" for="contact-by-text">
 											Cell phone number
 										  </label>
@@ -217,7 +213,7 @@
 								<h2>Smaller checkboxes</h2>
 								<p>Use standard-sized checkboxes in nearly all cases. However, smaller versions work well on pages where it’s helpful to make them less visually prominent.</p>
 								<p>For example, on a page of search results, the primary user need is to see the results. Using smaller checkboxes lets users see and change search filters without distracting them from the main content.</p>
-								<div class="ns-form-group exampleDisplay">
+								<div class="ns-fieldset exampleDisplay">
 								  <fieldset class="ns-fieldset">
 									<legend class="ns-fieldset__legend noBorder">
 									  <h3 class="ns-fieldset__heading">
@@ -260,7 +256,7 @@
 								<h2>Basic checkbox with error</h2>
 								<p>Let users select one or more options by using the checkboxes component.</p>
 								<div class="exampleDisplay">					
-									<div class="ns-form-group ns-form-group-message-error" >
+									<div class="ns-fieldset ns-fieldset-message-error" >
 									  <fieldset class="ns-fieldset">
 										<legend class="ns-fieldset__legend noBorder">
 										  <h3 class="ns-fieldset__heading">
@@ -314,5 +310,4 @@
 <!-- END FOOTER -->
 </div>
 </body>
-	<script src="js/bootstrap.min.js"></script>
 </html>

@@ -1,6 +1,25 @@
+/* --------------------------------------------start set font to root ----------------------------------------------------- */
+
+h1, .h1 {
+  font-size: 2.25rem; }
+
+h2, .h2 {
+  font-size: 1.7rem; }
+
 h3, .h3 {
-    font-size: 1.35rem;
-}
+  font-size: 1.35rem; }
+
+h4, .h4 {
+  font-size: 1.15rem; }
+
+h5, .h5 {
+  font-size: 1rem; }
+
+h6, .h6 {
+  font-size: 0.875rem; }
+  
+/* --------------------------------------------end set font to root ----------------------------------------------------- */
+
 /* --------------------------------------------start not needed for service ----------------------------------------------------- */
 .exampleDisplay{
 	border: 1px solid #a4a4a4;
@@ -68,3 +87,70 @@ h3, .h3 {
     white-space: inherit !important;
 }
 /* --------------------------------------------end visiually hidden screen reader accessible ----------------------------------------------------- */
+
+/* -------------------------------------------- start back link ----------------------------------------------------- */
+
+.ns-back-link {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.14286;
+    font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 14px;
+	transition: .2s ease;
+}
+@media (min-width: 40.0625em) {
+    .ns-back-link {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+}
+.ns-back-link:hover,
+.ns-back-link:active,
+.ns-back-link:focus {
+    color: #002f58;
+}
+.ns-back-link[href] {
+    text-decoration: underline;
+}
+.ns-back-link[href]:focus {
+    text-decoration: none;
+}
+.ns-back-link[href]:hover:before, 
+.ns-back-link[href]:active:before, 
+.ns-back-link[href]:focus:before {
+    border-color: #002f58;
+	transition: .2s ease;
+}
+.ns-back-link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 3px;
+    width: 7px;
+    height: 7px;
+    margin: auto 0;
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+    border: solid;
+    border-width: 1px 1px 0 0;
+    border-color: #0058a4;
+}
+.ns-back-link:after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: 0;
+    bottom: -14px;
+    left: 0;
+}
+/* -------------------------------------------- end back link ----------------------------------------------------- */
