@@ -154,3 +154,22 @@ h6, .h6 {
     left: 0;
 }
 /* -------------------------------------------- end back link ----------------------------------------------------- */
+/* -------------------------------------------- Start service header caption ----------------------------------------------------- */
+.ns-caption{
+    font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.11111;
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.ns-caption + h1{
+	margin-top: 0;
+}
+/* -------------------------------------------- End service header caption ----------------------------------------------------- */
+

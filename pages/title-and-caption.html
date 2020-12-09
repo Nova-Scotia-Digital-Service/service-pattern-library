@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=.5">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
-	<title>Question Page Example - Service Patter Library - Government of Nova Scotia</title>
+	<title>Yes / No Page Example - Service Patter Library - Government of Nova Scotia</title>
 		
 <!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
@@ -29,7 +29,6 @@
 </head>
 
 <body>
-<div class="Site js-enabled" id="container">
 
 <!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
 
@@ -48,67 +47,19 @@
 </header>
 
 <!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
-
 <!--A basic page has a primary content area and an optional column for secondary information like related content.-->
 <div class="container Site-content">
 	<a href="#" class="ns-back-link pr-2">Back</a><!-- backlink should be located above the main content of the page -->	
 	<main><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
 		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
 				<div class="row">
-					<div class="col-sm-8 col-xs-12"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
-						<form name="parameters" method="GET" target="_parent">
-							<fieldset class="ns-fieldset" aria-describedby="income-radios-hint"><!-- Add aria-describedby to fieldset if there is hint text that applies to the set -->
-								<legend class="ns-fieldset__legend noBorder">
-								  <h1 class="ns-fieldset__heading">
-									What is your total household income?
-								  </h1><!-- SEMANTIC H1 TAG SET AS LEGEND FOR RADIO BUTTON QUESTIONS. ONLY 1 H1 PER PAGE-->
-								</legend>
-								<div id="income-radios-hint" class="ns-hint"><!-- This hint should be described by the aria-describedby located in the fieldset -->
-								  Select the income range that applies to your total household income
-								</div>
-								<div class="ns-radios">
-								  <div class="ns-radios__item">
-									<input class="ns-radios__input" id="income-radios" name="income-radios" type="radio" value="income radio 1" checked>
-									<label class="ns-label ns-radios__label" for="income-radios">
-									  <span class="ns-label-span">$0 to $50,000</span>
-									</label>
-								  </div>
-								  <div class="ns-radios__item income">
-									<input class="ns-radios__input" id="income-radios-2" name="income-radios" type="radio" value="income radio 2">
-									<label class="ns-label ns-radios__label" for="income-radios-2">
-									  <span class="ns-label-span">$50,000 to $150,000</span>
-									</label>
-								  </div>
-								  <div class="ns-radios__item income">
-									<input class="ns-radios__input" id="income-radios-3" name="income-radios" type="radio" value="income radio 3">
-									<label class="ns-label ns-radios__label" for="income-radios-3">
-									  <span class="ns-label-span">Other</span>
-									</label>
-								  </div>
-								</div>
-							</fieldset>
-							<section class="row">
-								<div class="col-auto">
-									<button class="btn-lg btn-default" type="button">Continue</button>
-								</div>
-								<div class="col-auto">
-									<button class="btn-lg ns-btn-2nd" type="button">Cancel</button>
-								</div>
-							</section>
-						</form>
-					</div><!-- /col-xs-8 -->
-				</div><!--/row-->
+					<div class="col-xs-12"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
+						<span class="ns-caption">Lottery licence - Eligibility question 1 of 4</span>
+						<h1>Are you 19 years old or older?</h1><!-- SEMANTIC H1 TAG. ONLY 1 H1 PER PAGE-->
+					</div>
+				</div>
 		</article>
 	</main>
-</div><!-- /container -->
-
-<!-- START FOOTER -->
-	<footer id="footer" class="footer" role="contentinfo">
-		<div class="container">
-
-		</div>
-	</footer>
-<!-- END FOOTER -->
 </div>
 </body>
 </html>

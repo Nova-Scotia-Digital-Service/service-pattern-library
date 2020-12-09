@@ -17,13 +17,13 @@ button:focus {
 .btn-default {
 	transition: 0.2s ease;
 }
-.btn-2nd {
+.ns-btn-2nd {
     color: #0058a4;
     background-color: #fff;
     border-color: transparent;
 	transition: 0.2s ease;
 }
-.btn-2nd:hover {
+.ns-btn-2nd:hover {
     color: #0058a4;
     background-color: #d4d4d4;
     border-color: rgba(0,0,0,0);
@@ -48,4 +48,22 @@ button:focus {
 }
 a.btn-success:not([href]):not([tabindex]) {
     color: #fff;
+}
+
+/* -------------------------------------------- button general ----------------------------------------------------- */
+
+/* -------------------------------------------- start yes / no button ----------------------------------------------------- */
+
+.ns-btn-yes-no {
+    padding: 20px 32px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+    text-decoration: none;
+    margin: 27px auto;
+    margin-right: auto;
+    min-width: 120px;
+    min-width: 6rem;
+    border: 0;
+	border-radius: 6px;
 }
