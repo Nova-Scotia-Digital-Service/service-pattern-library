@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -8,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
-	<title>Slider - Service Patter Library - Government of Nova Scotia</title>
+	<title>Phase Banner - Service Patter Library - Government of Nova Scotia</title>
 		
 <!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
@@ -68,7 +66,6 @@
 	</div>
 </div>
 <!-- END Alpha Phase Banner -->
-
 <!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
 
 <!--A basic page has a primary content area and an optional column for secondary information like related content.-->
@@ -85,33 +82,67 @@
 						  $("#nav-placeholder").load("nav.html");
 						});
 						</script>
+
 					</div>
 					<div class="col-sm-9 col-xs-12">
-						<h1>Slider examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<h1>Phase Banner examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<p>Use the phase banner component to show users your service is still being worked on.</p>
+
+						<h2 id="when-to-use-this-component">When to use this component</h2>
+						<p>Use the phase banner component if your service is still being developed.
+						Use an alpha banner when your service is in alpha, and a beta banner if your service is in private or public beta.</p>
+						<h2 id="how-it-works">How it works</h2>
+						<p>Your banner must be directly under the blue NS mothership ribbon header.</p>
+						<h3 id="add-a-feedback-link">Add a feedback link</h3>
+						<p>Use a ‘feedback’ link to collect on-page feedback about your service. This can open an email or take the user to a dedicated page or form. Whatever option you use, make sure that users do not lose their place in the service and can return to the page they were on.</p>
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<h2>Sliders</h2>
-								<p>Use a slider only when the precise value won’t matter to the user, but rather only the approximate range.</p>
-								<h3>Sliders can be used when:</h3>
-								<ul>
-									<li><strong>You want to take input in touch devices</strong><br>
-									Since sliders can be given input by touch, It doesn't have to open keyboard in mobile. Also it becomes faster to input in mobile devices.</li><br>
-									<li><strong>You have start & end points</strong><br>
-									All sliders have starting and ending point which show the broadness of value user can input.</li><br>
-									<li><strong>User can skip in between values</strong><br>
-									In some cases, user feels good to enter approximate values. For example in ratings, user don't prefer to put 3.45 out of 5. While in case of brightness or volume control, user don't even need the values.</li><br>
-								</ul>
-								<div class="ns-fieldset exampleDisplay">
-									<label class="ns-fieldset__legend noBorder" for="slider">
-									  <h3 class="ns-fieldset__heading mb-4">
-										Slider Example
-									  </h3>
-									</label>
-									<input class="slider ns-slider__Item" type="range" name="slider" id="slider" min="0" max="2000" value="0" step="25" aria-valuemin="0" aria-valuemax="2000" aria-valuenow="">
+								<h2>Alpha Banner</h2>
+								<p>Use an Alpha banner when you are still trying out new things and the service is not fully functional. </p>
+								<div class="exampleDisplay">
+									<div class="ns-phase-banner">
+										<!-- <div class="container"> -->
+											<div class="row">
+												<div class="col">
+												  <p class="ns-phase-banner__content">
+													<strong class="ns-tag ns-phase-banner__content__tag">
+													  Alpha
+													</strong>
+													<span class="ns-phase-banner__text">
+														This is a new service that we're still developing. Try the service and <a href="https://github.com/connorscarolyns/service-pattern-library/issues">send us your comments and suggestions</a>. Your feedback will help make the service easier to use for everyone.
+													</span>
+												  </p>
+												</div>
+											</div>
+										<!-- </div> -->
+									</div>
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
-
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Beta Banner</h2>
+								<p>Use a Beta banner when you service is working and close to going live (private beta), or has recently gone live (beta) and is activley being inproved based on user data and feedback.</p>
+								<div class="exampleDisplay">
+									<div class="ns-phase-banner">
+										<!-- <div class="container"> -->
+											<div class="row">
+												<div class="col">
+												  <p class="ns-phase-banner__content">
+													<strong class="ns-tag ns-phase-banner__content__tag">
+													  Beta
+													</strong>
+													<span class="ns-phase-banner__text">
+														This is a new service that we're working on improving. Use the service and <a href="#">send us your comments and suggestions</a>. Your feedback will help make the service easier to use for everyone.
+													</span>
+												  </p>
+												</div>
+											</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
 
 					</div><!-- /col-xs-8 -->
 				</div><!--/row-->
