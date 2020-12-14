@@ -68,11 +68,102 @@
 						<h1>Button Examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
+								<h2 id="when-to-use-this-component">When to use this component</h2>
+								<p>Use the button component to help users carry out an action like starting an application or saving their information.</p>
+								<h2 id="how-it-works">How it works</h2>
+								<p>Write button text in sentence case, describing the action it performs. For example:</p>
+								<ul>
+								<li>‘Start now’ at the start of the service</li>
+								<li>‘Continue’ when the service does not save a user’s information</li>
+								<li>‘Save and continue’ when the service does save a user’s information</li>
+								<li>‘Add another’ to add another item to a list or group</li>
+								<li>‘Pay now’ to make a payment</li>
+								<li>‘Confirm and submit’ on a review page that does not have any legal content a user must agree to</li>
+								<li>‘Accept and submit’ on a review page that has legal content a user must agree to</li>
+								<li>‘Sign out’ when a user is signed in to an account</li>
+								</ul>
+								<p>You may need to include more or different words to better describe the action. For example, ‘Add another address’ and ‘Accept and claim a tax refund’.</p>
+								<p>Align the primary action button to the left edge of your form.</p>
+
 								<h2>Default button</h2>
 								<p>Use a default button for the main call to action on a page.</p>
 								<p>Avoid using multiple default buttons on a single page. Having more than one main call to action reduces their impact, and makes it harder for users to know what to do next.</p>
 								<div class="exampleDisplay">
 									<button class="btn-lg btn-default">Default button</button>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h3 id="secondary-buttons">Secondary buttons</h3>
+								<p>Use secondary buttons for secondary calls to action on a page.</p>
+								<p>Pages with too many calls to action make it hard for users to know what to do next. Before adding lots of secondary buttons, try to simplify the page or break the content down across multiple pages. Secondary buttons work great for cancel buttons.</p>
+								<div class="exampleDisplay">
+									<button class="btn-lg ns-btn-2nd">Secondary button</button>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Combination default and secondary buttons</h2>
+								<p>You can use secondary buttons in combination with default buttons.</p>
+								<div class="exampleDisplay">
+								<section class="row">
+									<div class="col-auto">
+										<button class="btn-lg btn-default" type="button">Continue</button>
+									</div>
+									<div class="col-auto">
+										<button class="btn-lg ns-btn-2nd" type="button">Cancel</button>
+									</div>
+								</section>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>A / B option buttons</h2>
+								<p>A / B option buttons can be used when asking simple questions that have clear and straightforward answers. They can be used to determin a users eligibility for a service. See <a href="basic-page.html">question page templates<a> for when and how to use A / B option pages and other types of question pages</p>
+								<div class="exampleDisplay">
+									<section class="row">
+										<div class="col-auto">
+											<button class="ns-btn-yes-no btn-default" type="button">Yes</button>
+										</div>
+										<div class="col-auto">
+											<button class="ns-btn-yes-no btn-default" type="button">No</button>
+										</div>
+									</section>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Action buttons</h2>
+								<p>Use an action button for buttons that will tigger an irreversable action such as a ‘Confirm and submit’ or ‘Pay now’ button. These button usually appear at the bottom of a review page.</p>
+								<div class="exampleDisplay">
+									<a class="btn-lg btn-success mt-4 mb-4">Confirm and submit<i class="fa fa-arrow-right ml-2 mr-0" aria-hidden="true"></i></a>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Warning buttons</h2>
+								<p>Warning buttons are designed to make users think carefully before they use them. They only work if used very sparingly. Most services should not need one.</p>
+								<p>Only use warning buttons for actions with serious destructive consequences that cannot be easily undone by a user. For example, permanently deleting an account.</p>
+								<p>When letting users carry out an action like this, it’s a good idea to include an additional step which asks them to confirm it.</p>
+								<p>In this instance, use another style of button for the initial call to action, and a warning button for the final confirmation.</p>
+								<p>Do not only rely on the red colour of a warning button to communicate the serious nature of the action. This is because not all users will be able to see the colour or will understand what it signifies. Make sure the context and button text make clear what will happen if the user selects it.</p>
+								<div class="exampleDisplay">
+									<button class="btn-lg btn-warning" type="button">Delete account</button>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Disabled buttons</h2>
+								<p>Disabled buttons have poor contrast and can confuse some users, so avoid them if possible.</p>
+								<p>Only use disabled buttons if research shows it makes the user interface easier to understand.</p>
+								<div class="exampleDisplay">
+									<button class="btn-lg btn-disabled" type="button">Disabled button</button>
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
@@ -109,79 +200,6 @@
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<h2>Yes / No buttons</h2>
-								<div class="exampleDisplay">
-									<section class="row">
-										<div class="col-auto">
-											<button class="ns-btn-yes-no btn-default" type="button">Yes</button>
-										</div>
-										<div class="col-auto">
-											<button class="ns-btn-yes-no btn-default" type="button">No</button>
-										</div>
-									</section>
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
-						<section class="row">
-							<div class="col-md-12 col-xs-12">
-								<h2>Secondary button</h2>
-								<p>Use a default button for the main call to action on a page.</p>
-								<p>Avoid using multiple default buttons on a single page. Having more than one main call to action reduces their impact, and makes it harder for users to know what to do next.</p>
-								<div class="exampleDisplay">
-									<button class="btn-lg ns-btn-2nd">Secondary button</button>
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
-						<section class="row">
-							<div class="col-md-12 col-xs-12">
-								<h2>Combination default and secondary buttons</h2>
-								<p>You can use secondary buttons in combination with default buttons.</p>
-								<div class="exampleDisplay">
-								<section class="row">
-									<div class="col-auto">
-										<button class="btn-lg btn-default" type="button">Continue</button>
-									</div>
-									<div class="col-auto">
-										<button class="btn-lg ns-btn-2nd" type="button">Cancel</button>
-									</div>
-								</section>
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
-						<section class="row">
-							<div class="col-md-12 col-xs-12">
-								<h2>Start buttons</h2>
-								<p>Use a start button for the main call to action on your service’s start page. Start buttons don’t submit form data, so they use a link tag rather than a button tag.</p>
-								<div class="exampleDisplay">
-									<a class="btn-lg btn-success mt-4 mb-4">Start now<i class="fa fa-arrow-right ml-2 mr-0" aria-hidden="true"></i></a>
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
-						<section class="row">
-							<div class="col-md-12 col-xs-12">
-								<h2>Warning buttons</h2>
-								<p>Warning buttons are designed to make users think carefully before they use them. They only work if used very sparingly. Most services should not need one.</p>
-								<p>Only use warning buttons for actions with serious destructive consequences that cannot be easily undone by a user. For example, permanently deleting an account.</p>
-								<p>When letting users carry out an action like this, it’s a good idea to include an additional step which asks them to confirm it.</p>
-								<p>In this instance, use another style of button for the initial call to action, and a warning button for the final confirmation.</p>
-								<p>Do not only rely on the red colour of a warning button to communicate the serious nature of the action. This is because not all users will be able to see the colour or will understand what it signifies. Make sure the context and button text make clear what will happen if the user selects it.</p>
-								<div class="exampleDisplay">
-									<button class="btn-lg btn-warning" type="button">Delete account</button>
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
-						<section class="row">
-							<div class="col-md-12 col-xs-12">
-								<h2>Disabled buttons</h2>
-								<p>Disabled buttons have poor contrast and can confuse some users, so avoid them if possible.</p>
-								<p>Only use disabled buttons if research shows it makes the user interface easier to understand.</p>
-								<div class="exampleDisplay">
-									<button class="btn-lg btn-disabled" type="button">Disabled button</button>
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
-						<section class="row">
-							<div class="col-md-12 col-xs-12">
 								<h3>Stop users from accidentally sending information more than once</h3>
 								<p>Sometimes, users double click buttons because they:</p>
 								<ul>
@@ -194,7 +212,7 @@
 								<p>To do this, set the <code>data-prevent-double-click</code> attribute to <code>true</code>. You can do this directly in the HTML.</p>
 								<div class="exampleDisplay">
 									<pre><code><textarea rows="4" readonly="readonly">
-<button data-prevent-double-click="true" class="btn-lg btn-disabled" type="button">
+<button data-prevent-double-click="true" class="btn-lg btn-success" type="button">
     Submit
 </button>
 									</textarea></code></pre>
