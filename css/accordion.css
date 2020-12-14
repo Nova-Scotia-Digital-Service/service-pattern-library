@@ -1,0 +1,185 @@
+/**
+ * Accordion container element
+ */
+/* .accordion {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.accordion > li {
+	margin: 0;
+} */
+
+/**
+ * Add zero-width space. needed to ensure Safari + VO respect list semantics.
+ * Set the before content to position absolute to negate any visible space
+ * the before content could add to the document.
+ */
+/* .accordion > li:before {
+	content: "\200B";
+	position: absolute;
+} */
+
+/**
+ * Accordion Heading
+ */
+/* .js .accordion__heading {
+	border: 1px solid #4464c2;
+	font-size: inherit;
+	margin: -1px 0 0;
+}
+
+.js .accordion__trigger {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: #4464c2;
+	cursor: pointer;
+	display: block;
+	font-size: inherit;
+	padding: .5em 2em .5em 1em;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	z-index: 2;
+}
+
+.js .accordion__trigger:after {
+  border-left: .4em solid transparent;
+  border-right: .4em solid transparent;
+  border-top: .5em solid #222;
+  bottom: 0;
+  content: '';
+  height: 0;
+  margin: auto;
+  position: absolute;
+  right: 1em;
+  top: 0;
+  transition: transform .2s ease-in-out;
+  transform-origin: center center;
+  transform: rotate(0deg);
+  width: 0;
+}
+
+.js .accordion__trigger:hover:after,
+.js .accordion__trigger:focus:after,
+.js .accordion__trigger[aria-expanded="true"]:after {
+	border-top-color: #fff;
+}
+
+.js .accordion__trigger[aria-expanded="true"]:after {
+	transform: rotate(180deg);
+} */
+
+/**
+ * This is needed to allow a double tap iOS 11
+ * Safari + VO to function correctly, if there
+ * are multiple elements (wrapper spans) to layout
+ * text nodes within the accordion button.
+
+	-- This is not needed if a button only contains text
+	   and no other child nodes wrapping the text --
+
+.accordion__trigger > * {
+	pointer-events: none;
+}
+ */
+/*
+.js .accordion__trigger:hover,
+.js .accordion__trigger:focus {
+	background-color: #0e3b5e;
+	color: #fff;
+	outline: none;
+}
+
+.js .accordion__trigger:focus {
+	box-shadow: inset 0 0 0 2px #1e82d1;
+}
+
+.accordion__trigger[aria-disabled="true"]:hover {
+	background-color: #1b75bc;
+	color: #fff;
+	cursor: not-allowed;
+}
+
+.accordion__trigger[aria-disabled="true"]:focus {
+	background-color: #0a2a42;
+} */
+
+.js .accordion__panel {
+	background-color: inherit;
+	max-height: 0vh;
+	overflow: hidden;
+	padding: .05em 1.25em;
+	position: relative;
+	visibility: hidden;
+	z-index: 1;
+}
+
+.js .accordion__panel {
+	margin-top: -.1em;
+}
+
+.js .accordion__panel > :last-child {
+	margin-bottom: 0;
+}
+
+.js .accordion__panel[aria-hidden="false"] {
+	max-height: 1000vh;
+	overflow: auto;
+	padding: 1.25em 0;
+	visibility: visible;
+}
+
+/* .accordion__trigger[aria-expanded="true"] {
+	background: #1b75bc;
+	color: #fff;
+} */
+
+.accordion button {
+	outline: none;
+	border: 0;
+	background-color: white;
+	/* color: inherit; */
+	padding: 0;
+	font-size: inherit;
+	text-align: left;
+	color: #0058a4;
+cursor: pointer;
+  text-decoration: underline;
+	display: inline;
+}
+
+.accordion button:hover {
+	background: #f8d44c;
+    color: #0081f1;
+}
+
+.accordion button:focus {
+	/* outline: none; */
+	outline: solid 0.25em #f8d44c;
+    outline-offset: 0;
+    text-decoration: none;
+}
+
+
+
+.accordion .pseudo-link {
+    color: #0058a4;
+	cursor: pointer;
+    text-decoration: underline;
+}
+
+.accordion .pseudo-link:hover {
+    background: #f8d44c;
+    color: #0081f1;
+}
+
+.accordion .pseudo-link:focus {
+	outline: solid 0.25em #f8d44c;
+    outline-offset: 0;
+    text-decoration: none;
+}
