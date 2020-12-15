@@ -3,11 +3,11 @@
     outline: 2px solid transparent;
     outline-offset: -2px;
     color: #fff;
-    background-color: #1d70b8;
+    background-color: #0058a4;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "GDS Transport", arial, sans-serif;
+    font-family: font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 700;
@@ -30,7 +30,7 @@
     border-bottom: 1px solid #b1b4b6;
 }
 .ns-phase-banner__content {
-    font-family: "GDS Transport", arial, sans-serif;
+    font-family: font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;

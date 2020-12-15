@@ -183,3 +183,12 @@ cursor: pointer;
     outline-offset: 0;
     text-decoration: none;
 }
+
+.otherways-accordion .accordion__heading.accordion__privacy button:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: '\f023';
+    font-size: 1.5rem;
+    padding: 0 4px;
+    position: relative;
+    top: 2px;
+}
