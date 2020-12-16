@@ -9,6 +9,12 @@
   margin-bottom: 2rem;
 }
 
+#Calendar-dates{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
 .Calendar-nav {
     display: flex;
     padding: 0.125rem;
@@ -22,6 +28,7 @@
   font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
   display: flex;
   font-size: 1.5rem;
   font-weight: 400;
@@ -73,8 +80,9 @@
 }
 
 .Calendar-row {
-  display: flex;
-  text-align: center;
+	display: flex;
+    text-align: center;
+    flex: 1 1 0;
 }
 
 .Calendar-item {
@@ -92,6 +100,8 @@
   position: relative;
   height: 3rem;
   width: 3rem;
+  flex: 1 1 0px;
+  padding: 0;
   overflow: hidden;
   transition: background-color .2s ease;
 	
