@@ -11,8 +11,8 @@
 
 #Calendar-dates{
     display: flex;
-    flex-direction: column;
     flex: 1 1 auto;
+    flex-wrap: wrap;
 }
 
 .Calendar-nav {
@@ -89,6 +89,7 @@
   font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #BBE0FF;
   background: var(--available-color);
   border: 0;
   outline: none;
@@ -124,6 +125,7 @@
   color: #004A8B;
 }
 .Calendar-item[aria-pressed='true'] {
+  background-color: #004A8B;
   background-color: var(--selected-color);
   font-family: "open_sansbold",Helvetica,Arial,Tahoma,sans-serif;
   font-weight: 600;
@@ -150,9 +152,11 @@
 }
 
 .Calendar-item:not(.Calendar-item--unavailable):hover {
+  background-color: #D4EBFF;
   background-color: var(--hover-color);
 }
 .Calendar-item[aria-pressed='true']:hover {
+    background-color: #004A8B;
     background-color: var(--selected-color);
 }
 

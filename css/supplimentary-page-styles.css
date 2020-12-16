@@ -44,15 +44,20 @@ p{
 /* --------------------------------------------start not needed for service ----------------------------------------------------- */
 
 /* --------------------------------------------start sticky footer ----------------------------------------------------- */
+body {
+    display: flex;
+    margin: 0;
+}
 
 .Site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
 }
 
 .Site-content {
-  flex: 1;
+  flex: 1 1 auto;
 }
 /* --------------------------------------------End sticky footer ----------------------------------------------------- */
 
