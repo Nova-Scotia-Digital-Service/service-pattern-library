@@ -9,16 +9,6 @@
   margin-bottom: 2rem;
 }
 
-/* #Calendar-dates{
-	display: flex;
-    flex: 1 1 auto;
-    flex-wrap: wrap;
-    flex-direction: column;
-	height: 15rem;
-	height: max-content;
-
-} */
-
 .Calendar-nav {
     display: flex;
     padding: 0.125rem;
@@ -109,6 +99,8 @@
   padding: 0;
   overflow: hidden;
   transition: background-color .2s ease;
+      
+    font-weight: 600;
 	
 }
 
@@ -146,7 +138,7 @@
   background-color: white;
   outline: none;
   border: 0;
-  color: #a2a2a2;
+  color: #737373;
 }
 
 .Calendar-item.Calendar-item--unavailable:focus {
