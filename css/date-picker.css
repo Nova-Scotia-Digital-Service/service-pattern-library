@@ -10,9 +10,11 @@
 }
 
 #Calendar-dates{
-    display: flex;
+	display: flex;
     flex: 1 1 auto;
     flex-wrap: wrap;
+    flex-direction: column;
+
 }
 
 .Calendar-nav {
@@ -100,7 +102,7 @@
   line-height: 200%;
   position: relative;
   height: 3rem;
-  width: 3rem;
+  min-width: 1rem;
   flex: 1 1 0px;
   padding: 0;
   overflow: hidden;
