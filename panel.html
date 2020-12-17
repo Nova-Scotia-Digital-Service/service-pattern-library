@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortlink" href="https://beta.novascotia.ca/">
+	
+	<title>Panel - Service Patter Library - Government of Nova Scotia</title>
+		
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">		
+		<link rel="stylesheet" media="all" href="css/saltire.css">
+		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
+		<link rel="stylesheet" media="all" href="css/global-form-styles.css">
+		<link rel="stylesheet" media="all" href="css/radio-button.css">
+		<link rel="stylesheet" media="all" href="css/toggle.css">
+		<link rel="stylesheet" media="all" href="css/checkboxes.css">
+		<link rel="stylesheet" media="all" href="css/slider.css">
+		<link rel="stylesheet" media="all" href="css/input-field-group.css">
+		<link rel="stylesheet" media="all" href="css/select.css">
+		<link rel="stylesheet" media="all" href="css/buttons.css">
+		<link rel="stylesheet" media="all" href="css/phase-banner.css"><!-- Include this only if needed -->
+		<link rel="stylesheet" media="all" href="css/panel.css"><!-- Include this only if needed -->
+	<!--[if lte IE 8]>
+	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+<div class="Site js-enabled" id="container">
+
+<!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
+
+<header>
+<!-- START SALTIRE NS MOTHERSHIP RIBBON w FR -->
+	<nav id="navigation" class="ribbon" role="navigation" aria-label="Main navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<a href="https://novascotia.ca/" hreflang="en"><img class="ribbon-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Province of Nova Scotia" /></a>
+				</div>
+			</div>
+		</div>
+	</nav>	
+<!-- END SALTIRE NS MOTHERSHIP RIBBON w FR -->
+</header>
+
+<!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
+<!-- START Alpha Phase Banner -->
+<div class="ns-phase-banner">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+			  <p class="ns-phase-banner__content">
+				<strong class="ns-tag ns-phase-banner__content__tag">
+				  Alpha
+				</strong>
+				<span class="ns-phase-banner__text">
+					This is a new service that we're still developing. Try the service and <a href="https://github.com/connorscarolyns/service-pattern-library/issues">send us your comments and suggestions</a>. Your feedback will help make the service easier to use for everyone.
+				</span>
+			  </p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END Alpha Phase Banner -->
+
+<!--A basic page has a primary content area and an optional column for secondary information like related content.-->
+<div class="container Site-content">
+	<main><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
+		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
+			<form name="parameters" method="GET" target="_parent">
+				<div class="row">
+					<div class="col-sm-3 col-xs-12">
+						<div id="nav-placeholder">
+						</div>
+						<script>
+						$(function(){
+						  $("#nav-placeholder").load("nav.html");
+						});
+						</script>
+
+					</div>
+					<div class="col-sm-9 col-xs-12">
+						<h1>Panel</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Panel example</h2>
+								<div class="exampleDisplay">
+									<section class="row">
+										<div class="col-md-12 ns-panel ns-panel__box">
+											<div class="ns-panel__heading ns-heading__icon"">
+												<i class="fa fa-check-circle fa-3x ns-heading__icon-left" aria-hidden="true"></i>
+												<h1 class="my-0 has-success">Booking Successful!</h1>
+											</div>
+											<div class="ns-panel__content">
+												<h2 class="mt-0">Your reference number is: <strong>HDJ2123F</strong></h2>
+												<form>
+												  <fieldset class="ns-fieldset">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ns-heading__icon">
+														<i class="fa fa-envelope ns-heading__icon-left" aria-hidden="true"></i> We have emailed you instructions for your visit
+													  </h3>
+													</legend>
+													<div id="confirm-hint" class="ns-hint">
+													  You may also wish to print or save a copy of this page for your files.
+													</div>
+													<section class="row align-items-center">
+														<div class="col-auto">
+															<button aria-describedby="confirm-hint" class="btn-lg btn-default ns-btn__icon"><i class="fa fa-print ns-btn__icon-left" aria-hidden="true"></i>Print a copy</button>
+														</div>
+														<div class="col-auto">
+															<button aria-describedby="confirm-hint" class="btn-lg btn-default ns-btn__icon"><i class="fa fa-save ns-btn__icon-left" aria-hidden="true"></i>Save a copy</button>
+														</div>
+													</section>
+												  </fieldset>
+												</form>
+											</div>
+										</div>
+									</section>
+								</div><!-- / panel -->
+							</div><!-- / example col -->
+						</section><!--/row-->
+
+					</div><!-- /col-xs-8 -->
+				</div><!--/row-->
+			</form>
+		</article>
+	</main>
+</div><!-- /container -->
+
+<!-- START FOOTER -->
+	<footer id="footer" class="footer" role="contentinfo">
+		<div class="container">
+
+		</div>
+	</footer>
+<!-- END FOOTER -->
+</div>
+</body>
+</html>

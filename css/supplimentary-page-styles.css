@@ -185,3 +185,40 @@ body {
 }
 /* -------------------------------------------- End service header caption ----------------------------------------------------- */
 
+
+/* -------------------------------------------- Start supplimentary icon styles ----------------------------------------------------- */
+.ns-heading__icon {
+    display: inline-flex;
+    align-items: baseline;
+    color: inherit;
+}
+.ns-heading__icon-left {
+    margin-right: 1rem;
+}
+
+.ns-heading__icon-right {
+    margin-left: 1rem;
+}
+
+.ns-heading__icon:before {
+    padding-right: 10px;
+}
+.ns-btn__icon {
+    display: inline-flex;
+    align-items: baseline;
+	text-align: left;
+}
+
+.ns-btn__icon .ns-btn__icon-left {
+    margin-right: .5rem;
+}
+
+.ns-btn__icon .ns-btn__icon-right {
+    margin-left: .5rem;
+}
+
+.ns-btn__icon:before {
+    padding-right: 5px;
+}
+
+/* -------------------------------------------- End supplimentary icon styles  ----------------------------------------------------- */
