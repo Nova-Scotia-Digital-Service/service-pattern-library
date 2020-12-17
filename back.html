@@ -6,12 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
-	<title>Privacy Notice - Service Patter Library - Government of Nova Scotia</title>
-	
-<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> --><!-- For bootstrap modals and toasts. Include this only if needed -->
+	<title>Back link - Service Patter Library - Government of Nova Scotia</title>
+		
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
 		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">		
 		<link rel="stylesheet" media="all" href="css/saltire.css">
 		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
@@ -24,7 +24,6 @@
 		<link rel="stylesheet" media="all" href="css/select.css">
 		<link rel="stylesheet" media="all" href="css/buttons.css">
 		<link rel="stylesheet" media="all" href="css/phase-banner.css"><!-- Include this only if needed -->
-		<link rel="stylesheet" media="all" href="css/accordion.css"><!-- Include this only if needed -->
 	<!--[if lte IE 8]>
 	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
 	<![endif]-->
@@ -32,7 +31,7 @@
 </head>
 
 <body>
-<div class="Site js-enabled js" id="container">
+<div class="Site js-enabled" id="container">
 
 <!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
 
@@ -49,6 +48,8 @@
 	</nav>	
 <!-- END SALTIRE NS MOTHERSHIP RIBBON w FR -->
 </header>
+
+<!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
 <!-- START Alpha Phase Banner -->
 <div class="ns-phase-banner">
 	<div class="container">
@@ -67,7 +68,6 @@
 	</div>
 </div>
 <!-- END Alpha Phase Banner -->
-<!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
 
 <!--A basic page has a primary content area and an optional column for secondary information like related content.-->
 <div class="container Site-content">
@@ -86,51 +86,25 @@
 
 					</div>
 					<div class="col-sm-9 col-xs-12">
-						<h1>Privacy notice example</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<h1>Back link</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<p>Use the back link component to help users go back to the previous page in a multi-page transaction.</p>
 						<h2 id="when-to-use-this-component">When to use this component</h2>
-						<p>Use this accordion on the page where private information is being collected. This statement should be specific to the service and information you are collecting. It does not replace the generic provincial statement that is linked to in the page footer.</p>
+						<p>Always include the back link component on <a href="basic-page.html">question pages</a>.</p>
+						<p>You can include a back link on other pages within a multi-page transaction, if it makes sense to do so.</p>
+						<h2 id="when-not-to-use-this-component">When not to use this component</h2>
+						<p>Never use the back link component together with breadcrumbs. If necessary, you should do research with your users to learn which they find more helpful in your service.</p>
 						<h2 id="how-it-works">How it works</h2>
-						<p>The privacy notice should be located below the call to action buttons on the service page where personal information is collected.</p>
+						<p>Always place back links at the top of a page, before the <code>&lt;main&gt;</code> element.</p>
+						<p>Make sure the link takes users to the previous page they were on, in the state they last saw it. Where possible, ensure it works even when JavaScript is not available.</p>
+						<p>If this is not possible, you should hide the back link when JavaScript is not available. </p>
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<div class="exampleDisplay">
-									<h2>Example privacy notice</h2>
-									<p>Work with the Privacy department to create a statement that is specific for your service. </p>
-
-									<div class="otherways-accordion accordion ns-accordion" data-aria-accordion="" id="acc_1-0">
-										<div class="accordion__heading accordion__privacy">  
-											<button type="button" aria-controls="acc_1-0_panel_1" id="acc_1-0_panel_1_trigger" class="accordion__trigger" aria-expanded="false" data-current="true" data-target="#acc_1-0_panel_1" data-toggle="collapse">
-												How we're protecting your privacy
-											</button>
-										</div>
-										<div class="accordion__panel" id="acc_1-0_panel_1" aria-hidden="true">
-											<h2 class="h3 mt-2">Privacy notice</h3>
-											<p>Personal information you provide online to the Access Nova Scotia Appointment Booking  Service is collected under the authority of the Nova Scotia Freedom of Information and Protection of Privacy (FOIPOP) Act.
-
-											<p class="mb-1"><strong>We will use your contact information to:</strong></p>
-											<ul>
-												<li>Email you an appointment confirmation and instructions</li>
-												<li>Send you text messages with check-in instructions and notifications the day of your appointment</li>
-											</ul>
-
-											<p class="mb-1"><strong>We won't use your contact information to: </strong></p>
-											<ul>
-												<li>Contact you for any other purpose </li>
-												<li>Send you spam or marketing emails</li>
-												<li>Share your contact information with other parties</li>
-											</ul>
-
-											<p>We use and disclose your personal information only for the purposes described above, or in the following circumstances: a) if we are authorized by law to do so, or b) if we obtain your express consent.</p>
-
-											<p>The Access Nova Scotia appointment booking service uses Google Analytics to help us understand how you use the site and to continually improve the online service. Access Nova Scotia will not use Google Analytics to collect personally identifiable information about you. </p>
-
-											<p>For further information about Google Analytics and the Government of Nova Scotia’s privacy information practices, please refer to the <a href="#">Government of Nova Scotia Privacy Statement</a>.</p>
-										</div>
-									</div>
+								<h2>Back link example</h2>
+								<div class="ns-fieldset exampleDisplay">
+									<a href="#" class="ns-back-link pr-2">Back</a><!-- backlink should be located above the main content of the page -->
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
-
 					</div><!-- /col-xs-8 -->
 				</div><!--/row-->
 			</form>
@@ -146,8 +120,5 @@
 	</footer>
 <!-- END FOOTER -->
 </div>
-		
 </body>
-		<script src="js/aria.accordion.js"></script> <!-- For accodions. Include this only if needed -->
-		<script src="js/modernizr.min.js?v=3.3.1"></script> <!-- For accodions. Include this only if needed -->
 </html>
