@@ -1,12 +1,12 @@
-/* .ns-panel__box{
-	border: 1px solid #3c7c31;
-    padding: 0 2rem;
-	align-content: baseline;
-}  */
-
-.ns-panel__heading{
+.ns-panel__heading__container{
     color: #3c7c31;
 }
+
+.ns-panel__heading{
+    margin:0;
+}
+
+
 @media only screen and (max-width: 576px)  {
   .ns-heading__icon{
     display:block;
@@ -18,11 +18,15 @@
     padding: 0.5rem 0 0 2.5rem;
     margin: .5rem 0 0 1rem;
 }
+
 @media only screen and (max-width: 576px)  {
   .ns-panel__content{
     margin-left: 0;
 	padding-left: 1.5rem;
   }
+}
+.ns-panel__content__heading{
+	margin-top:0;
 }
 .ns-panel .ns-fieldset {
 	margin-bottom:0;

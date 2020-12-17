@@ -1,0 +1,13 @@
+.ns-sidebar .ns-summary__box{
+	margin-top: 2rem;
+}
+
+.ns-summary__box{
+	background: #f1f1f0;
+    border: 10px solid #d8d8d6;
+    padding: 1rem;
+}
+
+.ns-summary__box .ns-summary__heading {
+	margin-top:0;
+}
