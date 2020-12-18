@@ -60,7 +60,7 @@
 	<main><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
 		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
 				<div class="row">
-					<div class="col-md-8"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
+					<div class="col-lg-8"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
 						<section class="row">
 							<div class="col-md-12 ns-panel mt-4">
 								<div class="ns-panel__heading__container ns-heading__icon"">
@@ -110,30 +110,29 @@
 								<p>If you have questions about your appointment contact us. Reference number <strong>1234</strong>.</p>
 
 								<h3 class="h4">Phone</h3>
-								<p><a href="#">(902) 424-5851</a> or <a href="#">toll-free 1 (800)898-7668</a></p>
+								<p><a class="ns-tel" href="tel:+1-902-123-4567">902-424-5851</a> or toll-free <a class="ns-tel" href="tel:+1-800-898-7668">1-800-898-7668</a></p>
 
 								<h3 class="h4">Email</h3>
-								<p><a href="#">rmv@novascotia.ca</a></p>
+								<p><a class="ns-email" href="to:rmv@novascotia.ca">rmv@novascotia.ca</a></p>
 							</div>
 						</section>
 					</div><!-- /col-xs-8 -->
-					<div class="col-md-4 ns-sidebar">
+					<div class="col-lg-4 ns-sidebar">
 						<div class="ns-summary__box">
-							<h2 class="h3 ns-summary__heading">Booking summary</h2>
-							<h3 class="h4">You've booked</h3>
-							<ul class="ns-list__no-bullets">
-								<li>What: Nova Scotia ID card</li>
-								<li>Accessible counter: No</li>
-								<li>Where: Amherst Access</li>
-								<li>When: December 17, 2020 at 16:45</li>
-							</ul>
-
-							<h3 class="h4">Your contact details</h4>
-							<ul class="ns-list__no-bullets">
-								<li>Carolyn Connors</li>
-								<li>connorscarolyns@gmail.com</li>
-								<li>902-456-5851</li>
-							</ul>
+							<h2 class="ns-summary__heading">Booking summary</h2>
+							<dl class="ns-summary__definition-list" >
+							  <dt class="h3">Appointment details</dt>
+							  <dd>What: Nova Scotia ID card</dd>
+							  <dd>Accessible counter: No</dd>
+							  <dd>Where: Amherst Access</dd>
+							  <dd>When: December 17, 2020 at 16:45</dd>
+							</dl>
+							<dl class="ns-summary__definition-list">
+							  <dt class="h3">Your contact information</dt>
+							  <dd>Jane Smith</dd>
+							  <dd>jame.smith@gmail.com</dd>
+							  <dd>902-123-4567</dd>
+							</dl>
 						</div>
 					</div>
 				</div><!--/row-->

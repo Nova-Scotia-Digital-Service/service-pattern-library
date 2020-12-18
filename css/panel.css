@@ -6,10 +6,9 @@
     margin:0;
 }
 
-
 @media only screen and (max-width: 576px)  {
-  .ns-heading__icon{
-    display:block;
+  .ns-heading__icon-left{
+    display:none;
   }
 }
 
