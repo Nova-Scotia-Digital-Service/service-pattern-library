@@ -32,6 +32,11 @@
 
 <body>
 <div class="Site js-enabled" id="container">
+<!-- -------------------------------------------------- START Skip Link --------------------------------------------------- -->
+<nav class="skip-links" aria-label="Skip to main content">
+	<a href="#main" class="skip-to-link">Skip to main content</a>
+</nav>
+<!-- -------------------------------------------------- END Skip Link  --------------------------------------------------- -->
 
 <!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
 
@@ -71,7 +76,7 @@
 
 <!--A basic page has a primary content area and an optional column for secondary information like related content.-->
 <div class="container Site-content">
-	<main><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
+	<main id="main"><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
 		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
 			<form name="parameters" method="GET" target="_parent">
 				<div class="row">
@@ -92,7 +97,7 @@
 						<p>Always include the back link component on <a href="basic-page.html">question pages</a>.</p>
 						<p>You can include a back link on other pages within a multi-page transaction, if it makes sense to do so.</p>
 						<h2 id="when-not-to-use-this-component">When not to use this component</h2>
-						<p>Never use the back link component together with breadcrumbs. If necessary, you should do research with your users to learn which they find more helpful in your service.</p>
+						<p>Never use the back link component together with breadcrumbs. The back link is enough in most cases. If research shows breadcrumbs are more helpful in your service then use breadcrumbs without the back link.</p>
 						<h2 id="how-it-works">How it works</h2>
 						<p>Always place back links at the top of a page, before the <code>&lt;main&gt;</code> element.</p>
 						<p>Make sure the link takes users to the previous page they were on, in the state they last saw it. Where possible, ensure it works even when JavaScript is not available.</p>

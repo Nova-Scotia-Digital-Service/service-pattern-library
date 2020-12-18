@@ -32,6 +32,11 @@
 
 <body>
 <div class="Site js-enabled" id="container">
+<!-- -------------------------------------------------- START Skip Link --------------------------------------------------- -->
+<nav class="skip-links" aria-label="Skip to main content">
+	<a href="#main" class="skip-to-link">Skip to main content</a>
+</nav>
+<!-- -------------------------------------------------- END Skip Link  --------------------------------------------------- -->
 
 <!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
 
@@ -71,7 +76,7 @@
 
 <!--A basic page has a primary content area and an optional column for secondary information like related content.-->
 <div class="container Site-content">
-	<main><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
+	<main id="main"><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
 		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
 			<form name="parameters" method="GET" target="_parent">
 				<div class="row">
@@ -157,7 +162,7 @@
 									  </h3>
 										<span id="changed-name-error" class="ns--message ns-warning-message field-validation-error has-warning">
 										  <i class="fa fa-exclamation-triangle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Error:</span> You will not be notified when changes occure
+										  <span class="ns-visually-hidden">Error:</span> You will not be notified when changes occur
 										</span>
 										<input type="checkbox" id="demo7" class="ns-toggle__input" checked="checked">
 										<label class="ns-toggle__label" for="demo7">

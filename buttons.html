@@ -31,6 +31,11 @@
 
 <body>
 <div class="Site js-enabled" id="container">
+<!-- -------------------------------------------------- START Skip Link --------------------------------------------------- -->
+<nav class="skip-links" aria-label="Skip to main content">
+	<a href="#main" class="skip-to-link">Skip to main content</a>
+</nav>
+<!-- -------------------------------------------------- END Skip Link  --------------------------------------------------- -->
 
 <!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
 
@@ -70,7 +75,7 @@
 
 <!--A basic page has a primary content area and an optional column for secondary information like related content.-->
 <div class="container Site-content">
-	<main><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
+	<main id="main"><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
 		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
 			<form name="parameters" method="GET" target="_parent">
 				<div class="row">
@@ -180,7 +185,9 @@
 							<div class="col-md-12 col-xs-12">
 								<h2>Disabled buttons</h2>
 								<p>Disabled buttons have poor contrast and can confuse some users, so avoid them if possible.</p>
+								<p>When possible use an active button and, if clicked, display an error explaining why clicking the button won't work. If users are often triggering this error there may be an issue with your interface, consider completing user research to determin the exact reason for the problem.</p>
 								<p>Only use disabled buttons if research shows it makes the user interface easier to understand.</p>
+								<p>If you are including a disabled button, be sure to code it correctly so that visually impaired users will be able to perceive that there is a button but it's not active. You can do this by including the aria-disabled="true"</p>
 								<div class="exampleDisplay">
 									<button class="btn-lg btn-disabled" type="button">Disabled button</button>
 								</div>

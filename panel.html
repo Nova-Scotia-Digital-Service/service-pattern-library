@@ -33,6 +33,11 @@
 
 <body>
 <div class="Site js-enabled" id="container">
+<!-- -------------------------------------------------- START Skip Link --------------------------------------------------- -->
+<nav class="skip-links" aria-label="Skip to main content">
+	<a href="#main" class="skip-to-link">Skip to main content</a>
+</nav>
+<!-- -------------------------------------------------- END Skip Link  --------------------------------------------------- -->
 
 <!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
 
@@ -72,7 +77,7 @@
 
 <!--A basic page has a primary content area and an optional column for secondary information like related content.-->
 <div class="container Site-content">
-	<main><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
+	<main id="main"><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
 		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
 			<form name="parameters" method="GET" target="_parent">
 				<div class="row">
@@ -90,10 +95,10 @@
 						<h1>Panel</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<p>The panel component is a visible container used on confirmation or results pages to highlight important content.</p>
 						<h2 id="when-to-use-this-component">When to use this component</h2>
-						<p>Use the panel component to display important information when a transaction has been&nbsp; completed.</p>
-						<p>In most cases, the panel component is used on <a href="#">confirmation pages</a>, to tell the user they have successfully completed the transaction.</p>
+						<p>Use the panel component to display important information following a major action. For example, display it after a submission or payment transaction has been completed.</p>
+						<p>In most cases, the panel component is used on <a href="pages/confirmation-page.html">confirmation pages</a>, to tell the user they have successfully completed the transaction.</p>
 						<h2 id="when-not-to-use-this-component">When not to use this component</h2>
-						<p>Never use the panel component to highlight important information within body content.</p>
+						<p>Never use the panel component to highlight important information within the body content of a page of information.</p>
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Panel example</h2>
