@@ -93,10 +93,10 @@
 					</div>
 					<div class="col-sm-9 col-xs-12">
 						<h1>Panel</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
-						<p>The panel component is a visible container used on confirmation or results pages to highlight important content.</p>
+						<p>The panel component is a visible indicator used on confirmation or results pages to highlight important content.</p>
 						<h2 id="when-to-use-this-component">When to use this component</h2>
 						<p>Use the panel component to display important information following a major action. For example, display it after a submission or payment transaction has been completed.</p>
-						<p>In most cases, the panel component is used on <a href="pages/confirmation-page.html">confirmation pages</a>, to tell the user they have successfully completed the transaction.</p>
+						<p>In most cases, the panel component is used on <a href="confirmation-pages.html">confirmation pages</a>, to tell the user they have successfully completed the transaction.</p>
 						<h2 id="when-not-to-use-this-component">When not to use this component</h2>
 						<p>Never use the panel component to highlight important information within the body content of a page of information.</p>
 						<section class="row">
@@ -105,9 +105,9 @@
 								<div class="exampleDisplay">
 									<section class="row">
 										<div class="col-md-12 ns-panel ns-panel__box">
-											<div class="ns-panel__heading ns-heading__icon"">
+											<div class="ns-panel__heading__container ns-heading__icon"">
 												<i class="fa fa-check-circle fa-3x ns-heading__icon-left" aria-hidden="true"></i>
-												<h1 class="my-0 has-success">Booking Successful!</h1>
+												<h1 class="my-0 ns-panel__heading has-success">Booking successful!</h1>
 											</div>
 											<div class="ns-panel__content">
 												<h2 class="mt-0">Your reference number is: <strong>HDJ2123F</strong></h2>
@@ -115,7 +115,7 @@
 												  <fieldset class="ns-fieldset">
 													<legend class="ns-fieldset__legend noBorder">
 													  <h3 class="ns-fieldset__heading ns-heading__icon">
-														<i class="fa fa-envelope ns-heading__icon-left" aria-hidden="true"></i> We have emailed you instructions for your visit
+														We have emailed you instructions for your visit
 													  </h3>
 													</legend>
 													<div id="confirm-hint" class="ns-hint">
@@ -131,6 +131,9 @@
 													</section>
 												  </fieldset>
 												</form>
+												<div class="ns-fieldset">
+													<a href="#" class="ns-back-link pr-2">All finished, back to start</a>
+												</div>
 											</div>
 										</div>
 									</section>

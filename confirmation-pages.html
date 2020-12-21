@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
-	<title>Back link - Service Patter Library - Government of Nova Scotia</title>
+	<title>Confirmation Pages - Service Patter Library - Government of Nova Scotia</title>
 		
 <!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
@@ -23,7 +22,6 @@
 		<link rel="stylesheet" media="all" href="css/input-field-group.css">
 		<link rel="stylesheet" media="all" href="css/select.css">
 		<link rel="stylesheet" media="all" href="css/buttons.css">
-		<link rel="stylesheet" media="all" href="css/phase-banner.css"><!-- Include this only if needed -->
 	<!--[if lte IE 8]>
 	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
 	<![endif]-->
@@ -55,24 +53,6 @@
 </header>
 
 <!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
-<!-- START Alpha Phase Banner -->
-<div class="ns-phase-banner">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-			  <p class="ns-phase-banner__content">
-				<strong class="ns-tag ns-phase-banner__content__tag">
-				  Alpha
-				</strong>
-				<span class="ns-phase-banner__text">
-					This is a new service that we're still developing. Try the service and <a href="https://github.com/connorscarolyns/service-pattern-library/issues">send us your comments and suggestions</a>. Your feedback will help make the service easier to use for everyone.
-				</span>
-			  </p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- END Alpha Phase Banner -->
 
 <!--A basic page has a primary content area and an optional column for secondary information like related content.-->
 <div class="container Site-content">
@@ -90,36 +70,26 @@
 						</script>
 
 					</div>
-					<div class="col-sm-9 col-xs-12">
-						<h1>Back link</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
-						<p>Use the back link component to help users go back to the previous page in a multi-page transaction.</p>
-						<h2 id="when-to-use-this-component">When to use this component</h2>
-						<p>Always include the back link component on <a href="basic-page.html">question pages</a>.</p>
-						<p>You can include a back link on other pages within a multi-page transaction, if it makes sense to do so.</p>
-						<h2 id="when-not-to-use-this-component">When not to use this component</h2>
-						<p>Never use the back link component together with breadcrumbs. The back link is enough in most cases. If research shows breadcrumbs are more helpful in your service then use breadcrumbs without the back link.</p>
+					<div class="col-sm-9 col-xs-12"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
+						<h1>Confirmation Pages</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<p>Use this pattern to let users know they’ve completed a transaction.</p>
+						<h2 id="when-to-use-this-pattern">When to use this pattern</h2>
+						<p>You should use a confirmation page at the end of a transaction.</p>
 						<h2 id="how-it-works">How it works</h2>
-						<p>Always place back links at the top of a page, before the <code>&lt;main&gt;</code> element.</p>
-						<p>Make sure the link takes users to the previous page they were on, in the state they last saw it. Where possible, ensure it works even when JavaScript is not available.</p>
-						<p>If this is not possible, you should hide the back link when JavaScript is not available. </p>
-						<section class="row">
-							<div class="col-md-12 col-xs-12">
-								<h2>Back link example</h2>
-								<div class="ns-fieldset exampleDisplay">
-									<a href="#" class="ns-back-link pr-2">Back</a><!-- backlink should be located above the main content of the page -->
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
-						<h2 id="how-it-works">Back to start</h2>
-						<p>Include a back to start button on the confirmation page. Research has shown that some users like to have a closing action after they have completed thier transaction. It signals to them there that there is nothing left for them to do and it's safe for them to close the page. It should be placed at the bottom of the <a href="panel.html"> confirmation panel</a>.</p>
-						<section class="row">
-							<div class="col-md-12 col-xs-12">
-								<h2>Back to start example</h2>
-								<div class="ns-fieldset exampleDisplay">
-									<a href="#" class="ns-back-link pr-2">All finished, back to start</a>
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
+						<p>Confirmation pages reassure users that they have completed a transaction and helps them understand what to expect next.</p>
+						<p>Your confirmation page should include:</p>
+						<ul>
+						<li>a reference number, if there is one</li>
+						<li>details of what happens next and when</li>
+						<li>contact details for the service</li>
+						<li>links to information or services that users are likely to need next</li>
+						<li>summary list of the information submitted, if needed</li>
+						<li>a way for users to print or save a record of the transaction</li>
+						<li>a back to start link</li>
+						</ul>
+						<div>
+							<iframe src="pages/confirmation-page.html" style="width: calc(100% + 25%);height:1100px;border: 2px solid #a2a2a2;-ms-zoom: 0.75;-moz-transform: scale(0.75);-moz-transform-origin: 0 0;-o-transform: scale(0.75);-o-transform-origin: 0 0;-webkit-transform: scale(0.75);-webkit-transform-origin: 0 0;"  frameborder="0"></iframe>
+						</div>
 					</div><!-- /col-xs-8 -->
 				</div><!--/row-->
 			</form>

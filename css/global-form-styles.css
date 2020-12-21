@@ -167,7 +167,7 @@ label.ns-label{
 .ns-warning-message {
     color: #8a6d3b;
 }
-.error-indicator{
+.ns-error-indicator{
     color: #a94442;
 }
 input[type="text"].ns-input--error, input[type="email"].ns-input--error, input[type="number"].ns-input--error, input[type="tel"].ns-input--error, textarea.ns-input--error, input[list].ns-input--error {

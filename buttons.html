@@ -97,7 +97,6 @@
 								<h2 id="how-it-works">How it works</h2>
 								<p>Write button text in sentence case, describing the action it performs. For example:</p>
 								<ul>
-								<li>‘Start now’ at the start of the service</li>
 								<li>‘Continue’ when the service does not save a user’s information</li>
 								<li>‘Save and continue’ when the service does save a user’s information</li>
 								<li>‘Add another’ to add another item to a list or group</li>
@@ -145,24 +144,42 @@
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<h2>A / B option buttons</h2>
-								<p>A / B option buttons can be used when asking simple questions that have clear and straightforward answers. They can be used to determin a users eligibility for a service. See <a href="basic-page.html">question page templates<a> for when and how to use A / B option pages and other types of question pages</p>
+								<h2>Button error message</h2>
+								<p>Button errors can be used instead of disabled buttons. This allows gudiance to be given at the time it's needed. You must link the errors in the button error to the answer they relate to. For questions that require a user to answer using a single field, like a file upload, select, textarea, or text input, link directly to the field.The field or answer linked to the button error must also display a matching error message.</p>
 								<div class="exampleDisplay">
+								
 									<section class="row">
 										<div class="col-auto">
-											<button class="ns-btn-yes-no btn-default" type="button">Yes</button>
+											<button class="btn-lg btn-default" type="button">Continue</button>
+											<i class="fa fa-exclamation-circle error-indicator ns-error-indicator errorAlert" aria-hidden="true"></i>
 										</div>
 										<div class="col-auto">
-											<button class="ns-btn-yes-no btn-default" type="button">No</button>
-										</div>
+											<button class="btn-lg ns-btn-2nd" type="button">Cancel</button>
+										</div>								
+										<span id="date-field-error" class="ns--message ns-error-message col-md-12">
+										  <span class="ns-visually-hidden">Error:</span><strong>Before continuing:</strong> <a href="#" class="ns-error-link">enter a first name</a>
+										</span>
 									</section>
+
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<h2>Disabled buttons</h2>
+								<p>Disabled buttons have poor contrast and can confuse some users, so avoid them if possible.</p>
+								<p>When possible use an active button and, if clicked, display an error explaining why clicking the button won't work. If users are often triggering this error there may be an issue with your interface, consider completing user research to determin the exact reason for the problem.</p>
+								<p>Only use disabled buttons if research shows it makes the user interface easier to understand.</p>
+								<p>If you are including a disabled button, be sure to code it correctly so that visually impaired users will be able to perceive that there is a button but it's not active. You can do this by including the aria-disabled="true"</p>
+								<div class="exampleDisplay">
+									<button class="btn-lg btn-disabled" type="button">Disabled button</button>
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Action buttons</h2>
-								<p>Use an action button for buttons that will tigger an irreversable action such as a ‘Confirm and submit’ or ‘Pay now’ button. These button usually appear at the bottom of a review page.</p>
+								<p>Use an action button for buttons that will tigger an irreversable action such as a ‘Confirm and submit’ or ‘Pay now’ button. These buttons usually appear at the bottom of a review page.</p>
 								<div class="exampleDisplay">
 									<a class="btn-lg btn-success mt-4 mb-4">Confirm and submit</a>
 								</div>
@@ -178,18 +195,6 @@
 								<p>Do not only rely on the red colour of a warning button to communicate the serious nature of the action. This is because not all users will be able to see the colour or will understand what it signifies. Make sure the context and button text make clear what will happen if the user selects it.</p>
 								<div class="exampleDisplay">
 									<button class="btn-lg btn-warning" type="button">Delete account</button>
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
-						<section class="row">
-							<div class="col-md-12 col-xs-12">
-								<h2>Disabled buttons</h2>
-								<p>Disabled buttons have poor contrast and can confuse some users, so avoid them if possible.</p>
-								<p>When possible use an active button and, if clicked, display an error explaining why clicking the button won't work. If users are often triggering this error there may be an issue with your interface, consider completing user research to determin the exact reason for the problem.</p>
-								<p>Only use disabled buttons if research shows it makes the user interface easier to understand.</p>
-								<p>If you are including a disabled button, be sure to code it correctly so that visually impaired users will be able to perceive that there is a button but it's not active. You can do this by including the aria-disabled="true"</p>
-								<div class="exampleDisplay">
-									<button class="btn-lg btn-disabled" type="button">Disabled button</button>
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
@@ -226,23 +231,17 @@
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<h2>Button error message</h2>
-								<p>Button errors can be used instead of disabled buttons. This allows gudiance to be given at the time it's needed. You must link the errors in the button error to the answer they relate to. For questions that require a user to answer using a single field, like a file upload, select, textarea, or text input, link directly to the field.</p>
+								<h2>A / B option buttons</h2>
+								<p>A / B option buttons can be used when asking simple questions that have clear and straightforward answers. They can be used to determin a users eligibility for a service. See <a href="basic-page.html">question page templates<a> for when and how to use A / B option pages and other types of question pages</p>
 								<div class="exampleDisplay">
-								
 									<section class="row">
 										<div class="col-auto">
-											<button class="btn-lg btn-default" type="button">Continue</button>
-											<i class="fa fa-exclamation-circle error-indicator ns-error-indicator errorAlert" aria-hidden="true"></i>
+											<button class="ns-btn-yes-no btn-default" type="button">Yes</button>
 										</div>
 										<div class="col-auto">
-											<button class="btn-lg ns-btn-2nd" type="button">Cancel</button>
-										</div>								
-										<span id="date-field-error" class="ns--message ns-error-message col-md-12">
-										  <span class="ns-visually-hidden">Error:</span> <a href="#" class="ns-error-link">Enter a first name</a> before you continue
-										</span>
+											<button class="ns-btn-yes-no btn-default" type="button">No</button>
+										</div>
 									</section>
-
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
