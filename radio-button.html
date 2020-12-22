@@ -7,10 +7,7 @@
 	
 	<title>Radio buttons - Service Patter Library - Government of Nova Scotia</title>
 		
-<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Should be included in all head tags -->
 		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">		
 		<link rel="stylesheet" media="all" href="css/saltire.css">
 		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
@@ -80,15 +77,16 @@
 			<form name="parameters" method="GET" target="_parent">
 				<div class="row">
 					<div class="col-sm-3 col-xs-12">
-						<div id="nav-placeholder">
+						<div id="nav-placeholder1">
 						</div>
 						<script>
 						$(function(){
-						  $("#nav-placeholder").load("nav.html");
+						  $("#nav-placeholder1").load("nav-components.html");
 						});
 						</script>
 					</div>
 					<div class="col-sm-9 col-xs-12">
+						<span class="ns-caption">Service Design System - Components</span>
 						<h1>Radio Button</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<h2 id="when-to-use-this-component">When to use this component</h2>
 						<p>Use the radios component when users can only select one option from a list.</p>
@@ -442,5 +440,9 @@
 	</footer>
 <!-- END FOOTER -->
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
 </html>

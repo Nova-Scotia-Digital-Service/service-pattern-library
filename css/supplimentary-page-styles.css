@@ -51,6 +51,13 @@ p{
 .displayButton:hover{
     background: #e9ecef;
 }
+
+@media (max-width: 991.98px){
+	.navbar .ns-nav-container{
+		justify-content: start;
+	}
+}
+
 /* --------------------------------------------start not needed for service ----------------------------------------------------- */
 
 /* --------------------------------------------start sticky footer ----------------------------------------------------- */
@@ -69,6 +76,8 @@ body {
 .Site-content {
   flex: 1 1 auto;
 }
+
+.footer {background-image: url(https://beta.novascotia.ca/themes/ignition/img/bg-footer.svg);} 
 /* --------------------------------------------End sticky footer ----------------------------------------------------- */
 
 /* --------------------------------------------start visiually hidden screen reader accessible ----------------------------------------------------- */

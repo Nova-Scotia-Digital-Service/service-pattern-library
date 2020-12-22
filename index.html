@@ -6,11 +6,8 @@
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
 	<title>Home - Service Patter Library - Government of Nova Scotia</title>
-		
-<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>   --><!-- Include this only if needed -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- Include this only if needed -->
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script><!-- Include this only if needed -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"><!-- Should be included in all head tags -->
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Should be included in all head tags -->
 		<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css"><!-- Should be included in all head tags -->	
 		<link rel="stylesheet" media="all" href="css/saltire.css"> <!-- Should be included in all head tags -->
 		<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css"><!-- Should be included in all head tags -->
@@ -68,7 +65,15 @@
 	</div>
 </div>
 <!-- END Alpha Phase Banner -->
-
+<div class="col-sm-4 col-xs-12">
+	<div id="nav-placeholder4">
+	</div>
+	<script>
+	$(function(){
+	  $("#nav-placeholder4").load("primary-nav.html");
+	});
+	</script>
+</div>
 <!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
 
 <!--A basic page has a primary content area and an optional column for secondary information like related content.-->
@@ -78,11 +83,29 @@
 			<form name="parameters" method="GET" target="_parent">
 				<div class="row mb-4">
 					<div class="col-sm-4 col-xs-12">
-						<div id="nav-placeholder">
+						<div id="nav-placeholder1">
 						</div>
 						<script>
 						$(function(){
-						  $("#nav-placeholder").load("nav.html");
+						  $("#nav-placeholder1").load("nav-components.html");
+						});
+						</script>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div id="nav-placeholder2">
+						</div>
+						<script>
+						$(function(){
+						  $("#nav-placeholder2").load("nav-patterns.html");
+						});
+						</script>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div id="nav-placeholder3">
+						</div>
+						<script>
+						$(function(){
+						  $("#nav-placeholder3").load("nav-templates.html");
 						});
 						</script>
 					</div>
@@ -201,8 +224,8 @@
 										Off     
 									  </div>
 									 </label>
-								   </fieldset>
-								   <!-- end NS toggle -->
+						</fieldset>
+						<!-- end NS toggle -->
 								</button>
 							</div><!-- / example col -->
 						</section><!--/row-->
@@ -239,5 +262,8 @@
 	</footer>
 <!-- END FOOTER -->
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
