@@ -58,6 +58,44 @@ p{
 	}
 }
 
+.navbar{
+	padding: 0;
+    border-bottom: solid 1px #0058a4;
+}
+
+.ns-navbar-light .navbar-nav .nav-link:focus, .ns-navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    background: #0058a4;
+}
+
+.ns-navbar-light .navbar-nav .active>.nav-link, .ns-navbar-light .navbar-nav .nav-link.active, .ns-navbar-light .navbar-nav .nav-link.show, .ns-navbar-light .navbar-nav .show>.nav-link {
+    color: #f8d44c;
+    background: #0058a4;
+    position: relative;
+    border-color: #004a8b;
+}
+.ns-navbar-light .navbar-nav .nav-link:focus, .ns-navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    background: #0058a4;
+}
+.ns-navbar-light .navbar-nav .nav-link {
+    color: #0058a4;
+}
+
+.ns-navbar-light .dropdown-menu {
+    border-radius: 0;
+    margin: 0;
+	border: solid 1px #e6e7e6;
+	color: #0058a4;
+	background: #f3f3f3;
+	margin-top: 1px;
+}
+.ns-navbar-light .dropdown-item:focus, .ns-navbar-light .dropdown-item:hover {
+    color: #fff;
+    background: #003262;
+}
+
+
 /* --------------------------------------------start not needed for service ----------------------------------------------------- */
 
 /* --------------------------------------------start sticky footer ----------------------------------------------------- */

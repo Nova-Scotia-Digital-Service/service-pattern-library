@@ -27,7 +27,7 @@
 .ns-phase-banner {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #b1b4b6;
+    border-bottom: solid 1px #0058a4;
 }
 .ns-phase-banner__content {
     font-family: font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
