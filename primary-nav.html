@@ -46,6 +46,18 @@
 	</div>
 </nav>
 <script>$(document).ready(function() {
+    var selector = '.dropdown-menu';
+    var url = window.location.href;
+    var target = url.split('/');
+     $(selector).each(function(){
+        if($(this).find('a').attr('href')===(target[target.length-1])){
+          $(selector).removeClass('active');
+          $(this).removeClass('active').parent().addClass('active');
+        }
+		});
+	});
+</script>
+<script>$(document).ready(function() {
     var selector = '.navbar-nav li';
     var url = window.location.href;
     var target = url.split('/');
