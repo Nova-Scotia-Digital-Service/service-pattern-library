@@ -1,3 +1,5 @@
+
+<!-- START Primary NAV -->
 <nav id="topheader" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container ns-nav-container">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,13 +48,13 @@
 	</div>
 </nav>
 <script>$(document).ready(function() {
-    var selector = '.dropdown-menu';
+    var selector = '.dropdown-item';
     var url = window.location.href;
     var target = url.split('/');
      $(selector).each(function(){
-        if($(this).find('a').attr('href')===(target[target.length-1])){
+        if($(this).attr('href')===(target[target.length-1])){
           $(selector).removeClass('active');
-          $(this).removeClass('active').parent().addClass('active');
+          $(this).removeClass('active').parent().parent().addClass('active');
         }
 		});
 	});
@@ -69,3 +71,4 @@
 		});
 	});
 </script>
+<!-- End Primary NAV -->
