@@ -80,6 +80,8 @@ p{
 }
 .ns-navbar-light .navbar-nav .nav-link {
     color: #0058a4;
+	padding-right: 12px;
+    padding-left: 12px;
 }
 
 .ns-navbar-light .dropdown-menu {
@@ -94,7 +96,16 @@ p{
     color: #fff;
     background: #003262;
 }
-
+.navbar-toggler{
+	font-size: 2rem;
+}
+.ns-navbar-light .ns-toggle-icon: {
+    font-size: 2rem;
+}
+.ns-navbar-light .ns-toggle-icon:before {
+    color:#0058a4;
+	z-index: 1;
+}
 
 /* --------------------------------------------start not needed for service ----------------------------------------------------- */
 
@@ -156,6 +167,25 @@ body {
     white-space: inherit !important;
 }
 /* --------------------------------------------end visiually hidden screen reader accessible ----------------------------------------------------- */
+
+/* --------------------------------------------start link no visited state ----------------------------------------------------- */
+.ns-link--no-visited-state:link {
+    color: #0058a4;
+}
+.ns-link--no-visited-state:visited {
+    color: #0058a4;
+}
+.ns-link--no-visited-state:hover {
+    color: #002f58;
+}
+.ns-link--no-visited-state:active {
+    color: #0058a4;
+}
+.ns-link--no-visited-state:focus {
+    color: #002f58;
+}
+
+/* --------------------------------------------end link no visited state ----------------------------------------------------- */
 
 /* -------------------------------------------- start back link ----------------------------------------------------- */
 
