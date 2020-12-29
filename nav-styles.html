@@ -1,0 +1,18 @@
+						<h2 class="h3">Styles</h2>						
+						<nav id="nav" class="sidebar_first hidden-xs">
+							<ul class="menu">
+								<li class="first"><a href="#links">Links</a></li>
+							</ul>
+						</nav>
+						<script>$(document).ready(function() {
+							var selector = '.menu li';
+							var url = window.location.href;
+							var target = url.split('/');
+							 $(selector).each(function(){
+								if($(this).find('a').attr('href')===(target[target.length-1])){
+								  $(selector).removeClass('active-trail active');
+								  $(this).removeClass('active-trail active').children().addClass('active-trail active');
+								}
+								});
+							});
+						</script>
