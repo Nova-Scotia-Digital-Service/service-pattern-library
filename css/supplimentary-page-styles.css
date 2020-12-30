@@ -69,6 +69,14 @@
     color:#0058a4;
 }
 
+li code, td code, p code {
+	font-family: monospace, monospace;
+    font-size: 1em;
+    padding: 0 5px;
+    color: #d13118;
+    background-color: #f3f2f1;
+}
+
 /* --------------------------------------------start not needed for service ----------------------------------------------------- */
 
 /* --------------------------------------------start set font to root ----------------------------------------------------- */
