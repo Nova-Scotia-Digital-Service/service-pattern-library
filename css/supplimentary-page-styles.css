@@ -1,43 +1,6 @@
-/* --------------------------------------------start set font to root ----------------------------------------------------- */
-
-h1, .h1 {
-  font-size: 2.25rem; }
-
-h2, .h2 {
-  font-size: 1.7rem; }
-
-h3, .h3 {
-  font-size: 1.35rem; }
-
-h4, .h4 {
-  font-size: 1.15rem; }
-
-h5, .h5 {
-  font-size: 1rem; }
-
-h6, .h6 {
-  font-size: 0.875rem; }
-  
-/* --------------------------------------------end set font to root ----------------------------------------------------- */
-
-/* --------------------------------------------start suplimentary typography ----------------------------------------------------- */
-p{
-	max-width:800px;
-}
-.ns-tel{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.ns-email{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* --------------------------------------------end suplimentary typography  ----------------------------------------------------- */
 
 /* --------------------------------------------start not needed for service ----------------------------------------------------- */
+
 .exampleDisplay{
 	border: 1px solid #a4a4a4;
     padding: 2rem;
@@ -108,6 +71,46 @@ p{
 
 /* --------------------------------------------start not needed for service ----------------------------------------------------- */
 
+/* --------------------------------------------start set font to root ----------------------------------------------------- */
+
+h1, .h1 {
+  font-size: 2.25rem; }
+
+h2, .h2 {
+  font-size: 1.7rem; }
+
+h3, .h3 {
+  font-size: 1.35rem; }
+
+h4, .h4 {
+  font-size: 1.15rem; }
+
+h5, .h5 {
+  font-size: 1rem; }
+
+h6, .h6 {
+  font-size: 0.875rem; }
+  
+/* --------------------------------------------end set font to root ----------------------------------------------------- */
+
+/* --------------------------------------------start suplimentary typography ----------------------------------------------------- */
+p{
+	max-width:800px;
+}
+.ns-tel{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ns-email{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* --------------------------------------------end suplimentary typography  ----------------------------------------------------- */
+
+
 /* --------------------------------------------start sticky footer ----------------------------------------------------- */
 body {
     display: flex;
@@ -126,6 +129,7 @@ body {
 }
 
 .footer {background-image: url(https://beta.novascotia.ca/themes/ignition/img/bg-footer.svg);} 
+
 /* --------------------------------------------End sticky footer ----------------------------------------------------- */
 
 /* --------------------------------------------start visiually hidden screen reader accessible ----------------------------------------------------- */
