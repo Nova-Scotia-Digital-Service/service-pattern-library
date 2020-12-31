@@ -95,7 +95,7 @@ $(function(){
 						</div>
 						<script>
 						$(function(){
-						  $("#nav-placeholder1").load("nav-components.html");
+						  $("#nav-placeholder1").load("nav-patterns.html");
 						});
 						</script>
 					</div>
@@ -103,9 +103,9 @@ $(function(){
 						<h1>Address</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						    <p>Help users provide an address using one of the following:</p>
 							<ul>
-								<li>Address lookup</li>
-								<li>Multiple text inputs</li>
-								<li>Textarea</li>
+								<li><a href="#address-lookup">Address lookup</a></li>
+								<li><a href="#multiple-text-inputs-for-canadian-civic-addresses">Multiple text inputs</a></li>
+								<li><a href="#textarea">Textarea</a></li>
 							</ul>
 						<h2 id="address-lookup">Address lookup</h2>	
 						<h3 id="when-to-use-an-address-lookup">When to use an address lookup</h3>
@@ -207,7 +207,7 @@ $(function(){
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
-						<h2 id="conditional-mailing-addresses">Conditional mailing addresses</h2>
+						<h3 id="conditional-mailing-addresses">Conditional mailing addresses</h3>
 						<p>If you need to collect a mailing address as well as a civic address you can place them on the same page as the civic address. Not all people have a sperate address for mailing, so add a radio set that displays a conditional set of inputs based on the selected value.</p>
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
@@ -321,7 +321,54 @@ $(function(){
 						<p>Use the <code>autocomplete</code> attribute on each individual address field to help users enter their address more quickly. This lets you specify each input’s purpose so browsers can autofill the information on a user’s behalf if they’ve entered it previously.</p>
 						<p><a href="https://www.w3.org/TR/WCAG21/#input-purposes">Check which input purpose to use</a> for each field.</p>
 						<p>In production, you’ll need to do this to meet <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html">WCAG 2.1 Level AA</a>. You will not normally need to use the <code>autocomplete</code> attribute in prototypes, as users will not generally be using their own devices.</p>
-
+						
+						<h3 id="error-messages">Error messages</h3>
+						<p>Error messages should be styled like this:</p>
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<div class="ns-fieldset exampleDisplay">
+									<div class="ns-fieldset ns-fieldset-message-error">
+										<label class="ns-label" for="event-name">
+										  Postal code
+										</label>
+										<span id="address-postcode-error" class="ns-error-message field-validation-error">
+										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+										  <span class="ns-visually-hidden">Error:</span> Enter real postal code
+										</span>
+									  <input class="ns-input fw-6 ns-input--error" id="address-postcode" name="address-postcode" type="text" value="Nope" aria-describedby="address-postcode-error" autocomplete="postal-code">
+									</div>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->	
+						<p>Make sure errors follow the guidance in <a href="error-message.html">error message</a> and have specific error messages for specific error states.</p>	
+						<h2 id="textarea">Textarea</h2>	
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<div class="ns-fieldset exampleDisplay">
+									<div class="ns-fieldset">
+									  <label class="ns-label" for="address">
+										What is your address?
+									  </label>
+									  <textarea class="ns-textarea" id="address" name="address" rows="5" autocomplete="street-address"></textarea>
+									</div>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->	
+						<h3 id="when-to-use-textarea">When to use textarea</h3>
+						<p>Use a textarea if you expect a broad range of address formats and you do not need to format the address for print or use specific sub-parts of the address (for example, street or postcode).</p>
+						<h3 id="when-not-to-use-textarea">When not to use textarea</h3>
+						<p>You should not use a textarea if you:</p>
+						<ul>
+							<li>need to separate an address into accurate sub-parts (for example, street or postcode)</li>
+							<li>need to help users look up an address</li>
+						</ul>
+						<h3 id="how-a-textarea-works">How a textarea works</h3>
+						<p>Textareas let users enter an address in any format and make it easy to copy and paste addresses from their clipboard.</p>
+						<h4 id="use-the-autocomplete-attribute-on-a-textarea">Use the autocomplete attribute on a textarea</h4>
+						<p>Use the <code>autocomplete</code> attribute on the textarea component when you’re asking for an address. This lets browsers autofill the information on a user’s behalf if they’ve entered it previously.</p>
+						<p>To do this, set the <code>autocomplete</code> attribute to <code>street-address</code> as shown in the HTML and Nunjucks tabs in the textarea example above.</p>
+						<p>If you are working in production you’ll need to do this to meet <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html">WCAG 2.1 Level AA</a>.</p>
+						<p>You will not normally need to use the <code>autocomplete</code> attribute in prototypes, as users will not generally be using their own devices.</p>					
 					</div><!-- /col-xs-8 -->
 				</div><!--/row-->
 			</form>
