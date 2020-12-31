@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
-	<title>Privacy Notice - Service Pattern Library - Government of Nova Scotia</title>
+	<title>Email Address - Service Pattern Library - Government of Nova Scotia</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Include in all head tags -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><!-- Include in all head tags -->	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script><!-- Include in all head tags -->
@@ -98,51 +98,92 @@ $(function(){
 						</script>
 					</div>
 					<div class="col-sm-9 col-xs-12">
-						<h1>Privacy notice</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
-						<h2 id="when-to-use-this-component">When to use this component</h2>
-						<p>Use this accordion on the page where private information is being collected. This statement should be specific to the service and information you are collecting. It does not replace the generic provincial statement that is linked to in the page footer.</p>
-						<h2 id="how-it-works">How it works</h2>
-						<p>The privacy notice should be located below the call to action buttons on the service page where personal information is collected.</p>
-						<p>This is a new pattern still needs more testing.</p>
+						<h1>Email Address</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<div class="exampleDisplay">
-									<h2>Example privacy notice</h2>
-									<p>Work with the Privacy department to create a statement that is specific for your service. </p>
-
-									<div class="otherways-accordion accordion ns-accordion" data-aria-accordion="" id="acc_1-0">
-										<div class="accordion__heading accordion__privacy">  
-											<button type="button" aria-controls="acc_1-0_panel_1" id="acc_1-0_panel_1_trigger" class="accordion__trigger" aria-expanded="false" data-current="true" data-target="#acc_1-0_panel_1" data-toggle="collapse">
-												How we're protecting your information
-											</button>
-										</div>
-										<div class="accordion__panel" id="acc_1-0_panel_1" aria-hidden="true">
-											<h2 class="h3 mt-2">Privacy notice</h3>
-											<p>Personal information you provide online to the Access Nova Scotia Appointment Booking  Service is collected under the authority of the Nova Scotia Freedom of Information and Protection of Privacy (FOIPOP) Act.
-
-											<p class="mb-1"><strong>We will use your contact information to:</strong></p>
-											<ul>
-												<li>Email you an appointment confirmation and instructions</li>
-												<li>Send you text messages with check-in instructions and notifications the day of your appointment</li>
-											</ul>
-
-											<p class="mb-1"><strong>We won't use your contact information to: </strong></p>
-											<ul>
-												<li>Contact you for any other purpose </li>
-												<li>Send you spam or marketing emails</li>
-												<li>Share your contact information with other parties</li>
-											</ul>
-
-											<p>We use and disclose your personal information only for the purposes described above, or in the following circumstances: a) if we are authorized by law to do so, or b) if we obtain your express consent.</p>
-
-											<p>The Access Nova Scotia appointment booking service uses Google Analytics to help us understand how you use the site and to continually improve the online service. Access Nova Scotia will not use Google Analytics to collect personally identifiable information about you. </p>
-
-											<p>For further information about Google Analytics and the Government of Nova Scotia’s privacy information practices, please refer to the <a href="#">Government of Nova Scotia Privacy Statement</a>.</p>
-										</div>
+									<div class="ns-form-group">
+									  <label class="ns-label" for="email">
+										Email address
+									  </label>
+									  <div id="email-hint" class="ns-hint">
+										We’ll only use this to send you a receipt
+									  </div>
+									  <input class="ns-input fw-25" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
 									</div>
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
+						<h2 id="when-to-use-this-pattern">When to use this pattern</h2>
+						<p>Follow this pattern whenever you need to capture an email address.</p>
+						<h2 id="how-it-works">How it works</h2>
+						<p>When asking users for their email address, you must:</p>
+						<ul>
+							<li>make it clear why you’re asking</li>
+							<li>make sure the field works for all of your users</li>
+							<li>help users to enter a valid email address</li>
+						</ul>
+						<p>You may also need to check that users have access to the email account they give you.</p>
+						<pre><code><textarea rows="11" readonly="readonly">
+<div class="ns-form-group">
+	<label class="ns-label" for="email">
+		Email address
+	</label>
+	<div id="email-hint" class="ns-hint">
+		We’ll only use this to send you a receipt
+	</div>
+	<input class="ns-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+</div>
+						</textarea></code></pre>
+						<h3 id="tell-users-why-you-want-the-email-address">Tell users why you want the email address</h3>
+						<p>Make it clear what the email address will be used for so that:</p>
+						<ul>
+							<li>users feel confident that you’re not going to abuse it</li>
+							<li>users with multiple email addresses can choose which one to give you</li>
+						</ul>
+						<p>If the email address field is part of a sign-in box, you do not need to say ‘We need your email so we can sign you in’.</p>
+						<h3 id="make-sure-the-field-works-for-all-of-your-users">Make sure the field works for all of your users</h3>
+						<p>Make sure the field can accommodate up to 256 characters, which is the longest an email address can be.</p>
+						<h3 id="help-users-to-enter-a-valid-email-address">Help users to enter a valid email address</h3>
+						<p>Help your users to enter a valid email address by:</p>
+						<ul>
+							<li>checking they have entered the correct format</li>
+							<li>allowing users to paste the email address</li>
+							<li>setting the <code>type</code> attribute to <code>email</code> so that devices display the correct keyboard</li>
+							<li>setting the <code>spellcheck</code> attribute to <code>false</code> so that browsers do not spellcheck the email address</li>
+							<li>confirming their address back to them so they can check and change it</li>
+						</ul>
+						<p>You should also set the <code>autocomplete</code> attribute to <code>email</code>. This lets browsers autofill the email address on a user’s behalf if they’ve entered it previously.</p>
+						<p>If you are working in production you’ll need to do this to meet <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html">WCAG 2.1 Level AA</a>. You will not normally need to use the <code>autocomplete</code> attribute in prototypes, as users will not generally be using their own devices.</p>
+						<p>The field should be wide enough for most users to see their entire email address once they have entered it. A good rule of thumb is to make sure you can see at least 30 characters at once. You can analyse your user data to refine this.</p>
+						<p>You can check for common misspellings of popular email providers, for example ‘homtail.com’ instead of ‘hotmail.com’. Warn users if you detect one, but allow them to proceed in case it’s a genuine email address.</p>
+						<p>Some services ask users to repeat their email address. Only do this if your user research shows it to be effective.</p>
+						<h3 id="error-messages">Error messages</h3>
+						<p>Error messages should be styled like this:</p>
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
+								<div class="exampleDisplay mb-4">
+									<div class="ns-fieldset ns-fieldset-message-error">
+									  <label class="ns-label" for="email">
+										Email address
+									  </label>
+									  <div id="email-hint" class="ns-hint">
+										We’ll only use this to send you a receipt
+									  </div>
+									  <span id="email-error" class="ns-error-message">
+									    <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+										<span class="ns-visually-hidden">Error:</span> Enter an email address in the correct format, like name@example.com
+									  </span>
+									  <input class="ns-input ns-input--error fw-25" id="email" name="email" type="email" spellcheck="false" value="Not an email address" aria-describedby="email-hint email-error" autocomplete="email">
+									</div>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<p>Make sure errors follow the guidance in <a href="error-message.html">error message</a> and have specific error messages for specific error states.</p>
+						<h4 id="if-the-email-address-is-not-in-the-correct-format-and-there-is-no-example">If the email address is not in the correct format and there is no example</h4>
+						<p>Say ‘Enter an email address in the correct format, like name<i></i>@example.com’.</p>
+						<h4 id="if-the-email-address-is-not-in-the-correct-format-and-there-is-an-example">If the email address is not in the correct format and there is an example</h4>
+						<p>Say ‘Enter an email address in the correct format’.</p>
 
 					</div><!-- /col-xs-8 -->
 				</div><!--/row-->
