@@ -153,6 +153,18 @@ $(function(){
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
+								<h2>Disabled buttons</h2>
+								<p>Disabled buttons have poor contrast and can confuse some users, so avoid them if possible.</p>
+								<p>When possible use an active button and, if clicked, display an error explaining why clicking the button won't work. If users are often triggering this error there may be an issue with your interface, consider completing user research to determine the exact reason for the problem.</p>
+								<p>Only use disabled buttons if research shows it makes the user interface easier to understand.</p>
+								<p>If you are including a disabled button, be sure to code it correctly so that visually impaired users will be able to perceive that there is a button but it's not active. You can do this by including the aria-disabled="true"</p>
+								<div class="exampleDisplay">
+									<button class="btn-lg btn-disabled" type="button">Disabled button</button>
+								</div>
+							</div><!-- / example col -->
+						</section><!--/row-->
+						<section class="row">
+							<div class="col-md-12 col-xs-12">
 								<h2 id="error-messages">Button error message</h2>
 								<p>Button errors can be used instead of disabled buttons. This allows gudiance to be given at the time it's needed. You must link the errors in the button error to the answer they relate to. For questions that require a user to answer using a single field, like a file upload, select, textarea, or text input, link directly to the field. The field or answer linked to the button error must also display a matching error message.</p>
 								<div class="exampleDisplay">
@@ -170,18 +182,6 @@ $(function(){
 										</span>
 									</section>
 
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
-						<section class="row">
-							<div class="col-md-12 col-xs-12">
-								<h2>Disabled buttons</h2>
-								<p>Disabled buttons have poor contrast and can confuse some users, so avoid them if possible.</p>
-								<p>When possible use an active button and, if clicked, display an error explaining why clicking the button won't work. If users are often triggering this error there may be an issue with your interface, consider completing user research to determin the exact reason for the problem.</p>
-								<p>Only use disabled buttons if research shows it makes the user interface easier to understand.</p>
-								<p>If you are including a disabled button, be sure to code it correctly so that visually impaired users will be able to perceive that there is a button but it's not active. You can do this by including the aria-disabled="true"</p>
-								<div class="exampleDisplay">
-									<button class="btn-lg btn-disabled" type="button">Disabled button</button>
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row-->
@@ -241,7 +241,7 @@ $(function(){
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>A / B option buttons</h2>
-								<p>A / B option buttons can be used when asking simple questions that have clear and straightforward answers. They can be used to determin a users eligibility for a service. See <a href="basic-page.html">question page templates<a> for when and how to use A / B option pages and other types of question pages</p>
+								<p>Use A / B option buttons when asking simple questions that have clear and straightforward answers. They help, for example, to determine a user's eligibility for a service. See <a href="basic-page.html">question page templates</a> for when and how to use A / B option pages and other types of question pages. The order of A / B option buttons (should yes or no come first?) matters less than the clarity of the question. If the question is simple and well written, which button comes first won't matter. User testing will help you figure out which questions need work and if you need to change the order of your buttons.</p>
 								<div class="exampleDisplay">
 									<section class="row">
 										<div class="col-auto">
