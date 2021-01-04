@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortlink" href="https://beta.novascotia.ca/">
+	
+	<title>Content Page - Service Pattern Library - Government of Nova Scotia</title>
+		
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Should be included in all head tags -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><!-- Should be included in all head tags -->	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script><!-- Should be included in all head tags -->	
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script><!-- Not needed for service design, loads the navigation for this site -->	
+	<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">			
+	<link rel="stylesheet" media="all" href="css/saltire.css">
+	<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
+	<link rel="stylesheet" media="all" href="css/global-form-styles.css">
+	<link rel="stylesheet" media="all" href="css/radio-button.css">
+	<link rel="stylesheet" media="all" href="css/toggle.css">
+	<link rel="stylesheet" media="all" href="css/checkboxes.css">
+	<link rel="stylesheet" media="all" href="css/slider.css">
+	<link rel="stylesheet" media="all" href="css/input-field-group.css">
+	<link rel="stylesheet" media="all" href="css/select.css">
+	<link rel="stylesheet" media="all" href="css/buttons.css">
+	<link rel="stylesheet" media="all" href="css/phase-banner.css"><!-- Include this only if needed -->
+	<!--[if lte IE 8]>
+	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+<div class="Site js-enabled" id="container">
+<!-- -------------------------------------------------- START Skip Link --------------------------------------------------- -->
+<nav class="skip-links" aria-label="Skip to main content">
+	<a href="#main" class="skip-to-link">Skip to main content</a>
+</nav>
+<!-- -------------------------------------------------- END Skip Link  --------------------------------------------------- -->
+
+<!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
+
+<header>
+<!-- START SALTIRE NS MOTHERSHIP RIBBON w FR -->
+	<nav id="navigation" class="ribbon" role="navigation" aria-label="Main navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<a href="https://novascotia.ca/" hreflang="en"><img class="ribbon-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Province of Nova Scotia" /></a>
+				</div>
+			</div>
+		</div>
+	</nav>	
+<!-- END SALTIRE NS MOTHERSHIP RIBBON w FR -->
+</header>
+
+<!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
+<!-- START Alpha Phase Banner -->
+<div class="ns-phase-banner">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+			  <p class="ns-phase-banner__content">
+				<strong class="ns-tag ns-phase-banner__content__tag">
+				  Alpha
+				</strong>
+				<span class="ns-phase-banner__text">
+					This is a new service that we're still developing. Try the service and <a href="https://github.com/connorscarolyns/service-pattern-library/issues">send us your comments and suggestions</a>. Your feedback will help make the service easier to use for everyone.
+				</span>
+			  </p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END Alpha Phase Banner -->
+<!-- START Primary NAV -->
+<div id="nav-placeholder4">
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder4").load("primary-nav.html");
+});
+</script>
+<!-- End Primary NAV -->
+
+<!--A basic page has a primary content area and an optional column for secondary information like related content.-->
+<div class="container Site-content">
+	<main id="main"><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
+		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
+			<form name="parameters" method="GET" target="_parent">
+				<div class="row">
+					<div class="col-sm-3 col-xs-12 order-last order-sm-first">
+						<div id="nav-placeholder2">
+						</div>
+						<script>
+						$(function(){
+						  $("#nav-placeholder2").load("nav-templates.html");
+						});
+						</script>
+					</div>
+					<div class="col-sm-9 col-xs-12"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
+						<h1>Content page</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<p>Your main content area shouldn't exceed 800px, lines of text that span the screen are hard to read. If you don't have a sidebar, use <code>col-8</code>to restrict the column to a readable length. Don't set the column width to full-width <code>col-12</code>.</p>
+						<h2>Basic Layout</h2>
+							<iframe src="pages/content-page-template.html" style="width: calc(100% + 25%); height:500px; margin-bottom: -125px; border: 2px solid #a2a2a2; -ms-zoom: 0.75;-moz-transform: scale(0.75); -moz-transform-origin: 0 0; -o-transform: scale(0.75); -o-transform-origin: 0 0; -webkit-transform: scale(0.75); -webkit-transform-origin: 0 0;"  frameborder="0"></iframe>	
+						<h3>Page title</h3>
+						<p>Each page in your service must contain a distinct page title tag. Page titles should include the page heading, the name of the service, and Government of Nova Scotia. As an example, the page title of this page is <code>&lt;title&gt;Content Page - Service Pattern Library - Government of Nova Scotia&lt;/title&gt;</code></p>
+						<h3>Header and main navigation</h3>
+						<p>Use the "NS MOTHERSHIP RIBBON" provided in the <a href="https://cns.pages.novascotia.ca/patternlab/navigation.html">CNS saltire pattern library</a>. In bilingual services, when the service toggles to the French, use the French version on the ribbon. Don't forget to change the page language declaration <code>&lt;html lang="fr"&gt;</code> and update any aria labels and alt text on the page.</p>
+						<p>Only include a search bar or a help link if user testing shows they make the service easier to use. Instead, try adding information to the pages where needed. Use the <a href="#">accordion compontent (link not available yet)</a> to hold these pieces of information.</p>
+						<h3>Page heading</h3> 
+						<p>Don't use the same page heading across multiple pages.</p>
+						<p>The page heading should relate to the content of the current page, not any higher-level section. If you need to show the high-level section, use the <code>ns-caption</code> style.</p>
+						<div>
+							<iframe src="pages/title-and-caption.html" style="width:100%; height:200px; border: 1px solid #a2a2a2"  frameborder="0"></iframe>
+						</div>
+						<h3>Sub-heading</h3>
+						<p>Sub-headings must not skip heading levels. If a sub-heading visually looks too big, change the size by adding a heading class for the desired level.</p>
+						<pre><code><textarea rows="2" readonly="readonly">
+<h2 class="h3">H2 title with a class of H3</h2>
+						</textarea></code></pre>
+						<h3>Footer</h3>
+						<p>Use the footer provided in the <a href="https://cns.pages.novascotia.ca/patternlab/navigation.html">CNS saltire pattern library</a>. Remove the social media links unless there's a benefit to display them.</p>
+						<p></p>
+					</div><!-- /col-xs-8 -->
+				</div><!--/row-->
+			</form>
+		</article>
+	</main>
+</div><!-- /container -->
+
+<!-- START FOOTER -->
+	<footer id="footer" class="footer" role="contentinfo">
+		<div class="container">
+
+		</div>
+	</footer>
+<!-- END FOOTER -->
+</div>
+
+</body>
+</html>

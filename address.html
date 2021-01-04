@@ -113,16 +113,16 @@ $(function(){
 						<h3 id="when-not-to-use-an-address-lookup">When not to use an address lookup</h3>
 						<p><abbr title="Nova Scotia Civic Address File">NSCAF</abbr> integrated address lookups generally work well for Nova Scotian civic addresses. Use a manual option such as  multiple text inputs or a textarea when you are collecting mailing adddresses, or addresses outside of the province. Read more about the <a href="https://geonova.novascotia.ca/civic-addressing">Nova Scotia Civic Address File at GeoNOVA</a>.</p>
 						<h3 id="how-an-address-lookup-works">How an address lookup works</h3>
-						<p>An address lookup lets users specify a NS address by entering their postcode and selecting their address from a list. There is also an option to enter a street name or&nbsp;number.</p>
+						<p>An address lookup lets users specify a NS address by entering their postal code and selecting their address from a list. There is also an option to enter a street name or&nbsp;number.</p>
 						<p>When using an address lookup, you should:</p>
 						<ul>
 							<li>make it clear that it will only work for NS addresses</li>
 							<li>provide a manual option for people with international addresses or addresses that are missing or not properly listed in the address lookup</li>
-							<li>let people enter their postcodes in upper or lower case and with or without spaces</li>
+							<li>let people enter their postal codes in upper or lower case and with or without spaces</li>
 						</ul>
-						<h4 id="allow-different-postcode-formats">Allow different postcode formats</h4>
-						<p>It is easier for users if you accept and ignore unwanted characters. This is better than rejecting the input and telling a user they’ve not provided a valid postcode.</p>
-						<p>You should allow postcodes that contain upper and lower case letters, no spaces, additional spaces at the beginning, middle or end and punctuation like hyphens, brackets, dashes and periods.</p>
+						<h4 id="allow-different-postal-code-formats">Allow different postal code formats</h4>
+						<p>It is easier for users if you accept and ignore unwanted characters. This is better than rejecting the input and telling a user they’ve not provided a valid postal code.</p>
+						<p>You should allow postal codes that contain upper and lower case letters, no spaces, additional spaces at the beginning, middle or end and punctuation like hyphens, brackets, dashes and periods.</p>
 						<h2 id="multiple-text-inputs-for-canadian-civic-addresses">Multiple text inputs for Canadian civic addresses</h2>
 						
 						<h3 id="when-to-use-multiple-text-inputs">When to use multiple text inputs</h3>
@@ -197,10 +197,10 @@ $(function(){
 									  </div>
 									  
 									  <div class="ns-fieldset">
-										<label class="ns-label" for="address-postcode">
-										  Postcode
+										<label class="ns-label" for="address-postal-code">
+										  Postal code
 										</label>
-										<input class="ns-input fw-6" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+										<input class="ns-input fw-6" id="address-postal-code" name="address-postal-code" type="text" autocomplete="postal-code">
 									  </div>
 
 									</fieldset>
@@ -281,10 +281,10 @@ $(function(){
 											  </div>
 											  
 											  <div class="ns-fieldset">
-												<label class="ns-label" for="address-postcode">
-												  Postcode
+												<label class="ns-label" for="postal-code2">
+												  Postal code
 												</label>
-												<input class="ns-input fw-6" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+												<input class="ns-input fw-6" id="postal-code2" name="postal-code2" type="text" autocomplete="postal-code2">
 											  </div>
 										  </div>
 										</div>
@@ -312,8 +312,8 @@ $(function(){
 						<p>If you use multiple text inputs, you should:</p>
 						<ul>
 							<li>only make individual text inputs mandatory if you really need the information</li>
-							<li>make the text inputs the appropriate length for the content – it helps people understand the form, for example, make postcode text inputs shorter than street text inputs</li>
-							<li><a href="#allow-different-postcode-formats">let users enter postcodes in different formats</a></li>
+							<li>make the text inputs the appropriate length for the content – it helps people understand the form, for example, make postal code text inputs shorter than street text inputs</li>
+							<li><a href="#allow-different-postal-code-formats">let users enter postal codes in different formats</a></li>
 						</ul>
 						<p>Make sure there are enough text inputs to accommodate longer addresses if you know your users will need them. For example, allow users to include a company name.</p>
 						<p>Only ask for the information you require, for example if you only need to know what province a person is from there is no need to ask for a full civic address.</p>
@@ -331,11 +331,11 @@ $(function(){
 										<label class="ns-label" for="event-name">
 										  Postal code
 										</label>
-										<span id="address-postcode-error" class="ns-error-message field-validation-error">
+										<span id="address-postal-code-error" class="ns-error-message field-validation-error">
 										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Error:</span> Enter real postal code
+										  <span class="ns-visually-hidden">Error:</span> Enter a postal code in the correct format like, A1B 2C3
 										</span>
-									  <input class="ns-input fw-6 ns-input--error" id="address-postcode" name="address-postcode" type="text" value="Nope" aria-describedby="address-postcode-error" autocomplete="postal-code">
+									  <input class="ns-input fw-6 ns-input--error" id="address-postal-code3" name="address-postal-code3" type="text" value="Nope" aria-describedby="address-postal-code-error3" autocomplete="postal-code">
 									</div>
 								</div>
 							</div><!-- / example col -->
@@ -355,11 +355,11 @@ $(function(){
 							</div><!-- / example col -->
 						</section><!--/row-->	
 						<h3 id="when-to-use-textarea">When to use textarea</h3>
-						<p>Use a textarea if you expect a broad range of address formats and you do not need to format the address for print or use specific sub-parts of the address (for example, street or postcode).</p>
+						<p>Use a textarea if you expect a broad range of address formats and you do not need to format the address for print or use specific sub-parts of the address (for example, street or postal code).</p>
 						<h3 id="when-not-to-use-textarea">When not to use textarea</h3>
 						<p>You should not use a textarea if you:</p>
 						<ul>
-							<li>need to separate an address into accurate sub-parts (for example, street or postcode)</li>
+							<li>need to separate an address into accurate sub-parts (for example, street or postal code)</li>
 							<li>need to help users look up an address</li>
 						</ul>
 						<h3 id="how-a-textarea-works">How a textarea works</h3>
