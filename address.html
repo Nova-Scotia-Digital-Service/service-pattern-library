@@ -113,16 +113,12 @@ $(function(){
 						<h3 id="when-not-to-use-an-address-lookup">When not to use an address lookup</h3>
 						<p><abbr title="Nova Scotia Civic Address File">NSCAF</abbr> integrated address lookups generally work well for Nova Scotian civic addresses. Use a manual option such as  multiple text inputs or a textarea when you are collecting mailing adddresses, or addresses outside of the province. Read more about the <a href="https://geonova.novascotia.ca/civic-addressing">Nova Scotia Civic Address File at GeoNOVA</a>.</p>
 						<h3 id="how-an-address-lookup-works">How an address lookup works</h3>
-						<p>An address lookup lets users specify a NS address by entering their postal code and selecting their address from a list. There is also an option to enter a street name or&nbsp;number.</p>
+						<p>An address lookup lets users specify a NS address by entering their street aadress.</p>
 						<p>When using an address lookup, you should:</p>
 						<ul>
 							<li>make it clear that it will only work for NS addresses</li>
 							<li>provide a manual option for people with international addresses or addresses that are missing or not properly listed in the address lookup</li>
-							<li>let people enter their postal codes in upper or lower case and with or without spaces</li>
 						</ul>
-						<h4 id="allow-different-postal-code-formats">Allow different postal code formats</h4>
-						<p>It is easier for users if you accept and ignore unwanted characters. This is better than rejecting the input and telling a user they’ve not provided a valid postal code.</p>
-						<p>You should allow postal codes that contain upper and lower case letters, no spaces, additional spaces at the beginning, middle or end and punctuation like hyphens, brackets, dashes and periods.</p>
 						<h2 id="multiple-text-inputs-for-canadian-civic-addresses">Multiple text inputs for Canadian civic addresses</h2>
 						
 						<h3 id="when-to-use-multiple-text-inputs">When to use multiple text inputs</h3>
@@ -133,6 +129,7 @@ $(function(){
 							<li>you can give help for individual text inputs</li>
 							<li>you can validate each part of the address separately</li>
 							<li>users can complete the form using their browser’s autocomplete function</li>
+							<li>let people enter their postal codes in upper or lower case and with or without spaces</li>
 						</ul>
 
 						<section class="row">
@@ -177,7 +174,7 @@ $(function(){
 										  Province / Territory
 										</label>
 										<div class="select fw-15">
-											<input type="list" list="typeahead1List" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+											<input type="list" list="typeahead1List" id="address-town" name="address-town" type="text" autocomplete="address-level1">
 												<datalist id="typeahead1List">
 												  <option>Alberta - AB</option>
 												  <option>British Columbia - BC</option>
@@ -261,7 +258,7 @@ $(function(){
 												  Province / Territory
 												</label>
 												<div class="select fw-15">
-													<input type="list" list="typeahead1List" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+													<input type="list" list="typeahead1List" id="address-town" name="address-town" type="text" autocomplete="address-level1">
 														<datalist id="typeahead1List">
 														  <option>Alberta - AB</option>
 														  <option>British Columbia - BC</option>
@@ -321,6 +318,10 @@ $(function(){
 						<p>Use the <code>autocomplete</code> attribute on each individual address field to help users enter their address more quickly. This lets you specify each input’s purpose so browsers can autofill the information on a user’s behalf if they’ve entered it previously.</p>
 						<p><a href="https://www.w3.org/TR/WCAG21/#input-purposes">Check which input purpose to use</a> for each field.</p>
 						<p>In production, you’ll need to do this to meet <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html">WCAG 2.1 Level AA</a>. You will not normally need to use the <code>autocomplete</code> attribute in prototypes, as users will not generally be using their own devices.</p>
+						
+						<h4 id="allow-different-postal-code-formats">Allow different postal code formats</h4>
+						<p>It is easier for users if you accept and ignore unwanted characters. This is better than rejecting the input and telling a user they’ve not provided a valid postal code.</p>
+						<p>You should allow postal codes that contain upper and lower case letters, no spaces, additional spaces at the beginning, middle or end and punctuation like hyphens, brackets, dashes and periods.</p>
 						
 						<h3 id="error-messages">Error messages</h3>
 						<p>Error messages should be styled like this:</p>
