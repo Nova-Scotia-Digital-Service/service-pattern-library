@@ -1,0 +1,49 @@
+.ns-details-accordion {
+  padding: .1em 0;
+}
+
+.ns-details-accordion .accordion__heading {
+    margin-top: 27px; 
+}
+
+.ns-details-accordion .accordion__panel {
+    margin: 0 0 27px 3px; 
+    clear: both;
+    border-left: 6px solid #777;
+}
+
+.ns-details-accordion .accordion__panel h2,
+.ns-details-accordion .accordion__panel h3,
+.ns-details-accordion .accordion__panel h4,
+.ns-details-accordion .accordion__panel h5,
+.ns-details-accordion .accordion__panel h6,
+.ns-details-accordion .accordion__panel .h2,
+.ns-details-accordion .accordion__panel .h3,
+.ns-details-accordion .accordion__panel .h4,
+.ns-details-accordion .accordion__panel .h5,
+.ns-details-accordion .accordion__panel .h6 {
+    margin-top: 0; 
+}
+
+.ns-details-accordion .accordion__panel[aria-hidden="false"] {
+    padding: 15px;
+}
+	
+.ns-details-accordion .accordion__heading button {
+    background: transparent;
+    font-size: 17.5px;
+    text-decoration: none; 
+}
+
+.ns-details-accordion .accordion__heading button[aria-expanded="false"]:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: '\f0d7';
+	margin-right: .5rem;
+    font-size: 1.5rem;
+}
+.ns-details-accordion .accordion__heading button[aria-expanded="true"]:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: '\f0d8'; 
+	margin-right: .5rem;
+    font-size: 1.5rem;
+}
