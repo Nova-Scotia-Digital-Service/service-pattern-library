@@ -4,6 +4,7 @@
 .exampleDisplay{
 	border: 1px solid #a4a4a4;
     padding: 2rem;
+	margin-bottom:2rem;
 }
 .displayButton{
     text-align: left;

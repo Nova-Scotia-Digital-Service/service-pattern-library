@@ -56,10 +56,66 @@ input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
 /* -------------------------------------------- End fixed widths ----------------------------------------------------- */
 
 /* -------------------------------------------- start fieldset ----------------------------------------------------- */
+
+.ns-fieldset {
+    margin-bottom: 20px;
+}
+.ns-fieldset:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+@media (min-width: 40.0625em) {
+    .ns-fieldset {
+        margin-bottom: 30px;
+    }
+}
+.ns-fieldset .ns-fieldset:last-of-type {
+    margin-bottom: 0;
+}
 .ns-fieldset__heading {
     margin: 0;
 }
 /* -------------------------------------------- end fieldset ----------------------------------------------------- */
+
+/* -------------------------------------------- start form group ----------------------------------------------------- */
+
+.ns-form-group {
+    margin-bottom: 20px;
+}
+.ns-form-group:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+@media (min-width: 40.0625em) {
+    .ns-form-group {
+        margin-bottom: 30px;
+    }
+}
+.ns-form-group .ns-form-group:last-of-type {
+    margin-bottom: 0;
+}
+.ns-form-group--error {
+    padding-left: 15px;
+    border-left: 5px solid #d4351c;
+}
+.ns-form-group--error .ns-form-group {
+    padding: 0;
+    border: 0;
+}
+
+.ns-form-group-message-error {
+    padding-left: 15px;
+    border-left: 5px solid #a94442;
+}
+
+.ns-form-group-message-warning {
+    padding-left: 15px;
+    border-left: 5px solid #8a6d3b;
+}
+
+/* -------------------------------------------- end form group ----------------------------------------------------- */
 
 /* -------------------------------------------- start legend ----------------------------------------------------- */
 legend{
@@ -132,7 +188,7 @@ label.ns-label{
 
 
 
-/* -------------------------------------------- start form group error ----------------------------------------------------- */
+/* -------------------------------------------- start fieldset error ----------------------------------------------------- */
 
 .ns-fieldset-message-error {
     padding-left: 15px;
@@ -178,4 +234,4 @@ input[type="text"].ns-input--error, input[type="email"].ns-input--error, input[t
 	text-decoration: underline;
 	color: #a94442;
 }
-/* -------------------------------------------- end form group error ----------------------------------------------------- */
+/* -------------------------------------------- end fieldset error ----------------------------------------------------- */
