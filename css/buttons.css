@@ -1,4 +1,4 @@
-button:focus {
+button:focus, .ns-link-button:focus{
 	-webkit-box-shadow:0 0 0 4px #f8d44c;
 	-moz-box-shadow:0 0 0 4px #f8d44c;
 	-o-box-shadow:0 0 0 4px #f8d44c;
@@ -16,6 +16,11 @@ button:focus {
 }
 .btn-default {
 	transition: 0.2s ease;
+	border: 0;
+    display: inline-block;
+}
+.ns-link-button{
+	text-decoration-line: none;
 }
 .ns-btn-2nd {
     color: #0058a4;

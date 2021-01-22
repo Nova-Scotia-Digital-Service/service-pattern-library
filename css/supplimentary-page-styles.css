@@ -117,6 +117,10 @@ p{
     text-overflow: ellipsis;
 }
 
+a {
+    text-decoration: underline;
+}
+
 /* --------------------------------------------end suplimentary typography  ----------------------------------------------------- */
 
 
