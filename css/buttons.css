@@ -4,7 +4,6 @@ button:focus, .ns-link-button:focus{
 	-o-box-shadow:0 0 0 4px #f8d44c;
 	box-shadow:0 0 0 4px #f8d44c;
 	transition: box-shadow 0.2s ease;
-    border-radius: 4;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
