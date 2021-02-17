@@ -108,8 +108,8 @@ $(function(){
 								<h2>Basic input form group</h2>
 								<p>All text inputs must have visible labels; placeholder text is not an acceptable replacement for a label as it vanishes when users start typing.</p>
 								<p>Labels should be aligned above the text input they refer to. They should be short, direct and written in sentence case. Do not use colons at the end of labels.</p>
-								<div class="ns-fieldset exampleDisplay">
-									<div class="ns-fieldset">
+								<div class="exampleDisplay">
+									<div class="ns-form-group">
 										<label class="ns-label" for="event-name">
 										  What is the name of the event?
 										</label>
@@ -122,8 +122,8 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Input form with Header as a Label</h2>
 								<p>If you’re asking just one question per page as recommended, you can set the contents of the label as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.</p>
-								<div class="ns-fieldset exampleDisplay">
-									<div class="ns-fieldset">
+								<div class="exampleDisplay">
+									<div class="ns-form-group">
 									  <h3 class="ns-label-wrapper">
 										<label class="ns-label" for="event-name2">
 										  What is the name of the event?
@@ -144,73 +144,73 @@ $(function(){
 								<p>Use fixed width inputs for content that has a specific, known length. Postcode inputs should be postcode-sized, telephone number inputs should be telephone number-sized.</p>
 								<p>On fixed width inputs, the width will remain fixed on all screens unless it is wider than the viewport, in which case it will shrink to fit.</p>
 								<div class="ns-fieldset exampleDisplay">
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-50">
 											50 em (about 65 characters)
 										  </label>
 										  <input class="ns-input fw-50" id="width-50" name="width-50" type="text">
 									</div>
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-40">
 											40 em (about 55 characters)
 										  </label>
 										  <input class="ns-input fw-40" id="width-40" name="width-40" type="text">
 									</div>
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-35">
 											35 em (about 45 characters)
 										  </label>
 										  <input class="ns-input fw-35" id="width-35" name="width-35" type="text">
 									</div>
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-30">
 											30 em (about 40 characters)
 										  </label>
 										  <input class="ns-input fw-30" id="width-30" name="width-30" type="text">
 									</div>
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-25">
 											25 em (about 30 characters)
 										  </label>
 										  <input class="ns-input fw-25" id="width-25" name="width-25" type="text">
 									</div>
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-20">
 											20 em (about 25 characters)
 										  </label>
 										  <input class="ns-input fw-20" id="width-20" name="width-20" type="text">
 									</div>
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-15">
 											15 em (about 20 characters)
 										  </label>
 										  <input class="ns-input fw-15" id="width-15" name="width-15" type="text">
 									</div>
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-10">
 											10 em (about 15 characters)
 										  </label>
 										  <input class="ns-input fw-10" id="width-10" name="width-10" type="text">
 									</div>
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-8">
 											8 em (about 10 characters)
 										  </label>
 										  <input class="ns-input fw-8" id="width-8" name="width-8" type="text">
 									</div>
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-6">
 											6 em (about 7 characters)
 										  </label>
 										  <input class="ns-input fw-6" id="width-6" name="width-6" type="text">
 									</div>
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-4">
 											4 em (about 4 characters)
 										  </label>
 										  <input class="ns-input fw-4" id="width4" name="width-4" type="text">
 									</div>
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										  <label class="ns-label" for="width-2">
 											2 em (about 2 characters)
 										  </label>
@@ -223,8 +223,8 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Input form group with hint text</h2>
 								<p>Use hint for help that’s relevant to the majority of users, like how their information will be used, or where to find it.</p>
-								<div class="ns-fieldset exampleDisplay">
-									<div class="ns-fieldset">
+								<div class="exampleDisplay">
+									<div class="ns-form-group">
 									  <h3 class="ns-label-wrapper"><label class="ns-label" for="event-name">
 										  What is the name of the event?
 										</label>
@@ -244,8 +244,8 @@ $(function(){
 								<p>Prefixes and suffixes are useful when there’s a commonly understood symbol or abbreviation for the type of information you’re asking for. Do not rely on prefixes or suffixes alone, because people who use a screen reader won’t see them.</p>
 								<p>If you need a specific type of information, say so in the input label or hint text as well. For example, put “Cost, in dollars” in the input label and use the “$” symbol in the prefix.</p>
 								<p>Some users may miss the fact that the input already has a suffix or prefix, and enter a prefix or suffix into the input. Allow for this in your validation and do not show an error.</p>
-								<div class="ns-fieldset exampleDisplay">
-									<div class="ns-fieldset">
+								<div class="exampleDisplay">
+									<div class="ns-form-group">
 									  <h3 class="ns-label-wrapper">
 										<label class="ns-label" for="cost-per-item">
 										  What is the cost per item, in dollars?
@@ -265,7 +265,7 @@ $(function(){
 								<h2 id="error-messages">Error messages</h2>
 								<p>Error messages should be styled like this:</p>
 								<div class="exampleDisplay">
-									<div class="ns-fieldset ns-fieldset-message-error">
+									<div class="ns-form-group ns-form-group-message-error">
 									  <h3 class="ns-label-wrapper">
 										<label class="ns-label" for="event-name">
 										  What is the name of the event?
@@ -287,7 +287,7 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h3>Prefixes and suffixes with error</h3>
 								<div class="exampleDisplay">
-									<div class="ns-fieldset ns-fieldset-message-error">
+									<div class="ns-form-group ns-form-group-message-error">
 									  <h3 class="ns-label-wrapper">
 										<label class="ns-label" for="cost-per-item">
 										  What is the cost per item, in dolars?

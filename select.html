@@ -106,8 +106,8 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Select with header as a Label</h2>
 								<p>If you’re asking just one question per page as recommended, you can set the contents of the label as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.</p>
-								<div class="ns-fieldset exampleDisplay">
-									<div class="ns-fieldset">
+								<div class="exampleDisplay">
+									<div class="ns-field-group">
 									  <h3 class="ns-label-wrapper">
 										<label class="ns-label" for="select1">
 										  What would you like to select?
@@ -129,13 +129,11 @@ $(function(){
 								<h2>Typeahead searchable dropdown</h2>
 								<p>As a general practice searchable dropdowns are used when there are a lot of dropdown options or the options are categorized.</p>
 								<p>Another thing to consider is the context of the user, typeahead in dropdown menus are good if the user knows what he is searching for. It makes it easier to search and select the Option required.</p>
-								<div class="ns-fieldset exampleDisplay">
-									<div class="ns-fieldset">
-
+								<div class="exampleDisplay">
+									<div class="ns-field-group">
 										<label class="ns-label" for="typeahead1">
 										  Type something to narrow down options
 										</label>
-
 										<div class="select fw-20">
 											<input type="list" id="typeahead1" list="typeahead1List" name="typeahead1">
 												<datalist id="typeahead1List">
@@ -151,8 +149,8 @@ $(function(){
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2 id="error-messages">Typeahead searchable dropdown with errors</h2>
-								<div class="ns-fieldset exampleDisplay">
-									<div class="ns-fieldset  ns-fieldset-message-error">
+								<div class="exampleDisplay">
+									<div class="ns-form-group ns-form-group-message-error">
 										<h3 class="ns-label-wrapper">
 											<label class="ns-label" for="typeahead2">
 											  What would you like to select?

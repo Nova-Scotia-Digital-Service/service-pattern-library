@@ -113,8 +113,8 @@ $(function(){
 								<p>Never automatically tab users between the fields of the date input because this can be confusing and may clash with normal keyboard controls.</p>
 								<h2>Example date fields with legend as a title</h2>
 								<div class="exampleDisplay">
-									<div class="ns-fieldset">
-										<fieldset class="form-group" aria-describedby="fieldset-hint">
+									<div class="ns-form-group">
+										<fieldset class="ns-form-group" aria-describedby="fieldset-hint">
 											<legend class="ns-fieldset__legend noBorder">
 											  <h3 class="ns-fieldset__heading h3">
 												When was your passport issued?
@@ -139,7 +139,7 @@ $(function(){
 								<h2>Example date fields with legend as a label</h2>
 								<p>Sometime when a date fields are part of a larger form you may want to make the legend blend in with the surounding form. In this case you can apply a <code>.label</code> class to the legend.
 								<div class="exampleDisplay">
-									<div class="ns-fieldset">
+									<div class="ns-form-group">
 										<fieldset aria-describedby="fieldset-hint2">
 											<legend class="ns-fieldset__legend noBorder label">
 												Date recieved
@@ -163,7 +163,7 @@ $(function(){
 								<h2 id="use-the-autocomplete-attribute-for-a-date-of-birth">Use the autocomplete attribute for a date of birth</h2>
 								<p>Use the <code>autocomplete</code> attribute on the date input component when you’re asking for a date of birth. This lets browsers autofill the information on a user’s behalf if they’ve entered it previously.</p>
 								<p>To do this, set the <code>autocomplete</code> attribute on the 3 fields to <code>bday-day</code>, <code>bday-month</code> and <code>bday-year</code>. See how to do this in the HTML in the following example. Read more about useful <code>autocomplete</code> attributes at <a href="https://www.w3.org/TR/WCAG21/#input-purposes"><abbr  title="Web Content Accessibility Guidelines">WCAG 2.1</abbr></a></p>								
-								<div class="ns-fieldset exampleDisplay">
+								<div class="exampleDisplay">
 
 								<pre><code><textarea rows="10" readonly="readonly">
 <div class="row">
@@ -180,7 +180,7 @@ $(function(){
 								<h2 id="error-messages">Error messages</h2>
 								<p>If you’re highlighting the whole date, style all the fields like this</p>
 							<div class="exampleDisplay">
-								<div class="ns-fieldset ns-fieldset-message-error">
+								<div class="ns-form-group ns-fieldset-message-error">
 									<fieldset aria-describedby="fieldset-hint2">
 										<legend class="ns-fieldset__legend noBorder">
 										  <h3 class="ns-fieldset__heading h3">
@@ -203,7 +203,7 @@ $(function(){
 									</fieldset>
 								</div>
 								<p>If you’re highlighting just one field - either the day, month or year - only style the field that has an error. The error message must say which field has an error, like this:</p>
-								<div class="ns-fieldset ns-fieldset-message-error">
+								<div class="ns-form-group ns-fieldset-message-error">
 									<fieldset aria-describedby="fieldset-hint3">
 										<legend class="ns-fieldset__legend noBorder">
 										  <h3 class="ns-fieldset__heading h3">
@@ -225,7 +225,53 @@ $(function(){
 										</div>
 									</fieldset>
 								</div>
+								
 							</div><!-- / example col -->
+							<p>Make sure errors follow the guidance in <a href="error-message.html">error message</a> and have specific error messages for specific error states.</p>
+							<p>If there’s more than one error, show the highest priority error message. In order of priority, show error messages about:</p>
+							<ul>
+							<li>missing or incomplete information</li>
+							<li>information that can’t be correct (for example, the number ‘13’ in the month field)</li>
+							<li>information that fails validation for another reason</li>
+							</ul>
+							<h4 id="if-nothing-is-entered">If nothing is entered</h4>
+							<p>Highlight the date input as a whole.<br></p>
+							<p>Say ‘Enter [whatever it is]’. For example, ‘Enter your date of birth’.</p>
+							<h4 id="if-the-date-is-incomplete">If the date is incomplete</h4>
+							<p>Highlight the day, month or year field where the information is missing. If more than one field is missing information, highlight the date input as a whole.<br></p>
+							<p>Say ‘[whatever it is] must include a [whatever is missing]’. For example, ‘Date of birth must include a month’ or ‘Date of birth must include a day and month’.</p>
+							<h4 id="if-the-date-entered-can-t-be-correct">If the date entered can’t be correct</h4>
+							<p>For example, ‘13’ in the month field can’t be correct.<br></p>
+							<p>Highlight the day, month or year field with the incorrect information. Or highlight the date as a whole if there’s incorrect information in more than one field, or it’s not clear which field is incorrect.<br></p>
+							<p>Say ‘[Whatever it is] must be a real date’. For example, ‘Date of birth must be a real date’.</p>
+							<h4 id="if-the-date-is-in-the-future-when-it-needs-to-be-in-the-past">If the date is in the future when it needs to be in the past</h4>
+							<p>Highlight the date input as a whole.<br></p>
+							<p>Say ‘[whatever it is] must be in the past’. For example, ‘Date of birth must be in the past’.</p>
+							<h4 id="if-the-date-is-in-the-future-when-it-needs-to-be-today-or-in-the-past">If the date is in the future when it needs to be today or in the past</h4>
+							<p>Highlight the date input as a whole.<br></p>
+							<p>Say ‘[whatever it is] must be today or in the past’. For example, ‘Date of birth must be today or in the past’.</p>
+							<h4 id="if-the-date-is-in-the-past-when-it-needs-to-be-in-the-future">If the date is in the past when it needs to be in the future</h4>
+							<p>Highlight the date input as a whole.<br></p>
+							<p>Say ‘[whatever it is] must be in the future’. For example, ‘The date your course ends must be in the future’.</p>
+							<h4 id="if-the-date-is-in-the-past-when-it-needs-to-be-today-or-in-the-future">If the date is in the past when it needs to be today or in the future</h4>
+							<p>Highlight the date input as a whole.<br></p>
+							<p>Say ‘[whatever it is] must be today or in the future’. For example, ‘The date your course ends must be today or in the future’.</p>
+							<h4 id="if-the-date-must-be-the-same-as-or-after-another-date">If the date must be the same as or after another date</h4>
+							<p>Highlight the date input as a whole.<br></p>
+							<p>Say ‘[whatever it is] must be the same as or after [date and optional description]’. For example, ‘The date your course ends must be the same as or after 1 September 2017 when you started the course’.</p>
+							<h4 id="if-the-date-must-be-after-another-date">If the date must be after another date</h4>
+							<p>Highlight the date input as a whole.<br></p>
+							<p>Say ‘[whatever it is] must be after [date and optional description]’. For example, ‘The day your course ends must be after 1 September 2017’.</p>
+							<h4 id="if-the-date-must-be-the-same-as-or-before-another-date">If the date must be the same as or before another date</h4>
+							<p>Highlight the date input as a whole.<br></p>
+							<p>Say ‘[whatever it is] must be  the same as or before [date and optional description]’. For example, ‘The date of Gordon’s last exam must be the same as or before 31 August 2017 when they left school’.</p>
+							<h4 id="if-the-date-must-be-before-another-date">If the date must be before another date</h4>
+							<p>Highlight the date input as a whole.<br></p>
+							<p>Say ‘[whatever it is] must be before [date and optional description]’. For example, ‘The date of Gordon’s last exam must be the same as or before 31 August 2017’.</p>
+							<h4 id="if-the-date-must-be-between-two-dates">If the date must be between two dates</h4>
+							<p>Highlight the date input as a whole.<br></p>
+							<p>Say ‘[whatever it is] must be between [date] and [date and optional description]’. For example, ‘The date your contract started must be between 1 September 2017 and 30 September  2017 when you were self-employed’.</p>
+							</div>
 						</section><!--/row-->
 
 

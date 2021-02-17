@@ -139,9 +139,16 @@
 }
 
 .Calendar-item.Calendar-item--unavailable:focus {
-  outline: dotted;
-  outline-offset: -4px;
-  outline-offset: -4px;
+	box-shadow: 0 0 0 4px #f8d44c;
+    transition: box-shadow .2s ease;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-decoration: none;
+    outline-offset: -4px;
+    z-index: 1;
+    outline: 0;
 }
 
 .Calendar-item:not(.Calendar-item--unavailable):hover {

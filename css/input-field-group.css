@@ -1,21 +1,3 @@
-.ns-fieldset {
-    margin-bottom: 20px;
-}
-.ns-fieldset:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-@media (min-width: 40.0625em) {
-    .ns-fieldset {
-        margin-bottom: 30px;
-    }
-}
-.ns-fieldset .ns-fieldset:last-of-type {
-    margin-bottom: 0;
-}
-
-
 /* -------------------------------------------- start general input styles ----------------------------------------------------- */
 
 input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea, input[list], select {
