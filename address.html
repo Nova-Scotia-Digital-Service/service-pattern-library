@@ -154,7 +154,7 @@ $(function(){
 
 									  <div class="ns-form-group">
 										<label class="ns-label" for="address-line-2">
-										  Apartment / Unit (optional)
+										  Apartment / Unit
 										</label>
 										<div id="email-hint" class="ns-hint">
 										For example, 'Apt 100' or 'Unit 5'
@@ -217,18 +217,18 @@ $(function(){
 										</legend>
 										<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
 										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+											<input class="ns-radios__input" id="contact" name="contact" type="radio" value="ns-radios__conditional--hidden" data-aria-controls="conditional-contact">
 											<label class="ns-label ns-radios__label" for="contact">
 											  <span class="ns-label-span">Same as home address</span>
 											</label>
 										  </div>
 										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2"  checked="checked">
+											<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="ns-radios__conditional" data-aria-controls="conditional-contact-2"  checked="checked">
 											<label class="ns-label ns-radios__label" for="contact-2">
 											  <span class="ns-label-span">Different than home address</span>
 											</label>
 										  </div>
-										  <div class="ns-radios__conditional" id="conditional-contact">
+										  <div id="conditional-content" class="ns-radios__conditional" id="conditional-contact">
 											  <div class="ns-form-group">
 												<label class="ns-label" for="address-line-1-2">
 												  Street address / PO box
@@ -238,7 +238,7 @@ $(function(){
 
 											  <div class="ns-form-group">
 												<label class="ns-label" for="address-line-2">
-												  Apartment / Unit (optional)
+												  Apartment / Unit
 												</label>
 												<div id="email-hint" class="ns-hint">
 												For example, 'Apt 100' or 'Unit 5'
@@ -285,6 +285,16 @@ $(function(){
 											  </div>
 										  </div>
 										</div>
+										
+										  <script>
+										  $(document).ready(function () {
+												$('input:radio').click(function () {
+													
+														$('#conditional-content').attr('class',this.value);
+
+												});
+
+											});</script>
 
 									  </fieldset>
 								</div>
