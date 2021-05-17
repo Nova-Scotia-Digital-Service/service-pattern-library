@@ -1,0 +1,80 @@
+/* --------------------------------------------start not needed for service ----------------------------------------------------- */
+
+.exampleDisplay{
+	border: 1px solid #a4a4a4;
+    padding: 2rem;
+	margin-bottom:2rem;
+}
+.displayButton{
+    text-align: left;
+    background: #fff;
+    width: 100%;
+	transition: 0.2s ease;
+}
+.displayButton:hover{
+    background: #e9ecef;
+}
+
+@media (max-width: 991.98px){
+	.navbar .ns-nav-container{
+		justify-content: start;
+	}
+}
+
+.navbar{
+	padding: 0;
+    border-bottom: solid 1px #0058a4;
+}
+
+.ns-navbar-light .navbar-nav .nav-link:focus, .ns-navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    background: #0058a4;
+}
+
+.ns-navbar-light .navbar-nav .active>.nav-link, .ns-navbar-light .navbar-nav .nav-link.active, .ns-navbar-light .navbar-nav .nav-link.show, .ns-navbar-light .navbar-nav .show>.nav-link {
+    color: #f8d44c;
+    background: #0058a4;
+    border-color: #004a8b;
+    position: relative;
+	z-index: 1001;
+}
+.ns-navbar-light .navbar-nav .nav-link:focus, .ns-navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    background: #0058a4;
+}
+.ns-navbar-light .navbar-nav .nav-link {
+    color: #0058a4;
+	padding-right: 12px;
+    padding-left: 12px;
+}
+
+.ns-navbar-light .dropdown-menu {
+    border-radius: 0;
+    margin: 0;
+	border: solid 1px #e6e7e6;
+	color: #0058a4;
+	background: #f3f3f3;
+	margin-top: 1px;
+}
+.ns-navbar-light .dropdown-item:focus, .ns-navbar-light .dropdown-item:hover {
+    color: #fff;
+    background: #003262;
+}
+.navbar-toggler{
+	font-size: 2rem;
+    position: relative;
+	z-index: 1002;
+}
+.ns-navbar-light .ns-toggle-icon:before {
+    color:#0058a4;
+}
+
+li code, td code, p code {
+	font-family: monospace, monospace;
+    font-size: 1em;
+    padding: 0 5px;
+    color: #d13118;
+    background-color: #f3f2f1;
+}
+
+/* --------------------------------------------start not needed for service ----------------------------------------------------- */
