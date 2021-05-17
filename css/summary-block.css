@@ -1,24 +1,23 @@
 .ns-sidebar .ns-summary__box{
 	margin-top: 2rem;
 }
-
 .ns-summary__box{
-	background: #f1f1f0;
+    background: #f1f1f0;
     border: 10px solid #e3e3e3;
     padding: 1rem;
 }
-
+.ns-summary__box table:last-of-type{
+    margin-bottom:0;
+}
+.ns-summary__box .ns-summary__heading {
+    margin-top: 0;
+}
 @media only screen and (max-width: 576px)  {
   .ns-summary__box{
     border: 5px solid #e3e3e3;
 	padding: .5rem;
   }
 }
-
-.ns-summary__box dl:last-of-type{
-	margin-bottom:0;
-}
-
 .ns-summary__box .ns-summary__heading {
 	margin-top:0;
 }
