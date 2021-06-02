@@ -1,38 +1,14 @@
 .ns-summary-list {
-    font-family: "GDS Transport", arial, sans-serif;
+    font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.25;
-    color: #0b0c0c;
     margin: 0;
     margin-bottom: 20px;
 }
-@media print {
-    .ns-summary-list {
-        font-family: sans-serif;
-    }
-}
-@media (min-width: 40.0625em) {
-    .ns-summary-list {
-        font-size: 19px;
-        font-size: 1.1875rem;
-        line-height: 1.31579;
-    }
-}
-@media print {
-    .ns-summary-list {
-        font-size: 14pt;
-        line-height: 1.15;
-    }
-}
-@media print {
-    .ns-summary-list {
-        color: #000;
-    }
-}
+
 @media (min-width: 40.0625em) {
     .ns-summary-list {
         display: table;
@@ -48,7 +24,7 @@
 @media (max-width: 40.0525em) {
     .ns-summary-list__row {
         margin-bottom: 15px;
-        border-bottom: 1px solid #b1b4b6;
+        border-bottom: 1px solid #ddd;
     }
 }
 @media (min-width: 40.0625em) {
@@ -69,7 +45,7 @@
         padding-top: 10px;
         padding-right: 20px;
         padding-bottom: 10px;
-        border-bottom: 1px solid #b1b4b6;
+        border-bottom: 1px solid #ddd;
     }
 }
 .ns-summary-list__actions {
