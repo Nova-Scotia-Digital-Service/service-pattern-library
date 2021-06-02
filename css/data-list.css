@@ -8,7 +8,6 @@
     margin: 0;
     margin-bottom: 20px;
 }
-
 @media (min-width: 40.0625em) {
     .ns-summary-list {
         display: table;
