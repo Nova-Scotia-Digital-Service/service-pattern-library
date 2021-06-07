@@ -1,0 +1,138 @@
+.ns-summary-list {
+    font-family: "open_sansregular",Helvetica,Arial,Tahoma,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    margin: 0;
+    margin-bottom: 20px;
+}
+@media (min-width: 40.0625em) {
+    .ns-summary-list {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+}
+@media (min-width: 40.0625em) {
+    .ns-summary-list {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 40.0525em) {
+    .ns-summary-list__row {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+}
+@media (min-width: 40.0625em) {
+    .ns-summary-list__row {
+        display: table-row;
+    }
+}
+.ns-summary-list__key,
+.ns-summary-list__value,
+.ns-summary-list__actions {
+    margin: 0;
+}
+@media (min-width: 40.0625em) {
+    .ns-summary-list__key,
+    .ns-summary-list__value,
+    .ns-summary-list__actions {
+        display: table-cell;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+}
+.ns-summary-list__actions {
+    margin-bottom: 15px;
+}
+@media (min-width: 40.0625em) {
+    .ns-summary-list__actions {
+        width: 20%;
+        padding-right: 0;
+        text-align: right;
+    }
+}
+.ns-summary-list__key,
+.ns-summary-list__value {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.ns-summary-list__key {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+@media (min-width: 40.0625em) {
+    .ns-summary-list__key {
+        width: 30%;
+    }
+}
+@media (max-width: 40.0525em) {
+    .ns-summary-list__value {
+        margin-bottom: 15px;
+    }
+}
+@media (min-width: 40.0625em) {
+    .ns-summary-list__value {
+        width: 50%;
+    }
+}
+@media (min-width: 40.0625em) {
+    .ns-summary-list__value:last-child {
+        width: 70%;
+    }
+}
+.ns-summary-list__value > p {
+    margin-bottom: 10px;
+}
+.ns-summary-list__value > :last-child {
+    margin-bottom: 0;
+}
+.ns-summary-list__actions-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.ns-summary-list__actions-list-item {
+    display: inline;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.ns-summary-list__actions-list-item:not(:last-child) {
+    border-right: 1px solid #b1b4b6;
+}
+.ns-summary-list__actions-list-item:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border: 0;
+}
+@media (max-width: 40.0525em) {
+    .ns-summary-list--no-border .ns-summary-list__row {
+        border: 0;
+    }
+}
+@media (min-width: 40.0625em) {
+    .ns-summary-list--no-border .ns-summary-list__key,
+    .ns-summary-list--no-border .ns-summary-list__value,
+    .ns-summary-list--no-border .ns-summary-list__actions {
+        padding-bottom: 11px;
+        border: 0;
+    }
+}
+@media (max-width: 40.0525em) {
+    .ns-summary-list__row--no-border {
+        border: 0;
+    }
+}
+@media (min-width: 40.0625em) {
+    .ns-summary-list__row--no-border .ns-summary-list__key,
+    .ns-summary-list__row--no-border .ns-summary-list__value,
+    .ns-summary-list__row--no-border .ns-summary-list__actions {
+        padding-bottom: 11px;
+        border: 0;
+    }
+}
