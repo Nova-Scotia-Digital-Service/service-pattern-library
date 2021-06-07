@@ -39,6 +39,14 @@ a {
     text-decoration: underline;
 }
 
+abbr[title], abbr[data-original-title] {
+    text-decoration: none;
+    font-style: initial;
+}
+dfn {
+    font-style: initial;
+}
+
 /* --------------------------------------------end suplimentary typography  ----------------------------------------------------- */
 
 
