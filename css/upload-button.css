@@ -1,0 +1,28 @@
+/* ----------------- upload button ------------------*/
+.ns-upload {
+    /* to simulate a button, put your button style here */
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    border: 0;
+    display: inline-block;
+    font-size: 17.5px;
+    background-color: #0058a4;
+    color: #fff;
+    transition: 0.2s ease;
+    margin-bottom: 0 !important;
+    max-width: 30%;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.ns-upload-button {
+	width: 0px;
+	outline: none !important;
+    opacity: 0;
+    visibility: unset;
+    height: 0px;
+    display: none;
+    color: transparent !important;
+    margin-bottom: 0 !important;
+}
+/* ----------------- end of upload button ----------------------- */
