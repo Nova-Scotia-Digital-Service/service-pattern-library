@@ -9,17 +9,10 @@
     background-color: #0058a4;
     color: #fff;
     transition: 0.2s ease;
-    text-decoration: none;
-    padding: 5px 10px;
-    line-height: 1.3333333;
-    border-radius: 3px;
-    cursor: pointer;
-    text-decoration: none;
     margin-bottom: 0 !important;
-    font-weight: unset !important;
     max-width: 30%;
-    text-align: center;
-    text-rendering: auto;
+    cursor: pointer;
+    font-weight: 400;
 }
 
 .ns-upload-button {
