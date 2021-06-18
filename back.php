@@ -68,54 +68,101 @@ $(function(){
 <div class="container Site-content">
     <main id="main"><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
         <article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
-                <div class="row">
-                    <div class="col-sm-3 col-xs-12 order-last order-sm-first">
-                        <div id="nav-placeholder1">
-                        </div>
-                        <script>
-                        $(function(){
-                          $("#nav-placeholder1").load("nav-components.html");
-                        });
-                        </script>
-                    </div>
-                    <div class="col-sm-9 col-xs-12"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
-                        <h1>Back link</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
-                        <p>Use the back link component to help users go back to the previous page in a multi-page transaction.</p>
-                        <h2 id="when-to-use-this-component">When to use this component</h2>
-                        <p>Always include the back link component on <a href="basic-page.html">question pages</a>.</p>
-                        <p>You can include a back link on other pages within a multi-page transaction, if it makes sense to do so.</p>
-                        <h2 id="when-not-to-use-this-component">When not to use this component</h2>
-                        <p>Never use the back link component together with breadcrumbs. The back link is enough in most cases. If research shows breadcrumbs are more helpful in your service then use breadcrumbs without the back link.</p>
-                        <h2 id="how-it-works">How it works</h2>
-                        <p>Always place back links at the top left of a page, before the <code>&lt;main&gt;</code> element.</p>
-                        <p>Make sure the link takes users to the previous page they were on, in the state they last saw it. Where possible, ensure it works even when JavaScript is not available.</p>
-                        <p>If this is not possible, you should hide the back link when JavaScript is not available. </p>
+            <div class="row">
+                <div class="col-sm-3 col-xs-12 order-last order-sm-first">
+                    <div id="nav-placeholder1"></div>
+                   
+                    <script>
+                    $(function(){
+                      $("#nav-placeholder1").load("nav-components.html");
+                    });
+                    </script>
+                </div>
+                   
+                <div class="col-sm-9 col-xs-12"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
+                    <h1>Back link</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+                   
+                    <p>Use the back link component to help users go back to the previous page in a multi-page transaction.</p>
+                    
+                    <h2 id="when-to-use-this-component">When to use this component</h2>
+                    
+                    <p>Always include the back link component on <a href="basic-page.html">question pages</a>.</p>
+                    
+                    <p>You can include a back link on other pages within a multi-page transaction, if it makes sense to do so.</p>
+                    
+                    <h2 id="when-not-to-use-this-component">When not to use this component</h2>
+                    
+                    <p>Never use the back link component together with breadcrumbs. The back link is enough in most cases. If research shows breadcrumbs are more helpful in your service then use breadcrumbs without the back link.</p>
+                    
+                    <h2 id="how-it-works">How it works</h2>
+                    
+                    <p>Always place back links at the top left of a page, before the <code>&lt;main&gt;</code> element.</p>
+                    
+                    <p>Make sure the link takes users to the previous page they were on, in the state they last saw it. Where possible, ensure it works even when JavaScript is not available.</p>
+                    
+                    <p>If this is not possible, you should hide the back link when JavaScript is not available. </p>
+                        
                         <section class="row">
                             <div class="col-md-12 col-xs-12">
                                 <h2>Back link example</h2>
+                                
                                 <div class="exampleDisplay">
-                                      <?php
-                                                      $files = array();
-                                                      $handle=opendir('back');
-                                                          while (false !== ($file = readdir($handle))):
-                                          if(substr($file, -5) == '.html'):
-                                              $files[] = $file;
-                                          endif;
-                                      endwhile;
-                                      sort($files);
-                                          echo '<div class="pattern">';
-                                          echo '<div class="display">';
-                                          include('back/back.html');
-                                          echo '</div>';
-                                          echo '<div class="source">';
-                                          echo '<textarea rows="6" cols="15">';
-                                          echo htmlspecialchars(file_get_contents('back/back.html'));
-                                          echo '</textarea>';
-                                          echo '<p><a href="back/back.html"></a></p>';
-                                          echo '</div>';
-                                          echo '</div>';
-                                      ?>
-                                 </div>
+    <!-- Tab nav -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" href="#exampleBack" role="tab" data-toggle="tab">Example</a>
+        </li>
+                                        
+        <li class="nav-item">
+            <a class="nav-link" href="#htmlBack" role="tab" data-toggle="tab">HTML</a>
+        </li>
+    </ul>
+    
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active show" id="exampleBack">
+            <?php
+                $files = array();
+                $handle=opendir('back');
+            
+                while (false !== ($file = readdir($handle))):
+                    
+                    if(substr($file, -5) == '.html'):
+                        
+                        $files[] = $file;
+                    endif;
+                endwhile;
+                
+                sort($files);
+                    echo '<div class="pattern">';
+                        echo '<div class="display">';
+                            include('back/back.html');
+                        echo '</div>';
+                    echo '</div>';
+            ?>
+        </div>
+                                        
+        <div role="tabpanel" class="tab-pane fade" id="htmlBack">
+            <?php
+                $files = array();
+                $handle=opendir('back');
+                    
+                while (false !== ($file = readdir($handle))):
+                    
+                    if(substr($file, -5) == '.html'):
+                        
+                        $files[] = $file;
+                    endif;
+                endwhile;
+                
+                sort($files);
+                    echo '<textarea rows="6" cols="15">';
+                    echo htmlspecialchars(file_get_contents('back/back.html'));
+            ?>
+        </div> <!-- end of tab panel -->
+    <!-- </div> -->  <!-- end of tab content -->
+<!-- </div> --> <!--  end of example display -->
+                                
+                                 
                             </div><!-- / example col -->
                         </section><!--/row-->
 
