@@ -9,7 +9,7 @@
             <a class="nav-link" href="#htmlBack" role="tab" data-toggle="tab">HTML</a>
         </li>
     </ul>
-    
+
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active show" id="exampleBack">
             <?php
@@ -49,7 +49,8 @@
                 sort($files);
                     echo '<textarea rows="6" cols="15">';
                     echo htmlspecialchars(file_get_contents('back/back.html'));
+                    echo '</textarea';
             ?>
         </div> <!-- end of tab panel -->
     </div>  <!-- end of tab content -->
-</div> <!--  end of example display -->
+</div> <!-- end of example display -->
