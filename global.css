@@ -1,0 +1,45 @@
+.pattern-container {margin: 30px; text-align: left;}
+
+#patternlab-header {background: #3fbced url(img/patternlab-bg-header.svg) top left no-repeat; background-size: 2713px 339px; min-height: 100px; width: 100%; margin: 0; padding: 0;}
+#patternlab-header .main-link {float: right; color: #000; margin: 2em; font-size: 1.25em}
+#patternlab-header .main-link a {color: #000; text-decoration: none; border: 1px solid #2750a0; background: #3fbced; padding: .5em; border-radius: 6px;}
+#patternlab-header .main-link a:hover {color: #fff; background: #2750a0;}
+
+.pattern {
+    clear: both;
+    overflow: visible;
+    display: block;
+    padding-top: 1em;
+
+}
+.pattern .display {
+    width: 65%;
+    float: left;
+}
+.pattern .source {
+    width: 30%;
+    float: right;
+}
+.pattern .source textarea {
+    width: 90%;
+}
+
+.ui-categories li {}
+
+
+h1.pl-title {font-family: 'PT Serif', Georgia, serif; font-weight: normal; margin-bottom: 1.5em;}
+
+h2.section {background: #333; color: #fff; padding: 20px; clear: both; display: block; margin: 2em auto; text-transform: uppercase;}
+
+/* @group Typography */
+
+html {
+  background-color: #fff;
+}
+
+
+footer.footer {background: #0058a4 url(img/bg-footer.svg)}
+
+button.search-box-button {background-image: url(img/sprite-icons.svg);}
+
+.pattern-separator {clear:both; margin: 1.5em auto; border-bottom: 15px solid #ccc;}
