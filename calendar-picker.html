@@ -4,16 +4,16 @@
 	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
-	
-	<title>Date picker - Forms & Services Building Blocks - Government of Nova Scotia</title>
-  
+
+	<title>Calendar picker - Forms & Services Building Blocks - Government of Nova Scotia</title>
+
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Include in all head tags -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><!-- Include in all head tags -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><!-- Include in all head tags -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script><!-- Include in all head tags -->
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script><!-- Not needed for service design, loads the navigation for this site -->	
-	<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css"><!-- Include in all head tags -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script><!-- Not needed for service design, loads the navigation for this site -->
+	<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"><!-- Include in all head tags -->
 	<link rel="stylesheet" media="all" href="css/saltire.css"><!-- Include in all head tags -->
-	<link rel="stylesheet" media="all" href="css/service-specific-styles.css"><!-- Not needed for services--> 
+	<link rel="stylesheet" media="all" href="css/service-specific-styles.css"><!-- Not needed for services-->
 	<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css"><!-- Include in all head tags -->
 	<link rel="stylesheet" media="all" href="css/global-form-styles.css"><!-- Include only if forms are used-->
 	<link rel="stylesheet" media="all" href="css/radio-button.css"><!-- Include only if radios are used-->
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 		</div>
-	</nav>	
+	</nav>
 <!-- END SALTIRE NS MOTHERSHIP RIBBON w FR -->
 </header>
 
@@ -101,10 +101,17 @@ $(function(){
 						</script>
 					</div>
 					<div class="col-sm-9 col-xs-12">
-						<h1>Date picker</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<h1>Calendar picker</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<h2>When to use this component</h2>
+						<p>Use a calendar picker when the user needs to know a date’s relation to other days such as the day of the week it falls on or its proximity to today. They are optimal for scheduling tasks.</p>
+						<h2>When not to use this component</h2>
+						<p>Do not use the calendar picker component when you’re asking users for a date they’ll already know, or can look up without using a calendar. Such as a birthday or a licence expiry. <a href="date-fields.html">Use the date fields pattern instead</a>.</p>
+						<h2>How it works</h2>
+						<p>Calendar pickers default to showing today’s date and only one month is shown at a time. Calendar pickers allow users to navigate through months and years, however they work best when used for recent or near future dates. If a user needs to input a far distant or future date consider having the calendar default open to a more convenient day.</p>
+
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<h2>Date picker example</h2>
+								<h2>Calendar picker example</h2>
 								<div class="exampleDisplay">
 									<section class="Calendar" aria-label="Calendar">
 										<section aria-label="Calendar Navigation" class="Calendar-nav">
@@ -173,24 +180,24 @@ $(function(){
 								</div>
 							</div><!-- / example col -->
 						</section><!--/row -->
-						
-						
-																
-						<!-- French date picker example -->
+
+
+
+						<!-- French calendar picker example -->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<h2>Date picker example (<span lang="fr">en français</span>)</h2>
+								<h2>Calendar picker example (<span lang="fr">en français</span>)</h2>
 								<div class="exampleDisplay">
 
-									
+
 
 
 									<section class="Calendar" aria-label="Calendrier"><!-- Update the aria-label from "Calendar" to "Calendrier" -->
 										<section aria-label="Navigation du calendrier" class="Calendar-nav"><!-- Update the aria-label from "Calendar Navaigation" to "Navigation du calendrier" -->
 											<button id="previous" class="Calendar-nav--button Calendar-nav--button--unavailable" type="button" aria-label="le mois précédent" tabindex="-1">❮</button><!-- Update the aria-label from "Previous month" to "le mois précédent" -->
 											<div class="Nav--month">décembre</div><!-- Update from "December" to "le mois précédent" -->
-											<!-- 
-												List of the months in French 
+											<!--
+												List of the months in French
 												*******Note that they are always in lower case*******
 													janvier
 													février
@@ -206,9 +213,9 @@ $(function(){
 													décembre
 
 
-	
+
 												List of abbreviated months in French
-												*******Note that they are always in lower case and period 
+												*******Note that they are always in lower case and period
 	`													(exceptation for period are: mars, mai, juin and août *******
 													janv.
 													févr.
@@ -225,8 +232,8 @@ $(function(){
 
 												-->
 
-											
-											
+
+
 											<button id="next" class="Calendar-nav--button" type="button" aria-label="le mois suivant">❯</button><!-- Update the aria-label from "Next month" to "le mois suivant" -->
 										</section>
 										<div class="Calendar-grid">
@@ -239,9 +246,9 @@ $(function(){
 												<span class="Calendar-item Calendar-item--day" aria-label="	vendredi">ven.</span>
 												<span class="Calendar-item Calendar-item--day" aria-label="	samedi">sam.</span>
 											</div>
-											
-											<!-- 
-												List of the months in French 
+
+											<!--
+												List of the months in French
 												*******Note that they are always in lower case*******
 													dimanche
 													lundi
@@ -251,7 +258,7 @@ $(function(){
 													vendredi
 													samedi
 
-	
+
 												List of abbreviated months in French
 												*******Note that they are always in lower case and period  *******
 													dim.
@@ -262,24 +269,24 @@ $(function(){
 													ven.
 													sam.
 
-												-->											
+												-->
 
-											
-					
+
+
 
 											<section id="Calendar-dates" aria-label="Dates du calendrier" role="application"><!-- Update the aria-label from "Calendar dates" to "le mois suivant" -->
 										</section>
-											
-											
-											
-											<!-- 
-												Written dates in French should be all in lower case (day and month) 
+
+
+
+											<!--
+												Written dates in French should be all in lower case (day and month)
 													English:
 														Tuesday December 01 2020
 													French:
 														mardi 01 décembre 2021
  												-->
-											
+
 												<div class="Calendar-row">
 													<span class="Calendar-item Calendar-item--empty"></span>
 													<span class="Calendar-item Calendar-item--empty"></span>
@@ -326,13 +333,194 @@ $(function(){
 												</div>
 
 										</div>
-											</section>							
+											</section>
 
 								</div>
 							</div>
 						</section>
 
 
+							<fieldset class="ns-fieldset" aria-describedby="fieldset-hint-date">
+								<legend class="ns-fieldset__legend noBorder label">
+									Enter a date
+								</legend>
+								<div id="fieldset-hint-date" class="ns-hint">
+								  Enter Day Month Year. For example, 17 11 2007.
+								</div>
+
+								<div class="row align-items-end">
+									<div class="col-auto pr-0"><label class="ns-label" for="day2">DD</label><input type="text" id="day2" name="day" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric" value="16"></input></div>
+									<div class="col-auto pr-0"><label class="ns-label" for="month2">MM</label><input type="text" id="month2" name="month" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric" value="12"></input></div>
+									<div class="col-auto pr-0"><label class="ns-label" for="year2">YYYY</label><input type="text" id="year2" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric" value="2021"></input></div>
+									<div class="col-auto"><button class="btn-md ns-btn-2nd ns-btn__icon btn-inline-field"  type="button" data-toggle="collapse" data-target="#collapseCalendarPicker" aria-expanded="false" aria-controls="collapseCalendarPicker"><i class="far fa-calendar-alt ns-btn__icon-left" aria-hidden="true"></i>Select from calendar</button></div>
+								</div>
+							</fieldset>
+
+							<div class="collapse in" id="collapseCalendarPicker">
+								<div class="calendar-wrapper">
+									<section class="Calendar" aria-label="Calendar">
+										<section aria-label="Calendar Navigation" class="Calendar-nav">
+											<button id="previous" class="Calendar-nav--button Calendar-nav--button--unavailable" type="button" aria-label="Previous month" tabindex="-1">❮</button>
+											<div class="Nav--month">December, 2021</div>
+											<button id="next" class="Calendar-nav--button" type="button" aria-label="Next month">❯</button>
+										</section>
+										<div class="Calendar-grid">
+											<div class="Calendar-days Calendar-row" aria-disabled="true" role="presentation" aria-hidden="true">
+												<span class="Calendar-item Calendar-item--day" aria-label="Sunday">S</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Monday">M</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Tuesday">T</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Wednesday">W</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Thursday">T</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Friday">F</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Saturday">S</span>
+											</div>
+											<section id="Calendar-dates" aria-label="Calendar dates" role="application">
+												<div class="Calendar-row">
+													<span class="Calendar-item Calendar-item--empty"></span>
+													<span class="Calendar-item Calendar-item--empty"></span>
+													<button type="button" aria-label="calendar_schedular_unavailable, Tuesday December 01 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1606795200" data-day="1" data-date="2020-12-01" tabindex="-1">1</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Wednesday December 02 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1606881600" data-day="2" data-date="2020-12-02" tabindex="-1">2</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Thursday December 03 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1606968000" data-day="3" data-date="2020-12-03" tabindex="-1">3</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Friday December 04 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607054400" data-day="4" data-date="2020-12-04" tabindex="-1">4</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Saturday December 05 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607140800" data-day="5" data-date="2020-12-05" tabindex="-1">5</button>
+												</div>
+												<div class="Calendar-row">
+													<button type="button" aria-label="calendar_schedular_unavailable, Sunday December 06 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607227200" data-day="6" data-date="2020-12-06" tabindex="-1">6</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Monday December 07 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607313600" data-day="7" data-date="2020-12-07" tabindex="-1">7</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Tuesday December 08 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607400000" data-day="8" data-date="2020-12-08" tabindex="-1">8</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Wednesday December 09 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607486400" data-day="9" data-date="2020-12-09" tabindex="-1">9</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Thursday December 10 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607572800" data-day="10" data-date="2020-12-10" tabindex="-1">10</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Friday December 11 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607659200" data-day="11" data-date="2020-12-11" tabindex="-1">11</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Saturday December 12 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607745600" data-day="12" data-date="2020-12-12" tabindex="-1">12</button>
+												</div>
+												<div class="Calendar-row">
+													<button type="button" aria-label="calendar_schedular_unavailable, Sunday December 13 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607832000" data-day="13" data-date="2020-12-13" tabindex="-1">13</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Monday December 14 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607918400" data-day="14" data-date="2020-12-14" tabindex="-1">14</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Tuesday December 15 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1608004800" data-day="15" data-date="2020-12-15" aria-current="date" tabindex="-1">15</button>
+													<button type="button" aria-label="Wednesday December 16 2020" aria-pressed="true" class="Calendar-item Calendar-item--active" data-timestamp="1608091200" data-day="16" data-date="2020-12-16">16</button>
+													<button type="button" aria-label="Thursday December 17 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1608177600" data-day="17" data-date="2020-12-17">17</button>
+													<button type="button" aria-label="Friday December 18 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1608264000" data-day="18" data-date="2020-12-18">18</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Saturday December 19 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1608350400" data-day="19" data-date="2020-12-19" tabindex="-1">19</button>
+												</div>
+												<div class="Calendar-row">
+													<button type="button" aria-label="calendar_schedular_unavailable, Sunday December 20 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1608436800" data-day="20" data-date="2020-12-20" tabindex="-1">20</button>
+													<button type="button" aria-label="Monday December 21 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1608523200" data-day="21" data-date="2020-12-21">21</button>
+													<button type="button" aria-label="Tuesday December 22 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1608609600" data-day="22" data-date="2020-12-22">22</button>
+													<button type="button" aria-label="Wednesday December 23 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1608696000" data-day="23" data-date="2020-12-23">23</button>
+													<button type="button" aria-label="Thursday December 24 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1608782400" data-day="24" data-date="2020-12-24">24</button>
+													<button type="button" aria-label="Friday December 25 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1608868800" data-day="25" data-date="2020-12-25">25</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Saturday December 26 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1608955200" data-day="26" data-date="2020-12-26" tabindex="-1">26</button>
+												</div>
+												<div class="Calendar-row">
+													<button type="button" aria-label="calendar_schedular_unavailable, Sunday December 27 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1609041600" data-day="27" data-date="2020-12-27" tabindex="-1">27</button>
+													<button type="button" aria-label="Monday December 28 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1609128000" data-day="28" data-date="2020-12-28">28</button>
+													<button type="button" aria-label="Tuesday December 29 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1609214400" data-day="29" data-date="2020-12-29">29</button>
+													<button type="button" aria-label="Wednesday December 30 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1609300800" data-day="30" data-date="2020-12-30">30</button>
+													<button type="button" aria-label="Thursday December 31 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1609387200" data-day="31" data-date="2020-12-31">31</button>
+													<span class="Calendar-item Calendar-item--empty"></span><span class="Calendar-item Calendar-item--empty"></span>
+												</div>
+											</section>
+										</div>
+									</section>
+								</div>
+							</div>
+
+
+							<div class="ns-form-group d-flex">
+								<fieldset class="ns-fieldset">
+									<legend class="ns-fieldset__legend noBorder label">
+										Enter a date or date range
+									</legend>
+
+									<div class="d-flex justify-content-start">
+
+										<div class="pr-3"><label class="ns-label" for="day3">DD</label><input type="text" id="day3" name="day" class="fw-2" pattern="[0-9]*" inputmode="numeric" value="21"></div>
+										<div class="pr-3"><label class="ns-label" for="month3">MM</label><input type="text" id="month3" name="month" class="fw-2" pattern="[0-9]*" inputmode="numeric" value="12"></div>
+										<div class="pr-3"><label class="ns-label" for="year3">YYYY</label><input type="text" id="year3" name="year" class="fw-4" pattern="[0-9]*" inputmode="numeric" value="2021"></div>
+
+										<div class="pr-3 align-self-end mb-2">
+											<span>to</span>
+										</div>
+
+										<div class="pr-3"><label class="ns-label" for="day4">DD</label><input type="text" id="day4" name="day" class="fw-2" pattern="[0-9]*" inputmode="numeric" value="24"></div>
+										<div class="pr-3"><label class="ns-label" for="month4">MM</label><input type="text" id="month4" name="month" class="fw-2" pattern="[0-9]*" inputmode="numeric" value="12"></div>
+										<div class="pr-3"><label class="ns-label" for="year4">YYYY</label><input type="text" id="year4" name="year" class="fw-4" pattern="[0-9]*" inputmode="numeric" value="2021"></div>
+
+										<div class="pr-3 align-self-end"><button class="btn-md ns-btn-2nd ns-btn__icon btn-inline-field"  type="button" data-toggle="collapse" data-target="#collapseCalendarPickerRange" aria-expanded="false" aria-controls="collapseCalendarPickerRange"><i class="far fa-calendar-alt ns-btn__icon-left" aria-hidden="true"></i>Select from calendar</button></div>
+
+									</div>
+								</fieldset>
+							</div>
+
+							<div class="collapse show" id="collapseCalendarPickerRange">
+								<div class="calendar-wrapper">
+									<section class="Calendar" aria-label="Calendar">
+										<section aria-label="Calendar Navigation" class="Calendar-nav">
+											<button id="previous" class="Calendar-nav--button Calendar-nav--button--unavailable" type="button" aria-label="Previous month" tabindex="-1">❮</button>
+											<div class="Nav--month">December, 2021</div>
+											<button id="next" class="Calendar-nav--button" type="button" aria-label="Next month">❯</button>
+										</section>
+										<div class="Calendar-grid">
+											<div class="Calendar-days Calendar-row" aria-disabled="true" role="presentation" aria-hidden="true">
+												<span class="Calendar-item Calendar-item--day" aria-label="Sunday">S</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Monday">M</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Tuesday">T</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Wednesday">W</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Thursday">T</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Friday">F</span>
+												<span class="Calendar-item Calendar-item--day" aria-label="Saturday">S</span>
+											</div>
+											<section id="Calendar-dates" aria-label="Calendar dates" role="application">
+												<div class="Calendar-row">
+													<span class="Calendar-item Calendar-item--empty"></span>
+													<span class="Calendar-item Calendar-item--empty"></span>
+													<button type="button" aria-label="calendar_schedular_unavailable, Tuesday December 01 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1606795200" data-day="1" data-date="2020-12-01" tabindex="-1">1</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Wednesday December 02 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1606881600" data-day="2" data-date="2020-12-02" tabindex="-1">2</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Thursday December 03 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1606968000" data-day="3" data-date="2020-12-03" tabindex="-1">3</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Friday December 04 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607054400" data-day="4" data-date="2020-12-04" tabindex="-1">4</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Saturday December 05 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607140800" data-day="5" data-date="2020-12-05" tabindex="-1">5</button>
+												</div>
+												<div class="Calendar-row">
+													<button type="button" aria-label="calendar_schedular_unavailable, Sunday December 06 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607227200" data-day="6" data-date="2020-12-06" tabindex="-1">6</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Monday December 07 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607313600" data-day="7" data-date="2020-12-07" tabindex="-1">7</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Tuesday December 08 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607400000" data-day="8" data-date="2020-12-08" tabindex="-1">8</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Wednesday December 09 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607486400" data-day="9" data-date="2020-12-09" tabindex="-1">9</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Thursday December 10 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607572800" data-day="10" data-date="2020-12-10" tabindex="-1">10</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Friday December 11 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607659200" data-day="11" data-date="2020-12-11" tabindex="-1">11</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Saturday December 12 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607745600" data-day="12" data-date="2020-12-12" tabindex="-1">12</button>
+												</div>
+												<div class="Calendar-row">
+													<button type="button" aria-label="calendar_schedular_unavailable, Sunday December 13 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607832000" data-day="13" data-date="2020-12-13" tabindex="-1">13</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Monday December 14 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1607918400" data-day="14" data-date="2020-12-14" tabindex="-1">14</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Tuesday December 15 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1608004800" data-day="15" data-date="2020-12-15" aria-current="date" tabindex="-1">15</button>
+													<button type="button" aria-label="Wednesday December 16 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1608091200" data-day="16" data-date="2020-12-16">16</button>
+													<button type="button" aria-label="Thursday December 17 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1608177600" data-day="17" data-date="2020-12-17">17</button>
+													<button type="button" aria-label="Friday December 18 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1608264000" data-day="18" data-date="2020-12-18">18</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Saturday December 19 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1608350400" data-day="19" data-date="2020-12-19" tabindex="-1">19</button>
+												</div>
+												<div class="Calendar-row">
+													<button type="button" aria-label="calendar_schedular_unavailable, Sunday December 20 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1608436800" data-day="20" data-date="2020-12-20" tabindex="-1">20</button>
+													<button type="button" aria-label="Monday December 21 2020" aria-pressed="true" class="Calendar-item Calendar-item--active" data-timestamp="1608523200" data-day="21" data-date="2020-12-21">21</button>
+													<button type="button" aria-label="Tuesday December 22 2020" aria-pressed="true" class="Calendar-item Calendar-item--active" data-timestamp="1608609600" data-day="22" data-date="2020-12-22">22</button>
+													<button type="button" aria-label="Wednesday December 23 2020" aria-pressed="true" class="Calendar-item Calendar-item--active" data-timestamp="1608696000" data-day="23" data-date="2020-12-23">23</button>
+													<button type="button" aria-label="Thursday December 24 2020" aria-pressed="true" class="Calendar-item Calendar-item--active" data-timestamp="1608782400" data-day="24" data-date="2020-12-24">24</button>
+													<button type="button" aria-label="Friday December 25 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1608868800" data-day="25" data-date="2020-12-25">25</button>
+													<button type="button" aria-label="calendar_schedular_unavailable, Saturday December 26 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1608955200" data-day="26" data-date="2020-12-26" tabindex="-1">26</button>
+												</div>
+												<div class="Calendar-row">
+													<button type="button" aria-label="calendar_schedular_unavailable, Sunday December 27 2020" aria-pressed="false" class="Calendar-item Calendar-item--unavailable" data-timestamp="1609041600" data-day="27" data-date="2020-12-27" tabindex="-1">27</button>
+													<button type="button" aria-label="Monday December 28 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1609128000" data-day="28" data-date="2020-12-28">28</button>
+													<button type="button" aria-label="Tuesday December 29 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1609214400" data-day="29" data-date="2020-12-29">29</button>
+													<button type="button" aria-label="Wednesday December 30 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1609300800" data-day="30" data-date="2020-12-30">30</button>
+													<button type="button" aria-label="Thursday December 31 2020" aria-pressed="false" class="Calendar-item Calendar-item--active" data-timestamp="1609387200" data-day="31" data-date="2020-12-31">31</button>
+													<span class="Calendar-item Calendar-item--empty"></span><span class="Calendar-item Calendar-item--empty"></span>
+												</div>
+											</section>
+										</div>
+									</section>
+
+								</div>
+							</div>
 					</div><!-- /col-xs-8 -->
 				</div><!--/row-->
 			</form>

@@ -9,6 +9,10 @@
   margin-bottom: 2rem;
 }
 
+.card .Calendar {
+  margin-bottom: 0;
+}
+
 .Calendar-nav {
     display: flex;
     padding: 0.125rem;
