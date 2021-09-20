@@ -100,8 +100,8 @@ $(function(){
 					<div class="col-sm-9 col-xs-12"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
 						<h1 id="BilingualConsideration">General consideration for bilingual services</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						
-						<p>Declaring the language of the page’s content helps assistive technology and translation services within browsers. It can be declared globally or on specific tags.</p>
-						<p>Global declaration set the page language tells assistive technology and the browser what language they should use when reading the page content and code.</p>
+						<p>Declaring the language of page content helps assistive technology and translation services in browsers. Language can be declared globally or on specific tags.</p>
+						<p>Global declaration sets the page language and tells assistive technology and the browser what language should be used when reading the page content and code.</p>
 						<p>Specific tag declaration tells assistive technology and the browser that the content of the tag is not in the same language as the global declared <code>lang</code>.</p>
 						<p><a href=" https://www.w3schools.com/tags/ref_language_codes.asp">List of Language code reference</a></p>
 						
@@ -112,15 +112,15 @@ $(function(){
 						<h4>Code</h4>
 						<code>&lt;html lang="<mark>fr</mark>"&gt;</code>
 						
-						<h3>XHTML pages</h3>
-						<p>Declare language inside the <code>html</code> tag using the the <code>lang</code> and <code>xml:lang</code>attribute.</p>
+						<h3>XHTML pages</h3> <!-- do we use XHTML pages? -->
+						<p>Declare language inside the <code>html</code> tag using the the <code>lang</code> and <code>xml:lang</code> attribute.</p>
 						<h4>Code</h4>
 						<code>&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="<mark>fr</mark>" xml:lang="<mark>fr</mark>"&gt;</code>
 <!--New Section -->					
 						<h2>Specific tag declaration examples</h2>
 						<p>The <code>lang</code> attribute can be added to any HTML tags.</p>
 						
-						<h3>Example</h3>
+						<h3>Example</h3> 
 						<p lang="fr">Les renseignements personnels que vous fournissez en ligne pour le Permis de loterie à billets pour des prix d’une valeur inférieure à 4 000 $ sont recueillis au titre de la loi sur l’accès à l’information et la protection de la vie privée de la Nouvelle-Écosse (<i lang="en">Freedom of Information and Protection of Privacy Act</i>) et de la loi sur la régie du jeu <i lang="en">Gaming Control Act</i>)</p>						
 						
 						<h3>Code</h3>
@@ -134,25 +134,25 @@ $(function(){
 						
 <!--New Section -->					
 						<h2>Other language declaration attribute examples</h2>
-						<p>The <code>hreflang</code> attribute specifies the language of the document in the link.</p>
+						<p>The <code>hreflang</code> attribute specifies the language of the link destination.</p>
 					
 <!--New Section -->					
 						<h2>Text in code and hidden text</h2>
-						<p>Not just the visible content (text on the screen) needs to be translate, but all English text that is in the HTML code. Whether it is an attribute like <code>alt</code>,code>content</code> and <code>aria-label</code>, or hidden content like "Skip to main content" link, or an error messages for a form field. It needs to be translated.</p>
+						<p>All English text that is in the HTML code needs to be translated when translation of a service is required. This inlcudes attributes like <code>alt</code>, <code>content</code> and <code>aria-label</code>, or hidden content like a "Skip to main content" link and error messages for a form field.</p>
 					
 						<h3>Examples of <code>alt</code> attribute</h3>
 						<p><code>&lt;img src="/sns/img/plaque-immatriculation-portant-drapeau-acadien-sm.png" alt="<mark>Plaque d’immatriculation portant le drapeau acadien</mark>" width="110" height="55"&gt;</code></p>
 						<p><code>&lt;area shape="rect" coords="0,0,82,126" href="sun.htm" hreflang="en" alt="<mark>Soleil</mark>"&gt;</code></p>
 								
 						<h3>Example of <code>content</code> attribute</h3>
-						<p>The attribute <code>content</code> for  <code>meta</code> tags contains text that is not visible on the screen, but is machine parsable. Parsable by assistive technology, browsers (how to display content or reload page), search engines (keywords), and other web services. The <code>content</code> attribute is often overlook and not translated.</p>
+						<p>The <code>content</code> attribute  for <code>meta</code> tags contains text that is not visible on the screen, but is readable by assistive technology, browsers, and search engines. The <code>content</code> attribute is often overlooked and not translated.</p>
 						<p><code>&lt;meta name="description" content="<mark>Liste &#224; jour des fermetures du gouvernement provincial.</mark>"/&gt;</code></p>
 						<p><code>&lt;meta name="dcterms.title" content="<mark>Fermetures, annulations et changements aux services</mark>"/&gt;</code></p>
 							
 						<h3>Examples of <code>aria-label</code> attributes</h3>
-						<p>In short, <code>aria-label</code> attribute is an invisible label where a visible label can't be used.</p>
+						<p>An <code>aria-label</code> attribute is an invisible label where a visible label can't be used.</p>
 						<p><code>&lt;nav id="navigation" class="ribbon" role="navigation" aria-label="<mark>Navigation principale</mark>"&gt;</code></p>
-						<p><code>&lt;button aria-label="<mark>Fermer</mark>" onclick="document.getElementById('box').style.display='none';" class="close-button"&gt;X&lt;/button&gt;</code></p
+						<p><code>&lt;button aria-label="<mark>Fermer</mark>" onclick="document.getElementById('box').style.display='none';" class="close-button"&gt;X&lt;/button&gt;</code></p>
 						<p><code>&lt;nav class="skip-links" aria-label="<mark>Passer au contenu principal</mark>"&gt;</code></p>
 						<p><code>&lt;section aria-label="<mark>Navigation du calendrier</mark>" class="Calendar-nav"&gt;</code></p>
 						<p><code>&lt;button id="previous" class="Calendar-nav--button Calendar-nav--button--unavailable" type="button" aria-label="<mark>Le mois précédent</mark>" tabindex="-1"&gt; &lt;/button&gt;</code></p>
@@ -161,13 +161,13 @@ $(function(){
 						<h3>Examples of Hidden content</h3>
 						<p>Some text is hidden from being displayed on the screen. This text could be used for help keyboard-only users navigate a page, like in the example of <a href="skip-link.html" title="Skip link">Skip link</a>.</p>
 						
-						<h3>Examples of Error message</h3>
+						<h3>Examples of Error message</h3> <!-- i don't see how this example has to do anything with french? Is this already covered in the error message section? --> 
 						<p>Show an error message when there is a validation error. In the error message explain what went wrong and how to fix it.</p>
 						<p>Examples of <a href="error-message.html" title="Error message">Error message</a>.</p>
 									
 <!--New Section -->			
 						<h2>Links</h2>		
-						<p>On French pages, all links should have French text for <code>title</code> attribute and a language declaration for <code>hreflang</code> attribute. The <code>hreflang</code> attribute should set to the language of the language of content targeted by link. The <code>lang</code> should only be uses when the language of the hypertext is different than the <a href="#GlobalDeclaration" title="Global declaration examples">global declared language</a>.</p>
+						<p>On French pages, all links should have French text for the <code>title</code> attribute and a language declaration for <code>hreflang</code> attribute. The <code>hreflang</code> attribute should set to the language of content targeted by link. The <code>lang</code> should only be used when the language of the hypertext is different than the <a href="#GlobalDeclaration" title="Global declaration examples">global declared language</a>.</p>
 						<ul>
 							<li>If the target it French use <code>hreflang="fr"</code>.
 								<ul>
@@ -193,9 +193,11 @@ $(function(){
 				
 				
 				<!--New Section -->
-						<h2>General French grammar rules</h2>
+						<h2>French grammar rules</h2>
 						<h3>Capitization</h3>
-						<p>The grammar rules on capitization for French is different than English. That sentence is a good example. In French (<span lang="fr">en français</span>), names of languages are not capitized.</p>
+						<p>Capitization for French is different than English. In French, names of languages are not capitized. For example, (<span lang="fr">en français</span>)</p> <!-- isn't this the responsibility of the translator, not the developer? -->
+
+						
 						<p>Below are some of the French grammar rules from <cite><a href="https://www.lalanguefrancaise.com/general/guide-complet-usage-majuscules-francais/" lang="fr" hreflang="fr" title="Le guide complet de l’usage des majuscules en français">https://www.lalanguefrancaise.com/general/guide-complet-usage-majuscules-francais/</a></cite>.</p>
 						
 						<h4>When to use a upper-case letter?</h4>
