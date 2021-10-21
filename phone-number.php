@@ -19,11 +19,20 @@
 
 <!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
 
-<?php include 'includes/header.php' ?>
-
+<div id="header"></div>
+<script>
+$(function(){
+	$("#header").load("includes/header.html");
+});
+</script>
 <!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
 <!-- START Alpha Phase Banner -->
-<?php include 'includes/alpha-banner.php' ?>
+<div id="alpha-banner"></div>
+<script>
+$(function(){
+	$("#alpha-banner").load("includes/alpha-banner.html");
+});
+</script>
 <!-- END Alpha Phase Banner -->
 
 
@@ -70,13 +79,13 @@ $(function(){
 							</li>
 
 							<li>
-								<strong>If you’re asking for a phone number to send an SMS message, include that in your helper text.</strong>
+								<strong>If you’re asking for a phone number to send a text message, include that in your helper text.</strong>
 								<p> Example: Enter a phone number that can receive text messages.</p>
 							</li>
 							
 							<li>
 								<strong>Allow people to enter the phone number in any format</strong>
-								<p> allow for extra spaces, dashes, periods, and brackets.</p>
+								<p>Allow for extra spaces, dashes, periods, and brackets.</p>
 							</li>
 
 							<li>
@@ -99,9 +108,18 @@ $(function(){
               <div class="col-md-12 col-xs-12">
                   <h2>Phone number example</h2>
 
-                  <?php include "phone/phone-number-tabs.php" ?>
+                  <!-- < ?php include "phone/phone-number-tabs.php" ?> -->
 
-              </div>
+                  <label class="ns-label" for="phone-number">
+										Phone number
+									</label>
+
+									<div class="ns-hint">
+										Enter a 10-digit phone number	
+									</div>
+									<input class="ns-input fw-20" id="phone-number" name="phone-number" type="tel" autocomplete="tel">
+
+							</div>
           	</section><!--/row-->
 						
 						
@@ -110,11 +128,21 @@ $(function(){
 						
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<div class="exampleDisplay">
-									<?php include "phone/phone-number-error-tabs.php" ?> 		
-								</div>
-							</div>
-							
+									<!-- < ?php include "phone/phone-number-error-tabs.php" ?> 		 -->
+							   
+									<div class="ns-form-group ns-form-group-message-error">
+										<label class="ns-label" for="phone-number">
+											Phone number
+										</label>
+										<span id="phone-number-error" class="ns-error-message field-validation-error">
+									  		<i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+									  		<span class="ns-visually-hidden">Error:</span> Enter a 10-digit phone number
+										</span>
+
+										<input class="ns-input fw-20 ns-input--error" id="phone-number" name="phone-number" type="tel" autocomplete="tel">
+									</div>
+            
+        			</div>
 						</section><!--/row-->	
 						<p>Make sure errors follow the guidance in <a href="error-message.html">error message</a> and have specific error messages for specific error states.</p>	
 		
@@ -123,7 +151,7 @@ $(function(){
 
 						<p>Use the <code>autocomplete</code> attribute on a phone number field when you’re asking for a user's own phone number. This lets browsers autofill the information on a user’s behalf if they’ve entered it previously.</p>
 
-						<p>To do this, set the <code>autocomplete</code> attribute to <code>phone-number</code> as shown in the HTML tabs in the example above.</p>
+						<p>To do this, set the <code>autocomplete</code> attribute to <code>tel</code> as shown in the HTML tabs in the example above.</p>
 
 						<p>If you are working in production you’ll need to do this to meet <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html">WCAG 2.1 Level AA</a>.</p>
 
