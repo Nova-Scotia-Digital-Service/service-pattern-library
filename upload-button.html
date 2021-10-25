@@ -4,17 +4,17 @@
 	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
-	
+
 
 	<title>Upload button - Forms & Services Building Blocks - Government of Nova Scotia</title>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Include in all head tags -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><!-- Include in all head tags -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><!-- Include in all head tags -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script><!-- Include in all head tags -->
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script><!-- Not needed for service design, loads the navigation for this site -->	
-	<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css"><!-- Include in all head tags -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script><!-- Not needed for service design, loads the navigation for this site -->
+	<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"><!-- Include in all head tags -->
 	<link rel="stylesheet" media="all" href="css/saltire.css"><!-- Include in all head tags -->
-	<link rel="stylesheet" media="all" href="css/service-specific-styles.css"><!-- Not needed for services--> 
+	<link rel="stylesheet" media="all" href="css/service-specific-styles.css"><!-- Not needed for services-->
 	<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css"><!-- Include in all head tags -->
 	<link rel="stylesheet" media="all" href="css/global-form-styles.css"><!-- Include only if forms are used-->
 	<link rel="stylesheet" media="all" href="css/radio-button.css"><!-- Include only if radios are used-->
@@ -26,8 +26,9 @@
 	<link rel="stylesheet" media="all" href="css/buttons.css"><!-- Include only if buttons are used-->
 	<link rel="stylesheet" media="all" href="css/phase-banner.css"><!-- Include only if phase banner is used-->
 	<link rel="stylesheet" media="all" href="css/accordion.css"><!-- Include this only if needed -->
-	<link rel="stylesheet" media="all" href="css/panel.css"><!-- Include this only if needed -->	
+	<link rel="stylesheet" media="all" href="css/panel.css"><!-- Include this only if needed -->
 	<link rel="stylesheet" media="all" href="css/upload-button.css"><!-- Include this only if needed -->
+	<link rel="stylesheet" media="all" href="css/data-list.css"><!-- Include this only if needed -->
 	<!--[if lte IE 8]>
 	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
 	<![endif]-->
@@ -53,7 +54,7 @@
 				</div>
 			</div>
 		</div>
-	</nav>	
+	</nav>
 <!-- END SALTIRE NS MOTHERSHIP RIBBON w FR -->
 </header>
 
@@ -105,7 +106,7 @@ $(function(){
 						<h1>Upload button</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<p>The upload button is used for file uploads from devices.</p>
 						<h2 id="when-to-use-this-component">When to use this component</h2>
-						<p>Fill in later...</p>	
+						<p>Fill in later...</p>
 						<h2 id="when-not-to-use-this-component">When not to use this component</h2>
 						<p>Fill in later...</p>
 						<section class="row">
@@ -113,12 +114,64 @@ $(function(){
 								<h2>Upload button example</h2>
 								<div class="exampleDisplay">
 									<section class="row">
-										<div class="col-md-12 ns-panel ns-panel__box">										
+										<div class="col-md-12 ns-panel ns-panel__box">
 											<form>
 											   <div class="ns-form-group mb-0">
 
-													<div id="fileName">File name: document.txt</div>
-													<label for="uploadDoc" class="btn-lg btn-default ns-upload" aria-describedby="fileDescription">
+													<div class="ns-form-group">
+													  <h3 class="ns-label-wrapper">
+															<label class="ns-label" for="uploadDoc">
+														  Upload documents
+															</label>
+														</h3>
+														<div id="uploadHint" class="ns-hint">
+														Accepted file types:
+															<abbr title="Joint Photographic Experts Group image format">JPG</abbr>,
+															<abbr title="Portable Network Graphics image format">PNG</abbr>,
+															<abbr title="Graphics Interchange Format">GIF</abbr>,
+															<abbr title="Portable document format">PDF</abbr>.
+														Maximum file size: 5
+															<abbr title="MegaBytes">MB</abbr>.
+														</div>
+
+
+														<table class="table table-condensed mb-0">
+															<caption class="ns-visually-hidden">Uploaded file list</caption>
+															<thead>
+																<tr>
+																	<th>File name</th>
+																	<th class="text-center"><span class="ns-visually-hidden">Remove file from list</span></th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="align-middle">document1.txt</td>
+																	<td class="text-center">
+				                            <a href="#" role="button" draggable="false" class="btn-lg ns-btn-2nd d-inline-block medfit-btn-inline-icon ns-link-button my-0">
+				                              <i class="fas fa-trash" aria-hidden="true"></i><span class="ns-visually-hidden">Remove</span>
+				                            </a>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="align-middle">document2.txt</td>
+																	<td class="text-center">
+				                            <a href="#" role="button" draggable="false" class="btn-lg ns-btn-2nd d-inline-block medfit-btn-inline-icon ns-link-button my-0">
+				                              <i class="fas fa-trash" aria-hidden="true"></i><span class="ns-visually-hidden">Remove</span>
+				                            </a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<button class="btn-lg btn-default ns-upload" for="uploadDoc">
+													  Upload document
+															<input class="ns-input ns-upload-button fw-20" id="uploadDoc" name="event-name" type="text" aria-describedby="event-name-hint">
+														</button>
+
+													</div>
+
+
+													<!-- <label for="uploadDoc" class="btn-lg btn-default ns-upload" aria-describedby="fileDescription">
 
 														Upload document
 														<input type="file" id="uploadDoc" class="ns-upload-button" />
@@ -127,11 +180,87 @@ $(function(){
 												<div id="fileDescription mt-0">
 													<p class="mt-0 mb-0">Accepted file types: jpg, png, gif, pdf</p>
 													<p>Maximum file size: 5 MB</p>
-												</div>
-											</form>										
+												</div> -->
+											</form>
 										</div>
 									</section>
 								</div><!-- / panel -->
+									
+							<h2>French upload button example</h2>
+								<div class="exampleDisplay">
+									<section class="row">
+										<div class="col-md-12 ns-panel ns-panel__box">
+											<form>
+											   <div class="ns-form-group mb-0">
+
+													<div class="ns-form-group">
+													  <h3 class="ns-label-wrapper">
+															<label class="ns-label" for="uploadDoc">
+														  Téléverser les documents 
+															</label>
+														</h3>
+														<div id="uploadHint" class="ns-hint">
+														Types de fichiers acceptés :
+															<abbr lang="en" title="Joint Photographic Experts Group image format">JPG</abbr>,
+															<abbr lang="en" title="Portable Network Graphics image format">PNG</abbr>,
+															<abbr lang="en" title="Graphics Interchange Format">GIF</abbr>,
+															<abbr lang="en" title="Portable document format">PDF</abbr>.
+														La taille maximale : 5
+															<abbr title="mégaoctets">Mo</abbr>.
+														</div>
+
+
+														<table class="table table-condensed mb-0">
+															<caption class="ns-visually-hidden">Liste des fichiers téléversés</caption>
+															<thead>
+																<tr>
+																	<th>Nom de fichier</th>
+																	<th class="text-center"><span class="ns-visually-hidden">Supprimer le fichier de la liste</span></th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="align-middle">fichier1.txt</td>
+																	<td class="text-center">
+				                            <a href="#" role="button" draggable="false" class="btn-lg ns-btn-2nd d-inline-block medfit-btn-inline-icon ns-link-button my-0">
+				                              <i class="fas fa-trash" aria-hidden="true"></i><span class="ns-visually-hidden">Supprimer</span>
+				                            </a>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="align-middle">fichier2.txt</td>
+																	<td class="text-center">
+				                            <a href="#" role="button" draggable="false" class="btn-lg ns-btn-2nd d-inline-block medfit-btn-inline-icon ns-link-button my-0">
+				                              <i class="fas fa-trash" aria-hidden="true"></i><span class="ns-visually-hidden">Supprimer</span>
+				                            </a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<button class="btn-lg btn-default ns-upload" for="uploadDoc">
+													  Téléverser le document
+															<input class="ns-input ns-upload-button fw-20" id="uploadDoc" name="event-name" type="text" aria-describedby="event-name-hint">
+														</button>
+
+													</div>
+
+
+													<!-- <label for="uploadDoc" class="btn-lg btn-default ns-upload" aria-describedby="fileDescription">
+
+														Upload document
+														<input type="file" id="uploadDoc" class="ns-upload-button" />
+													</label>
+												</div>
+												<div id="fileDescription mt-0">
+													<p class="mt-0 mb-0">Accepted file types: jpg, png, gif, pdf</p>
+													<p>Maximum file size: 5 MB</p>
+												</div> -->
+											</form>
+										</div>
+									</section>
+								</div><!-- / panel -->
+									
 							</div><!-- / example col -->
 						</section><!--/row-->
 
