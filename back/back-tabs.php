@@ -47,7 +47,7 @@
                 sort($files);
                     echo '<textarea rows="1" aria-labelledby="htmlTabBack">';
                     echo htmlspecialchars(file_get_contents('back/back.html'));
-                    echo '</textarea';
+                    echo '</textarea>';
             ?>
         </div> <!-- end of tab panel -->
     </div>  <!-- end of tab content -->
