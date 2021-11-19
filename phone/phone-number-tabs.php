@@ -1,21 +1,21 @@
 <!-- Tab nav -->
 <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item">
-        <a class="nav-link active" href="#exampleBack" role="tab" data-toggle="tab">Example</a>
+        <a class="nav-link active" href="#examplePhone" role="tab" data-toggle="tab">Example</a>
     </li>
 
     <li class="nav-item">
-        <a id="htmlTabBack" class="nav-link" href="#htmlBack" role="tab" data-toggle="tab">HTML</a>
+        <a id="htmlTabBack" class="nav-link" href="#htmlPhone" role="tab" data-toggle="tab">HTML</a>
     </li>
 </ul>
 
 <div class="exampleDisplay">
 
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade in active show" id="exampleBack">
+        <div role="tabpanel" class="tab-pane fade in active show" id="examplePhone">
             <?php
                 $files = array();
-                $handle=opendir('back');
+                $handle=opendir('phone');
 
                 while (false !== ($file = readdir($handle))):
 
@@ -26,15 +26,14 @@
                 endwhile;
 
                 sort($files);
-                  include('back/back.html');
-
+                  include('phone/phone-number.html');
             ?>
         </div>
 
-        <div role="tabpanel" class="tab-pane fade" id="htmlBack">
+         <div role="tabpanel" class="tab-pane fade" id="htmlPhone">
             <?php
                 $files = array();
-                $handle=opendir('back');
+                $handle=opendir('phone');
 
                 while (false !== ($file = readdir($handle))):
 
@@ -45,10 +44,11 @@
                 endwhile;
 
                 sort($files);
-                    echo '<textarea rows="1" aria-labelledby="htmlTabBack">';
-                    echo htmlspecialchars(file_get_contents('back/back.html'));
+                    echo '<textarea rows="3" aria-labelledby="htmlTabPhone">';
+                    echo htmlspecialchars(file_get_contents('phone/phone-number.html'));
                     echo '</textarea>';
             ?>
         </div> <!-- end of tab panel -->
+       
     </div>  <!-- end of tab content -->
 </div> <!-- end of example display -->

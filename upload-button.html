@@ -185,6 +185,82 @@ $(function(){
 										</div>
 									</section>
 								</div><!-- / panel -->
+									
+							<h2>French upload button example</h2>
+								<div class="exampleDisplay">
+									<section class="row">
+										<div class="col-md-12 ns-panel ns-panel__box">
+											<form>
+											   <div class="ns-form-group mb-0">
+
+													<div class="ns-form-group">
+													  <h3 class="ns-label-wrapper">
+															<label class="ns-label" for="uploadDoc">
+														  Téléverser les documents 
+															</label>
+														</h3>
+														<div id="uploadHint" class="ns-hint">
+														Types de fichiers acceptés :
+															<abbr lang="en" title="Joint Photographic Experts Group image format">JPG</abbr>,
+															<abbr lang="en" title="Portable Network Graphics image format">PNG</abbr>,
+															<abbr lang="en" title="Graphics Interchange Format">GIF</abbr>,
+															<abbr lang="en" title="Portable document format">PDF</abbr>.
+														La taille maximale : 5
+															<abbr title="mégaoctets">Mo</abbr>.
+														</div>
+
+
+														<table class="table table-condensed mb-0">
+															<caption class="ns-visually-hidden">Liste des fichiers téléversés</caption>
+															<thead>
+																<tr>
+																	<th>Nom de fichier</th>
+																	<th class="text-center"><span class="ns-visually-hidden">Supprimer le fichier de la liste</span></th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="align-middle">fichier1.txt</td>
+																	<td class="text-center">
+				                            <a href="#" role="button" draggable="false" class="btn-lg ns-btn-2nd d-inline-block medfit-btn-inline-icon ns-link-button my-0">
+				                              <i class="fas fa-trash" aria-hidden="true"></i><span class="ns-visually-hidden">Supprimer</span>
+				                            </a>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="align-middle">fichier2.txt</td>
+																	<td class="text-center">
+				                            <a href="#" role="button" draggable="false" class="btn-lg ns-btn-2nd d-inline-block medfit-btn-inline-icon ns-link-button my-0">
+				                              <i class="fas fa-trash" aria-hidden="true"></i><span class="ns-visually-hidden">Supprimer</span>
+				                            </a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<button class="btn-lg btn-default ns-upload" for="uploadDoc">
+													  Téléverser le document
+															<input class="ns-input ns-upload-button fw-20" id="uploadDoc" name="event-name" type="text" aria-describedby="event-name-hint">
+														</button>
+
+													</div>
+
+
+													<!-- <label for="uploadDoc" class="btn-lg btn-default ns-upload" aria-describedby="fileDescription">
+
+														Upload document
+														<input type="file" id="uploadDoc" class="ns-upload-button" />
+													</label>
+												</div>
+												<div id="fileDescription mt-0">
+													<p class="mt-0 mb-0">Accepted file types: jpg, png, gif, pdf</p>
+													<p>Maximum file size: 5 MB</p>
+												</div> -->
+											</form>
+										</div>
+									</section>
+								</div><!-- / panel -->
+									
 							</div><!-- / example col -->
 						</section><!--/row-->
 
