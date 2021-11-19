@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"><!--Meta data is page specific and should be assess and adjusted on a per page basis.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortlink" href="https://beta.novascotia.ca/">
+	
+	<title>General consideration for bilingual services - Service Pattern Library - Government of Nova Scotia</title>
+		
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Should be included in all head tags -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><!-- Should be included in all head tags -->	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script><!-- Should be included in all head tags -->	
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script><!-- Not needed for service design, loads the navigation for this site -->	
+	<link rel="stylesheet" media="all" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">			
+	<link rel="stylesheet" media="all" href="css/saltire.css">
+	<link rel="stylesheet" media="all" href="css/supplimentary-page-styles.css">
+	<link rel="stylesheet" media="all" href="css/global-form-styles.css">
+	<link rel="stylesheet" media="all" href="css/radio-button.css">
+	<link rel="stylesheet" media="all" href="css/toggle.css">
+	<link rel="stylesheet" media="all" href="css/checkboxes.css">
+	<link rel="stylesheet" media="all" href="css/slider.css">
+	<link rel="stylesheet" media="all" href="css/input-field-group.css">
+	<link rel="stylesheet" media="all" href="css/select.css">
+	<link rel="stylesheet" media="all" href="css/buttons.css">
+	<link rel="stylesheet" media="all" href="css/phase-banner.css"><!-- Include this only if needed -->
+	<!--[if lte IE 8]>
+	<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+<div class="Site js-enabled" id="container">
+<!-- -------------------------------------------------- START Skip Link --------------------------------------------------- -->
+<nav class="skip-links" aria-label="Skip to main content">
+	<a href="#main" class="skip-to-link">Skip to main content</a>
+</nav>
+<!-- -------------------------------------------------- END Skip Link  --------------------------------------------------- -->
+
+<!-- -------------------------------------------------- START HEADER --------------------------------------------------- -->
+
+<header>
+<!-- START SALTIRE NS MOTHERSHIP RIBBON w FR -->
+	<nav id="navigation" class="ribbon" role="navigation" aria-label="Main navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<a href="https://novascotia.ca/" hreflang="en"><img class="ribbon-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Province of Nova Scotia" /></a>
+				</div>
+			</div>
+		</div>
+	</nav>	
+<!-- END SALTIRE NS MOTHERSHIP RIBBON w FR -->
+</header>
+
+<!-- -------------------------------------------------- END HEADER --------------------------------------------------- -->
+<!-- START Alpha Phase Banner -->
+<div class="ns-phase-banner">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+			  <p class="ns-phase-banner__content">
+				<strong class="ns-tag ns-phase-banner__content__tag">
+				  Alpha
+				</strong>
+				<span class="ns-phase-banner__text">
+					This is a new service that we're still developing. Try the service and <a href="https://github.com/connorscarolyns/service-pattern-library/issues">send us your comments and suggestions</a>. Your feedback will help make the service easier to use for everyone.
+				</span>
+			  </p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END Alpha Phase Banner -->
+<!-- START Primary NAV -->
+<div id="nav-placeholder4">
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder4").load("primary-nav.html");
+});
+</script>
+<!-- End Primary NAV -->
+
+<!--A basic page has a primary content area and an optional column for secondary information like related content.-->
+<div class="container Site-content">
+	<main id="main"><!-- SEMANTIC MAIN TAG TO INDICATE PAGE CONTENT-->
+		<article><!-- SEMANTIC ARTICLE TAG TO GROUP RELATED CONTENT-->
+			<form name="parameters" method="GET" target="_parent">
+				<div class="row">
+					<div class="col-sm-3 col-xs-12 order-last order-sm-first">
+						<div id="nav-placeholder2">
+						</div>
+						<script>
+						$(function(){
+						  $("#nav-placeholder2").load("nav-templates.html");
+						});
+						</script>
+					</div>
+					<div class="col-sm-9 col-xs-12"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
+						<h1 id="BilingualConsideration">General consideration for bilingual services</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						
+						<p>Declaring the language of page content helps assistive technology and translation services in browsers. Language can be declared globally or on specific tags.</p>
+						<p>Global declaration sets the page language and tells assistive technology and the browser what language should be used when reading the page content and code.</p>
+						<p>Specific tag declaration tells assistive technology and the browser that the content of the tag is not in the same language as the global declared <code>lang</code>.</p>
+						<p><a href=" https://www.w3schools.com/tags/ref_language_codes.asp">List of Language code reference</a></p>
+						
+<!--New Section -->
+						<h2 id="GlobalDeclaration">Global declaration examples</h2>
+						<h3>HTML pages</h3>
+						<p>Declare language inside the <code>html</code> tag using the the <code>lang</code> attribute.</p>
+						<h4>Code</h4>
+						<code>&lt;html lang="<mark>fr</mark>"&gt;</code>
+						
+						<h3>XHTML pages</h3> <!-- do we use XHTML pages? -->
+						<p>Declare language inside the <code>html</code> tag using the the <code>lang</code> and <code>xml:lang</code> attribute.</p>
+						<h4>Code</h4>
+						<code>&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="<mark>fr</mark>" xml:lang="<mark>fr</mark>"&gt;</code>
+<!--New Section -->					
+						<h2>Specific tag declaration examples</h2>
+						<p>The <code>lang</code> attribute can be added to any HTML tags.</p>
+						
+						<h3>Example</h3> 
+						<p lang="fr">Les renseignements personnels que vous fournissez en ligne pour le Permis de loterie à billets pour des prix d’une valeur inférieure à 4 000 $ sont recueillis au titre de la loi sur l’accès à l’information et la protection de la vie privée de la Nouvelle-Écosse (<i lang="en">Freedom of Information and Protection of Privacy Act</i>) et de la loi sur la régie du jeu <i lang="en">Gaming Control Act</i>)</p>						
+						
+						<h3>Code</h3>
+						<code lang="fr">&lt;p&gt;Les renseignements personnels que vous fournissez en ligne pour le Permis de loterie à billets pour des prix d’une valeur inférieure à 4 000 $ sont recueillis au titre de la loi sur l’accès à l’information et la protection de la vie privée de la Nouvelle-Écosse (&lt;i lang="<mark>en</mark>"&gt;Freedom of Information and Protection of Privacy Act&lt;/i&gt;) et de la loi sur la régie du jeu (&lt;i lang="<mark>en</mark>" &gt;Gaming Control Act&lt;/i&gt;).&lt;/p&gt;</code></p>
+						
+						<h3>Example</h3>
+						<p><a href="content-page-template.html" hreflang="en"  lang="en">English</a></p>					
+						
+						<h3>Code</h3>					
+						<code>&lt;a href="content-page-template.html" hreflang="en"  lang="<mark>en</mark>"&gt;English&lt;/a&gt;</code>
+						
+<!--New Section -->					
+						<h2>Other language declaration attribute examples</h2>
+						<p>The <code>hreflang</code> attribute specifies the language of the link destination.</p>
+					
+<!--New Section -->					
+						<h2>Text in code and hidden text</h2>
+						<p>All English text that is in the HTML code needs to be translated when translation of a service is required. This inlcudes attributes like <code>alt</code>, <code>content</code> and <code>aria-label</code>, or hidden content like a "Skip to main content" link and error messages for a form field.</p>
+					
+						<h3>Examples of <code>alt</code> attribute</h3>
+						<p><code>&lt;img src="/sns/img/plaque-immatriculation-portant-drapeau-acadien-sm.png" alt="<mark>Plaque d’immatriculation portant le drapeau acadien</mark>" width="110" height="55"&gt;</code></p>
+						<p><code>&lt;area shape="rect" coords="0,0,82,126" href="sun.htm" hreflang="en" alt="<mark>Soleil</mark>"&gt;</code></p>
+								
+						<h3>Example of <code>content</code> attribute</h3>
+						<p>The <code>content</code> attribute  for <code>meta</code> tags contains text that is not visible on the screen, but is readable by assistive technology, browsers, and search engines. The <code>content</code> attribute is often overlooked and not translated.</p>
+						<p><code>&lt;meta name="description" content="<mark>Liste &#224; jour des fermetures du gouvernement provincial.</mark>"/&gt;</code></p>
+						<p><code>&lt;meta name="dcterms.title" content="<mark>Fermetures, annulations et changements aux services</mark>"/&gt;</code></p>
+							
+						<h3>Examples of <code>aria-label</code> attributes</h3>
+						<p>An <code>aria-label</code> attribute is an invisible label where a visible label can't be used.</p>
+						<p><code>&lt;nav id="navigation" class="ribbon" role="navigation" aria-label="<mark>Navigation principale</mark>"&gt;</code></p>
+						<p><code>&lt;button aria-label="<mark>Fermer</mark>" onclick="document.getElementById('box').style.display='none';" class="close-button"&gt;X&lt;/button&gt;</code></p>
+						<p><code>&lt;nav class="skip-links" aria-label="<mark>Passer au contenu principal</mark>"&gt;</code></p>
+						<p><code>&lt;section aria-label="<mark>Navigation du calendrier</mark>" class="Calendar-nav"&gt;</code></p>
+						<p><code>&lt;button id="previous" class="Calendar-nav--button Calendar-nav--button--unavailable" type="button" aria-label="<mark>Le mois précédent</mark>" tabindex="-1"&gt; &lt;/button&gt;</code></p>
+						<p><code>&lt;button id="next" class="Calendar-nav--button" type="button" aria-label="<mark>Le mois prochain</mark>"&gt;❯&lt;/button&gt;&lt;/section&gt;</code></p>
+							
+						<h3>Examples of Hidden content</h3>
+						<p>Some text is hidden from being displayed on the screen. This text could be used for help keyboard-only users navigate a page, like in the example of <a href="skip-link.html" title="Skip link">Skip link</a>.</p>
+						
+						<h3>Examples of Error message</h3> <!-- i don't see how this example has to do anything with french? Is this already covered in the error message section? --> 
+						<p>Show an error message when there is a validation error. In the error message explain what went wrong and how to fix it.</p>
+						<p>Examples of <a href="error-message.html" title="Error message">Error message</a>.</p>
+									
+<!--New Section -->			
+						<h2>Links</h2>		
+						<p>On French pages, all links should have French text for the <code>title</code> attribute and a language declaration for <code>hreflang</code> attribute. The <code>hreflang</code> attribute should set to the language of content targeted by link. The <code>lang</code> should only be used when the language of the hypertext is different than the <a href="#GlobalDeclaration" title="Global declaration examples">global declared language</a>.</p>
+						<ul>
+							<li>If the target it French use <code>hreflang="fr"</code>.
+								<ul>
+									<li>If the hypertext is in English add <code>lang="en"</code> to the <code>a</code> tag.</li>
+								</ul>
+							</li>
+							<li>If the target it English use <code>hreflang="en"</code> and "<span lang="fr">en anglais seulement</span>" should be added to the <code>title</code> attribute and hypertext.
+								<ul>
+									<li>If the hypertext is in English add <code>lang="en"</code> to the <code>a</code> tag.</li>
+								</ul>
+							</li>
+						</ul>
+				
+						<h3>Examples of a French target</h3>
+						<code>&lt;a href="https://beta.novascotia.ca/fr/enonce-de-confidentialite" <mark>hreflang="fr"</mark> title="Énoncé de confidentialité"&gt;Énoncé de confidentialité&lt;/a&gt;</code>
+				
+						<h3>Examples of a English target with French <code>title</code> and hypertext</h3>
+						<code>&lt;a href="https://beta.novascotia.ca/contact/health-and-wellness#DHW-MSI-01" <mark>hreflang="en"</mark> title="le Service d’inscription et de demande de renseignements du MSI <mark>(en anglais seulement)</mark>"&gt;le Service d’inscription et de demande de renseignements du MSI <mark>(en anglais seulement)</mark>&lt;/a&gt;</code>
+				
+						<h3>Examples of a English target with English <code>title</code> and hypertext</h3>
+						<code>&lt;a href="http://www.nshealth.ca/legacy-life" <mark>hreflang="en"</mark> <mark>lang="en"</mark> title="Legacy of Life <mark>(en anglais seulement)</mark>"&gt;Legacy of Life <mark>(en anglais seulement)</mark>&lt;/a&gt;</code>
+				
+				
+				
+				<!--New Section -->
+						<h2>French grammar rules</h2>
+						<h3>Capitization</h3>
+						<p>Capitization for French is different than English. In French, names of languages are not capitized. For example, (<span lang="fr">en français</span>)</p> <!-- isn't this the responsibility of the translator, not the developer? -->
+
+						
+						<p>Below are some of the French grammar rules from <cite><a href="https://www.lalanguefrancaise.com/general/guide-complet-usage-majuscules-francais/" lang="fr" hreflang="fr" title="Le guide complet de l’usage des majuscules en français">https://www.lalanguefrancaise.com/general/guide-complet-usage-majuscules-francais/</a></cite>.</p>
+						
+						<h4>When to use a upper-case letter?</h4>
+						<ol>
+							<li>At the beginning of the sentence.</li>
+							<li>After a period except in the case of using a period for an abbreviation ("etc.").</li>
+							<li>After an exclamation point except if it's an interjection.
+								<ul>
+									<li>Do not put a capital letter after the semicolon.</li>
+								</ul>
+							</li>
+							<li>Only on the first word of a title or subtitle should be capitalized in French (unlike in English).</li>
+							<li>First names, surnames and nicknames always take a capital letter.</li>
+							<li>When nouns and adjectives are used as nicknames, they are capitalized.</li>
+						</ol>
+
+						<h3>Punctuation</h3>
+						<p>This is a table of French typographical rules for punctuation. Source: <a href="https://www.btb.termiumplus.gc.ca/tcdnstyl-chap?lang=eng&lettr=chapsect17&info0=17" title="7 French Typographical Rules">17 French Typographical Rules</a>.</p> 
+						<p><strong>Please note:</strong> For some of the punctuation that requires a space before or after it, you should use the <code>*&#38;nbsp;</code> code.</p>
+	
+						<style type="text/css">
+
+						  dl {
+							display: flex;
+							flex-flow: row wrap;
+							border: solid #005587;
+							border-width: 1px 1px 0 0;
+						  }
+						  dt {
+							flex-basis: 20%;
+							padding: 2px 10px;
+							background: #005587;
+							text-align: left;
+							color: #fff;
+						  }
+						  dd {
+							flex-basis: 70%;
+							flex-grow: 1;
+							margin: 0;
+							padding: 2px 10px;
+							border-bottom: 1px solid #333;
+						  }
+
+						</style>				
+				
+				
+
+						<h4>* Asterisk</h4>
+
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>When it is before a word</dd>
+							<dt>Space before</dt>
+							<dd>Yes, there is one space before it.</dd>
+							<dt>Space after</dt>
+							<dd>No space</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Sauf dans ce qui *suit</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Sauf dans ce qui *suit</code></dd>
+						</dl>
+
+						<h4>Asterisk *</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>When it is after a word</dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">La date d'expiration* dépend de la date d'application.</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>La date d'expiration* dépend de la date d'application.</code></dd>
+						</dl>
+				
+				
+						<h4>Brackets [</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>When it is the opening bracket.</dd>
+							<dt>Space before</dt>
+							<dd>Yes, there is one space before it.</dd>
+							<dt>Space after</dt>
+							<dd>There is no space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Par exemple&nbsp;: FINCH&nbsp;— 220867001 (cinq lettres [Finch] + 22 [jour] + 08 [mois] + 67 [année - 1967] + 001 [3 chiffres choisis par l’ordinateur&nbsp;)</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Par exemple&nbsp;: FINCH&nbsp;— 220867001 (cinq lettres [Finch] + 22 [jour] + 08 [mois] + 67 [année - 1967] + 001 [3 chiffres choisis par l’ordinateur]&nbsp;)</code></dd>
+						</dl>
+
+
+						<h4>Brackets ]</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>When it is the closing bracket.</dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Par exemple&nbsp;: FINCH&nbsp;— 220867001 (cinq lettres [Finch] + 22 [jour] + 08 [mois] + 67 [année - 1967] + 001 [3 chiffres choisis par l’ordinateur]&nbsp;)</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Par exemple&nbsp;: FINCH&nbsp;— 220867001 (cinq lettres [Finch]<mark>&#38nbsp;</mark>+ 22 [jour]<mark>&#38nbsp;</mark>+ 08 [mois]<mark>&#38nbsp;</mark>+ 67 [année - 1967]<mark>&#38nbsp;</mark>+ 001 [3 chiffres choisis par l’ordinateur]<mark>&#38nbsp;</mark>)</code></dd>
+						</dl>
+						
+						<h4>Colon :</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>After a word</dd>
+							<dt>Space before</dt>
+							<dd>Yes, there is one space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Par exemple&nbsp;: FINCH&nbsp;— 220867001 (cinq lettres [Finch] + 22 [jour] + 08 [mois] + 67 [année - 1967] + 001 [3 chiffres choisis par l’ordinateur]&nbsp;)</dd>
+							<dt>Code</dt>
+							<dd><code>Par exemple<mark>&#38nbsp;</mark>: FINCH&nbsp;— 220867001 (cinq lettres [Finch] + 22 [jour] + 08 [mois] + 67 [année - 1967] + 001 [3 chiffres choisis par l’ordinateur]&nbsp;) </code></dd>
+						</dl>
+
+						<h4>Comma ,</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>After a word</dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">un passeport, un permis de conduit ou une carte de santé</dd>
+							<dt>Code</dt>
+							<dd><code>un passeport, un permis de conduit ou une carte de santé</code></dd>
+						</dl>
+
+
+						<h4>Decimal comma ,</h4>				
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>In the middle of numbers.</dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>							<dt>Space after</dt>
+							<dd>There is no space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">55,45&nbsp;$</dd>
+							<dt>Code</dt>
+							<dd><code>55,45&nbsp;$</code></dd>
+						</dl>
+
+
+						<h4>Dash (em) —</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>After a word.</dd>
+							<dt>Space before</dt>
+							<dd>Yes, there is one space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Par exemple&nbsp;: FINCH — 220867001 (cinq lettres [Finch] + 22 [jour] + 08 [mois] + 67 [année - 1967] + 001 [3 chiffres choisis par l’ordinateur]&nbsp;)</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Par exemple&nbsp;: FINCH — 220867001 (cinq lettres [Finch] + 22 [jour] + 08 [mois] + 67 [année - 1967] + 001 [3 chiffres choisis par l’ordinateur]&nbsp;); </code></dd>
+						</dl>
+
+
+						<h4>Ellipsis ...</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>When it is at beginning of a sentence.</dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>
+							<dt>Space after</dt>.
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">...&nbsp;tu dois...&nbsp;</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>...<mark>&#38nbsp;</mark>tu dois...&nbsp;</code></dd>
+						</dl>
+
+
+						<h4>... Ellipsis</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>When it is at the middle or at end of a sentence.</dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">...&nbsp;tu dois...&nbsp;</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>...&nbsp;tu dois...&nbsp;</code></dd>
+						</dl>
+
+
+						<h4>Exclamation mark !</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>At the end of a sentence.</dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Attention! </dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Attention! </code></dd>
+						</dl>
+
+
+						<h4>Oblique /</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>In the between of two words.</dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>
+							<dt>Space after</dt>
+							<dd>There is no space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Vitesse maximum&nbsp;: 110 km/h</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Vitesse maximum&nbsp;: 110 km/h</code></dd>
+						</dl>
+
+
+						<h4>Parenthesis (</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>When it is the opening parenthesis.</dd>
+							<dt>Space before</dt>
+							<dd>Yes, there is one space before it.</dd>
+							<dt>Space after</dt>
+							<dd>There is no space after it</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Par exemple&nbsp;: FINCH&nbsp;— 220867001 (cinq lettres [Finch] + 22 [jour] + 08 [mois] + 67 [année - 1967] + 001 [3 chiffres choisis par l’ordinateur]&nbsp;)</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Par exemple&nbsp;: FINCH&nbsp;— 220867001 (cinq lettres [Finch] + 22 [jour] + 08 [mois] + 67 [année - 1967] + 001 [3 chiffres choisis par l’ordinateur]<mark>&#38nbsp;</mark>)</code></dd>
+						</dl>
+
+
+
+						<h4>Parenthesis )</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>When it is the closing parenthesis.</dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Par exemple&nbsp;: FINCH&nbsp;— 220867001 (cinq lettres [Finch] + 22 [jour] + 08 [mois] + 67 [année - 1967] + 001 [3 chiffres choisis par l’ordinateur]&nbsp;)</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Par exemple&nbsp;: FINCH&nbsp;—&nbsp;220867001&nbsp;(cinq lettres&nbsp;[Finch]&nbsp;+ 22&nbsp;[jour]&nbsp;+ 08&nbsp;[mois]&nbsp;+ 67&nbsp;[année - 1967] + 001&nbsp;[3 chiffres choisis par l’ordinateur]&nbsp;) </code></dd>
+						</dl>
+
+						<h4>Period .</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd></dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Vous pouvez utiliser le formulaire «&nbsp;<i lang="en">Application for Lottery Permit for Prizes Not Exceeding $4,000 in Value</i>&nbsp;» si vous ne pouvez pas faire la demande en ligne. </dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Vous pouvez utiliser le formulaire «&nbsp;<i lang="en">Application for Lottery Permit for Prizes Not Exceeding $4,000 in Value</i>&nbsp;» si vous ne pouvez pas faire la demande en ligne. </code></dd>
+						</dl>
+
+
+						<h4>Question mark ?</h4>
+
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>At the end of a sentence.</dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Est-ce que l'information sur cette page était utile? </dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Est-ce que l'information sur cette page était utile? </code></dd>
+						</dl>
+
+
+					<h4>Quotation mark «</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>When it is the opening quotation mark.</dd>
+							<dt>Space before</dt>
+							<dd>Yes, there is one space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Vous pouvez utiliser le formulaire «&nbsp;<i lang="en">Application for Lottery Permit for Prizes Not Exceeding $4,000 in Value</i>&nbsp;» si vous ne pouvez pas faire la demande en ligne.</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Vous pouvez utiliser le formulaire «<mark>&#38nbsp;</mark><i lang="en">Application for Lottery Permit for Prizes Not Exceeding $4,000 in Value</i>&nbsp;» si vous ne pouvez pas faire la demande en ligne.</code></dd>
+						</dl>
+
+
+					<h4>Quotation mark »</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>When it is the closing quotation mark.</dd>
+							<dt>Space before</dt>
+							<dd>Yes, there is one space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr">Vous pouvez utiliser le formulaire «&nbsp;<i lang="en">Application for Lottery Permit for Prizes Not Exceeding $4,000 in Value</i>&nbsp;» si vous ne pouvez pas faire la demande en ligne.</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Vous pouvez utiliser le formulaire «&nbsp;<i lang="en">Application for Lottery Permit for Prizes Not Exceeding $4,000 in Value</i><mark>&#38nbsp;</mark>» si vous ne pouvez pas faire la demande en ligne.</code></dd>
+						</dl>
+
+
+						<h4>Semicolon ;</h4>
+						<dl class="flexed">
+							<dt>Placement</dt>
+							<dd>After a word.</dd>
+							<dt>Space before</dt>
+							<dd>There is no space before it.</dd>
+							<dt>Space after</dt>
+							<dd>Yes, there is one space after it.</dd>
+							<dt>Example</dt>
+							<dd lang="fr"><p>Assurez-vous de fournir ce qui suit :</p>
+																	<ul>
+																		<li>une œuvre créative qui porte votre nom; </li>
+																		<li>une confirmation de votre inscription dans une université ou un collège; (reçu pour les frais de scolarité ou lettre du bureau du registraire ou d'un professeur)&nbsp;.</li>
+																	</ul>
+							</dd>
+							<dt>Code</dt>
+							<dd lang="fr"><code>Assurez-vous de fournir ce qui suit&nbsp;:<br>
+																	<br>une œuvre créative qui porte votre nom; <br>
+																	une confirmation de votre inscription dans une université ou un collège; (reçu pour les frais de scolarité ou lettre du bureau du registraire ou d'un professeur)&nbsp;.</code>
+							</dd>
+						</dl>
+						
+			
+						<h3>Currency</h3>
+						<p>Use the comma as the decimal marker in French texts and place the dollar sign after the numerals. There should a space (use <code>&#38;nbsp;</code>) between the numerals and dollar sign.</p>
+						<p>When the dollar amount has four or more figures use a space (<code>&#38;nbsp;</code>) to seperate the numerals in groups of threes.</p>
+				
+						
+				  <cite>Source: <a href="https://www.noslangues-ourlanguages.gc.ca/en/writing-tips-plus/canadian-dollar-symbol" title="Canadian dollar (symbol) (Linguistic recommendation from the Translation Bureau)">Symbol for the Canadian dollar in French</a></cite>
+				
+						<h4>Examples</h4>
+						<p><code>55,45&#38;nbsp;$</code></p>
+						<p><code>42&#38;nbsp;987,34&#38;nbsp;$</code></p>
+
+									
+						<h3>English words in French content</h3>
+						<h4>Acts or regulations</h4>
+		
+		
+						<p>The majority of the acts and regualtions in Nova Scotia are written (or proclaim) in English. For this reason, the official names are almost never translated. When the official names are in French content, you should use the <code>i</code> tag and the <code>lang</code> attribute.</p>
+		
+			
+						<h5>Example</h5>
+						<p lang="fr">Toute personne reconnue coupable d'une infraction à la loi sur les embaumeurs et les entrepreneurs de pompes funèbres (<i lang="en">Embalmers and Funeral Directors Act</i>) peut être condamnée à une amende maximale de 2&nbsp;000&nbsp;$.</p>
+						
+		
+						<h5>Code</h5>
+						<code lang="fr">&lt;p&gt;Toute personne reconnue coupable d'une infraction à la loi sur les embaumeurs et les entrepreneurs de pompes funèbres (&lt;i lang="en"&gt;Embalmers and Funeral Directors Act&lt;/i&gt;) peut être condamnée à une amende maximale de 2&#38;nbsp;000&#38;nbsp;$.&lt;/p&gt;</code>
+		
+		
+						<h4>Organization or company name</h4>
+		
+		
+						<p>Some organization (private or governmental) will only have an English name and it will not be translated. When that is the case, you should use the <code>i</code> tag and the <code>lang</code> attribute to its name and acronym of the name.</p>
+		
+						<h5>Example</h5>	
+						<p lang="fr">Le directeur du salon funéraire, du crématorium ou de l'entreprise doit être un entrepreneur de pompes funèbres autorisé par le <i lang="en">Nova Scotia Board of Registered Embalmers and Funeral Directors</i> (<i lang="en">NSBREFD</i>)</p>	
+		
+						<h5>Code</h5>
+						<code lang="fr">&lt;p&gt;Le directeur du salon funéraire, du crématorium ou de l'entreprise doit être un entrepreneur de pompes funèbres autorisé par le &lt;i lang="en"&gt;Nova Scotia Board of Registered Embalmers and Funeral Directors&lt;/i&gt; (&lt;i lang="en"&gt;NSBREFD&lt;/i&gt;)&lt;/p&gt;</code>				
+	
+						<h2>French characters</h2>
+						<p> <a href="https://toolstud.io/web/charmap.php?filter=*">URL Encoded</a></p>
+						<table>
+							<tbody>
+								<tr>
+									<th style="width:7%">Char</th>
+									<th style="width:7%">Dec</th>
+									<th style="width:7%">Hex</th>
+									<th style="width:15%">Entity</th>
+
+									<th>Name</th>
+								</tr>
+
+								<tr>
+									<td>À</td>
+									<td>192</td>
+									<td>00C0</td>
+									<td><code>&amp;Agrave;<code></td>
+									<td>A accent grave</td>
+								</tr>
+								<tr>
+									<td>à</td>
+									<td>224</td>
+									<td>00E0</td>
+									<td><code>&amp;agrave;<code></td>
+									<td>a accent grave</td>
+								</tr>
+	
+								<tr>
+									<td>Á</td>
+									<td>193</td>
+									<td>00C1</td>
+									<td><code>&amp;Aacute;<code></td>
+									<td>A accent acute</td>
+								</tr>
+							<tr>
+									<td>á</td>
+									<td>225</td>
+									<td>00E1</td>
+									<td><code>&amp;aacute;<code></td>
+									<td>A accent acute </td>
+								</tr>
+								<tr>
+									<td>Â</td>
+									<td>194</td>
+									<td>00C2</td>
+									<td><code>&amp;Acirc;<code></td>
+									<td>a accent circumflex</td>
+								</tr>								
+								<tr>
+									<td>â</td>
+									<td>226</td>
+									<td>00E2</td>
+									<td><code>&amp;acirc;<code></td>
+									<td>a accent circumflex</td>
+								</tr>
+
+								<tr>
+									<td>Æ</td>
+									<td>198</td>
+									<td>00C6</td>
+									<td><code>&amp;AElig;<code></td>
+									<td>AE</td>
+								</tr>
+								<tr>
+									<td>æ</td>
+									<td>230</td>
+									<td>00E6</td>
+									<td><code>&amp;aelig;</code></td>
+									<td>ae</td>
+								</tr>
+								<tr>
+									<td>Ç</td>
+									<td>199</td>
+									<td>00C7</td>
+									<td><code>&amp;Ccedil;<code></td>
+									<td>C  cédille  (cedilla)</td>
+								</tr>
+								<tr>
+									<td>ç</td>
+									<td>231</td>
+									<td>00E7</td>
+									<td><code>&amp;ccedil;</code></td>
+									<td>c  cédille  (cedilla)</td>
+								</tr>										
+								<tr>
+									<td>È</td>
+									<td>200</td>
+									<td>00C8</td>
+									<td><code>&amp;Egrave;<code></td>
+									<td>E accent grave</td>
+								</tr>
+								<tr>
+									<td>è</td>
+									<td>232</td>
+									<td>00E8</td>
+									<td><code>&amp;egrave;</code></td>
+									<td>e accent grave</td>
+								</tr>		
+								<tr>
+									<td>É</td>
+									<td>201</td>
+									<td>00C9</td>
+									<td><code>&amp;Eacute;<code></td>
+									<td>E accent acute</td>
+								</tr>
+								<tr>
+									<td>é</td>
+									<td>233</td>
+									<td>00E9</td>
+									<td><code>&amp;eacute;</code></td>
+									<td>e accent acute</td>
+								</tr>
+								<tr>
+									<td>Ê</td>
+									<td>202</td>
+									<td>00CA</td>
+									<td><code>&amp;Ecirc;<code></td>
+									<td>E accent circumflex</td>
+								</tr>
+								<tr>
+									<td>ê</td>
+									<td>234</td>
+									<td>00EA</td>
+									<td><code>&amp;ecirc;</code></td>
+									<td>e accent circumflex</td>
+								</tr>												
+								<tr>
+									<td>Ë</td>
+									<td>203</td>
+									<td>00CB</td>
+									<td><code>&amp;Euml;<code></td>
+									<td>E tréma (diaeresis)</td>
+								</tr>
+								<tr>
+									<td>ë</td>
+									<td>235</td>
+									<td>00EB</td>
+									<td><code>&amp;euml;</code></td>
+									<td>e tréma (diaeresis)</td>
+								</tr>										
+
+								<tr>
+									<td>Î</td>
+									<td>206</td>
+									<td>00CE</td>
+									<td><code>&amp;Icirc;<code></td>
+									<td>I accent circumflex</td>
+								</tr>
+								<tr>
+									<td>î</td>
+									<td>238</td>
+									<td>00EE</td>
+									<td><code>&amp;icirc;</code></td>
+									<td>i accent circumflex</td>
+								</tr>
+								<tr>
+									<td>Ï</td>
+									<td>207</td>
+									<td>00CF</td>
+									<td><code>&amp;Iuml;<code></td>
+									<td>I tréma (diaeresis)</td>
+								</tr>
+								<tr>
+									<td>ï</td>
+									<td>239</td>
+									<td>00EF</td>
+									<td><code>&amp;iuml;</code></td>
+									<td>i tréma (diaeresis)</td>
+								</tr>
+								<tr>
+									<td>Ô</td>
+									<td>212</td>
+									<td>00D4</td>
+									<td><code>&amp;Ocirc;<code></td>
+									<td>O accent circumflex</td>
+								</tr>
+								<tr>
+									<td>ô</td>
+									<td>244</td>
+									<td>00F4</td>
+									<td><code>&amp;ocirc;</code></td>
+									<td>o accent circumflex</td>
+								</tr>
+								<tr>
+									<td>Ö</td>
+									<td>214</td>
+									<td>00D6</td>
+									<td><code>&amp;Ouml;<code></td>
+									<td>O tréma (diaeresis)</td>
+								</tr>
+								<tr>
+									<td>ö</td>
+									<td>246</td>
+									<td>00F6</td>
+									<td><code>&amp;ouml;</code></td>
+									<td>o tréma (diaeresis)</td>
+								</tr>
+								<tr>
+									<td>Ù</td>
+									<td>217</td>
+									<td>00D9</td>
+									<td><code>&amp;Ugrave;<code></td>
+									<td>U accent grave</td>
+								</tr>
+								<tr>
+									<td>ù</td>
+									<td>249</td>
+									<td>00F9</td>
+									<td><code>&amp;ugrave;</code></td>
+									<td>u accent grave</td>
+								</tr>									
+								<tr>
+									<td>Ú</td>
+									<td>218</td>
+									<td>00DA</td>
+									<td><code>&amp;Uacute;<code></td>
+									<td>U accent acute</td>
+								</tr>
+								<tr>
+									<td>ú</td>
+									<td>250</td>
+									<td>00FA</td>
+									<td><code>&amp;uacute;</code></td>
+									<td>u accent acute</td>
+								</tr>
+								<tr>
+									<td>Û</td>
+									<td>219</td>
+									<td>00DB</td>
+									<td><code>&amp;Ucirc;<code></td>
+									<td>U accent circumflex</td>
+								</tr>
+								<tr>
+									<td>û</td>
+									<td>251</td>
+									<td>00FB</td>
+									<td><code>&amp;ucirc;</code></td>
+									<td>u accent circumflex</td>
+								</tr>
+								<tr>
+									<td>Ü</td>
+									<td>220</td>
+									<td>00DC</td>
+									<td><code>&amp;Uuml;<code></td>
+									<td>U tréma (diaeresis)</td>
+								</tr>
+								<tr>
+									<td>ü</td>
+									<td>252</td>
+									<td>00FC</td>
+									<td><code>&amp;uuml;</code></td>
+									<td>u tréma (diaeresis)</td>
+								</tr>
+								<tr>
+									<td>«</td>
+									<td>171</td>
+									<td>00AB</td>
+									<td><code>&amp;laquo;<code></td>
+									<td>Quotation mark (opening)</td>
+								</tr>
+								<tr>
+									<td>»</td>
+									<td>187</td>
+									<td>00BB</td>
+									<td><code>&amp;raquo;<code></td>
+									<td>Quotation mark (closing)</td>
+								</tr>								
+							</tbody>
+						</table>
+
+
+			</section>
+	
+	
+					</div><!-- /col-xs-8 -->
+				</div><!--/row-->
+			</form>
+		</article>
+	</main>
+</div><!-- /container -->
+
+<!-- START FOOTER -->
+	<footer id="footer" class="footer" role="contentinfo">
+		<div class="container">
+
+		</div>
+	</footer>
+<!-- END FOOTER -->
+</div>
+
+</body>
+</html>
