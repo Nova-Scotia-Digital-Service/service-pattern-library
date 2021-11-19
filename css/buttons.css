@@ -13,11 +13,27 @@ button:focus, .ns-link-button:focus{
 .btn-lg, .btn-sm, .btn-xs {
     margin: 1rem auto;
 }
+
+.btn-md{
+	padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1;
+  border-radius: 3px;
+  text-decoration: none;
+  margin: .5rem auto;
+}
+
 .btn-default {
 	transition: 0.2s ease;
 	border: 0;
-    display: inline-block;
+  display: inline-block;
 }
+.btn-inline-field{
+	margin-bottom: 0;
+  height: 40px;
+  height: 2.5rem;
+}
+
 .ns-link-button{
 	text-decoration-line: none;
 }
