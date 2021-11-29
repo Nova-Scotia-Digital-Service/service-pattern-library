@@ -103,11 +103,13 @@
 						<div class="col-sm-9 col-xs-12">
 							<h1>Calendar picker</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 							<h2>When to use this component</h2>
-							<p>Use a calendar picker when the user needs to know a date’s relation to other days such as the day of the week it falls on or its proximity to today. They are optimal for scheduling tasks.</p>
+							<p>Calendar pickers are optimal for scheduling upcoming tasks or indicating recent dates. Use one when it's helpful to see a date in relation to today, or other days of the week. It is also helpful if a user needs to pick more than one day in relation to another (like a start and an end).</p>
 							<h2>When not to use this component</h2>
-							<p>Do not use the calendar picker component when you’re asking users for a date they’ll already know, or can look up without using a calendar. Such as a birthday or a licence expiry. <a href="date-fields.html">Use the date fields pattern instead</a>.</p>
+							<p>Do not use the calendar picker component when you’re asking users for a date they’ll already know. This could be a birthday, or another date they can look up without using a calendar. An example of this is if a user has a document showing a date you're requesting, like an expiry date. <a href="date-fields.html">Use the date fields pattern instead</a>.</p>
 							<h2>How it works</h2>
-							<p>Calendar pickers default to showing today’s date and only one month is shown at a time. Calendar pickers allow users to navigate through months and years, however they work best when used for recent or near future dates. If a user needs to input a far distant or future date consider having the calendar default open to a more convenient day.</p>
+							<p>Calendar pickers default to showing today’s date and only one month is shown at a time. Calendar pickers navigate one month at a time so they work best when used for recent or near future dates. For example, if someone is older than 10, they would have scroll back quite far to find their year of birth.</p>
+
+							<p>If a calendar picker is best, but the expected entry is not close to today, default to open near a more convenient month. Or consider offering the option of both text entry or calendar picker. It's important to test with your users if you change a picker default to ensure users succeed.t open to a more convenient day.</p>
 
 							<section class="row">
 								<div class="col-md-12 col-xs-12">
