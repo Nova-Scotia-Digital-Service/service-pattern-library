@@ -102,15 +102,99 @@ $(function(){
 					<div class="col-sm-9 col-xs-12"><!-- Bootstrap column grid should not be set to more than 8-col for main content column -->
 						<h1>Content page</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<p>Your main content area shouldn't exceed 800px, lines of text that span the screen are hard to read. If you don't have a sidebar, use <code>col-8</code>to restrict the column to a readable length. Don't set the column width to full-width <code>col-12</code>.</p>
-						<h2>Basic Layout</h2>
-							<iframe src="pages/content-page-template.html" style="width: calc(100% + 25%); height:500px; margin-bottom: -125px; margin-right: -25%; border: 2px solid #a2a2a2; -ms-zoom: 0.75;-moz-transform: scale(0.75); -moz-transform-origin: 0 0; -o-transform: scale(0.75); -o-transform-origin: 0 0; -webkit-transform: scale(0.75); -webkit-transform-origin: 0 0;"  frameborder="0"></iframe>
+						<h2>Examples of a Basic Layout</h2>
+						
+						<caption>An example of a service only available in English.</caption>
+							<iframe src="pages/content-page-example-en.html" style="width: calc(100% + 25%); height:500px; margin-bottom: -125px; margin-right: -25%; border: 2px solid #a2a2a2; -ms-zoom: 0.75;-moz-transform: scale(0.75); -moz-transform-origin: 0 0; -o-transform: scale(0.75); -o-transform-origin: 0 0; -webkit-transform: scale(0.75); -webkit-transform-origin: 0 0;"  frameborder="0"></iframe>
+						
+						<caption>An example of a bilingual service (offered in English and French).</caption>
+						
+					  <iframe src="pages/content-page-template.html" style="width: calc(100% + 25%); height:500px; margin-bottom: -125px; border: 2px solid #a2a2a2; -ms-zoom: 0.75;-moz-transform: scale(0.75); -moz-transform-origin: 0 0; -o-transform: scale(0.75); -o-transform-origin: 0 0; -webkit-transform: scale(0.75); -webkit-transform-origin: 0 0;"  frameborder="0"></iframe>	
+						
+						
 						<h3>Page title</h3>
 						<p>Each page in your service must contain a distinct page title tag. Page titles should include the page heading, the name of the service, and Government of Nova Scotia. As an example, the page title of this page is <code>&lt;title&gt;Content Page - Forms & Services Building Blocks - Government of Nova Scotia&lt;/title&gt;</code></p>
+						
+						
+						<div class="secondary-content">
+							<h4 id="BilingualConsideration" >Consideration for bilingual services</h4>
+							<p>In a bilingual service, all the French page should have the page heading in French, the name of the service in French, and <span lang="fr">«&nbsp;Gouvernement de la Nouvelle-Écosse&nbsp;»</span>.</p> 
+						<p><code lang="fr">&lt;title&gt;Modèle de page de contenu - Bibliothèque de configurations de conception de service - Gouvernement de la Nouvelle-Écosse&lt;/title&gt;</code></p>
+						</div>
+						
+						
 						<h3>Skip link</h3>
 						<p>Include a <a href="skip-link.html">skip link component</a> to give users the option to bypass the top-level navigation links and jump to the main content on a page.</p>
+						
+						
 						<h3>Header and main navigation</h3>
-						<p>Use the "NS MOTHERSHIP RIBBON" provided in the <a href="https://cns.pages.novascotia.ca/patternlab/navigation.html">CNS saltire pattern library</a>. In bilingual services, when the service toggles to French, use the French version on the ribbon. Don't forget to change the page language declaration <code>&lt;html lang="fr"&gt;</code> and update any aria labels and alt text on the page.</p>
+						<p>Use the "NS MOTHERSHIP RIBBON" provided in the <a href="https://cns.pages.novascotia.ca/patternlab/navigation.html">CNS saltire pattern library</a>.</p>
+						
 						<p>Only include a search bar or a help link if user testing shows they make the service easier to use. Instead, try adding information to the pages where needed. Use the <a href="#">accordion compontent (link not available yet)</a> to hold these pieces of information.</p>
+
+					<div class="secondary-content">
+							<h4 id="BilingualConsideration">Consideration for bilingual services</h4>
+							<p>The English pages should have a <span lang="fr">«&nbsp;Français&nbsp;»</span> language toggle and use the <a href="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" title="Government of Nova Scotia - Logo">English Nova Scotia logo</a>. The French pages should have a "English" language toggle and use the <a href="https://novascotia.ca/clf/ignition/img/nsvip-fr-white-flag.svg" title="Gouvernement de la Nouvelle-Écosse - Logo bilingue">bilingual Nova Scotia logo</a>.</p>
+							
+							
+							<h5>Code for bilingual page</h5>
+							<h6>English page</h6>
+
+													<pre><code>&lt;!-- NS MOTHERSHIP RIBBON w FR --&gt;
+&lt;nav id="navigation" class="ribbon" role="navigation" aria-label="<mark>Main navigation</mark>"&gt;
+	&lt;div class="container"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-xs-6"&gt;
+				&lt;a href="https://novascotia.ca/" hreflang="en"&gt;&lt;img class="ribbon-img" src="<mark>https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg</mark>" alt="<mark>Government of Nova Scotia</mark>" /&gt;&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class="col-xs-6"&gt;
+				&lt;a href="<mark>/fr</mark>"  <mark>hreflang="fr"</mark>  style="float: right; color: #fff; font-weight: bold; margin: 10px 0; text-decoration: none;"&gt;<mark>Français</mark>&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;	
+							&lt;!-- NS MOTHERSHIP RIBBON w FR --&gt;</code></pre>
+							
+							
+							<h6>French page</h6>
+
+													<code lang="fr"><pre>&lt;!-- START SALTIRE NS MOTHERSHIP RIBBON w FR --&gt;
+&lt;nav id="navigation" class="ribbon" role="navigation" aria-label="<mark>Navigation principale</mark>"&gt;
+	&lt;div class="container"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-xs-6"&gt;
+				&lt;a href="https://novascotia.ca/" <mark>hreflang="en"</mark>&gt; &lt;img class="ribbon-img" src="<mark>https://novascotia.ca/clf/ignition/img/nsvip-fr-white-flag.svg</mark>" alt="<mark>Gouvernement de la Nouvelle-Écosse</mark>" style="width: 6.5em;" /&gt;&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class="col-xs-6"&gt;
+				&lt;a href="<mark>/en</mark>" <mark>hreflang="en"</mark> style="float: right; color: #fff; font-weight: bold; margin: 10px 0; text-decoration: none;"&gt;<mark>English</mark>&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;
+&lt;!-- END SALTIRE NS MOTHERSHIP RIBBON w FR --&gt;</pre>	</code>						
+
+							
+							
+							
+							<h5>Don't forget.</h5>
+								<ul>
+									<li>Declare French as the language of the page <code>&lt;html lang="fr"&gt;</code>.</li>
+									<li>Translate all content attribute of <code>&lt;meta&gt;</code> tags. Some examples:
+										<ul>
+											<li><code>&lt;meta name="description" content="Liste &#224; jour des fermetures du gouvernement provincial."/&gt;</code></li>
+											<li><code>&lt;meta name="dcterms.title" content="Fermetures, annulations et changements aux services"/&gt;</code></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+
+						
+						
+
+		
+						
+						
+						
 						<h3>Page heading</h3>
 						<p>There should only be one H1 heading on each page. Don't use the same page heading across multiple pages. For example, don't use the H1 heading to show the name of the service across multiple pages.</p>
 						<p>The page heading should relate to the content of the current page, not any higher-level section. If you need to show the high-level section, use the <code>ns-caption</code> style. An example of this is multiple forms within one service. When testing shows confusion about which form the user is on, use the <code>ns-caption</code> style to show the name of the form in the caption.</p>
@@ -124,6 +208,13 @@ $(function(){
 						</textarea></code></pre>
 						<h3>Footer</h3>
 						<p>Use the footer provided in the <a href="https://cns.pages.novascotia.ca/patternlab/navigation.html">CNS saltire pattern library</a>. Remove the social media links unless there's a benefit to display them. Don't change the links to privacy, terms and cookies. These link to provincial standards should be the same for all services. If your service has it's own provacy notice, place it on the page where private information is being collected. Use the <a href="privacy-notice.html">privacy notice pattern</a> to hold the information.</p>
+						
+						
+												<div class="secondary-content">
+							<h4 id="BilingualConsideration">Consideration for bilingual services</h4>
+							<p>In a bilingual service, all French pages should have a French footer. Use the <a href="https://cns.pages.novascotia.ca/patternlab/navigation.html">footer-fr.html</a> file from the CNS saltire pattern library.</p>
+						</div>
+						
 						
 					</div><!-- /col-xs-8 -->
 				</div><!--/row-->
