@@ -143,14 +143,26 @@ $(function(){
 							<li>if the error relates to a specific field within the question, give it a red border and refer to that field in the error message</li>
 						</ul>
 						<p>To help screen reader users, the error message component includes a hidden ‘Error:’ before the error message. These users will hear, for example, “Error: Enter an event name”.</p>
-						<p>If your error message is written in French, you can change the prefix as needed, as shown in this example.</p>
+						
+						
+						
+										
+						<div class="secondary-content">
+							<h4 id="BilingualConsideration" >Consideration for bilingual services</h4>
+							<p>All the error messages should be in French, including all hidden text. </p>
+							
+											<pre><code>
+&lt;span id="changed-name-error" class="ns-error-message field-validation-error"&gt;
+	&lt;i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"&gt;&lt;/i&gt;
+	"<mark>&lt;span class="ns-visually-hidden"&gt;Erreur&nbsp;:&lt;/span&gt; Entrez un nom d'événement.</mark>"
+&lt;/span&gt;
+						</code></pre>
+						</div>
+					
+						
+						
 
-						<pre><code><textarea rows="5" readonly="readonly">
-<span id="changed-name-error" class="ns-error-message field-validation-error">
-	<i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-	<span class="ns-visually-hidden">Erreur :</span> Entrez un nom d'événement
-</span>
-						</textarea></code></pre>
+
 						<h3 id="be-clear-and-concise">Be clear and concise</h3>
 						<p>Describe what has happened and tell them how to fix it. The message must be in written in plain language, be possitive, and get to the point.</p>
 						<p>Do not use:</p>
@@ -163,6 +175,18 @@ $(function(){
 							<li>humourous, informal language like ‘oops’</li>
 							<li>periods at the end of error messages, they are unnecessary</li>
 						</ul>
+						
+						
+						
+												<div class="secondary-content">
+							<h4 id="BilingualConsideration" >Consideration for bilingual services</h4>
+							<p>In French, error messages should have periods at the end of them.</p>
+							
+		
+						</div>
+						
+						
+						
 						<p>Do not give an example in the error message if there is an example on the screen. For example, if you are asking for a Social Insurance number and include ‘123 456 789’ as hint text, do not include an example in the error message.</p>
 						<p>Above all, aim for clarity.</p>
 						<p>Read the message out loud to see if it sounds like something you would say.</p>

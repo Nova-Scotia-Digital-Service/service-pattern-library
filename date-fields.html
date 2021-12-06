@@ -203,6 +203,31 @@ $(function(){
 										</div>
 									</fieldset>
 								</div>
+								<h3>French example</h3>
+
+								<div class="ns-form-group ns-fieldset-message-error">
+									<fieldset aria-describedby="fieldset-hint2">
+										<legend class="ns-fieldset__legend noBorder">
+										  <h3 class="ns-fieldset__heading h3">
+											When was your passport issued?
+										  </h3>
+										</legend>
+
+										<div id="fieldset-hint2" class="ns-hint">
+										  For example, 17 11 2007
+										</div>
+										<span id="changed-name-error" class="ns--message ns-error-message">
+										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+										  <span class="ns-visually-hidden">Error:</span> The date your passport was issued must be in the past
+										</span>
+										<div class="row">
+											<div class="col-auto pr-0"><label class="ns-label" for="day2">DD</label><input type="text" id="day2" name="day" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
+											<div class="col-auto pr-0"><label class="ns-label" for="month2">MM</label><input type="text" id="month2" name="month" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
+											<div class="col-auto"><label class="ns-label" for="year2">YYYY</label><input type="text" id="year2" name="year" class="ns-input fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
+										</div>
+									</fieldset>
+								</div>
+	
 								<p>If you’re highlighting just one field - either the day, month or year - only style the field that has an error. The error message must say which field has an error, like this:</p>
 								<div class="ns-form-group ns-fieldset-message-error">
 									<fieldset aria-describedby="fieldset-hint3">
@@ -226,6 +251,10 @@ $(function(){
 										</div>
 									</fieldset>
 								</div>
+
+
+
+
 
 							</div><!-- / example col -->
 							<p>Make sure errors follow the guidance in <a href="error-message.html">error message</a> and have specific error messages for specific error states.</p>
