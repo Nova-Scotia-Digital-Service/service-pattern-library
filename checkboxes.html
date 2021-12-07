@@ -104,7 +104,27 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Basic checkbox</h2>
 								<p>Let users select one or more options by using the checkboxes component.</p>
-								<div class="ns-fieldset exampleDisplay">
+								
+										<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleBasicCheckboxEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlBasicCheckboxEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleBasicCheckboxFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlBasicCheckboxFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleBasicCheckboxEnglish">
+					
 								  <fieldset class="ns-fieldset">
 									<legend class="ns-fieldset__legend noBorder">
 									  <h3 class="ns-fieldset__heading">
@@ -135,14 +155,134 @@ $(function(){
 									  </div>
 									</div>
 								  </fieldset>
-								</div>
+			
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlBasicCheckboxEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading">Basic checkbox example</h3>
+ </legend>
+ <div id="waste-hint" class="ns-hint">
+  Select all that apply.
+ </div>
+ <div class="ns-checkboxes">
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+    <label class="ns-label ns-checkboxes__label" for="waste">
+     <span class="ns-label-span">Waste from animal carcasses</span>
+    </label>
+  </div>
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+    <label class="ns-label ns-checkboxes__label" for="waste-2">
+     <span class="ns-label-span">Waste from mines or quarries</span>
+    </label>
+  </div>
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="ns-label ns-checkboxes__label" for="waste-3">
+     <span class="ns-label-span">Farm or agricultural waste</span>
+    </label>
+   </div>
+  </div>
+</fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleBasicCheckboxFrench" lang="fr">
+								  <fieldset class="ns-fieldset">
+									<legend class="ns-fieldset__legend noBorder">
+									  <h3 class="ns-fieldset__heading">
+										Exemple de case à cocher
+									  </h3>
+									</legend>
+									<div id="waste-hint" class="ns-hint">
+									  Cochez-la ou les cases appropriées. 
+									</div>
+									<div class="ns-checkboxes">
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+										<label class="ns-label ns-checkboxes__label" for="waste">
+										  <span class="ns-label-span">Déchets de carcasses d'animaux</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+										<label class="ns-label ns-checkboxes__label" for="waste-2">
+										  <span class="ns-label-span">Déchets de mines ou carrières</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+										<label class="ns-label ns-checkboxes__label" for="waste-3">
+										  <span class="ns-label-span">Déchets agricoles</span>
+										</label>
+									  </div>
+									</div>
+								  </fieldset>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlBasicCheckboxFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading">Exemple de case à cocher</h3>
+ </legend>
+ <div id="waste-hint" class="ns-hint">
+  Cochez-la ou les cases appropriées.
+ </div>
+ <div class="ns-checkboxes">
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+    <label class="ns-label ns-checkboxes__label" for="waste">
+     <span class="ns-label-span">Déchets de carcasses d'animaux</span>
+    </label>
+  </div>
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+    <label class="ns-label ns-checkboxes__label" for="waste-2">
+     <span class="ns-label-span">Déchets de mines ou carrières</span>
+    </label>
+  </div>
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+    <label class="ns-label ns-checkboxes__label" for="waste-3">
+     <span class="ns-label-span">Déchets agricoles</span>
+    </label>
+   </div>
+  </div>
+</fieldset></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+	
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
+
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Checkbox items with hints</h2>
 								<p>You can add hints to checkbox items to provide additional information about the options.</p>
-								<div class="ns-fieldset exampleDisplay">
+										<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleCheckboxItemHintEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlCheckboxItemHintEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleCheckboxItemHintFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlCheckboxItemHintFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleCheckboxItemHintEnglish">
+					
 								  <fieldset class="ns-fieldset">
 									<legend class="ns-fieldset__legend noBorder">
 									  <h3 class="ns-fieldset__heading">
@@ -176,7 +316,116 @@ $(function(){
 									  </div>
 									</div>
 								  </fieldset>
-								</div>
+			
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlCheckboxItemHintEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+ <fieldset class="ns-fieldset">
+  <legend class="ns-fieldset__legend noBorder">
+   <h3 class="ns-fieldset__heading">Checkbox items with hints example</h3>
+  </legend>
+  <div id="waste-hint" class="ns-hint">
+   If you have dual nationality, select all options that are relevant to you.
+  </div>
+  <div class="ns-checkboxes">
+   <div class="ns-checkboxes__item">
+    <input class="ns-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
+     <label class="ns-label ns-checkboxes__label" for="nationality">
+      <span class="ns-label-span">British</span>
+     </label>
+     <div id="nationality-item-hint" class="ns-hint ns-checkboxes__hint">
+      including English, Scottish, Welsh and Northern Irish
+     </div>
+    </div>
+    <div class="ns-checkboxes__item">
+     <input class="ns-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+      <label class="ns-label ns-checkboxes__label" for="nationality-2">
+       <span class="ns-label-span">Irish</span>
+      </label>
+    </div>
+    <div class="ns-checkboxes__item">
+     <input class="ns-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+      <label class="ns-label ns-checkboxes__label" for="nationality-3">
+       <span class="ns-label-span">Citizen of another country</span>
+      </label>
+    </div>
+  </div>
+</fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleCheckboxItemHintFrench" lang="fr">
+								  <fieldset class="ns-fieldset">
+									<legend class="ns-fieldset__legend noBorder">
+									  <h3 class="ns-fieldset__heading">
+										Exemple d'éléments de case à cocher avec des conseils
+									  </h3>
+									</legend>
+									<div id="waste-hint" class="ns-hint">
+									  Si vous avez la double nationalité, sélectionnez toutes les options qui vous concernent.
+									</div>
+									<div class="ns-checkboxes">
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
+										<label class="ns-label ns-checkboxes__label" for="nationality">
+										  <span class="ns-label-span">Britanique</span>
+										</label>
+										<div id="nationality-item-hint" class="ns-hint ns-checkboxes__hint">
+										  y compris l'anglais, l'écossais, le gallois et l'irlandais du Nord
+										</div>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+										<label class="ns-label ns-checkboxes__label" for="nationality-2">
+										  <span class="ns-label-span">Irish</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+										<label class="ns-label ns-checkboxes__label" for="nationality-3">
+										  <span class="ns-label-span">Citoyen d'un autre pays</span>
+										</label>
+									  </div>
+									</div>
+								  </fieldset>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlCheckboxItemHintFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+  <legend class="ns-fieldset__legend noBorder">
+   <h3 class="ns-fieldset__heading">Exemple d'éléments de case à cocher avec des conseils</h3>
+  </legend>
+  <div id="waste-hint" class="ns-hint">
+   Si vous avez la double nationalité, sélectionnez toutes les options qui vous concernent.
+  </div>
+  <div class="ns-checkboxes">
+   <div class="ns-checkboxes__item">
+    <input class="ns-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
+     <label class="ns-label ns-checkboxes__label" for="nationality">
+      <span class="ns-label-span">Britanique</span>
+     </label>
+     <div id="nationality-item-hint" class="ns-hint ns-checkboxes__hint">
+      y compris l'anglais, l'écossais, le gallois et l'irlandais du Nord
+     </div>
+    </div>
+    <div class="ns-checkboxes__item">
+     <input class="ns-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+      <label class="ns-label ns-checkboxes__label" for="nationality-2">
+       <span class="ns-label-span">Irlandais</span>
+      </label>
+    </div>
+    <div class="ns-checkboxes__item">
+     <input class="ns-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+      <label class="ns-label ns-checkboxes__label" for="nationality-3">
+       <span class="ns-label-span">Citoyen d'un autre pays</span>
+      </label>
+    </div>
+  </div>
+</fieldset></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+	
+										
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
