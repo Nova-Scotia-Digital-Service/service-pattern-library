@@ -674,44 +674,172 @@ $(function(){
 								<h2>Smaller checkboxes</h2>
 								<p>Use standard-sized checkboxes in nearly all cases. However, smaller versions work well on pages where it’s helpful to make them less visually prominent.</p>
 								<p>For example, on a page of search results, the primary user need is to see the results. Using smaller checkboxes lets users see and change search filters without distracting them from the main content.</p>
-								<div class="ns-fieldset exampleDisplay">
+
+								
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleSmallerCheckboxesEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlSmallerCheckboxesEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleSmallerCheckboxesFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlSmallerCheckboxesFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleSmallerCheckboxesEnglish">
 								  <fieldset class="ns-fieldset">
 									<legend class="ns-fieldset__legend noBorder">
-									  <h3 class="ns-fieldset__heading">
-										Smaller checkboxes example
-									  </h3>
+									  <h3 class="ns-fieldset__heading">Smaller checkboxes example</h3>
 									</legend>
 									<div class="ns-checkboxes ns-checkboxes--small">
 									  <div class="ns-checkboxes__item">
 										<input class="ns-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
 										<label class="ns-label ns-checkboxes__label" for="organisation">
-										  <span class="ns-label-span">HM Revenue and Customs (HMRC)</span>
+										  <span class="ns-label-span">Department of Community Services</span>
 										</label>
 									  </div>
 									  <div class="ns-checkboxes__item">
 										<input class="ns-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
 										<label class="ns-label ns-checkboxes__label" for="organisation-2">
-										  <span class="ns-label-span">Employment Tribunal</span>
+										  <span class="ns-label-span">Department of Energy</span>
 										</label>
 									  </div>
 									  <div class="ns-checkboxes__item">
 										<input class="ns-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
 										<label class="ns-label ns-checkboxes__label" for="organisation-3">
-										  <span class="ns-label-span">Ministry of Defence</span>
+										  <span class="ns-label-span">Department of Labour, Skills and Immigration</span>
 										</label>
 									  </div>
 									  <div class="ns-checkboxes__item">
 										<input class="ns-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
 										<label class="ns-label ns-checkboxes__label" for="organisation-4">
-										  <span class="ns-label-span">Department for Transport</span>
+										  <span class="ns-label-span">Department of Education and Early Childhood Development</span>
 										</label>
 									  </div>
 									</div>
-
 								  </fieldset>
-								</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlSmallerCheckboxesEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading">Smaller checkboxes example</h3>
+ </legend>
+ <div class="ns-checkboxes ns-checkboxes--small">
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+   <label class="ns-label ns-checkboxes__label" for="organisation">
+    <span class="ns-label-span">Department of Community Services</span>
+   </label>
+  </div>
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+   <label class="ns-label ns-checkboxes__label" for="organisation-2">
+    <span class="ns-label-span">Department of Energy</span>
+   </label>
+  </div>
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+    <label class="ns-label ns-checkboxes__label" for="organisation-3">
+    <span class="ns-label-span">Department of Labour, Skills and Immigration</span>
+   </label>
+  </div>
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+   <label class="ns-label ns-checkboxes__label" for="organisation-4">
+    <span class="ns-label-span">Department of Education and Early Childhood Development</span>
+   </label>
+  </div>
+ </div>
+</fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleSmallerCheckboxesFrench" lang="fr">
+								  <fieldset class="ns-fieldset">
+									<legend class="ns-fieldset__legend noBorder">
+									  <h3 class="ns-fieldset__heading">Exemple de petites cases à cocher</h3>
+									</legend>
+									<div class="ns-checkboxes ns-checkboxes--small">
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+										<label class="ns-label ns-checkboxes__label" for="organisation">
+										  <span class="ns-label-span">Ministère des Services communautaires</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+										<label class="ns-label ns-checkboxes__label" for="organisation-2">
+										  <span class="ns-label-span">Ministère de l’Énergie</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+										<label class="ns-label ns-checkboxes__label" for="organisation-3">
+										  <span class="ns-label-span">Ministère de Travail, des Compétences et de l’Immigration</span>
+										</label>
+									  </div>
+									  <div class="ns-checkboxes__item">
+										<input class="ns-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+										<label class="ns-label ns-checkboxes__label" for="organisation-4">
+										  <span class="ns-label-span">Ministère de l'Éducation et du Développement de la petite enfance</span>
+										</label>
+									  </div>
+									</div>
+								  </fieldset>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlSmallerCheckboxesFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading">Exemple de petites cases à cocher</h3>
+ </legend>
+ <div class="ns-checkboxes ns-checkboxes--small">
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+   <label class="ns-label ns-checkboxes__label" for="organisation">
+    <span class="ns-label-span">Ministère des Services communautaires</span>
+   </label>
+  </div>
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+   <label class="ns-label ns-checkboxes__label" for="organisation-2">
+    <span class="ns-label-span">Ministère de l’Énergie</span>
+   </label>
+  </div>
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+    <label class="ns-label ns-checkboxes__label" for="organisation-3">
+    <span class="ns-label-span">Ministère de Travail, des Compétences et de l’Immigration</span>
+   </label>
+  </div>
+  <div class="ns-checkboxes__item">
+   <input class="ns-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+   <label class="ns-label ns-checkboxes__label" for="organisation-4">
+    <span class="ns-label-span">Ministère de l'Éducation et du Développement de la petite enfance</span>
+   </label>
+  </div>
+ </div>
+</fieldset></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+										
+
+
+
 							</div><!-- / example col -->
 						</section><!--/row-->
+							
+							
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2 id="error-messages">Basic checkbox with error</h2>
