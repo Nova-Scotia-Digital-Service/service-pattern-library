@@ -117,7 +117,7 @@ $(function(){
 									<!-- Tab nav -->
 									<ul class="nav nav-tabs" role="tablist">
 									    <li class="nav-item">
-									        <a class="nav-link active" href="#exampleDatefieldsLegendTitlEnglish" role="tab" data-toggle="tab">English Example</a>
+									        <a class="nav-link active" href="#exampleDatefieldsLegendTitleEnglish" role="tab" data-toggle="tab">English Example</a>
 									    </li>
 									    <li class="nav-item">
 									        <a id="htmlTabBack" class="nav-link" href="#htmlDatefieldsLegendTitleEnglish" role="tab" data-toggle="tab">English HTML</a>
@@ -132,7 +132,7 @@ $(function(){
 
 									<div class="exampleDisplay">
 									    <div class="tab-content">
-									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleDatefieldsLegendTitlEnglish">												
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleDatefieldsLegendTitleEnglish">									<div class="ns-form-group">			
 										<fieldset class="ns-form-group" aria-describedby="fieldset-hint">
 											<legend class="ns-fieldset__legend noBorder">
 											  <h3 class="ns-fieldset__heading h3">
@@ -149,11 +149,12 @@ $(function(){
 												<div class="col-auto"><label class="ns-label" for="year">YYYY</label><input type="text" id="year" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input></div>
 											</div>
 										</fieldset>
-
+								</div>
 											</div><!-- / tabpanel exampleEnglish -->
 											
 											<div role="tabpanel" class="tab-pane fade" id="htmlDatefieldsLegendTitleEnglish">
 												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="tab-content">
 <fieldset class="ns-form-group" aria-describedby="fieldset-hint">
  <legend class="ns-fieldset__legend noBorder">
   <h3 class="ns-fieldset__heading h3">When was your passport issued?</h3>
@@ -175,11 +176,13 @@ $(function(){
    <input type="text" id="year" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
   </div>
  </div>
-</fieldset></textarea>
+</fieldset>
+</div></textarea>
 
 									        </div><!-- / tabpanel htmlEnglish-->
 											<div role="tabpanel" class="tab-pane fade" id="exampleDatefieldsLegendTitleFrench" lang="fr">
-										<fieldset class="ns-form-group" aria-describedby="fieldset-hint">
+<div class="tab-content">
+	<fieldset class="ns-form-group" aria-describedby="fieldset-hint">
 											<legend class="ns-fieldset__legend noBorder">
 											  <h3 class="ns-fieldset__heading h3">
 												Quand votre passeport a-t-il été délivré?
@@ -195,10 +198,12 @@ $(function(){
 												<div class="col-auto"><label class="ns-label" for="year">AAAA</label><input type="text" id="year" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input></div>
 											</div>
 										</fieldset>
+			</div>
 									        </div><!-- / tabpanel exampleFrench -->
 											
 									        <div role="tabpanel" class="tab-pane fade" id="htmlDatefieldsLegendTitleFrench" lang="fr">
 												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
 <fieldset class="ns-form-group" aria-describedby="fieldset-hint">
  <legend class="ns-fieldset__legend noBorder">
   <h3 class="ns-fieldset__heading h3">Quand votre passeport a-t-il été délivré?</h3>
@@ -220,7 +225,8 @@ $(function(){
    <input type="text" id="year" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
   </div>
  </div>
-</fieldset></textarea>
+</fieldset>
+</div></textarea>
 											</div> <!-- / tabpanel htmlFrench -->
 										</div><!-- / tab-content -->
 
@@ -231,8 +237,30 @@ $(function(){
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Example date fields with legend as a label</h2>
-								<p>Sometime when a date fields are part of a larger form you may want to make the legend blend in with the surounding form. In this case you can apply a <code>.label</code> class to the legend.
-								<div class="exampleDisplay">
+								<p>Sometime when a date fields are part of a larger form you may want to make the legend blend in with the surounding form. In this case you can apply a <code>.label</code> class to the legend.</p>
+									
+									
+									
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleDatefieldsLegendLabelEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlDatefieldsLegendLabelEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleDatefieldsLegendLabelFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlDatefieldsLegendLabelFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleDatefieldsLegendLabelEnglish">	
 									<div class="ns-form-group">
 										<fieldset aria-describedby="fieldset-hint2">
 											<legend class="ns-fieldset__legend noBorder label">
@@ -249,7 +277,78 @@ $(function(){
 											</div>
 										</fieldset>
 									</div>
-								</div>
+
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlDatefieldsLegendLabelEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+ <fieldset aria-describedby="fieldset-hint2">
+  <legend class="ns-fieldset__legend noBorder label">Date recieved</legend>
+  <div id="fieldset-hint2" class="ns-hint">Enter Day Month Year. For example, 17 11 2020.</div>
+  <div class="row">
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="day2">DD</label>
+    <input type="text" id="day2" name="day" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="month2">MM</label>
+    <input type="text" id="month2" name="month" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto">
+    <label class="ns-label" for="year2">YYYY</label>
+    <input type="text" id="year2" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+  </div>
+ </fieldset>
+</div></textarea>
+
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleDatefieldsLegendLabelFrench" lang="fr">
+									<div class="ns-form-group">
+										<fieldset aria-describedby="fieldset-hint2">
+											<legend class="ns-fieldset__legend noBorder label">
+												Date de délivrance
+											</legend>
+
+											<div id="fieldset-hint2" class="ns-hint">
+											  Entrez Jour Mois Année. Par exemple, 17 11 2007.
+											</div>
+											<div class="row">
+												<div class="col-auto pr-0"><label class="ns-label" for="day2">JJ</label><input type="text" id="day2" name="day" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+												<div class="col-auto pr-0"><label class="ns-label" for="month2">MM</label><input type="text" id="month2" name="month" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+												<div class="col-auto"><label class="ns-label" for="year2">AAAA</label><input type="text" id="year2" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input></div>
+											</div>
+										</fieldset>
+									</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlDatefieldsLegendLabelFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+ <fieldset aria-describedby="fieldset-hint2">
+  <legend class="ns-fieldset__legend noBorder label">Date de délivrance</legend>
+  <div id="fieldset-hint2" class="ns-hint">Entrez Jour Mois Année. Par exemple, 17 11 2007.</div>
+  <div class="row">
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="day2">JJ</label>
+    <input type="text" id="day2" name="day" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="month2">MM</label>
+    <input type="text" id="month2" name="month" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto">
+    <label class="ns-label" for="year2">AAAA</label>
+    <input type="text" id="year2" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+  </div>
+ </fieldset>
+</div></textarea>
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+
+
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
