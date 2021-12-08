@@ -211,40 +211,98 @@ $(function(){
 						<p>Error messages should be styled like this:</p>
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<div class="exampleDisplay">
-									<div class="ns-form-group ns-form-group-message-error">
-									  <label class="ns-label" for="email">
-										Email address
-									  </label>
-									  <div id="email-hint" class="ns-hint">
-										We’ll only use this to send you a receipt
-									  </div>
-									  <span id="email-error" class="ns-error-message">
-									    <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										<span class="ns-visually-hidden">Error:</span> Enter an email address in the correct format, like name@example.com
-									  </span>
-									  <input class="ns-input ns-input--error fw-25" id="email" name="email" type="email" spellcheck="false" value="Not an email address" aria-describedby="email-hint email-error" autocomplete="email">
-									</div>
-								</div>
-							</div><!-- / example col -->
+								
+								
+								
+								
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleEmailAddressErrorEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlEmailAddressErrorEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleEmailAddressErrorFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlEmailAddressErrorFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleEmailAddressErrorEnglish">
+												<div class="ns-form-group ns-form-group-message-error">
+												  <label class="ns-label" for="email">
+													Email address
+												  </label>
+												  <div id="email-hint" class="ns-hint">
+													We’ll only use this to send you a receipt
+												  </div>
+												  <span id="email-error" class="ns-error-message">
+													<i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+													<span class="ns-visually-hidden">Error:</span> Enter an email address in the correct format, like name@example.com
+												  </span>
+												  <input class="ns-input ns-input--error fw-25" id="email" name="email" type="email" spellcheck="false" value="Not an email address" aria-describedby="email-hint email-error" autocomplete="email">
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlEmailAddressErrorEnglish">
+												<textarea rows="16" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-form-group-message-error">
+ <label class="ns-label" for="email">
+  Email address
+ </label>
+ <div id="email-hint" class="ns-hint">
+  We’ll only use this to send you a receipt
+ </div>
+ <span id="email-error" class="ns-error-message">
+  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+  <span class="ns-visually-hidden">Error:</span> Enter an email address in the correct format, like name@example.com
+ </span>
+ <input class="ns-input ns-input--error fw-25" id="email" name="email" type="email" spellcheck="false" value="Not an email address" aria-describedby="email-hint email-error" autocomplete="email">
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleEmailAddressErrorFrench" lang="fr">
+											<div class="ns-form-group ns-form-group-message-error">
+											  <label class="ns-label" for="email" lang="fr">
+												Courriel
+											  </label>
+											  <div id="email-hint" class="ns-hint" lang="fr">
+												Nous l'utiliserons uniquement pour vous envoyer un reçu.
+											  </div>
+											  <span id="email-error" class="ns-error-message" lang="fr">
+												<i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+												<span class="ns-visually-hidden" lang="fr">Erreur&nbsp;: </span>Entrez le courriel au format correct, par exemple nom@exemple.com.
+											  </span>
+											  <input class="ns-input ns-input--error fw-25" id="email" name="email" type="email" spellcheck="false" value="Pas un courriel." aria-describedby="email-hint email-error" autocomplete="email" lang="fr">
+											</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlEmailAddressErrorFrench" lang="fr">
+												<textarea rows="16" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-form-group-message-error">
+ <label class="ns-label" for="email">
+  Courriel
+ </label>
+ <div id="email-hint" class="ns-hint">
+  Nous l'utiliserons uniquement pour vous envoyer un reçu.
+ </div>
+ <span id="email-error" class="ns-error-message">
+  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+  <span class="ns-visually-hidden">Erreur&#38;nbsp&#59;:</span>Entrez le courriel au format correct, par exemple nom@exemple.com.
+ </span>
+ <input class="ns-input ns-input--error fw-25" id="email" name="email" type="email" spellcheck="false" value="Pas un courriel." aria-describedby="email-hint email-error" autocomplete="email">
+</div></textarea>		
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+								
 						</section><!--/row-->
-						
-						<h3>French example</h3>
-							<div class="exampleDisplay">
-									<div class="ns-form-group ns-form-group-message-error">
-									  <label class="ns-label" for="email" lang="fr">
-										Courriel
-									  </label>
-									  <div id="email-hint" class="ns-hint" lang="fr">
-										Nous l'utiliserons uniquement pour vous envoyer un reçu .
-									  </div>
-									  <span id="email-error" class="ns-error-message" lang="fr">
-									    <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										<span class="ns-visually-hidden" lang="fr">Erreur&nbsp;:</span> Entrez le courriel au format correct, par exemple nom@exemple.com.
-									  </span>
-									  <input class="ns-input ns-input--error fw-25" id="email" name="email" type="email" spellcheck="false" value="Pas un courriel." aria-describedby="email-hint email-error" autocomplete="email" lang="fr">
-									</div>
-								</div>
 
 						<p>Make sure errors follow the guidance in <a href="error-message.html">error message</a> and have specific error messages for specific error states.</p>
 						<h4 id="if-the-email-address-is-not-in-the-correct-format-and-there-is-no-example">If the email address is not in the correct format and there is no example</h4>
