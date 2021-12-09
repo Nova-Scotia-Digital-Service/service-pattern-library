@@ -124,32 +124,142 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Inline Radios</h2>
 								<p>If there are only 2 options with short labels, you can display them inline.</p>
-								<div class="exampleDisplay">
-									<fieldset class="ns-fieldset">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading ">
-											Example Inline Radios
-										  </h3>
-										</legend>
-										<div id="inline-radios-hint" class="ns-hint">
-										  Add special instructions for buttons and inputs here.
-										</div>
-										<div class="ns-radios">
-										  <div class="ns-radios__item inline">
-											<input class="ns-radios__input" id="inline-radios" name="inline-radios" type="radio" value="inline radio 1" checked>
-											<label class="ns-label ns-radios__label" for="inline-radios">
-											  <span class="ns-label-span">Radio 1</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__item inline">
-											<input class="ns-radios__input" id="inline-radios-2" name="inline-radios" type="radio" value="inline radio 2">
-											<label class="ns-label ns-radios__label" for="inline-radios-2">
-											  <span class="ns-label-span">Radio 2</span>
-											</label>
-										  </div>
-										</div>
-									</fieldset>
-								</div>
+
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleInlineRadiosEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlInlineRadiosEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleInlineRadiosFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlInlineRadiosFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleInlineRadiosEnglish">
+												<fieldset class="ns-fieldset">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Example Inline Radios
+													  </h3>
+													</legend>
+													<div id="inline-radios-hint" class="ns-hint">
+													  Add special instructions for buttons and inputs here.
+													</div>
+													<div class="ns-radios">
+													  <div class="ns-radios__item inline">
+														<input class="ns-radios__input" id="inline-radios" name="inline-radios" type="radio" value="inline radio 1" checked>
+														<label class="ns-label ns-radios__label" for="inline-radios">
+														  <span class="ns-label-span">Radio 1</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item inline">
+														<input class="ns-radios__input" id="inline-radios-2" name="inline-radios" type="radio" value="inline radio 2">
+														<label class="ns-label ns-radios__label" for="inline-radios-2">
+														  <span class="ns-label-span">Radio 2</span>
+														</label>
+													  </div>
+													</div>
+												</fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
+
+											<div role="tabpanel" class="tab-pane fade" id="htmlInlineRadiosEnglish">
+												<textarea rows="12" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Example Inline Radios
+  </h3>
+ </legend>
+ <div id="inline-radios-hint" class="ns-hint">
+  Add special instructions for buttons and inputs here.
+ </div>
+ <div class="ns-radios">
+  <div class="ns-radios__item inline">
+   <input class="ns-radios__input" id="inline-radios" name="inline-radios" type="radio" value="inline radio 1" checked>
+   <label class="ns-label ns-radios__label" for="inline-radios">
+    <span class="ns-label-span">Radio 1</span>
+   </label>
+  </div>
+  <div class="ns-radios__item inline">
+   <input class="ns-radios__input" id="inline-radios-2" name="inline-radios" type="radio" value="inline radio 2">
+   <label class="ns-label ns-radios__label" for="inline-radios-2">
+    <span class="ns-label-span">Radio 2</span>
+   </label>
+  </div>
+ </div>
+</fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleInlineRadiosFrench" lang="fr">
+												<fieldset class="ns-fieldset">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Exemple de boutons radio alignés
+													  </h3>
+													</legend>
+													<div id="inline-radios-hint" class="ns-hint">
+													  Ajoutez ici des consignes particulières pour les boutons et les entrées. 
+													</div>
+													<div class="ns-radios">
+													  <div class="ns-radios__item inline">
+														<input class="ns-radios__input" id="inline-radios" name="inline-radios" type="radio" value="inline radio 1" checked>
+														<label class="ns-label ns-radios__label" for="inline-radios">
+															<span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item inline">
+														<input class="ns-radios__input" id="inline-radios-2" name="inline-radios" type="radio" value="inline radio 2">
+														<label class="ns-label ns-radios__label" for="inline-radios-2">
+														  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+														</label>
+													  </div>
+													</div>
+												</fieldset>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlInlineRadiosFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Exemple de boutons radio alignés
+  </h3>
+ </legend>
+ <div id="inline-radios-hint" class="ns-hint">
+  Ajoutez ici des consignes particulières pour les boutons et les entrées.
+ </div>
+ <div class="ns-radios">
+  <div class="ns-radios__item inline">
+   <input class="ns-radios__input" id="inline-radios" name="inline-radios" type="radio" value="inline radio 1" checked>
+   <label class="ns-label ns-radios__label" for="inline-radios">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+   </label>
+  </div>
+  <div class="ns-radios__item inline">
+   <input class="ns-radios__input" id="inline-radios-2" name="inline-radios" type="radio" value="inline radio 2">
+   <label class="ns-label ns-radios__label" for="inline-radios-2">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+   </label>
+  </div>
+ </div>
+</fieldset></textarea>	
+							
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+									
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 
