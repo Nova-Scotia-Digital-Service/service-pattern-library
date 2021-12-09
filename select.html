@@ -111,22 +111,22 @@ $(function(){
 									<!-- Tab nav -->
 									<ul class="nav nav-tabs" role="tablist">
 									    <li class="nav-item">
-									        <a class="nav-link active" href="#exampleSelectHeaderLabelEnglish" role="tab" data-toggle="tab">English Example</a>
+									        <a class="nav-link active" href="#exampleTypeaheadSearchableDropdownEnglish" role="tab" data-toggle="tab">English Example</a>
 									    </li>
 									    <li class="nav-item">
-									        <a id="htmlTabBack" class="nav-link" href="#htmlSelectHeaderLabelEnglish" role="tab" data-toggle="tab">English HTML</a>
+									        <a id="htmlTabBack" class="nav-link" href="#htmlTypeaheadSearchableDropdownEnglish" role="tab" data-toggle="tab">English HTML</a>
 									    </li>
 									    <li class="nav-item">
-									        <a class="nav-link" href="#exampleSelectHeaderLabelFrench" role="tab" data-toggle="tab">French Example</a>
+									        <a class="nav-link" href="#exampleTypeaheadSearchableDropdownFrench" role="tab" data-toggle="tab">French Example</a>
 									    </li>
 									    <li class="nav-item">
-									        <a id="htmlTabBack" class="nav-link" href="#htmlSelectHeaderLabelFrench" role="tab" data-toggle="tab">French HTML</a>
+									        <a id="htmlTabBack" class="nav-link" href="#htmlTypeaheadSearchableDropdownFrench" role="tab" data-toggle="tab">French HTML</a>
 									    </li>
 									</ul>
 
 									<div class="exampleDisplay">
 									    <div class="tab-content">
-									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleSelectHeaderLabelEnglish">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleTypeaheadSearchableDropdownEnglish">
 												<div class="ns-form-group">
 												  <h3 class="ns-label-wrapper">
 													<label class="ns-label" for="select1">
@@ -143,7 +143,7 @@ $(function(){
 												</div>
 											</div><!-- / tabpanel exampleEnglish -->
 											
-											<div role="tabpanel" class="tab-pane fade" id="htmlSelectHeaderLabelEnglish">
+											<div role="tabpanel" class="tab-pane fade" id="htmlTypeaheadSearchableDropdownEnglish">
 												<textarea rows="14" aria-labelledby="htmlTabBack">
 <div class="ns-form-group">
  <h3 class="ns-label-wrapper">
@@ -160,7 +160,8 @@ $(function(){
  </div>
 </div></textarea>	
 									        </div><!-- / tabpanel htmlEnglish-->
-											<div role="tabpanel" class="tab-pane fade" id="exampleSelectHeaderLabelFrench" lang="fr">
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleTypeaheadSearchableDropdownFrench" lang="fr">
 												<div class="ns-form-group">
 												  <h3 class="ns-label-wrapper">
 													<label class="ns-label" for="select1">
@@ -178,7 +179,7 @@ $(function(){
 												
 									        </div><!-- / tabpanel exampleFrench -->
 											
-									        <div role="tabpanel" class="tab-pane fade" id="htmlSelectHeaderLabelFrench" lang="fr">
+									        <div role="tabpanel" class="tab-pane fade" id="htmlTypeaheadSearchableDropdownFrench" lang="fr">
 												<textarea rows="14" aria-labelledby="htmlTabBack">
 <div class="ns-form-group">
  <h3 class="ns-label-wrapper">
@@ -207,21 +208,97 @@ $(function(){
 								<h2>Typeahead searchable dropdown</h2>
 								<p>As a general practice searchable dropdowns are used when there are a lot of dropdown options or the options are categorized.</p>
 								<p>Another thing to consider is the context of the user, typeahead in dropdown menus are good if the user knows what he is searching for. It makes it easier to search and select the Option required.</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group">
-										<label class="ns-label" for="typeahead1">
-										  Type something to narrow down options
-										</label>
-										<div class="select fw-20">
-											<input type="list" id="typeahead1" list="typeahead1List" name="typeahead1">
-												<datalist id="typeahead1List">
-												  <option>Aw yeah.</option>
-												  <option>You should pick me instead.</option>
-												  <option>I think I'm the better option!</option>
-												</datalist>	
-										 </div>
-									</div>
-								</div>
+
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleSelectHeaderLabelEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlSelectHeaderLabelEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleSelectHeaderLabelFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlSelectHeaderLabelFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleSelectHeaderLabelEnglish">
+												<div class="ns-form-group">
+													<label class="ns-label" for="typeahead1">
+													  Type something to narrow down options
+													</label>
+													<div class="select fw-20">
+														<input type="list" id="typeahead1" list="typeahead1List" name="typeahead1">
+															<datalist id="typeahead1List">
+															  <option>Aw yeah.</option>
+															  <option>You should pick me instead.</option>
+															  <option>I think I'm the better option!</option>
+															</datalist>	
+													 </div>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlSelectHeaderLabelEnglish">
+												<textarea rows="13" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+ <label class="ns-label" for="typeahead1">
+  Type something to narrow down options
+ </label>
+ <div class="select fw-20">
+  <input type="list" id="typeahead1" list="typeahead1List" name="typeahead1">
+  <datalist id="typeahead1List">
+   <option>Aw yeah.</option>
+   <option>You should pick me instead.</option>
+   <option>I think I'm the better option!</option>
+  </datalist>	
+ </div>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleSelectHeaderLabelFrench" lang="fr">
+												<div class="ns-form-group">
+													<label class="ns-label" for="typeahead1FR">
+													  Tapez quelque chose pour affiner les options
+													</label>
+													<div class="select fw-20">
+														<input type="list" id="typeahead1FR" list="typeahead1ListFR" name="typeahead1FR">
+															<datalist id="typeahead1ListFR">
+														  		<option>Ouais</option>
+																<option>Au lieu des autres, vous devriez me choisir.</option>
+														  		<option>Je pense que je suis la meilleure option!</option>
+															</datalist>	
+													 </div>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlSelectHeaderLabelFrench" lang="fr">
+												<textarea rows="13" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+ <label class="ns-label" for="typeahead1">
+  Tapez quelque chose pour affiner les options
+ </label>
+ <div class="select fw-20">
+  <input type="list" id="typeahead1FR" list="typeahead1ListFR" name="typeahead1FR">
+  <datalist id="typeahead1ListFR">
+   <option>Ouais</option>
+   <option>Au lieu des autres, vous devriez me choisir.</option>
+   <option>Je pense que je suis la meilleure option!</option>
+  </datalist>	
+ </div>
+</div></textarea>	
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+	
+								
 							</div><!-- / example col -->
 						</section><!--/row-->		
 						<section class="row">
