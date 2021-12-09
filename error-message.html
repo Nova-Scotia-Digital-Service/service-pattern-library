@@ -105,7 +105,27 @@ $(function(){
 						<p>Show an error message when there is a validation error. In the error message explain what went wrong and how to fix it.</p>
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<div class="ns-fieldset exampleDisplay">
+
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleErrorMessageEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessageEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleErrorMessageFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessageFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleErrorMessageEnglish">
 									<div class="ns-fieldset ns-fieldset-message-error">
 									  <h3 class="ns-label-wrapper">
 										<label class="ns-label" for="event-name">
@@ -121,7 +141,67 @@ $(function(){
 										</span>
 									  <input class="ns-input ns-input--error fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint event-name-error">
 									</div>
-								</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlErrorMessageEnglish">
+												<textarea rows="16" aria-labelledby="htmlTabBack">
+<div class="ns-fieldset ns-fieldset-message-error">
+ <h3 class="ns-label-wrapper">
+  <label class="ns-label" for="event-name">
+   What is the name of the event?
+  </label>
+ </h3>
+ <div id="event-name-hint" class="ns-hint">
+  The name you’ll use on promotional material.
+ </div>
+ <span id="changed-name-error" class="ns-error-message field-validation-error">
+  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+  <span class="ns-visually-hidden">Error:</span> Enter an event name
+ </span>
+ <input class="ns-input ns-input--error fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint event-name-error">
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleErrorMessageFrench" lang="fr">
+									<div class="ns-fieldset ns-fieldset-message-error">
+									  <h3 class="ns-label-wrapper">
+										<label class="ns-label" for="event-name">
+										  Quel est le nom de l'événement?
+										</label>
+									  </h3>
+									  <div id="event-name-hint" class="ns-hint">
+										Le nom que vous utiliserez sur le matériel promotionnel.
+									  </div>
+										<span id="changed-name-error" class="ns-error-message field-validation-error">
+										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+										  <span class="ns-visually-hidden">Erreur&nbsp;: </span> Entrez le nom de l'événement.
+										</span>
+									  <input class="ns-input ns-input--error fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint event-name-error">
+									</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlErrorMessageFrench" lang="fr">
+												<textarea rows="16" aria-labelledby="htmlTabBack">
+<div class="ns-fieldset ns-fieldset-message-error">
+ <h3 class="ns-label-wrapper">
+  <label class="ns-label" for="event-name">
+   Quel est le nom de l'événement?
+  </label>
+ </h3>
+ <div id="event-name-hint" class="ns-hint">
+  Le nom que vous utiliserez sur le matériel promotionnel.
+ </div>
+ <span id="changed-name-error" class="ns-error-message field-validation-error">
+  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+  <span class="ns-visually-hidden">Erreur&#38;nbsp&#59;: </span> Entrez le nom de l'événement.
+ </span>
+ <input class="ns-input ns-input--error fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint event-name-error">
+</div></textarea>		
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+
+
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<h2>When to use this component</h2>
@@ -154,7 +234,7 @@ $(function(){
 											<pre><code>
 &lt;span id="changed-name-error" class="ns-error-message field-validation-error"&gt;
 	&lt;i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"&gt;&lt;/i&gt;
-	"<mark>&lt;span class="ns-visually-hidden"&gt;Erreur&nbsp;:&lt;/span&gt; Entrez un nom d'événement.</mark>"
+	"<mark>&lt;span class="ns-visually-hidden"&gt;Erreur&#38;nbsp&#59;: &lt;/span&gt;Entrez un nom d'événement.</mark>"
 &lt;/span&gt;
 						</code></pre>
 						</div>
