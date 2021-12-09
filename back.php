@@ -58,7 +58,7 @@
 
               <h2 id="when-to-use-this-component">When to use this component</h2>
 
-              <p>Always include the back link component on <a href="basic-page.html">question pages</a>.</p>
+              <p>Always include the back link component on <a href="basic-page.html">question page templates</a>.</p>
 
               <p>You can include a back link on other pages within a multi-page transaction, if it makes sense to do so.</p>
 
