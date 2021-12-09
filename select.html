@@ -304,7 +304,28 @@ $(function(){
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2 id="error-messages">Typeahead searchable dropdown with errors</h2>
-								<div class="exampleDisplay">
+
+								
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleTypeaheadSearchableDropdownErrorsEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlTypeaheadSearchableDropdownErrorsEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleTypeaheadSearchableDropdownErrorsFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlTypeaheadSearchableDropdownErrorsFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleTypeaheadSearchableDropdownErrorsEnglish">
 									<div class="ns-form-group ns-form-group-message-error">
 										<h3 class="ns-label-wrapper">
 											<label class="ns-label" for="typeahead2">
@@ -324,19 +345,35 @@ $(function(){
 												</datalist>	
 										 </div>
 									</div>
-								</div>
-							</div><!-- / example col -->
-						
-
-																
-							
-						</section><!--/row-->	
-
-							<h3>French example</h3>
-								<div class="exampleDisplay">
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlTypeaheadSearchableDropdownErrorsEnglish">
+												<textarea rows="12" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-form-group-message-error">
+ <h3 class="ns-label-wrapper">
+  <label class="ns-label" for="typeahead2">
+   What would you like to select?
+  </label>
+ </h3>
+ <span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+  <span class="ns-visually-hidden">Error:</span> Select an option
+ </span>
+ <div class="select fw-20">
+  <input type="list" id="typeahead2" list="typeahead1List2" name="typeahead2" class="ns-input--error">
+  <datalist id="typeahead1List2">
+   <option>Aw yeah.</option>
+   <option>You should pick me instead.</option>
+   <option>I think I'm the better option!</option>
+  </datalist>	
+ </div>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleTypeaheadSearchableDropdownErrorsFrench" lang="fr">
 									<div class="ns-form-group ns-form-group-message-error">
 										<h3 class="ns-label-wrapper">
-											<label class="ns-label" for="typeahead2">
+											<label class="ns-label" for="typeahead2FR">
 											 Que voudriez-vous sélectionner ?
 											</label>
 										</h3>
@@ -353,7 +390,38 @@ $(function(){
 												</datalist>	
 										 </div>
 									</div>
-								</div>						
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlTypeaheadSearchableDropdownErrorsFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-form-group-message-error">
+ <h3 class="ns-label-wrapper">
+  <label class="ns-label" for="typeahead2FR">
+   Que voudriez-vous sélectionner?
+  </label>
+ </h3>
+ <span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+  <span class="ns-visually-hidden">Erreur&#38;nbsp&#59;: </span>Sélectionner une option.
+ </span>
+ <div class="select fw-20">
+  <input type="list" id="typeahead2Fr" list="typeahead1List2Fr" name="typeahead2Fr" class="ns-input--error">
+   <datalist id="typeahead1List2Fr">
+    <option>Ouais.</option>
+    <option>Au lieu des autres, vous devriez me choisir.</option>
+    <option>Je pense que je suis la meilleure option!</option>
+   </datalist>	
+ </div>
+</div></textarea>	
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+									
+							</div><!-- / example col -->
+							</section><!--/row-->	
+					
 					</div><!-- /col-xs-8 -->
 				</div><!--/row-->
 							
