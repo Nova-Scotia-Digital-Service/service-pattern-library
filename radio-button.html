@@ -515,7 +515,7 @@ $(function(){
 											  <fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
 												<legend class="ns-fieldset__legend noBorder">
 												  <h3 class="ns-fieldset__heading ">
-													Les éléments de bouton radio avec des conseils 
+													Exemple des éléments de bouton radio avec des conseils 
 												  </h3>
 												</legend>
 												<div id="sign-in-hint" class="ns-hint">
@@ -550,11 +550,10 @@ $(function(){
 											
 									        <div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosHintFrench" lang="fr">
 												<textarea rows="14" aria-labelledby="htmlTabBack">
-<textarea rows="12" aria-labelledby="htmlTabBack">
 <fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
  <legend class="ns-fieldset__legend noBorder">
   <h3 class="ns-fieldset__heading ">
-   Les éléments de bouton radio avec des conseils
+   Exemple des éléments de bouton radio avec des conseils
   </h3>
  </legend>
  <div id="sign-in-hint" class="ns-hint">
@@ -581,7 +580,7 @@ $(function(){
    </div>
   </div>
  </div>
-</fieldset></textarea>	</textarea>	
+</fieldset></textarea>
 						
 							
 				
@@ -596,37 +595,161 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Radio items with a text divider</h2>
 								<p>If one or more of your radio options is different from the others, it can help users if you separate them using a text divider. The text is usually the word ‘or’.</p>
-								<div class="exampleDisplay">
-									<fieldset class="ns-fieldset">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading ">
-											Radio items with a text divider example
-										  </h3>
-										</legend>
-										<div class="ns-radios">
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-											<label class="ns-label ns-radios__label" for="where-do-you-live">
-											  <span class="ns-label-span">Radio 1</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-											<label class="ns-label ns-radios__label" for="where-do-you-live-2">
-											  <span class="ns-label-span">Radio 2</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__divider">or</div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="where-do-you-live-6" name="where-do-you-live" type="radio" value="abroad">
-											<label class="ns-label ns-radios__label" for="where-do-you-live-6">
-											  <span class="ns-label-span">Radio 3</span>
-											</label>
-										  </div>
-										</div>
+								
+								
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleStackedRadiosDividerEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosDividerEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleStackedRadiosDividerFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosDividerFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
 
-									  </fieldset>
-								</div>
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleStackedRadiosDividerEnglish">
+												<fieldset class="ns-fieldset">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Radio items with a text divider example
+													  </h3>
+													</legend>
+													<div class="ns-radios">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+														<label class="ns-label ns-radios__label" for="where-do-you-live">
+														  <span class="ns-label-span">Radio 1</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+														<label class="ns-label ns-radios__label" for="where-do-you-live-2">
+														  <span class="ns-label-span">Radio 2</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__divider">or</div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live-6" name="where-do-you-live" type="radio" value="abroad">
+														<label class="ns-label ns-radios__label" for="where-do-you-live-6">
+														  <span class="ns-label-span">Radio 3</span>
+														</label>
+													  </div>
+													</div>
+												  </fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
+
+											<div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosDividerEnglish">
+												<textarea rows="12" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Radio items with a text divider example
+  </h3>
+ </legend>
+ <div class="ns-radios">
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+   <label class="ns-label ns-radios__label" for="where-do-you-live">
+    <span class="ns-label-span">Radio 1</span>
+   </label>
+  </div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+   <label class="ns-label ns-radios__label" for="where-do-you-live-2">
+    <span class="ns-label-span">Radio 2</span>
+   </label>
+  </div>
+  <div class="ns-radios__divider">or</div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live-6" name="where-do-you-live" type="radio" value="abroad">
+   <label class="ns-label ns-radios__label" for="where-do-you-live-6">
+    <span class="ns-label-span">Radio 3</span>
+   </label>
+  </div>
+ </div>
+</fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+																					
+											<div role="tabpanel" class="tab-pane fade" id="exampleStackedRadiosDividerFrench" lang="fr">
+												<fieldset class="ns-fieldset">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Exemple des éléments de bouton radio avec un séparateur de texte
+													  </h3>
+													</legend>
+													<div class="ns-radios">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+														<label class="ns-label ns-radios__label" for="where-do-you-live">
+														  <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+														<label class="ns-label ns-radios__label" for="where-do-you-live-2">
+														  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__divider">ou</div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live-6" name="where-do-you-live" type="radio" value="abroad">
+														<label class="ns-label ns-radios__label" for="where-do-you-live-6">
+														  <span class="ns-label-span">Bouton radio n<sup>o</sup> 3</span>
+														</label>
+													  </div>
+													</div>
+												  </fieldset>												
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosDividerFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Exemple des éléments de bouton radio avec un séparateur de texte
+  </h3>
+ </legend>
+ <div class="ns-radios">
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+   <label class="ns-label ns-radios__label" for="where-do-you-live">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+   </label>
+  </div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+   <label class="ns-label ns-radios__label" for="where-do-you-live-2">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+   </label>
+  </div>
+  <div class="ns-radios__divider">ou</div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live-6" name="where-do-you-live" type="radio" value="abroad">
+   <label class="ns-label ns-radios__label" for="where-do-you-live-6">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 3</span>
+   </label>
+  </div>
+ </div>
+</fieldset></textarea>
+						
+							
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 
