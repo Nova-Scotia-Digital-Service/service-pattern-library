@@ -203,7 +203,7 @@ $(function(){
 												<fieldset class="ns-fieldset">
 													<legend class="ns-fieldset__legend noBorder">
 													  <h3 class="ns-fieldset__heading ">
-														Exemple de boutons radio alignés
+														Exemple de boutons radio horizontaux
 													  </h3>
 													</legend>
 													<div id="inline-radios-hint" class="ns-hint">
@@ -231,7 +231,7 @@ $(function(){
 <fieldset class="ns-fieldset">
  <legend class="ns-fieldset__legend noBorder">
   <h3 class="ns-fieldset__heading ">
-   Exemple de boutons radio alignés
+   Exemple de boutons radio horizontaux
   </h3>
  </legend>
  <div id="inline-radios-hint" class="ns-hint">
@@ -267,36 +267,154 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Stacked Radios</h2>
 								<p>When there are more than 2 options, or if labels are long, radios should be stacked.</p>
-								<div class="exampleDisplay">
-								  <fieldset class="ns-fieldset">
-									<legend class="ns-fieldset__legend noBorder">
-									  <h3 class="ns-fieldset__heading ">
-										Example Stacked Radios
-									  </h3>
-									</legend>
-									<div class="ns-radios">
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
-										<label class="ns-label ns-radios__label" for="stacked-radio">
-										  <span class="ns-label-span">Radio 1</span>
-										</label>
-									  </div>
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
-										<label class="ns-label ns-radios__label" for="stacked-radio-2">
-										  <span class="ns-label-span">Radio 2</span>
-										</label>
-									  </div>
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="stacked-radio-3" name="stacked-radio" type="radio" value="radio 3">
-										<label class="ns-label ns-radios__label" for="stacked-radio-3">
-										  <span class="ns-label-span">Radio 3</span>
-										</label>
-									  </div>
-									</div>
 
-								  </fieldset>
-								</div>
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleStackedRadiosEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleStackedRadiosFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleStackedRadiosEnglish">
+											  <fieldset class="ns-fieldset">
+												<legend class="ns-fieldset__legend noBorder">
+												  <h3 class="ns-fieldset__heading ">
+													Example Stacked Radios
+												  </h3>
+												</legend>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+													<label class="ns-label ns-radios__label" for="stacked-radio">
+													  <span class="ns-label-span">Radio 1</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+													<label class="ns-label ns-radios__label" for="stacked-radio-2">
+													  <span class="ns-label-span">Radio 2</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-3" name="stacked-radio" type="radio" value="radio 3">
+													<label class="ns-label ns-radios__label" for="stacked-radio-3">
+													  <span class="ns-label-span">Radio 3</span>
+													</label>
+												  </div>
+												</div>
+											  </fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
+
+											<div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosEnglish">
+<textarea rows="12" aria-labelledby="htmlTabBack">
+ <fieldset class="ns-fieldset">
+  <legend class="ns-fieldset__legend noBorder">
+   <h3 class="ns-fieldset__heading ">
+    Example Stacked Radios
+   </h3>
+  </legend>
+  <div class="ns-radios">
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+    <label class="ns-label ns-radios__label" for="stacked-radio">
+     <span class="ns-label-span">Radio 1</span>
+    </label>
+   </div>
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+    <label class="ns-label ns-radios__label" for="stacked-radio-2">
+	 <span class="ns-label-span">Radio 2</span>
+    </label>
+   </div>
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio-3" name="stacked-radio" type="radio" value="radio 3">
+    <label class="ns-label ns-radios__label" for="stacked-radio-3">
+     <span class="ns-label-span">Radio 3</span>
+    </label>
+   </div>
+  </div>
+ </fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleStackedRadiosFrench" lang="fr">
+											  <fieldset class="ns-fieldset">
+												<legend class="ns-fieldset__legend noBorder">
+												  <h3 class="ns-fieldset__heading ">
+													Exemple de boutons radio verticaux
+												  </h3>
+												</legend>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+													<label class="ns-label ns-radios__label" for="stacked-radio">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+													<label class="ns-label ns-radios__label" for="stacked-radio-2">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-3" name="stacked-radio" type="radio" value="radio 3">
+													<label class="ns-label ns-radios__label" for="stacked-radio-3">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 3</span>
+													</label>
+												  </div>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<textarea rows="12" aria-labelledby="htmlTabBack">
+ <fieldset class="ns-fieldset">
+  <legend class="ns-fieldset__legend noBorder">
+   <h3 class="ns-fieldset__heading ">
+    Exemple de boutons radio verticaux
+   </h3>
+  </legend>
+  <div class="ns-radios">
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+    <label class="ns-label ns-radios__label" for="stacked-radio">
+     <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+    </label>
+   </div>
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+    <label class="ns-label ns-radios__label" for="stacked-radio-2">
+	 <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+    </label>
+   </div>
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio-3" name="stacked-radio" type="radio" value="radio 3">
+    <label class="ns-label ns-radios__label" for="stacked-radio-3">
+     <span class="ns-label-span">Bouton radio n<sup>o</sup> 3</span>
+    </label>
+   </div>
+  </div>
+ </fieldset></textarea>	
+						
+							
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->							
+							
+							
 							</div><!-- / example col -->
 						</section><!--/row-->
 
@@ -304,39 +422,173 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Radio items with hints</h2>
 								<p>You can add hints to radio items to provide additional information about the options.</p>
-								<div class="exampleDisplay">
-								  <fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
-									<legend class="ns-fieldset__legend noBorder">
-									  <h3 class="ns-fieldset__heading ">
-										Radio items with hints example
-									  </h3>
-									</legend>
-									<div id="sign-in-hint" class="ns-hint">
-									  This space can be used to describe the radio group in general and give more details about the options below.
-									</div>
-									<div class="ns-radios">
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
-										<label class="ns-label ns-radios__label" for="sign-in">
-										  <span class="ns-label-span">Radio option 1 with a longer title.</span>
-										</label>
-										<div id="sign-in-item-hint" class="ns-hint ns-radios__hint">
-										  Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
-										</div>
-									  </div>
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="sign-in-2" name="sign-in" type="radio" value="ns-verify" aria-describedby="sign-in-2-item-hint">
-										<label class="ns-label ns-radios__label" for="sign-in-2">
-										  <span class="ns-label-span">Radio option 2 with a longer title.</span>
-										</label>
-										<div id="sign-in-2-item-hint" class="ns-hint ns-radios__hint">
-										  Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
-										</div>
-									  </div>
-									</div>
 
-								  </fieldset>
-								</div>
+							
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleStackedRadiosHintEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosHintEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleStackedRadiosHintFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosHintFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleStackedRadiosHintEnglish">
+											  <fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
+												<legend class="ns-fieldset__legend noBorder">
+												  <h3 class="ns-fieldset__heading ">
+													Radio items with hints example
+												  </h3>
+												</legend>
+												<div id="sign-in-hint" class="ns-hint">
+												  This space can be used to describe the radio group in general and give more details about the options below.
+												</div>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+													<label class="ns-label ns-radios__label" for="sign-in">
+													  <span class="ns-label-span">Radio option 1 with a longer title.</span>
+													</label>
+													<div id="sign-in-item-hint" class="ns-hint ns-radios__hint">
+													  Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
+													</div>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="sign-in-2" name="sign-in" type="radio" value="ns-verify" aria-describedby="sign-in-2-item-hint">
+													<label class="ns-label ns-radios__label" for="sign-in-2">
+													  <span class="ns-label-span">Radio option 2 with a longer title.</span>
+													</label>
+													<div id="sign-in-2-item-hint" class="ns-hint ns-radios__hint">
+													  Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
+													</div>
+												  </div>
+												</div>
+											  </fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
+
+											<div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosHintEnglish">
+												<textarea rows="12" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Radio items with hints example
+  </h3>
+ </legend>
+ <div id="sign-in-hint" class="ns-hint">
+  This space can be used to describe the radio group in general and give more details about the options below.
+ </div>
+ <div class="ns-radios">
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+   <label class="ns-label ns-radios__label" for="sign-in">
+    <span class="ns-label-span">Radio option 1 with a longer title.</span>
+   </label>
+   <div id="sign-in-item-hint" class="ns-hint ns-radios__hint">
+    Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
+   </div>
+
+  </div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="sign-in-2" name="sign-in" type="radio" value="ns-verify" aria-describedby="sign-in-2-item-hint">
+   <label class="ns-label ns-radios__label" for="sign-in-2">
+    <span class="ns-label-span">Radio option 2 with a longer title.</span>
+   </label>
+   <div id="sign-in-2-item-hint" class="ns-hint ns-radios__hint">
+    Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
+   </div>
+  </div>
+ </div>
+</fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleStackedRadiosHintFrench" lang="fr">
+											  <fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
+												<legend class="ns-fieldset__legend noBorder">
+												  <h3 class="ns-fieldset__heading ">
+													Les éléments de bouton radio avec des conseils 
+												  </h3>
+												</legend>
+												<div id="sign-in-hint" class="ns-hint">
+												  Cet espace peut être utilisé pour décrire le groupe radio en général et donner plus de détails sur les options ci-dessous.
+												</div>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+													<label class="ns-label ns-radios__label" for="sign-in">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 1 avec un titre plus long.</span>
+													</label>
+													<div id="sign-in-item-hint" class="ns-hint ns-radios__hint">
+													  Le texte supplémentaire qui décrit l'option spécifique peut aller ici. Cet espace est destiné à donner plus de détails sur l'option et peut être aussi long que nécessaire.
+													</div>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="sign-in-2" name="sign-in" type="radio" value="ns-verify" aria-describedby="sign-in-2-item-hint">
+													<label class="ns-label ns-radios__label" for="sign-in-2">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2 avec un titre plus long.</span>
+													</label>
+													<div id="sign-in-2-item-hint" class="ns-hint ns-radios__hint">
+													  Le texte supplémentaire qui décrit l'option spécifique peut aller ici. Cet espace est destiné à donner plus de détails sur l'option et peut être aussi long que nécessaire.
+													</div>
+												  </div>
+												</div>
+											  </fieldset>
+												
+												
+												
+												
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosHintFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<textarea rows="12" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Les éléments de bouton radio avec des conseils
+  </h3>
+ </legend>
+ <div id="sign-in-hint" class="ns-hint">
+  Cet espace peut être utilisé pour décrire le groupe radio en général et donner plus de détails sur les options ci-dessous.
+ </div>
+ <div class="ns-radios">
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+   <label class="ns-label ns-radios__label" for="sign-in">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 1 avec un titre plus long.</span>
+   </label>
+   <div id="sign-in-item-hint" class="ns-hint ns-radios__hint">
+    Le texte supplémentaire qui décrit l'option spécifique peut aller ici. Cet espace est destiné à donner plus de détails sur l'option et peut être aussi long que nécessaire.
+
+   </div>
+  </div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="sign-in-2" name="sign-in" type="radio" value="ns-verify" aria-describedby="sign-in-2-item-hint">
+   <label class="ns-label ns-radios__label" for="sign-in-2">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 2 avec un titre plus long.</span>
+   </label>
+   <div id="sign-in-2-item-hint" class="ns-hint ns-radios__hint">
+    Le texte supplémentaire qui décrit l'option spécifique peut aller ici. Cet espace est destiné à donner plus de détails sur l'option et peut être aussi long que nécessaire.
+   </div>
+  </div>
+ </div>
+</fieldset></textarea>	</textarea>	
+						
+							
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+							
 							</div><!-- / example col -->
 						</section><!--/row-->
 
