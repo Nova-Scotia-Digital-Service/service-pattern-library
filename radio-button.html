@@ -758,64 +758,255 @@ $(function(){
 								<h2>Conditionally revealing content</h2>
 								<p>You can conditionally reveal content when the user selects a particular radio, so they only see content when it’s relevant to them.</p>
 								<p>For example, you could reveal a phone number input when the user selects the ‘Contact me by phone’ option.</p>
-								<div class="exampleDisplay">
-									  <fieldset class="ns-fieldset" aria-describedby="contact-hint">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading ">
-											Conditionally revealing content example
-										  </h3>
-										</legend>
-										<div id="contact-hint" class="ns-hint">
-										  Select one option.
-										</div>
-										<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
-											<label class="ns-label ns-radios__label" for="contact">
-											  <span class="ns-label-span">Email</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__conditional" id="conditional-contact">
-											<div class="ns-fieldset">
-											  <label class="ns-label" for="contact-by-email">
-												Email address
-											  </label>
-											  <input class="ns-input ns-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
+														
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleStackedRadiosRevealingEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosRevealingEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleStackedRadiosRevealingFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosRevealingFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
 
-										  </div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
-											<label class="ns-label ns-radios__label" for="contact-2">
-											  <span class="ns-label-span">Phone</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-2">
-											<div class="ns-fieldset">
-											  <label class="ns-label" for="contact-by-phone">
-												Phone number
-											  </label>
-											  <input class="ns-input ns-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel"></div>
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleStackedRadiosRevealingEnglish">
+												<fieldset class="ns-fieldset" aria-describedby="contact-hint">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Conditionally revealing content example
+													  </h3>
+													</legend>
+													<div id="contact-hint" class="ns-hint">
+													  Select one option.
+													</div>
+													<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
+														<label class="ns-label ns-radios__label" for="contact">
+														  <span class="ns-label-span">Email</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional" id="conditional-contact">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-email">
+															Email address
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
 
-										  </div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
-											<label class="ns-label ns-radios__label" for="contact-3">
-											  <span class="ns-label-span">Text message</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-3">
-											<div class="ns-fieldset">
-											  <label class="ns-label" for="contact-by-text">
-												Cell phone number
-											  </label>
-											  <input class="ns-input ns-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+														<label class="ns-label ns-radios__label" for="contact-2">
+														  <span class="ns-label-span">Phone</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-2">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-phone">
+															Phone number
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel"></div>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+														<label class="ns-label ns-radios__label" for="contact-3">
+														  <span class="ns-label-span">Text message</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-3">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-text">
+															Cell phone number
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+													  </div>
+													</div>
+												  </fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
 
-										  </div>
+											<div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosRevealingEnglish">
+												<textarea rows="12" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset" aria-describedby="contact-hint">
+	<legend class="ns-fieldset__legend noBorder">
+	  <h3 class="ns-fieldset__heading ">
+		Conditionally revealing content example
+	  </h3>
+	</legend>
+	<div id="contact-hint" class="ns-hint">
+	  Select one option.
+	</div>
+	<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
+		<label class="ns-label ns-radios__label" for="contact">
+		  <span class="ns-label-span">Email</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional" id="conditional-contact">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-email">
+			Email address
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
 
-										</div>
-
-									  </fieldset>
-								</div>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+		<label class="ns-label ns-radios__label" for="contact-2">
+		  <span class="ns-label-span">Phone</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-2">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-phone">
+			Phone number
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel"></div>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+		<label class="ns-label ns-radios__label" for="contact-3">
+		  <span class="ns-label-span">Text message</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-3">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-text">
+			Cell phone number
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+	  </div>
+	</div>
+  </fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											
+																					
+											<div role="tabpanel" class="tab-pane fade" id="exampleStackedRadiosRevealingFrench" lang="fr">
+																						
+												<fieldset class="ns-fieldset" aria-describedby="contact-hint">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Exemple de contenu révélateur conditionnel
+													  </h3>
+													</legend>
+													<div id="contact-hint" class="ns-hint">
+													  Sélectionnez toutes les options qui vous concernent.
+													</div>
+													<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
+														<label class="ns-label ns-radios__label" for="contact">
+														  <span class="ns-label-span">Courriel</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional" id="conditional-contact">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-email">
+															Adresse électronique
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+														<label class="ns-label ns-radios__label" for="contact-2">
+														  <span class="ns-label-span">Téléphone</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-2">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-phone">
+															Numéro de téléphone
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel"></div>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+														<label class="ns-label ns-radios__label" for="contact-3">
+														  <span class="ns-label-span">Texto</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-3">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-text">
+															Numéro de téléphone mobile
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+													  </div>
+													</div>
+												  </fieldset>
+								
+																	        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosRevealingFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset" aria-describedby="contact-hint">
+	<legend class="ns-fieldset__legend noBorder">
+	  <h3 class="ns-fieldset__heading ">
+		Exemple de contenu révélateur conditionnel
+	  </h3>
+	</legend>
+	<div id="contact-hint" class="ns-hint">
+	  Sélectionnez toutes les options qui vous concernent.
+	</div>
+	<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
+		<label class="ns-label ns-radios__label" for="contact">
+		  <span class="ns-label-span">Courriel</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional" id="conditional-contact">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-email">
+			Adresse électronique
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+		<label class="ns-label ns-radios__label" for="contact-2">
+		  <span class="ns-label-span">Téléphone</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-2">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-phone">
+			Numéro de téléphone
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel"></div>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+		<label class="ns-label ns-radios__label" for="contact-3">
+		  <span class="ns-label-span">Texto</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-3">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-text">
+			Numéro de téléphone mobile
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+	  </div>
+	</div>
+  </fieldset></textarea>
+						
+							
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
