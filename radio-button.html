@@ -1278,79 +1278,163 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2 id="error-messages">Error messages</h2>
 								<p>Display an error message if none of the radios are selected.</p>
-								<div class="exampleDisplay">
-									<div class="ns-fieldset ns-fieldset-message-error">
-									  <fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading ">
-											Have you changed your name?
-										  </h3>
-										</legend>
-										<div id="changed-name-hint" class="ns-hint">
-										  This includes changing your last name or spelling your name differently.
-										</div>
-										<span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
-										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Error:</span> Select yes or no before you continue
-										</span>
-										<div class="ns-radios ns-radios--inline">
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-											<label class="ns-label ns-radios__label" for="changed-name">
-											  <span class="ns-label-span">Yes</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-											<label class="ns-label ns-radios__label" for="changed-name-2">
-											  <span class="ns-label-span">No</span>
-											</label>
-										  </div>
-										</div>
 
-									  </fieldset>
-									</div>
-									
-									
-								</div>
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleErrorMessageEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessageEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleErrorMessageFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessageFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
 
-								<h3>French example</h3>
-								<div class="exampleDisplay">
-									<div class="ns-fieldset ns-fieldset-message-error">
-									  <fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading " lang="fr">
-											  Avez-vous changé votre nom?
-										  </h3>
-										</legend>
-										<div id="changed-name-hint" class="ns-hint" lang="fr">
-										Cela inclut le changement de votre nom de famille ou l'épellation de votre nom différemment.
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleErrorMessageEnglish">
+												<div class="ns-fieldset ns-fieldset-message-error">
+													<fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
+														<legend class="ns-fieldset__legend noBorder">
+														  <h3 class="ns-fieldset__heading ">
+															Have you changed your name?
+														  </h3>
+														</legend>
+														<div id="changed-name-hint" class="ns-hint">
+														  This includes changing your last name or spelling your name differently.
+														</div>
+														<span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+														  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+														  <span class="ns-visually-hidden">Error:</span> Select yes or no before you continue
+														</span>
+														<div class="ns-radios ns-radios--inline">
+														  <div class="ns-radios__item">
+															<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+															<label class="ns-label ns-radios__label" for="changed-name">
+															  <span class="ns-label-span">Yes</span>
+															</label>
+														  </div>
+														  <div class="ns-radios__item">
+															<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+															<label class="ns-label ns-radios__label" for="changed-name-2">
+															  <span class="ns-label-span">No</span>
+															</label>
+														  </div>
+														</div>
+													</fieldset>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
 											
-										</div>
-										<span id="changed-name-error" class="ns--message ns-error-message field-validation-error" lang="fr">
-										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Erreur&nbsp;: </span>Sélectionner «&nbsp;Oui&nbsp;» ou «&nbsp;Non&nbsp;» avant de continue.
-										</span>
-										<div class="ns-radios ns-radios--inline">
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-											<label class="ns-label ns-radios__label" for="changed-name">
-											  <span class="ns-label-span" lang="fr">Oui</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-											<label class="ns-label ns-radios__label" for="changed-name-2">
-											  <span class="ns-label-span" lang="fr">Non</span>
-											</label>
-										  </div>
-										</div>								
-							</div><!-- / example col -->
-
-
-									  </fieldset>
-									</div>
-								</div>							
+											<div role="tabpanel" class="tab-pane fade" id="htmlErrorMessageEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-fieldset ns-fieldset-message-error">
+	<fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
+		<legend class="ns-fieldset__legend noBorder">
+		  <h3 class="ns-fieldset__heading ">
+			Have you changed your name?
+		  </h3>
+		</legend>
+		<div id="changed-name-hint" class="ns-hint">
+		  This includes changing your last name or spelling your name differently.
+		</div>
+		<span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+		  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+		  <span class="ns-visually-hidden">Error:</span> Select yes or no before you continue
+		</span>
+		<div class="ns-radios ns-radios--inline">
+		  <div class="ns-radios__item">
+			<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+			<label class="ns-label ns-radios__label" for="changed-name">
+			  <span class="ns-label-span">Yes</span>
+			</label>
+		  </div>
+		  <div class="ns-radios__item">
+			<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+			<label class="ns-label ns-radios__label" for="changed-name-2">
+			  <span class="ns-label-span">No</span>
+			</label>
+		  </div>
+		</div>
+	</fieldset>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleErrorMessageFrench" lang="fr">
+												<div class="ns-fieldset ns-fieldset-message-error">
+												  <fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading " lang="fr">
+														  Avez-vous changé votre nom?
+													  </h3>
+													</legend>
+													<div id="changed-name-hint" class="ns-hint" lang="fr">
+														Cela inclut le changement de votre nom de famille ou l'épellation de votre nom différemment.
+													</div>
+													<span id="changed-name-error" class="ns--message ns-error-message field-validation-error" lang="fr">
+													  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+													  <span class="ns-visually-hidden">Erreur&nbsp;: </span>Sélectionner «&nbsp;Oui&nbsp;» ou «&nbsp;Non&nbsp;» avant de continue.
+													</span>
+													<div class="ns-radios ns-radios--inline">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+														<label class="ns-label ns-radios__label" for="changed-name">
+														  <span class="ns-label-span" lang="fr">Oui</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+														<label class="ns-label ns-radios__label" for="changed-name-2">
+														  <span class="ns-label-span" lang="fr">Non</span>
+														</label>
+													  </div>
+													</div>								
+												  </fieldset>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlErrorMessageFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-fieldset ns-fieldset-message-error">
+  <fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
+	<legend class="ns-fieldset__legend noBorder">
+	  <h3 class="ns-fieldset__heading " lang="fr">
+		  Avez-vous changé votre nom?
+	  </h3>
+	</legend>
+	<div id="changed-name-hint" class="ns-hint" lang="fr">
+		Cela inclut le changement de votre nom de famille ou l'épellation de votre nom différemment.
+	</div>
+	<span id="changed-name-error" class="ns--message ns-error-message field-validation-error" lang="fr">
+	  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+	  <span class="ns-visually-hidden">Erreur&nbsp;: </span>Sélectionner «&nbsp;Oui&nbsp;» ou «&nbsp;Non&nbsp;» avant de continue.
+	</span>
+	<div class="ns-radios ns-radios--inline">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+		<label class="ns-label ns-radios__label" for="changed-name">
+		  <span class="ns-label-span" lang="fr">Oui</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+		<label class="ns-label ns-radios__label" for="changed-name-2">
+		  <span class="ns-label-span" lang="fr">Non</span>
+		</label>
+	  </div>
+	</div>								
+  </fieldset>
+</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+								
+								
+												
 						</section><!--/row-->
 
 					</div><!-- /col-xs-8 -->
