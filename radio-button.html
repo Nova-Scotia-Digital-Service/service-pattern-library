@@ -1150,30 +1150,127 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Legend as a label</h2>
 								<p>Sometime in forms with more than one input type the legend styling can be too prominent. Use this example if you want the radio legend to blend in wth other fields on the page.</p>
-								<div class="exampleDisplay">
-								  <fieldset class="ns-fieldset">
-									<legend class="ns-fieldset__legend noBorder label">
-									  <h3 class="ns-fieldset__heading">
-										Legend as a label example
-									  </h3>
-									</legend>
-									<div class="ns-radios">
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
-										<label class="ns-label ns-radios__label noBold" for="stacked-radio">
-										  <span class="ns-label-span">Radio 1</span>
-										</label>
-									  </div>
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
-										<label class="ns-label ns-radios__label noBold" for="stacked-radio-2">
-										  <span class="ns-label-span">Radio 2</span>
-										</label>
-									  </div>
-									</div>
+								
 
-								  </fieldset>
-								</div>
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleLegendLabelEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlLegendLabelEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleLegendLabelFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlLegendLabelFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleLegendLabelEnglish">
+											  <fieldset class="ns-fieldset">
+												<legend class="ns-fieldset__legend noBorder label">
+												  <h3 class="ns-fieldset__heading">
+													Legend as a label example
+												  </h3>
+												</legend>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+													<label class="ns-label ns-radios__label noBold" for="stacked-radio">
+													  <span class="ns-label-span">Radio 1</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+													<label class="ns-label ns-radios__label noBold" for="stacked-radio-2">
+													  <span class="ns-label-span">Radio 2</span>
+													</label>
+												  </div>
+												</div>
+											  </fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlLegendLabelEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+	<legend class="ns-fieldset__legend noBorder label">
+	  <h3 class="ns-fieldset__heading">
+		Legend as a label example
+	  </h3>
+	</legend>
+	<div class="ns-radios">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+		<label class="ns-label ns-radios__label noBold" for="stacked-radio">
+		  <span class="ns-label-span">Radio 1</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+		<label class="ns-label ns-radios__label noBold" for="stacked-radio-2">
+		  <span class="ns-label-span">Radio 2</span>
+		</label>
+	  </div>
+	</div>
+</fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleLegendLabelFrench" lang="fr">
+											  <fieldset class="ns-fieldset">
+												<legend class="ns-fieldset__legend noBorder label">
+												  <h3 class="ns-fieldset__heading">
+													Exemple quand la légende est l'étiquette  
+												  </h3>
+												</legend>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+													<label class="ns-label ns-radios__label noBold" for="stacked-radio">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+													<label class="ns-label ns-radios__label noBold" for="stacked-radio-2">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+													</label>
+												  </div>
+												</div>
+											  </fieldset>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlLegendLabelFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+	<legend class="ns-fieldset__legend noBorder label">
+	  <h3 class="ns-fieldset__heading">
+		Exemple quand la légende est l'étiquette  
+	  </h3>
+	</legend>
+	<div class="ns-radios">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+		<label class="ns-label ns-radios__label noBold" for="stacked-radio">
+		  <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+		<label class="ns-label ns-radios__label noBold" for="stacked-radio-2">
+		  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+		</label>
+	  </div>
+	</div>
+</fieldset></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+
+					
 							</div><!-- / example col -->
 						</section><!--/row-->
 
