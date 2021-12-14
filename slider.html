@@ -116,17 +116,46 @@ $(function(){
 									<li><strong>User can skip in between values</strong><br>
 									In some cases, user feels good to enter approximate values. For example in ratings, user don't prefer to put 3.45 out of 5. While in case of brightness or volume control, user don't even need the values.</li><br>
 								</ul>
-								<div class="exampleDisplay">
-									<div class="ns-form-group">
-										<h3 class="ns-label-wrapper">
-											<label class="ns-label" for="slider">
-											  Slider Example
-											</label>
-										</h3>
-									  <input class="slider ns-slider__Item fw-40" type="range" name="slider" id="slider" min="0" max="2000" value="0" step="25" aria-valuemin="0" aria-valuemax="2000" aria-valuenow="">
-									</div>
-								</div>
 								
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleSliderEnglish" role="tab" data-toggle="tab">Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlSliderEnglish" role="tab" data-toggle="tab">HTML</a>
+									    </li>
+
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleSliderEnglish">
+												<div class="ns-form-group">
+													<h3 class="ns-label-wrapper">
+														<label class="ns-label" for="slider">
+														  Slider Example
+														</label>
+													</h3>
+												  <input class="slider ns-slider__Item fw-40" type="range" name="slider" id="slider" min="0" max="2000" value="0" step="25" aria-valuemin="0" aria-valuemax="2000" aria-valuenow="">
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlSliderEnglish">
+												<textarea rows="9" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+	<h3 class="ns-label-wrapper">
+		<label class="ns-label" for="slider">
+		  Slider Example
+		</label>
+	</h3>
+  <input class="slider ns-slider__Item fw-40" type="range" name="slider" id="slider" min="0" max="2000" value="0" step="25" aria-valuemin="0" aria-valuemax="2000" aria-valuenow="">
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+
+										</div><!-- / tab-content -->
+
 							</div><!-- / example col -->
 						</section><!--/row-->
 
