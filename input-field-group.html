@@ -648,48 +648,113 @@ $(function(){
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h3>Prefixes and suffixes with error</h3>
-								<div class="exampleDisplay">
+
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleErrorMessagesPrefixesSuffixesEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessagesPrefixesSuffixesEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleErrorMessagesPrefixesSuffixesFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessagesPrefixesSuffixesFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleErrorMessagesPrefixesSuffixesEnglish">
+												<div class="ns-form-group ns-form-group-message-error">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="cost-per-item">
+													  What is the cost per item, in dolars?
+													</label>
+												  </h3>
+													<span id="changed-name-error" class="ns-error-message field-validation-error">
+													  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+													  <span class="ns-visually-hidden">Error:</span> Enter an cost per item
+													</span>
+												  <div class="ns-input__wrapper inline">
+													<div class="ns-input__prefix" aria-hidden="true"><span>$</span></div>
+													<input class="ns-input fw-6 ns-input--error"  id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+													<div class="ns-input__suffix" aria-hidden="true"><span>per item</span></div>
+												  </div>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlErrorMessagesPrefixesSuffixesEnglish">
+												<textarea rows="11" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-form-group-message-error">
+	<h3 class="ns-label-wrapper">
+		<label class="ns-label" for="cost-per-item">
+			What is the cost per item, in dolars?
+		</label>
+	</h3>
+	<span id="changed-name-error" class="ns-error-message field-validation-error">
+		<i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+		<span class="ns-visually-hidden">Error:</span> Enter an cost per item
+	</span>
+	<div class="ns-input__wrapper inline">
+		<div class="ns-input__prefix" aria-hidden="true"><span>$</span></div>
+		<input class="ns-input fw-6 ns-input--error"  id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+		<div class="ns-input__suffix" aria-hidden="true"><span>per item</span></div>
+	</div>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleErrorMessagesPrefixesSuffixesFrench" lang="fr">
+												<div class="ns-form-group ns-form-group-message-error">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="cost-per-item" lang="fr">
+													  Quel est le coût par article, en dollars?
+													</label>
+												  </h3>
+													<span id="changed-name-error" class="ns-error-message field-validation-error" lang="fr">
+													  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+													   <span class="ns-visually-hidden" lang="fr">Erreur&nbsp;:</span> Entrez le coût par article.
+													</span>
+												  <div class="ns-input__wrapper inline">
+													
+													<input class="ns-input fw-6 ns-input--error"  id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+													<div class="ns-input__suffix" aria-hidden="true" lang="fr"><span>&nbsp;$&nbsp;par article</span></div>
+												  </div>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlErrorMessagesPrefixesSuffixesFrench" lang="fr">
+												<textarea rows="11" aria-labelledby="htmlTabBack">
 									<div class="ns-form-group ns-form-group-message-error">
-									  <h3 class="ns-label-wrapper">
-										<label class="ns-label" for="cost-per-item">
-										  What is the cost per item, in dolars?
+										<h3 class="ns-label-wrapper">
+										<label class="ns-label" for="cost-per-item" lang="fr">
+											Quel est le coût par article, en dollars?
 										</label>
-									  </h3>
-										<span id="changed-name-error" class="ns-error-message field-validation-error">
-										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Error:</span> Enter an cost per item
+										</h3>
+										<span id="changed-name-error" class="ns-error-message field-validation-error" lang="fr">
+											<i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+											<span class="ns-visually-hidden" lang="fr">Erreur&nbsp;:</span> Entrez le coût par article.
 										</span>
-									  <div class="ns-input__wrapper inline">
-										<div class="ns-input__prefix" aria-hidden="true"><span>$</span></div>
-										<input class="ns-input fw-6 ns-input--error"  id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
-										<div class="ns-input__suffix" aria-hidden="true"><span>per item</span></div>
+										<div class="ns-input__wrapper inline">
+											<input class="ns-input fw-6 ns-input--error"  id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+										<div class="ns-input__suffix" aria-hidden="true" lang="fr"><span>&nbsp;$&nbsp;par article</span></div>
 									  </div>
-									</div>
-								</div>
+									</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+																	
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 						
-	<h4>French example</h4>	
-						
-							<div class="exampleDisplay">
-									<div class="ns-form-group ns-form-group-message-error">
-									  <h3 class="ns-label-wrapper">
-										<label class="ns-label" for="cost-per-item" lang="fr">
-										  Quel est le coût par article, en dollars?
-										</label>
-									  </h3>
-										<span id="changed-name-error" class="ns-error-message field-validation-error" lang="fr">
-										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										   <span class="ns-visually-hidden" lang="fr">Erreur&nbsp;:</span> Entrez le coût par article.
-										</span>
-									  <div class="ns-input__wrapper inline">
-										
-										<input class="ns-input fw-6 ns-input--error"  id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
-										<div class="ns-input__suffix" aria-hidden="true" lang="fr"><span>&nbsp;$&nbsp;par article</span></div>
-									  </div>
-									</div>
-								</div>
-						
+	
+
 
 
 					</div><!-- /col-xs-8 -->
