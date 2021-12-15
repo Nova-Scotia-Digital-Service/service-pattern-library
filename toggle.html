@@ -182,11 +182,11 @@ $(function(){
 													  <div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
 													  <span class="ns-toggle__screenreader">Notifications automatiques par texto</span>
 													  <div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
-														Activer 
+														Activé 
 													  </div>
 													  <div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
 													  <div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
-														Désactiver 
+														Désactivé 
 													  </div>
 													</label>
 												 </div>
@@ -205,11 +205,11 @@ $(function(){
 		<div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
 		<span class="ns-toggle__screenreader">Notifications automatiques par texto</span>
 		<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
-			Activer 
+			Activé 
 		</div>
 		<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
 		<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
-			Désactiver
+			Désactivé
 		</div>
 	</label>
 </div></textarea>	
@@ -227,29 +227,123 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Toggle switch disabled</h2>
 								<p>The disabled state of the toggle switch displays a mesage text depending on the toggle state.</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group ns-toggle--ui-switch">
-									  <h3 class="ns-label-wrapper">
-										<div class="ns-label" for="event-name">
-										  Automatic text notifications
-										</div>
-									  </h3>
-									<input type="checkbox" id="demo6" class="ns-toggle__input" disabled>
-									<label class="ns-toggle__label" for="demo6">
-									  <div class="ns-toggle__disabled-msg" data-checked="This switch is turned off and disabled" data-unchecked="This switch is turned on and disabled"></div>
-									  <span class="ns-toggle__screenreader">View dashboard as activity stream</span>
-									  <div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
-										On 
 
-									  </div>
-									  <div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
-									  <div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
-										Off     
-									  </div>
-									 </label>
-						</fieldset>
-						<!-- end NS toggle -->
-								</div>
+		
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleToggleSwitchDisabledEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlToggleSwitchDisabledEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleToggleSwitchDisabledFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlToggleSwitchDisabledFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleToggleSwitchDisabledEnglish">
+												<div class="ns-form-group ns-toggle--ui-switch">
+													<h3 class="ns-label-wrapper">
+													<div class="ns-label" for="event-name">
+														Automatic text notifications
+													</div>
+													</h3>
+													<input type="checkbox" id="demo6" class="ns-toggle__input" disabled>
+													<label class="ns-toggle__label" for="demo6">
+														<div class="ns-toggle__disabled-msg" data-checked="This switch is turned off and disabled" data-unchecked="This switch is turned on and disabled"></div>
+														<span class="ns-toggle__screenreader">View dashboard as activity stream</span>
+														<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+															On
+														</div>
+														<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+														<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+															Off
+														</div>
+													</label>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlToggleSwitchDisabledEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-toggle--ui-switch">
+	<h3 class="ns-label-wrapper">
+	<div class="ns-label" for="event-name">
+		Automatic text notifications
+	</div>
+	</h3>
+	<input type="checkbox" id="demo6" class="ns-toggle__input" disabled>
+	<label class="ns-toggle__label" for="demo6">
+		<div class="ns-toggle__disabled-msg" data-checked="This switch is turned off and disabled" data-unchecked="This switch is turned on and disabled"></div>
+		<span class="ns-toggle__screenreader">View dashboard as activity stream</span>
+		<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+			On
+		</div>
+		<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+		<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+			Off
+		</div>
+	</label>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleToggleSwitchDisabledFrench" lang="fr">
+												<div class="ns-form-group ns-toggle--ui-switch">
+													<h3 class="ns-label-wrapper">
+													<div class="ns-label" for="event-name">
+														Notifications automatiques par texto
+													</div>
+													</h3>
+													<input type="checkbox" id="demo6" class="ns-toggle__input" disabled>
+													<label class="ns-toggle__label" for="demo6">
+														<div class="ns-toggle__disabled-msg" data-checked="Cet interrupteur à bascule est en position arrêt et désactivé." data-unchecked="Cet interrupteur à bascule est en position marche et désactivé."></div>
+														<span class="ns-toggle__screenreader">Afficher le tableau de bord en tant que volet d'activité.</span>
+														<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+															On
+														</div>
+														<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+														<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+															Off
+														</div>
+													</label>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlToggleSwitchDisabledFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-toggle--ui-switch">
+	<h3 class="ns-label-wrapper">
+	<div class="ns-label" for="event-name">
+		Notifications automatiques par texto
+	</div>
+	</h3>
+	<input type="checkbox" id="demo6" class="ns-toggle__input" disabled>
+	<label class="ns-toggle__label" for="demo6">
+		<div class="ns-toggle__disabled-msg" data-checked="Cet interrupteur à bascule est en position arrêt et désactivé." data-unchecked="Cet interrupteur à bascule est en position marche et désactivé."></div>
+		<span class="ns-toggle__screenreader">Afficher le tableau de bord en tant que volet d'activité.</span>
+		<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+			On
+		</div>
+		<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+		<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+			Off
+		</div>
+	</label>
+</div></textarea>	
+
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+									
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 										
