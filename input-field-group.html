@@ -263,6 +263,19 @@ $(function(){
 								<p>Use fixed width inputs for content that has a specific, known length. Postcode inputs should be postcode-sized, telephone number inputs should be telephone number-sized.</p>
 								<p>On fixed width inputs, the width will remain fixed on all screens unless it is wider than the viewport, in which case it will shrink to fit.</p>
 								<div class="ns-fieldset exampleDisplay">
+
+									<h3>HTML code</h3>
+									
+<pre>
+<code>&lt;div class="ns-form-group"&gt;
+	&lt;label class="ns-label" for="width-<mark>50</mark>"&gt;
+		50 em (about 65 characters)
+	&lt;/label&gt;
+	&lt;input class="ns-input fw-<mark>50</mark>" id="width-<mark>50</mark>" name="width-<mark>50</mark>" type="text"&gt;
+&lt;/div&gt;</code></pre>
+
+									<h3>Examples</h3>
+									
 									<div class="ns-form-group">
 										  <label class="ns-label" for="width-50">
 											50 em (about 65 characters)
