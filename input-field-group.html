@@ -355,18 +355,82 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Input form group with hint text</h2>
 								<p>Use hint for help that’s relevant to the majority of users, like how their information will be used, or where to find it.</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group">
-									  <h3 class="ns-label-wrapper"><label class="ns-label" for="event-name">
-										  What is the name of the event?
-										</label>
-									  </h3>
-									  <div id="event-name-hint" class="ns-hint">
-										The name you’ll use on promotional material.
-									  </div>
-									  <input class="ns-input fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
-									</div>
-								</div>
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleInputFormFroupHintTextEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlInputFormFroupHintTextEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleInputFormFroupHintTextFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlInputFormFroupHintTextFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleInputFormFroupHintTextEnglish">
+												<div class="ns-form-group">
+												  <h3 class="ns-label-wrapper"><label class="ns-label" for="event-name">
+													  What is the name of the event?
+													</label>
+												  </h3>
+												  <div id="event-name-hint" class="ns-hint">
+													The name you’ll use on promotional material.
+												  </div>
+												  <input class="ns-input fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlInputFormFroupHintTextEnglish">
+												<textarea rows="11" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+  <h3 class="ns-label-wrapper"><label class="ns-label" for="event-name">
+	  What is the name of the event?
+	</label>
+  </h3>
+  <div id="event-name-hint" class="ns-hint">
+	The name you’ll use on promotional material.
+  </div>
+  <input class="ns-input fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleInputFormFroupHintTextFrench" lang="fr">
+												<div class="ns-form-group">
+												  <h3 class="ns-label-wrapper"><label class="ns-label" for="event-name">
+													  Quel est le nom de l'événement?
+													</label>
+												  </h3>
+												  <div id="event-name-hint" class="ns-hint">
+													Le nom que vous utiliserez sur le matériel promotionnel.
+												  </div>
+												  <input class="ns-input fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlInputFormFroupHintTextFrench" lang="fr">
+												<textarea rows="11" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+  <h3 class="ns-label-wrapper"><label class="ns-label" for="event-name">
+	  Quel est le nom de l'événement?
+	</label>
+  </h3>
+  <div id="event-name-hint" class="ns-hint">
+	Le nom que vous utiliserez sur le matériel promotionnel.
+  </div>
+  <input class="ns-input fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+									
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
