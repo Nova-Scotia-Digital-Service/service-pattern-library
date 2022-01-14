@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
-	<title>Toggle switch - Forms & Services Building Blocks - Government of Nova Scotia</title>
+	<title>Toggle switches - Forms & Services Building Blocks - Government of Nova Scotia</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Include in all head tags -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><!-- Include in all head tags -->	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script><!-- Include in all head tags -->
@@ -100,93 +100,387 @@ $(function(){
 						</script>
 					</div>
 					<div class="col-sm-9 col-xs-12">
-						<h1>Toggle switch examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<h1>Toggle switches</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
-								<h2>Toggle switch</h2>
+								
 								<p>Toggle switches should change the state of something and take immediate effect and should not require the user to click Save or Submit to apply the new state.</p>
 								<p>They are great used for on and off options.</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group ns-toggle--ui-switch">
-									  <h3 class="ns-label-wrapper">
-										<div class="ns-label" for="event-name">
-										  Automatic text notifications
-										</div>
-									  </h3>
-										<input type="checkbox" id="demo5" class="ns-toggle__input">
-										<label class="ns-toggle__label" for="demo5">
-										  <div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
-										  <span class="ns-toggle__screenreader">Automatic text notifications</span>
-										  <div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
-											On 
-										  </div>
-										  <div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
-										  <div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
-											Off     
-										  </div>
-										</label>
-									 </div>
-								</div>
+
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleToggleAutomaticTextEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlToggleAutomaticTextEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleToggleAutomaticTextFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlToggleAutomaticTextFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleToggleAutomaticTextEnglish">
+												<div class="ns-form-group ns-toggle--ui-switch">
+												  <h3 class="ns-label-wrapper">
+													<div class="ns-label" for="event-name">
+													  Automatic text notifications
+													</div>
+												  </h3>
+													<input type="checkbox" id="demo5" class="ns-toggle__input">
+													<label class="ns-toggle__label" for="demo5">
+													  <div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
+													  <span class="ns-toggle__screenreader">Automatic text notifications</span>
+													  <div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+														On 
+													  </div>
+													  <div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+													  <div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+														Off     
+													  </div>
+													</label>
+												 </div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlToggleAutomaticTextEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-toggle--ui-switch">
+	<h3 class="ns-label-wrapper">
+	  <div class="ns-label" for="event-name">
+		  Automatic text notifications
+	  </div>
+	</h3>
+	<input type="checkbox" id="demo5" class="ns-toggle__input">
+	<label class="ns-toggle__label" for="demo5">
+		<div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
+		<span class="ns-toggle__screenreader">Automatic text notifications</span>
+		<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+			On 
+		</div>
+		<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+		<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+			Off
+		</div>
+	</label>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleToggleAutomaticTextFrench" lang="fr">
+												<div class="ns-form-group ns-toggle--ui-switch">
+												  <h3 class="ns-label-wrapper">
+													<div class="ns-label" for="event-name">
+														Notifications automatiques par texto 
+													</div>
+												  </h3>
+													<input type="checkbox" id="demo5" class="ns-toggle__input">
+													<label class="ns-toggle__label" for="demo5">
+													  <div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
+													  <span class="ns-toggle__screenreader">Notifications automatiques par texto</span>
+													  <div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+														Activé 
+													  </div>
+													  <div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+													  <div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+														Désactivé 
+													  </div>
+													</label>
+												 </div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlToggleAutomaticTextFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-toggle--ui-switch">
+	<h3 class="ns-label-wrapper">
+	  <div class="ns-label" for="event-name">
+		  Notifications automatiques par texto
+	  </div>
+	</h3>
+	<input type="checkbox" id="demo5" class="ns-toggle__input">
+	<label class="ns-toggle__label" for="demo5">
+		<div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
+		<span class="ns-toggle__screenreader">Notifications automatiques par texto</span>
+		<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+			Activé 
+		</div>
+		<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+		<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+			Désactivé
+		</div>
+	</label>
+</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+																
+							
+							
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Toggle switch disabled</h2>
 								<p>The disabled state of the toggle switch displays a mesage text depending on the toggle state.</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group ns-toggle--ui-switch">
-									  <h3 class="ns-label-wrapper">
-										<div class="ns-label" for="event-name">
-										  Automatic text notifications
-										</div>
-									  </h3>
-									<input type="checkbox" id="demo6" class="ns-toggle__input" disabled>
-									<label class="ns-toggle__label" for="demo6">
-									  <div class="ns-toggle__disabled-msg" data-checked="This switch is turned off and disabled" data-unchecked="This switch is turned on and disabled"></div>
-									  <span class="ns-toggle__screenreader">View dashboard as activity stream</span>
-									  <div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
-										On 
 
-									  </div>
-									  <div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
-									  <div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
-										Off     
-									  </div>
-									 </label>
-						</fieldset>
-						<!-- end NS toggle -->
-								</div>
+		
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleToggleSwitchDisabledEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlToggleSwitchDisabledEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleToggleSwitchDisabledFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlToggleSwitchDisabledFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleToggleSwitchDisabledEnglish">
+												<div class="ns-form-group ns-toggle--ui-switch">
+													<h3 class="ns-label-wrapper">
+													<div class="ns-label" for="event-name">
+														Automatic text notifications
+													</div>
+													</h3>
+													<input type="checkbox" id="demo6" class="ns-toggle__input" disabled>
+													<label class="ns-toggle__label" for="demo6">
+														<div class="ns-toggle__disabled-msg" data-checked="This switch is turned off and disabled" data-unchecked="This switch is turned on and disabled"></div>
+														<span class="ns-toggle__screenreader">View dashboard as activity stream</span>
+														<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+															On
+														</div>
+														<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+														<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+															Off
+														</div>
+													</label>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlToggleSwitchDisabledEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-toggle--ui-switch">
+	<h3 class="ns-label-wrapper">
+	<div class="ns-label" for="event-name">
+		Automatic text notifications
+	</div>
+	</h3>
+	<input type="checkbox" id="demo6" class="ns-toggle__input" disabled>
+	<label class="ns-toggle__label" for="demo6">
+		<div class="ns-toggle__disabled-msg" data-checked="This switch is turned off and disabled" data-unchecked="This switch is turned on and disabled"></div>
+		<span class="ns-toggle__screenreader">View dashboard as activity stream</span>
+		<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+			On
+		</div>
+		<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+		<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+			Off
+		</div>
+	</label>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleToggleSwitchDisabledFrench" lang="fr">
+												<div class="ns-form-group ns-toggle--ui-switch">
+													<h3 class="ns-label-wrapper">
+													<div class="ns-label" for="event-name">
+														Notifications automatiques par texto
+													</div>
+													</h3>
+													<input type="checkbox" id="demo6" class="ns-toggle__input" disabled>
+													<label class="ns-toggle__label" for="demo6">
+														<div class="ns-toggle__disabled-msg" data-checked="Cet interrupteur à bascule est en position arrêt et désactivé." data-unchecked="Cet interrupteur à bascule est en position marche et désactivé."></div>
+														<span class="ns-toggle__screenreader">Afficher le tableau de bord en tant que volet d'activité.</span>
+														<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+															On
+														</div>
+														<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+														<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+															Off
+														</div>
+													</label>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlToggleSwitchDisabledFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-toggle--ui-switch">
+	<h3 class="ns-label-wrapper">
+	<div class="ns-label" for="event-name">
+		Notifications automatiques par texto
+	</div>
+	</h3>
+	<input type="checkbox" id="demo6" class="ns-toggle__input" disabled>
+	<label class="ns-toggle__label" for="demo6">
+		<div class="ns-toggle__disabled-msg" data-checked="Cet interrupteur à bascule est en position arrêt et désactivé." data-unchecked="Cet interrupteur à bascule est en position marche et désactivé."></div>
+		<span class="ns-toggle__screenreader">Afficher le tableau de bord en tant que volet d'activité.</span>
+		<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+			On
+		</div>
+		<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+		<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+			Off
+		</div>
+	</label>
+</div></textarea>	
+
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+									
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 										
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Toggle switch with alert</h2>
-								<div class="exampleDisplay">
-									<div class="ns-form-group ns-fieldset-message-warning ns-toggle--ui-switch">
-									  <h3 class="ns-label-wrapper">
-										<div class="ns-label" for="event-name">
-										  Automatic text notifications
-										</div>
-									  </h3>
-										<span id="changed-name-error" class="ns--message ns-warning-message field-validation-error has-warning">
-										  <i class="fa fa-exclamation-triangle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Error:</span> You will not be notified when changes occur
-										</span>
-										<input type="checkbox" id="demo7" class="ns-toggle__input" checked="checked">
-										<label class="ns-toggle__label" for="demo7">
-										  <div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
-										  <span class="ns-toggle__screenreader">Automatic text notifications</span>
-										  <div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
-											On 
-										  </div>
-										  <div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
-										  <div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
-											Off     
-										  </div>
-										</label>
-									 </div>
-								</div>
+
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleToggleSwitchAlertEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlToggleSwitchAlertEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleToggleSwitchAlertFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlToggleSwitchAlertFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleToggleSwitchAlertEnglish">
+												<div class="ns-form-group ns-fieldset-message-warning ns-toggle--ui-switch">
+													<h3 class="ns-label-wrapper">
+														<div class="ns-label" for="event-name">
+														Automatic text notifications
+														</div>
+													</h3>
+													<span id="changed-name-error" class="ns--message ns-warning-message field-validation-error has-warning">
+														<i class="fa fa-exclamation-triangle error-indicator errorAlert" aria-hidden="true"></i>
+														<span class="ns-visually-hidden">Error:</span> You will not be notified when changes occur
+													</span>
+													<input type="checkbox" id="demo7" class="ns-toggle__input" checked="checked">
+													<label class="ns-toggle__label" for="demo7">
+													<div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
+													<span class="ns-toggle__screenreader">Automatic text notifications</span>
+													<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+														On 
+													</div>
+													<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+													<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+														Off     
+													</div>
+													</label>
+												 </div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlToggleSwitchAlertEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-fieldset-message-warning ns-toggle--ui-switch">
+	<h3 class="ns-label-wrapper">
+		<div class="ns-label" for="event-name">
+			Automatic text notifications
+		</div>
+	</h3>
+	<span id="changed-name-error" class="ns--message ns-warning-message field-validation-error has-warning">
+		<i class="fa fa-exclamation-triangle error-indicator errorAlert" aria-hidden="true"></i>
+		<span class="ns-visually-hidden">Error:</span> You will not be notified when changes occur
+	</span>
+	<input type="checkbox" id="demo7" class="ns-toggle__input" checked="checked">
+	<label class="ns-toggle__label" for="demo7">
+	<div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
+	<span class="ns-toggle__screenreader">Automatic text notifications</span>
+	<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+		On 
+	</div>
+	<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+	<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+		Off     
+	</div>
+	</label>
+ </div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleToggleSwitchAlertFrench" lang="fr">
+												<div class="ns-form-group ns-fieldset-message-warning ns-toggle--ui-switch">
+													<h3 class="ns-label-wrapper">
+														<div class="ns-label" for="event-name">
+															Notifications automatiques par texto
+														</div>
+													</h3>
+													<span id="changed-name-error" class="ns--message ns-warning-message field-validation-error has-warning">
+														<i class="fa fa-exclamation-triangle error-indicator errorAlert" aria-hidden="true"></i>
+														<span class="ns-visually-hidden">Erreur&#38;nbsp&#59;: </span>Vous ne serez pas averti lorsque des changements se produisent.
+													</span>
+													<input type="checkbox" id="demo7" class="ns-toggle__input" checked="checked">
+													<label class="ns-toggle__label" for="demo7">
+													<div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
+													<span class="ns-toggle__screenreader">Notifications automatiques par texto</span>
+													<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+														Activé  
+													</div>
+													<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+													<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+														Désactivé     
+													</div>
+													</label>
+												 </div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlToggleSwitchAlertFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-fieldset-message-warning ns-toggle--ui-switch">
+	<h3 class="ns-label-wrapper">
+		<div class="ns-label" for="event-name">
+			Notifications automatiques par texto
+		</div>
+	</h3>
+	<span id="changed-name-error" class="ns--message ns-warning-message field-validation-error has-warning">
+		<i class="fa fa-exclamation-triangle error-indicator errorAlert" aria-hidden="true"></i>
+		<span class="ns-visually-hidden">Erreur&#38;nbsp&#59;: </span>Vous ne serez pas averti lorsque des changements se produisent.
+	</span>
+	<input type="checkbox" id="demo7" class="ns-toggle__input" checked="checked">
+	<label class="ns-toggle__label" for="demo7">
+	<div class="ns-toggle__disabled-msg" data-checked="Pending" data-unchecked="Completed"></div>
+	<span class="ns-toggle__screenreader">Notifications automatiques par texto</span>
+	<div class="ns-toggle-option-LEFT mr-2" aria-hidden="true">
+		Activé  
+	</div>
+	<div class="ns-toggle-switch" role="presentation" aria-hidden="true"></div>
+	<div class="ns-toggle-option-RIGHT ml-2" aria-hidden="true">
+		Désactivé     
+	</div>
+	</label>
+ </div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+																
+							
+							
 							</div><!-- / example col -->
 						</section><!--/row-->
 

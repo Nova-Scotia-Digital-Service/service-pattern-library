@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
-	<title>Input form group - Forms & Services Building Blocks - Government of Nova Scotia</title>
+	<title>Input form groups - Forms & Services Building Blocks - Government of Nova Scotia</title>
 		
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Include in all head tags -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><!-- Include in all head tags -->	
@@ -101,7 +101,7 @@ $(function(){
 						</script>
 					</div>
 					<div class="col-sm-9 col-xs-12">
-						<h1>Input form group examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<h1>Input form groups</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<p>Use the text input component when you need to let users enter text that’s no longer than a single line, such as their name or phone number.</p>
 						<p>Input length should always be appropriate to the length of the text the user will enter. Input lengths can be altered by using field-width classes (.fw-xx).</p>
 						<section class="row">
@@ -109,30 +109,148 @@ $(function(){
 								<h2>Basic input form group</h2>
 								<p>All text inputs must have visible labels; placeholder text is not an acceptable replacement for a label as it vanishes when users start typing.</p>
 								<p>Labels should be aligned above the text input they refer to. They should be short, direct and written in sentence case. Do not use colons at the end of labels.</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group">
-										<label class="ns-label" for="event-name">
-										  What is the name of the event?
-										</label>
-									  <input class="ns-input fw-20" id="event-name" name="event-name" type="text">
-									</div>
-								</div>
+
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleBasicInputFormGroupEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlBasicInputFormGroupEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleBasicInputFormGroupFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlBasicInputFormGroupFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleBasicInputFormGroupEnglish">
+												<div class="ns-form-group">
+													<label class="ns-label" for="event-name">
+														What is the name of the event?
+													</label>
+													<input class="ns-input fw-20" id="event-name" name="event-name" type="text">
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlBasicInputFormGroupEnglish">
+												<textarea rows="6" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+	<label class="ns-label" for="event-name">
+		What is the name of the event?
+	</label>
+	<input class="ns-input fw-20" id="event-name" name="event-name" type="text">
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleBasicInputFormGroupFrench" lang="fr">
+												<div class="ns-form-group">
+													<label class="ns-label" for="event-name">
+														Quel est le nom de l'événement?
+													</label>
+													<input class="ns-input fw-20" id="event-name" name="event-name" type="text">
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlBasicInputFormGroupFrench" lang="fr">
+												<textarea rows="6" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+	<label class="ns-label" for="event-name">
+		Quel est le nom de l'événement?
+	</label>
+	<input class="ns-input fw-20" id="event-name" name="event-name" type="text">
+</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+																
+							
+							
+							
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Input form with Header as a Label</h2>
 								<p>If you’re asking just one question per page as recommended, you can set the contents of the label as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group">
-									  <h3 class="ns-label-wrapper">
-										<label class="ns-label" for="event-name2">
-										  What is the name of the event?
-										</label>
-									  </h3>
-									  <input class="ns-input fw-20" id="event-name2" name="event-name" type="text">
-									</div>
-								</div>
+								
+								
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleInputFormGroupHeaderLabelEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlInputFormGroupHeaderLabelEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleInputFormGroupHeaderLabelFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlInputFormGroupHeaderLabelFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleInputFormGroupHeaderLabelEnglish">
+												<div class="ns-form-group">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="event-name2">
+													  What is the name of the event?
+													</label>
+												  </h3>
+												  <input class="ns-input fw-20" id="event-name2" name="event-name" type="text">
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlInputFormGroupHeaderLabelEnglish">
+												<textarea rows="9" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+  <h3 class="ns-label-wrapper">
+	<label class="ns-label" for="event-name2">
+	  What is the name of the event?
+	</label>
+  </h3>
+  <input class="ns-input fw-20" id="event-name2" name="event-name" type="text">
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleInputFormGroupHeaderLabelFrench" lang="fr">
+												<div class="ns-form-group">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="event-name2">
+													  Quel est le nom de l'événement?
+													</label>
+												  </h3>
+												  <input class="ns-input fw-20" id="event-name2" name="event-name" type="text">
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlInputFormGroupHeaderLabelFrench" lang="fr">
+												<textarea rows="9" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+  <h3 class="ns-label-wrapper">
+	<label class="ns-label" for="event-name2">
+	  Quel est le nom de l'événement?
+	</label>
+  </h3>
+  <input class="ns-input fw-20" id="event-name2" name="event-name" type="text">
+</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+												
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
@@ -145,6 +263,19 @@ $(function(){
 								<p>Use fixed width inputs for content that has a specific, known length. Postcode inputs should be postcode-sized, telephone number inputs should be telephone number-sized.</p>
 								<p>On fixed width inputs, the width will remain fixed on all screens unless it is wider than the viewport, in which case it will shrink to fit.</p>
 								<div class="ns-fieldset exampleDisplay">
+
+									<h3>HTML code</h3>
+									
+<pre>
+<code>&lt;div class="ns-form-group"&gt;
+	&lt;label class="ns-label" for="width-<mark>50</mark>"&gt;
+		50 em (about 65 characters)
+	&lt;/label&gt;
+	&lt;input class="ns-input fw-<mark>50</mark>" id="width-<mark>50</mark>" name="width-<mark>50</mark>" type="text"&gt;
+&lt;/div&gt;</code></pre>
+
+									<h3>Examples</h3>
+									
 									<div class="ns-form-group">
 										  <label class="ns-label" for="width-50">
 											50 em (about 65 characters)
@@ -224,18 +355,82 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Input form group with hint text</h2>
 								<p>Use hint for help that’s relevant to the majority of users, like how their information will be used, or where to find it.</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group">
-									  <h3 class="ns-label-wrapper"><label class="ns-label" for="event-name">
-										  What is the name of the event?
-										</label>
-									  </h3>
-									  <div id="event-name-hint" class="ns-hint">
-										The name you’ll use on promotional material.
-									  </div>
-									  <input class="ns-input fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
-									</div>
-								</div>
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleInputFormFroupHintTextEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlInputFormFroupHintTextEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleInputFormFroupHintTextFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlInputFormFroupHintTextFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleInputFormFroupHintTextEnglish">
+												<div class="ns-form-group">
+												  <h3 class="ns-label-wrapper"><label class="ns-label" for="event-name">
+													  What is the name of the event?
+													</label>
+												  </h3>
+												  <div id="event-name-hint" class="ns-hint">
+													The name you’ll use on promotional material.
+												  </div>
+												  <input class="ns-input fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlInputFormFroupHintTextEnglish">
+												<textarea rows="11" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+  <h3 class="ns-label-wrapper"><label class="ns-label" for="event-name">
+	  What is the name of the event?
+	</label>
+  </h3>
+  <div id="event-name-hint" class="ns-hint">
+	The name you’ll use on promotional material.
+  </div>
+  <input class="ns-input fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleInputFormFroupHintTextFrench" lang="fr">
+												<div class="ns-form-group">
+												  <h3 class="ns-label-wrapper"><label class="ns-label" for="event-name">
+													  Quel est le nom de l'événement?
+													</label>
+												  </h3>
+												  <div id="event-name-hint" class="ns-hint">
+													Le nom que vous utiliserez sur le matériel promotionnel.
+												  </div>
+												  <input class="ns-input fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlInputFormFroupHintTextFrench" lang="fr">
+												<textarea rows="11" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+  <h3 class="ns-label-wrapper"><label class="ns-label" for="event-name">
+	  Quel est le nom de l'événement?
+	</label>
+  </h3>
+  <div id="event-name-hint" class="ns-hint">
+	Le nom que vous utiliserez sur le matériel promotionnel.
+  </div>
+  <input class="ns-input fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+									
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
@@ -245,68 +440,321 @@ $(function(){
 								<p>Prefixes and suffixes are useful when there’s a commonly understood symbol or abbreviation for the type of information you’re asking for. Do not rely on prefixes or suffixes alone, because people who use a screen reader won’t see them.</p>
 								<p>If you need a specific type of information, say so in the input label or hint text as well. For example, put “Cost, in dollars” in the input label and use the “$” symbol in the prefix.</p>
 								<p>Some users may miss the fact that the input already has a suffix or prefix, and enter a prefix or suffix into the input. Allow for this in your validation and do not show an error.</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group">
-									  <h3 class="ns-label-wrapper">
-										<label class="ns-label" for="cost-per-item">
-										  What is the cost per item, in dollars?
-										</label>
-									  </h3>
-									  <div class="ns-input__wrapper inline">
-										<div class="ns-input__prefix" aria-hidden="true"><span>$</span></div>
-										<input class="ns-input fw-6" id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
-										<div class="ns-input__suffix" aria-hidden="true"><span>per item</span></div>
-									  </div>
-									</div>
-								</div>
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#examplePrefixesSuffixesEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlPrefixesSuffixesEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#examplePrefixesSuffixesFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlPrefixesSuffixesFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="examplePrefixesSuffixesEnglish">
+												<div class="ns-form-group">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="cost-per-item">
+													  What is the cost per item, in dollars?
+													</label>
+												  </h3>
+												  <div class="ns-input__wrapper inline">
+													<div class="ns-input__prefix" aria-hidden="true"><span>$</span></div>
+													<input class="ns-input fw-6" id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+													<div class="ns-input__suffix" aria-hidden="true"><span>per item</span></div>
+												  </div>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlPrefixesSuffixesEnglish">
+												<textarea rows="13" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+  <h3 class="ns-label-wrapper">
+	<label class="ns-label" for="cost-per-item">
+	  What is the cost per item, in dollars?
+	</label>
+  </h3>
+  <div class="ns-input__wrapper inline">
+	<div class="ns-input__prefix" aria-hidden="true"><span>$</span></div>
+	<input class="ns-input fw-6" id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+	<div class="ns-input__suffix" aria-hidden="true"><span>per item</span></div>
+  </div>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="examplePrefixesSuffixesFrench" lang="fr">
+												<div class="ns-form-group">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="cost-per-item" lang="fr">
+													   Quel est le coût par article, en dollars?
+													</label>
+												  </h3>
+												  <div class="ns-input__wrapper inline">
+													<input class="ns-input fw-6" id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+													<div class="ns-input__suffix" aria-hidden="true"><span lang="fr">$&nbsp;par article</span></div>
+												  </div>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlPrefixesSuffixesFrench" lang="fr">
+												<textarea rows="13" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+  <h3 class="ns-label-wrapper">
+	<label class="ns-label" for="cost-per-item" lang="fr">
+	   Quel est le coût par article, en dollars?
+	</label>
+  </h3>
+  <div class="ns-input__wrapper inline">
+	<input class="ns-input fw-6" id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+	<div class="ns-input__suffix" aria-hidden="true"><span lang="fr">$&#38nbsp;par article</span></div>
+  </div>
+</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+									
+							
+							
+							
 							</div><!-- / example col -->
+							
+							
+							<div class="secondary-content">
+							<h4 id="BilingualConsideration">Consideration for bilingual services</h4>
+								<p>On French page, for <a href="bilingual-content.html">currency</a> use the comma as the decimal marker in French texts and place the dollar sign after the numerals.</p>
+						</div>
 						</section><!--/row-->
+						
+
+						
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2 id="error-messages">Error messages</h2>
 								<p>Error messages should be styled like this:</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group ns-form-group-message-error">
-									  <h3 class="ns-label-wrapper">
-										<label class="ns-label" for="event-name">
-										  What is the name of the event?
-										</label>
-									  </h3>
-									  <div id="event-name-hint" class="ns-hint">
-										The name you’ll use on promotional material.
-									  </div>
-										<span id="changed-name-error" class="ns-error-message field-validation-error">
-										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Error:</span> Enter an event name
-										</span>
-									  <input class="ns-input ns-input--error fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint event-name-error">
-									</div>
-								</div>
+
+	
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleErrorMessagesEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessagesEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleErrorMessagesFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessagesFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleErrorMessagesEnglish">
+												<div class="ns-form-group ns-form-group-message-error">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="event-name">
+													  What is the name of the event?
+													</label>
+												  </h3>
+												  <div id="event-name-hint" class="ns-hint">
+													The name you’ll use on promotional material.
+												  </div>
+													<span id="changed-name-error" class="ns-error-message field-validation-error">
+													  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+													  <span class="ns-visually-hidden">Error:</span> Enter an event name
+													</span>
+												  <input class="ns-input ns-input--error fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint event-name-error">
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlErrorMessagesEnglish">
+												<textarea rows="11" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-form-group-message-error">
+  <h3 class="ns-label-wrapper">
+	<label class="ns-label" for="event-name">
+	  What is the name of the event?
+	</label>
+  </h3>
+  <div id="event-name-hint" class="ns-hint">
+	The name you’ll use on promotional material.
+  </div>
+	<span id="changed-name-error" class="ns-error-message field-validation-error">
+	  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+	  <span class="ns-visually-hidden">Error:</span> Enter an event name
+	</span>
+  <input class="ns-input ns-input--error fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint event-name-error">
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleErrorMessagesFrench" lang="fr">
+												<div class="ns-form-group ns-form-group-message-error">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="event-name" lang="fr">
+													 Quel est le nom de l'événement?
+													</label>
+												  </h3>
+												  <div id="event-name-hint" class="ns-hint" lang="fr">
+													Le nom que vous utiliserez sur le matériel promotionnel.
+												  </div>
+													<span id="changed-name-error" class="ns-error-message field-validation-error">
+													  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+													  <span class="ns-visually-hidden" lang="fr">Erreur&nbsp;:</span> Entrez le nom de l'événement.
+													</span>
+												  <input class="ns-input ns-input--error fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint event-name-error">
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlErrorMessagesFrench" lang="fr">
+												<textarea rows="11" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-form-group-message-error">
+	<h3 class="ns-label-wrapper">
+		<label class="ns-label" for="event-name" lang="fr">
+			Quel est le nom de l'événement?
+		</label>
+	</h3>
+	<div id="event-name-hint" class="ns-hint" lang="fr">
+		Le nom que vous utiliserez sur le matériel promotionnel.
+	</div>
+	<span id="changed-name-error" class="ns-error-message field-validation-error">
+		<i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+		<span class="ns-visually-hidden" lang="fr">Erreur&nbsp;:</span> Entrez le nom de l'événement.
+	</span>
+	<input class="ns-input ns-input--error fw-20" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint event-name-error">
+</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+																
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
+										
+
+							
+					
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h3>Prefixes and suffixes with error</h3>
-								<div class="exampleDisplay">
+
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleErrorMessagesPrefixesSuffixesEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessagesPrefixesSuffixesEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleErrorMessagesPrefixesSuffixesFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessagesPrefixesSuffixesFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleErrorMessagesPrefixesSuffixesEnglish">
+												<div class="ns-form-group ns-form-group-message-error">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="cost-per-item">
+													  What is the cost per item, in dolars?
+													</label>
+												  </h3>
+													<span id="changed-name-error" class="ns-error-message field-validation-error">
+													  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+													  <span class="ns-visually-hidden">Error:</span> Enter an cost per item
+													</span>
+												  <div class="ns-input__wrapper inline">
+													<div class="ns-input__prefix" aria-hidden="true"><span>$</span></div>
+													<input class="ns-input fw-6 ns-input--error"  id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+													<div class="ns-input__suffix" aria-hidden="true"><span>per item</span></div>
+												  </div>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlErrorMessagesPrefixesSuffixesEnglish">
+												<textarea rows="11" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-form-group-message-error">
+	<h3 class="ns-label-wrapper">
+		<label class="ns-label" for="cost-per-item">
+			What is the cost per item, in dolars?
+		</label>
+	</h3>
+	<span id="changed-name-error" class="ns-error-message field-validation-error">
+		<i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+		<span class="ns-visually-hidden">Error:</span> Enter an cost per item
+	</span>
+	<div class="ns-input__wrapper inline">
+		<div class="ns-input__prefix" aria-hidden="true"><span>$</span></div>
+		<input class="ns-input fw-6 ns-input--error"  id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+		<div class="ns-input__suffix" aria-hidden="true"><span>per item</span></div>
+	</div>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleErrorMessagesPrefixesSuffixesFrench" lang="fr">
+												<div class="ns-form-group ns-form-group-message-error">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="cost-per-item" lang="fr">
+													  Quel est le coût par article, en dollars?
+													</label>
+												  </h3>
+													<span id="changed-name-error" class="ns-error-message field-validation-error" lang="fr">
+													  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+													   <span class="ns-visually-hidden" lang="fr">Erreur&nbsp;:</span> Entrez le coût par article.
+													</span>
+												  <div class="ns-input__wrapper inline">
+													
+													<input class="ns-input fw-6 ns-input--error"  id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+													<div class="ns-input__suffix" aria-hidden="true" lang="fr"><span>&nbsp;$&nbsp;par article</span></div>
+												  </div>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlErrorMessagesPrefixesSuffixesFrench" lang="fr">
+												<textarea rows="11" aria-labelledby="htmlTabBack">
 									<div class="ns-form-group ns-form-group-message-error">
-									  <h3 class="ns-label-wrapper">
-										<label class="ns-label" for="cost-per-item">
-										  What is the cost per item, in dolars?
+										<h3 class="ns-label-wrapper">
+										<label class="ns-label" for="cost-per-item" lang="fr">
+											Quel est le coût par article, en dollars?
 										</label>
-									  </h3>
-										<span id="changed-name-error" class="ns-error-message field-validation-error">
-										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Error:</span> Enter an cost per item
+										</h3>
+										<span id="changed-name-error" class="ns-error-message field-validation-error" lang="fr">
+											<i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+											<span class="ns-visually-hidden" lang="fr">Erreur&nbsp;:</span> Entrez le coût par article.
 										</span>
-									  <div class="ns-input__wrapper inline">
-										<div class="ns-input__prefix" aria-hidden="true"><span>$</span></div>
-										<input class="ns-input fw-6 ns-input--error"  id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
-										<div class="ns-input__suffix" aria-hidden="true"><span>per item</span></div>
+										<div class="ns-input__wrapper inline">
+											<input class="ns-input fw-6 ns-input--error"  id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+										<div class="ns-input__suffix" aria-hidden="true" lang="fr"><span>&nbsp;$&nbsp;par article</span></div>
 									  </div>
-									</div>
-								</div>
+									</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+									
+																	
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
+						
+	
+
 
 
 					</div><!-- /col-xs-8 -->

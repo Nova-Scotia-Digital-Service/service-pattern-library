@@ -100,7 +100,7 @@ $(function(){
 						</script>
 					</div>
 					<div class="col-sm-9 col-xs-12">
-						<h1>Radio Button</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<h1>Radio Buttons</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<h2 id="when-to-use-this-component">When to use this component</h2>
 						<p>Use the radios component when users can only select one option from a list.</p>
 						<h2 id="when-not-to-use-this-component">When not to use this component</h2>
@@ -124,32 +124,142 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Inline Radios</h2>
 								<p>If there are only 2 options with short labels, you can display them inline.</p>
-								<div class="exampleDisplay">
-									<fieldset class="ns-fieldset">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading ">
-											Example Inline Radios
-										  </h3>
-										</legend>
-										<div id="inline-radios-hint" class="ns-hint">
-										  Add special instructions for buttons and inputs here.
-										</div>
-										<div class="ns-radios">
-										  <div class="ns-radios__item inline">
-											<input class="ns-radios__input" id="inline-radios" name="inline-radios" type="radio" value="inline radio 1" checked>
-											<label class="ns-label ns-radios__label" for="inline-radios">
-											  <span class="ns-label-span">Radio 1</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__item inline">
-											<input class="ns-radios__input" id="inline-radios-2" name="inline-radios" type="radio" value="inline radio 2">
-											<label class="ns-label ns-radios__label" for="inline-radios-2">
-											  <span class="ns-label-span">Radio 2</span>
-											</label>
-										  </div>
-										</div>
-									</fieldset>
-								</div>
+
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleInlineRadiosEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlInlineRadiosEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleInlineRadiosFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlInlineRadiosFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleInlineRadiosEnglish">
+												<fieldset class="ns-fieldset">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Example Inline Radios
+													  </h3>
+													</legend>
+													<div id="inline-radios-hint" class="ns-hint">
+													  Add special instructions for buttons and inputs here.
+													</div>
+													<div class="ns-radios">
+													  <div class="ns-radios__item inline">
+														<input class="ns-radios__input" id="inline-radios" name="inline-radios" type="radio" value="inline radio 1" checked>
+														<label class="ns-label ns-radios__label" for="inline-radios">
+														  <span class="ns-label-span">Radio 1</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item inline">
+														<input class="ns-radios__input" id="inline-radios-2" name="inline-radios" type="radio" value="inline radio 2">
+														<label class="ns-label ns-radios__label" for="inline-radios-2">
+														  <span class="ns-label-span">Radio 2</span>
+														</label>
+													  </div>
+													</div>
+												</fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
+
+											<div role="tabpanel" class="tab-pane fade" id="htmlInlineRadiosEnglish">
+												<textarea rows="12" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Example Inline Radios
+  </h3>
+ </legend>
+ <div id="inline-radios-hint" class="ns-hint">
+  Add special instructions for buttons and inputs here.
+ </div>
+ <div class="ns-radios">
+  <div class="ns-radios__item inline">
+   <input class="ns-radios__input" id="inline-radios" name="inline-radios" type="radio" value="inline radio 1" checked>
+   <label class="ns-label ns-radios__label" for="inline-radios">
+    <span class="ns-label-span">Radio 1</span>
+   </label>
+  </div>
+  <div class="ns-radios__item inline">
+   <input class="ns-radios__input" id="inline-radios-2" name="inline-radios" type="radio" value="inline radio 2">
+   <label class="ns-label ns-radios__label" for="inline-radios-2">
+    <span class="ns-label-span">Radio 2</span>
+   </label>
+  </div>
+ </div>
+</fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleInlineRadiosFrench" lang="fr">
+												<fieldset class="ns-fieldset">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Exemple de boutons radio horizontaux
+													  </h3>
+													</legend>
+													<div id="inline-radios-hint" class="ns-hint">
+													  Ajoutez ici des consignes particulières pour les boutons et les entrées. 
+													</div>
+													<div class="ns-radios">
+													  <div class="ns-radios__item inline">
+														<input class="ns-radios__input" id="inline-radios" name="inline-radios" type="radio" value="inline radio 1" checked>
+														<label class="ns-label ns-radios__label" for="inline-radios">
+															<span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item inline">
+														<input class="ns-radios__input" id="inline-radios-2" name="inline-radios" type="radio" value="inline radio 2">
+														<label class="ns-label ns-radios__label" for="inline-radios-2">
+														  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+														</label>
+													  </div>
+													</div>
+												</fieldset>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlInlineRadiosFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Exemple de boutons radio horizontaux
+  </h3>
+ </legend>
+ <div id="inline-radios-hint" class="ns-hint">
+  Ajoutez ici des consignes particulières pour les boutons et les entrées.
+ </div>
+ <div class="ns-radios">
+  <div class="ns-radios__item inline">
+   <input class="ns-radios__input" id="inline-radios" name="inline-radios" type="radio" value="inline radio 1" checked>
+   <label class="ns-label ns-radios__label" for="inline-radios">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+   </label>
+  </div>
+  <div class="ns-radios__item inline">
+   <input class="ns-radios__input" id="inline-radios-2" name="inline-radios" type="radio" value="inline radio 2">
+   <label class="ns-label ns-radios__label" for="inline-radios-2">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+   </label>
+  </div>
+ </div>
+</fieldset></textarea>	
+							
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+									
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 
@@ -157,36 +267,154 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Stacked Radios</h2>
 								<p>When there are more than 2 options, or if labels are long, radios should be stacked.</p>
-								<div class="exampleDisplay">
-								  <fieldset class="ns-fieldset">
-									<legend class="ns-fieldset__legend noBorder">
-									  <h3 class="ns-fieldset__heading ">
-										Example Stacked Radios
-									  </h3>
-									</legend>
-									<div class="ns-radios">
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
-										<label class="ns-label ns-radios__label" for="stacked-radio">
-										  <span class="ns-label-span">Radio 1</span>
-										</label>
-									  </div>
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
-										<label class="ns-label ns-radios__label" for="stacked-radio-2">
-										  <span class="ns-label-span">Radio 2</span>
-										</label>
-									  </div>
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="stacked-radio-3" name="stacked-radio" type="radio" value="radio 3">
-										<label class="ns-label ns-radios__label" for="stacked-radio-3">
-										  <span class="ns-label-span">Radio 3</span>
-										</label>
-									  </div>
-									</div>
 
-								  </fieldset>
-								</div>
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleStackedRadiosEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleStackedRadiosFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleStackedRadiosEnglish">
+											  <fieldset class="ns-fieldset">
+												<legend class="ns-fieldset__legend noBorder">
+												  <h3 class="ns-fieldset__heading ">
+													Example Stacked Radios
+												  </h3>
+												</legend>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+													<label class="ns-label ns-radios__label" for="stacked-radio">
+													  <span class="ns-label-span">Radio 1</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+													<label class="ns-label ns-radios__label" for="stacked-radio-2">
+													  <span class="ns-label-span">Radio 2</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-3" name="stacked-radio" type="radio" value="radio 3">
+													<label class="ns-label ns-radios__label" for="stacked-radio-3">
+													  <span class="ns-label-span">Radio 3</span>
+													</label>
+												  </div>
+												</div>
+											  </fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
+
+											<div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosEnglish">
+<textarea rows="12" aria-labelledby="htmlTabBack">
+ <fieldset class="ns-fieldset">
+  <legend class="ns-fieldset__legend noBorder">
+   <h3 class="ns-fieldset__heading ">
+    Example Stacked Radios
+   </h3>
+  </legend>
+  <div class="ns-radios">
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+    <label class="ns-label ns-radios__label" for="stacked-radio">
+     <span class="ns-label-span">Radio 1</span>
+    </label>
+   </div>
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+    <label class="ns-label ns-radios__label" for="stacked-radio-2">
+	 <span class="ns-label-span">Radio 2</span>
+    </label>
+   </div>
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio-3" name="stacked-radio" type="radio" value="radio 3">
+    <label class="ns-label ns-radios__label" for="stacked-radio-3">
+     <span class="ns-label-span">Radio 3</span>
+    </label>
+   </div>
+  </div>
+ </fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleStackedRadiosFrench" lang="fr">
+											  <fieldset class="ns-fieldset">
+												<legend class="ns-fieldset__legend noBorder">
+												  <h3 class="ns-fieldset__heading ">
+													Exemple de boutons radio verticaux
+												  </h3>
+												</legend>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+													<label class="ns-label ns-radios__label" for="stacked-radio">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+													<label class="ns-label ns-radios__label" for="stacked-radio-2">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-3" name="stacked-radio" type="radio" value="radio 3">
+													<label class="ns-label ns-radios__label" for="stacked-radio-3">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 3</span>
+													</label>
+												  </div>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<textarea rows="12" aria-labelledby="htmlTabBack">
+ <fieldset class="ns-fieldset">
+  <legend class="ns-fieldset__legend noBorder">
+   <h3 class="ns-fieldset__heading ">
+    Exemple de boutons radio verticaux
+   </h3>
+  </legend>
+  <div class="ns-radios">
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+    <label class="ns-label ns-radios__label" for="stacked-radio">
+     <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+    </label>
+   </div>
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+    <label class="ns-label ns-radios__label" for="stacked-radio-2">
+	 <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+    </label>
+   </div>
+   <div class="ns-radios__item">
+    <input class="ns-radios__input" id="stacked-radio-3" name="stacked-radio" type="radio" value="radio 3">
+    <label class="ns-label ns-radios__label" for="stacked-radio-3">
+     <span class="ns-label-span">Bouton radio n<sup>o</sup> 3</span>
+    </label>
+   </div>
+  </div>
+ </fieldset></textarea>	
+						
+							
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->							
+							
+							
 							</div><!-- / example col -->
 						</section><!--/row-->
 
@@ -194,39 +422,172 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Radio items with hints</h2>
 								<p>You can add hints to radio items to provide additional information about the options.</p>
-								<div class="exampleDisplay">
-								  <fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
-									<legend class="ns-fieldset__legend noBorder">
-									  <h3 class="ns-fieldset__heading ">
-										Radio items with hints example
-									  </h3>
-									</legend>
-									<div id="sign-in-hint" class="ns-hint">
-									  This space can be used to describe the radio group in general and give more details about the options below.
-									</div>
-									<div class="ns-radios">
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
-										<label class="ns-label ns-radios__label" for="sign-in">
-										  <span class="ns-label-span">Radio option 1 with a longer title.</span>
-										</label>
-										<div id="sign-in-item-hint" class="ns-hint ns-radios__hint">
-										  Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
-										</div>
-									  </div>
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="sign-in-2" name="sign-in" type="radio" value="ns-verify" aria-describedby="sign-in-2-item-hint">
-										<label class="ns-label ns-radios__label" for="sign-in-2">
-										  <span class="ns-label-span">Radio option 2 with a longer title.</span>
-										</label>
-										<div id="sign-in-2-item-hint" class="ns-hint ns-radios__hint">
-										  Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
-										</div>
-									  </div>
-									</div>
 
-								  </fieldset>
-								</div>
+							
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleStackedRadiosHintEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosHintEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleStackedRadiosHintFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosHintFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleStackedRadiosHintEnglish">
+											  <fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
+												<legend class="ns-fieldset__legend noBorder">
+												  <h3 class="ns-fieldset__heading ">
+													Radio items with hints example
+												  </h3>
+												</legend>
+												<div id="sign-in-hint" class="ns-hint">
+												  This space can be used to describe the radio group in general and give more details about the options below.
+												</div>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+													<label class="ns-label ns-radios__label" for="sign-in">
+													  <span class="ns-label-span">Radio option 1 with a longer title.</span>
+													</label>
+													<div id="sign-in-item-hint" class="ns-hint ns-radios__hint">
+													  Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
+													</div>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="sign-in-2" name="sign-in" type="radio" value="ns-verify" aria-describedby="sign-in-2-item-hint">
+													<label class="ns-label ns-radios__label" for="sign-in-2">
+													  <span class="ns-label-span">Radio option 2 with a longer title.</span>
+													</label>
+													<div id="sign-in-2-item-hint" class="ns-hint ns-radios__hint">
+													  Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
+													</div>
+												  </div>
+												</div>
+											  </fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
+
+											<div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosHintEnglish">
+												<textarea rows="12" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Radio items with hints example
+  </h3>
+ </legend>
+ <div id="sign-in-hint" class="ns-hint">
+  This space can be used to describe the radio group in general and give more details about the options below.
+ </div>
+ <div class="ns-radios">
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+   <label class="ns-label ns-radios__label" for="sign-in">
+    <span class="ns-label-span">Radio option 1 with a longer title.</span>
+   </label>
+   <div id="sign-in-item-hint" class="ns-hint ns-radios__hint">
+    Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
+   </div>
+
+  </div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="sign-in-2" name="sign-in" type="radio" value="ns-verify" aria-describedby="sign-in-2-item-hint">
+   <label class="ns-label ns-radios__label" for="sign-in-2">
+    <span class="ns-label-span">Radio option 2 with a longer title.</span>
+   </label>
+   <div id="sign-in-2-item-hint" class="ns-hint ns-radios__hint">
+    Additional text that describes the specific option can go here. This space is meant to give more details about the option and can be as long as needed.
+   </div>
+  </div>
+ </div>
+</fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleStackedRadiosHintFrench" lang="fr">
+											  <fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
+												<legend class="ns-fieldset__legend noBorder">
+												  <h3 class="ns-fieldset__heading ">
+													Exemple des éléments de bouton radio avec des conseils 
+												  </h3>
+												</legend>
+												<div id="sign-in-hint" class="ns-hint">
+												  Cet espace peut être utilisé pour décrire le groupe radio en général et donner plus de détails sur les options ci-dessous.
+												</div>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+													<label class="ns-label ns-radios__label" for="sign-in">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 1 avec un titre plus long.</span>
+													</label>
+													<div id="sign-in-item-hint" class="ns-hint ns-radios__hint">
+													  Le texte supplémentaire qui décrit l'option spécifique peut aller ici. Cet espace est destiné à donner plus de détails sur l'option et peut être aussi long que nécessaire.
+													</div>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="sign-in-2" name="sign-in" type="radio" value="ns-verify" aria-describedby="sign-in-2-item-hint">
+													<label class="ns-label ns-radios__label" for="sign-in-2">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2 avec un titre plus long.</span>
+													</label>
+													<div id="sign-in-2-item-hint" class="ns-hint ns-radios__hint">
+													  Le texte supplémentaire qui décrit l'option spécifique peut aller ici. Cet espace est destiné à donner plus de détails sur l'option et peut être aussi long que nécessaire.
+													</div>
+												  </div>
+												</div>
+											  </fieldset>
+												
+												
+												
+												
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosHintFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset" aria-describedby="sign-in-hint">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Exemple des éléments de bouton radio avec des conseils
+  </h3>
+ </legend>
+ <div id="sign-in-hint" class="ns-hint">
+  Cet espace peut être utilisé pour décrire le groupe radio en général et donner plus de détails sur les options ci-dessous.
+ </div>
+ <div class="ns-radios">
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+   <label class="ns-label ns-radios__label" for="sign-in">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 1 avec un titre plus long.</span>
+   </label>
+   <div id="sign-in-item-hint" class="ns-hint ns-radios__hint">
+    Le texte supplémentaire qui décrit l'option spécifique peut aller ici. Cet espace est destiné à donner plus de détails sur l'option et peut être aussi long que nécessaire.
+
+   </div>
+  </div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="sign-in-2" name="sign-in" type="radio" value="ns-verify" aria-describedby="sign-in-2-item-hint">
+   <label class="ns-label ns-radios__label" for="sign-in-2">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 2 avec un titre plus long.</span>
+   </label>
+   <div id="sign-in-2-item-hint" class="ns-hint ns-radios__hint">
+    Le texte supplémentaire qui décrit l'option spécifique peut aller ici. Cet espace est destiné à donner plus de détails sur l'option et peut être aussi long que nécessaire.
+   </div>
+  </div>
+ </div>
+</fieldset></textarea>
+						
+							
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+							
 							</div><!-- / example col -->
 						</section><!--/row-->
 
@@ -234,37 +595,161 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Radio items with a text divider</h2>
 								<p>If one or more of your radio options is different from the others, it can help users if you separate them using a text divider. The text is usually the word ‘or’.</p>
-								<div class="exampleDisplay">
-									<fieldset class="ns-fieldset">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading ">
-											Radio items with a text divider example
-										  </h3>
-										</legend>
-										<div class="ns-radios">
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-											<label class="ns-label ns-radios__label" for="where-do-you-live">
-											  <span class="ns-label-span">Radio 1</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-											<label class="ns-label ns-radios__label" for="where-do-you-live-2">
-											  <span class="ns-label-span">Radio 2</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__divider">or</div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="where-do-you-live-6" name="where-do-you-live" type="radio" value="abroad">
-											<label class="ns-label ns-radios__label" for="where-do-you-live-6">
-											  <span class="ns-label-span">Radio 3</span>
-											</label>
-										  </div>
-										</div>
+								
+								
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleStackedRadiosDividerEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosDividerEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleStackedRadiosDividerFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosDividerFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
 
-									  </fieldset>
-								</div>
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleStackedRadiosDividerEnglish">
+												<fieldset class="ns-fieldset">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Radio items with a text divider example
+													  </h3>
+													</legend>
+													<div class="ns-radios">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+														<label class="ns-label ns-radios__label" for="where-do-you-live">
+														  <span class="ns-label-span">Radio 1</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+														<label class="ns-label ns-radios__label" for="where-do-you-live-2">
+														  <span class="ns-label-span">Radio 2</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__divider">or</div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live-6" name="where-do-you-live" type="radio" value="abroad">
+														<label class="ns-label ns-radios__label" for="where-do-you-live-6">
+														  <span class="ns-label-span">Radio 3</span>
+														</label>
+													  </div>
+													</div>
+												  </fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
+
+											<div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosDividerEnglish">
+												<textarea rows="12" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Radio items with a text divider example
+  </h3>
+ </legend>
+ <div class="ns-radios">
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+   <label class="ns-label ns-radios__label" for="where-do-you-live">
+    <span class="ns-label-span">Radio 1</span>
+   </label>
+  </div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+   <label class="ns-label ns-radios__label" for="where-do-you-live-2">
+    <span class="ns-label-span">Radio 2</span>
+   </label>
+  </div>
+  <div class="ns-radios__divider">or</div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live-6" name="where-do-you-live" type="radio" value="abroad">
+   <label class="ns-label ns-radios__label" for="where-do-you-live-6">
+    <span class="ns-label-span">Radio 3</span>
+   </label>
+  </div>
+ </div>
+</fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+																					
+											<div role="tabpanel" class="tab-pane fade" id="exampleStackedRadiosDividerFrench" lang="fr">
+												<fieldset class="ns-fieldset">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Exemple des éléments de bouton radio avec un séparateur de texte
+													  </h3>
+													</legend>
+													<div class="ns-radios">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+														<label class="ns-label ns-radios__label" for="where-do-you-live">
+														  <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+														<label class="ns-label ns-radios__label" for="where-do-you-live-2">
+														  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__divider">ou</div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="where-do-you-live-6" name="where-do-you-live" type="radio" value="abroad">
+														<label class="ns-label ns-radios__label" for="where-do-you-live-6">
+														  <span class="ns-label-span">Bouton radio n<sup>o</sup> 3</span>
+														</label>
+													  </div>
+													</div>
+												  </fieldset>												
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosDividerFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading ">
+   Exemple des éléments de bouton radio avec un séparateur de texte
+  </h3>
+ </legend>
+ <div class="ns-radios">
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+   <label class="ns-label ns-radios__label" for="where-do-you-live">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+   </label>
+  </div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+   <label class="ns-label ns-radios__label" for="where-do-you-live-2">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+   </label>
+  </div>
+  <div class="ns-radios__divider">ou</div>
+  <div class="ns-radios__item">
+   <input class="ns-radios__input" id="where-do-you-live-6" name="where-do-you-live" type="radio" value="abroad">
+   <label class="ns-label ns-radios__label" for="where-do-you-live-6">
+    <span class="ns-label-span">Bouton radio n<sup>o</sup> 3</span>
+   </label>
+  </div>
+ </div>
+</fieldset></textarea>
+						
+							
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 
@@ -273,64 +758,255 @@ $(function(){
 								<h2>Conditionally revealing content</h2>
 								<p>You can conditionally reveal content when the user selects a particular radio, so they only see content when it’s relevant to them.</p>
 								<p>For example, you could reveal a phone number input when the user selects the ‘Contact me by phone’ option.</p>
-								<div class="exampleDisplay">
-									  <fieldset class="ns-fieldset" aria-describedby="contact-hint">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading ">
-											Conditionally revealing content example
-										  </h3>
-										</legend>
-										<div id="contact-hint" class="ns-hint">
-										  Select one option.
-										</div>
-										<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
-											<label class="ns-label ns-radios__label" for="contact">
-											  <span class="ns-label-span">Email</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__conditional" id="conditional-contact">
-											<div class="ns-fieldset">
-											  <label class="ns-label" for="contact-by-email">
-												Email address
-											  </label>
-											  <input class="ns-input ns-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
+														
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleStackedRadiosRevealingEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosRevealingEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleStackedRadiosRevealingFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlStackedRadiosRevealingFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
 
-										  </div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
-											<label class="ns-label ns-radios__label" for="contact-2">
-											  <span class="ns-label-span">Phone</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-2">
-											<div class="ns-fieldset">
-											  <label class="ns-label" for="contact-by-phone">
-												Phone number
-											  </label>
-											  <input class="ns-input ns-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel"></div>
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleStackedRadiosRevealingEnglish">
+												<fieldset class="ns-fieldset" aria-describedby="contact-hint">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Conditionally revealing content example
+													  </h3>
+													</legend>
+													<div id="contact-hint" class="ns-hint">
+													  Select one option.
+													</div>
+													<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
+														<label class="ns-label ns-radios__label" for="contact">
+														  <span class="ns-label-span">Email</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional" id="conditional-contact">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-email">
+															Email address
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
 
-										  </div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
-											<label class="ns-label ns-radios__label" for="contact-3">
-											  <span class="ns-label-span">Text message</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-3">
-											<div class="ns-fieldset">
-											  <label class="ns-label" for="contact-by-text">
-												Cell phone number
-											  </label>
-											  <input class="ns-input ns-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+														<label class="ns-label ns-radios__label" for="contact-2">
+														  <span class="ns-label-span">Phone</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-2">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-phone">
+															Phone number
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel"></div>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+														<label class="ns-label ns-radios__label" for="contact-3">
+														  <span class="ns-label-span">Text message</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-3">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-text">
+															Cell phone number
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+													  </div>
+													</div>
+												  </fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
 
-										  </div>
+											<div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosRevealingEnglish">
+												<textarea rows="12" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset" aria-describedby="contact-hint">
+	<legend class="ns-fieldset__legend noBorder">
+	  <h3 class="ns-fieldset__heading ">
+		Conditionally revealing content example
+	  </h3>
+	</legend>
+	<div id="contact-hint" class="ns-hint">
+	  Select one option.
+	</div>
+	<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
+		<label class="ns-label ns-radios__label" for="contact">
+		  <span class="ns-label-span">Email</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional" id="conditional-contact">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-email">
+			Email address
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
 
-										</div>
-
-									  </fieldset>
-								</div>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+		<label class="ns-label ns-radios__label" for="contact-2">
+		  <span class="ns-label-span">Phone</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-2">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-phone">
+			Phone number
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel"></div>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+		<label class="ns-label ns-radios__label" for="contact-3">
+		  <span class="ns-label-span">Text message</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-3">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-text">
+			Cell phone number
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+	  </div>
+	</div>
+  </fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											
+																					
+											<div role="tabpanel" class="tab-pane fade" id="exampleStackedRadiosRevealingFrench" lang="fr">
+																						
+												<fieldset class="ns-fieldset" aria-describedby="contact-hint">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Exemple de contenu révélateur conditionnel
+													  </h3>
+													</legend>
+													<div id="contact-hint" class="ns-hint">
+													  Sélectionnez toutes les options qui vous concernent.
+													</div>
+													<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
+														<label class="ns-label ns-radios__label" for="contact">
+														  <span class="ns-label-span">Courriel</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional" id="conditional-contact">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-email">
+															Adresse électronique
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+														<label class="ns-label ns-radios__label" for="contact-2">
+														  <span class="ns-label-span">Téléphone</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-2">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-phone">
+															Numéro de téléphone
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel"></div>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+														<label class="ns-label ns-radios__label" for="contact-3">
+														  <span class="ns-label-span">Texto</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-3">
+														<div class="ns-fieldset">
+														  <label class="ns-label" for="contact-by-text">
+															Numéro de téléphone mobile
+														  </label>
+														  <input class="ns-input ns-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+													  </div>
+													</div>
+												  </fieldset>
+								
+																	        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlStackedRadiosRevealingFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset" aria-describedby="contact-hint">
+	<legend class="ns-fieldset__legend noBorder">
+	  <h3 class="ns-fieldset__heading ">
+		Exemple de contenu révélateur conditionnel
+	  </h3>
+	</legend>
+	<div id="contact-hint" class="ns-hint">
+	  Sélectionnez toutes les options qui vous concernent.
+	</div>
+	<div class="ns-radios ns-radios--conditional" data-module="ns-radios">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
+		<label class="ns-label ns-radios__label" for="contact">
+		  <span class="ns-label-span">Courriel</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional" id="conditional-contact">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-email">
+			Adresse électronique
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+		<label class="ns-label ns-radios__label" for="contact-2">
+		  <span class="ns-label-span">Téléphone</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-2">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-phone">
+			Numéro de téléphone
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel"></div>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+		<label class="ns-label ns-radios__label" for="contact-3">
+		  <span class="ns-label-span">Texto</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__conditional ns-radios__conditional--hidden" id="conditional-contact-3">
+		<div class="ns-fieldset">
+		  <label class="ns-label" for="contact-by-text">
+			Numéro de téléphone mobile
+		  </label>
+		  <input class="ns-input ns-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+	  </div>
+	</div>
+  </fieldset></textarea>
+						
+							
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
@@ -338,32 +1014,135 @@ $(function(){
 								<h2>Smaller radios</h2>
 								<p>Use standard-sized radios in nearly all cases. However, smaller versions work well on pages where it’s helpful to make them less visually prominent.</p>
 								<p>For example, on a page of search results, the primary user need is to see the results. Using smaller radios lets users see and change search filters without distracting them from the main content</p>
-								<div class="exampleDisplay">
-									<div class="ns-radios">
-									  <fieldset class="ns-fieldset">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading ">
-											Smaller radios example
-										  </h3>
-										</legend>
-										<div class="ns-radios ns-radios--small">
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
-											<label class="ns-label ns-radios__label" for="changed-name">
-											  <span class="ns-label-span">Small radio 1</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
-											<label class="ns-label ns-radios__label" for="changed-name-2">
-											  <span class="ns-label-span">Small radio 2</span>
-											</label>
-										  </div>
-										</div>
 
-									  </fieldset>
-									</div>
-								</div>
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleSmallRadiosEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlSmallRadiosEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleSmallRadiosFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlSmallRadiosFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleSmallRadiosEnglish">
+												<div class="ns-radios">
+												  <fieldset class="ns-fieldset">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Smaller radios example
+													  </h3>
+													</legend>
+													<div class="ns-radios ns-radios--small">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+														<label class="ns-label ns-radios__label" for="changed-name">
+														  <span class="ns-label-span">Small radio 1</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+														<label class="ns-label ns-radios__label" for="changed-name-2">
+														  <span class="ns-label-span">Small radio 2</span>
+														</label>
+													  </div>
+													</div>
+												  </fieldset>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlSmallRadiosEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-radios">
+  <fieldset class="ns-fieldset">
+	<legend class="ns-fieldset__legend noBorder">
+	  <h3 class="ns-fieldset__heading ">
+		Smaller radios example
+	  </h3>
+	</legend>
+	<div class="ns-radios ns-radios--small">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+		<label class="ns-label ns-radios__label" for="changed-name">
+		  <span class="ns-label-span">Small radio 1</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+		<label class="ns-label ns-radios__label" for="changed-name-2">
+		  <span class="ns-label-span">Small radio 2</span>
+		</label>
+	  </div>
+	</div>
+  </fieldset>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleSmallRadiosFrench" lang="fr">
+												<div class="ns-radios">
+												  <fieldset class="ns-fieldset">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading ">
+														Exemple de petites boutons radio
+													  </h3>
+													</legend>
+													<div class="ns-radios ns-radios--small">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+														<label class="ns-label ns-radios__label" for="changed-name">
+														  <span class="ns-label-span">Petite boutons radio n<sup>o</sup> 1</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+														<label class="ns-label ns-radios__label" for="changed-name-2">
+														  <span class="ns-label-span">Petite boutons radio n<sup>o</sup> 2</span>
+														</label>
+													  </div>
+													</div>
+												  </fieldset>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlSmallRadiosFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-radios">
+  <fieldset class="ns-fieldset">
+	<legend class="ns-fieldset__legend noBorder">
+	  <h3 class="ns-fieldset__heading ">
+		Exemple de petites boutons radio
+	  </h3>
+	</legend>
+	<div class="ns-radios ns-radios--small">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+		<label class="ns-label ns-radios__label" for="changed-name">
+		  <span class="ns-label-span">Petite boutons radio n<sup>o</sup> 1</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+		<label class="ns-label ns-radios__label" for="changed-name-2">
+		  <span class="ns-label-span">Petite boutons radio n<sup>o</sup> 2</span>
+		</label>
+	  </div>
+	</div>
+  </fieldset>
+</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->								
+								
+								
+
 							</div><!-- / example col -->
 						</section><!--/row-->
 
@@ -371,30 +1150,127 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Legend as a label</h2>
 								<p>Sometime in forms with more than one input type the legend styling can be too prominent. Use this example if you want the radio legend to blend in wth other fields on the page.</p>
-								<div class="exampleDisplay">
-								  <fieldset class="ns-fieldset">
-									<legend class="ns-fieldset__legend noBorder label">
-									  <h3 class="ns-fieldset__heading">
-										Legend as a label example
-									  </h3>
-									</legend>
-									<div class="ns-radios">
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
-										<label class="ns-label ns-radios__label noBold" for="stacked-radio">
-										  <span class="ns-label-span">Radio 1</span>
-										</label>
-									  </div>
-									  <div class="ns-radios__item">
-										<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
-										<label class="ns-label ns-radios__label noBold" for="stacked-radio-2">
-										  <span class="ns-label-span">Radio 2</span>
-										</label>
-									  </div>
-									</div>
+								
 
-								  </fieldset>
-								</div>
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleLegendLabelEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlLegendLabelEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleLegendLabelFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlLegendLabelFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleLegendLabelEnglish">
+											  <fieldset class="ns-fieldset">
+												<legend class="ns-fieldset__legend noBorder label">
+												  <h3 class="ns-fieldset__heading">
+													Legend as a label example
+												  </h3>
+												</legend>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+													<label class="ns-label ns-radios__label noBold" for="stacked-radio">
+													  <span class="ns-label-span">Radio 1</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+													<label class="ns-label ns-radios__label noBold" for="stacked-radio-2">
+													  <span class="ns-label-span">Radio 2</span>
+													</label>
+												  </div>
+												</div>
+											  </fieldset>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlLegendLabelEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+	<legend class="ns-fieldset__legend noBorder label">
+	  <h3 class="ns-fieldset__heading">
+		Legend as a label example
+	  </h3>
+	</legend>
+	<div class="ns-radios">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+		<label class="ns-label ns-radios__label noBold" for="stacked-radio">
+		  <span class="ns-label-span">Radio 1</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+		<label class="ns-label ns-radios__label noBold" for="stacked-radio-2">
+		  <span class="ns-label-span">Radio 2</span>
+		</label>
+	  </div>
+	</div>
+</fieldset></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleLegendLabelFrench" lang="fr">
+											  <fieldset class="ns-fieldset">
+												<legend class="ns-fieldset__legend noBorder label">
+												  <h3 class="ns-fieldset__heading">
+													Exemple quand la légende est l'étiquette  
+												  </h3>
+												</legend>
+												<div class="ns-radios">
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+													<label class="ns-label ns-radios__label noBold" for="stacked-radio">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+													</label>
+												  </div>
+												  <div class="ns-radios__item">
+													<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+													<label class="ns-label ns-radios__label noBold" for="stacked-radio-2">
+													  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+													</label>
+												  </div>
+												</div>
+											  </fieldset>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlLegendLabelFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<fieldset class="ns-fieldset">
+	<legend class="ns-fieldset__legend noBorder label">
+	  <h3 class="ns-fieldset__heading">
+		Exemple quand la légende est l'étiquette  
+	  </h3>
+	</legend>
+	<div class="ns-radios">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="stacked-radio" name="stacked-radio" type="radio" value="radio 1">
+		<label class="ns-label ns-radios__label noBold" for="stacked-radio">
+		  <span class="ns-label-span">Bouton radio n<sup>o</sup> 1</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="stacked-radio-2" name="stacked-radio" type="radio" value="radio 2">
+		<label class="ns-label ns-radios__label noBold" for="stacked-radio-2">
+		  <span class="ns-label-span">Bouton radio n<sup>o</sup> 2</span>
+		</label>
+	  </div>
+	</div>
+</fieldset></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+
+					
 							</div><!-- / example col -->
 						</section><!--/row-->
 
@@ -402,40 +1278,163 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2 id="error-messages">Error messages</h2>
 								<p>Display an error message if none of the radios are selected.</p>
-								<div class="exampleDisplay">
-									<div class="ns-fieldset ns-fieldset-message-error">
-									  <fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading ">
-											Have you changed your name?
-										  </h3>
-										</legend>
-										<div id="changed-name-hint" class="ns-hint">
-										  This includes changing your last name or spelling your name differently.
-										</div>
-										<span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
-										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Error:</span> Select yes or no before you continue
-										</span>
-										<div class="ns-radios ns-radios--inline">
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-											<label class="ns-label ns-radios__label" for="changed-name">
-											  <span class="ns-label-span">Yes</span>
-											</label>
-										  </div>
-										  <div class="ns-radios__item">
-											<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-											<label class="ns-label ns-radios__label" for="changed-name-2">
-											  <span class="ns-label-span">No</span>
-											</label>
-										  </div>
-										</div>
 
-									  </fieldset>
-									</div>
-								</div>
-							</div><!-- / example col -->
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleErrorMessageEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessageEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleErrorMessageFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlErrorMessageFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleErrorMessageEnglish">
+												<div class="ns-fieldset ns-fieldset-message-error">
+													<fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
+														<legend class="ns-fieldset__legend noBorder">
+														  <h3 class="ns-fieldset__heading ">
+															Have you changed your name?
+														  </h3>
+														</legend>
+														<div id="changed-name-hint" class="ns-hint">
+														  This includes changing your last name or spelling your name differently.
+														</div>
+														<span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+														  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+														  <span class="ns-visually-hidden">Error:</span> Select yes or no before you continue
+														</span>
+														<div class="ns-radios ns-radios--inline">
+														  <div class="ns-radios__item">
+															<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+															<label class="ns-label ns-radios__label" for="changed-name">
+															  <span class="ns-label-span">Yes</span>
+															</label>
+														  </div>
+														  <div class="ns-radios__item">
+															<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+															<label class="ns-label ns-radios__label" for="changed-name-2">
+															  <span class="ns-label-span">No</span>
+															</label>
+														  </div>
+														</div>
+													</fieldset>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlErrorMessageEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-fieldset ns-fieldset-message-error">
+	<fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
+		<legend class="ns-fieldset__legend noBorder">
+		  <h3 class="ns-fieldset__heading ">
+			Have you changed your name?
+		  </h3>
+		</legend>
+		<div id="changed-name-hint" class="ns-hint">
+		  This includes changing your last name or spelling your name differently.
+		</div>
+		<span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+		  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+		  <span class="ns-visually-hidden">Error:</span> Select yes or no before you continue
+		</span>
+		<div class="ns-radios ns-radios--inline">
+		  <div class="ns-radios__item">
+			<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+			<label class="ns-label ns-radios__label" for="changed-name">
+			  <span class="ns-label-span">Yes</span>
+			</label>
+		  </div>
+		  <div class="ns-radios__item">
+			<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+			<label class="ns-label ns-radios__label" for="changed-name-2">
+			  <span class="ns-label-span">No</span>
+			</label>
+		  </div>
+		</div>
+	</fieldset>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleErrorMessageFrench" lang="fr">
+												<div class="ns-fieldset ns-fieldset-message-error">
+												  <fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
+													<legend class="ns-fieldset__legend noBorder">
+													  <h3 class="ns-fieldset__heading " lang="fr">
+														  Avez-vous changé votre nom?
+													  </h3>
+													</legend>
+													<div id="changed-name-hint" class="ns-hint" lang="fr">
+														Cela inclut le changement de votre nom de famille ou l'épellation de votre nom différemment.
+													</div>
+													<span id="changed-name-error" class="ns--message ns-error-message field-validation-error" lang="fr">
+													  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+													  <span class="ns-visually-hidden">Erreur&nbsp;: </span>Sélectionner «&nbsp;Oui&nbsp;» ou «&nbsp;Non&nbsp;» avant de continue.
+													</span>
+													<div class="ns-radios ns-radios--inline">
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+														<label class="ns-label ns-radios__label" for="changed-name">
+														  <span class="ns-label-span" lang="fr">Oui</span>
+														</label>
+													  </div>
+													  <div class="ns-radios__item">
+														<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+														<label class="ns-label ns-radios__label" for="changed-name-2">
+														  <span class="ns-label-span" lang="fr">Non</span>
+														</label>
+													  </div>
+													</div>								
+												  </fieldset>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlErrorMessageFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-fieldset ns-fieldset-message-error">
+  <fieldset class="ns-fieldset" aria-describedby="changed-name-hint changed-name-error">
+	<legend class="ns-fieldset__legend noBorder">
+	  <h3 class="ns-fieldset__heading " lang="fr">
+		  Avez-vous changé votre nom?
+	  </h3>
+	</legend>
+	<div id="changed-name-hint" class="ns-hint" lang="fr">
+		Cela inclut le changement de votre nom de famille ou l'épellation de votre nom différemment.
+	</div>
+	<span id="changed-name-error" class="ns--message ns-error-message field-validation-error" lang="fr">
+	  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+	  <span class="ns-visually-hidden">Erreur&nbsp;: </span>Sélectionner «&nbsp;Oui&nbsp;» ou «&nbsp;Non&nbsp;» avant de continue.
+	</span>
+	<div class="ns-radios ns-radios--inline">
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+		<label class="ns-label ns-radios__label" for="changed-name">
+		  <span class="ns-label-span" lang="fr">Oui</span>
+		</label>
+	  </div>
+	  <div class="ns-radios__item">
+		<input class="ns-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+		<label class="ns-label ns-radios__label" for="changed-name-2">
+		  <span class="ns-label-span" lang="fr">Non</span>
+		</label>
+	  </div>
+	</div>								
+  </fieldset>
+</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+									
+								
+								
+												
 						</section><!--/row-->
 
 					</div><!-- /col-xs-8 -->

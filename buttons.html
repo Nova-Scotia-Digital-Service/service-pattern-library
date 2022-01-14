@@ -99,7 +99,7 @@ $(function(){
 						</script>
 					</div>
 					<div class="col-sm-9 col-xs-12">
-						<h1>Button Examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<h1>Buttons</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2 id="when-to-use-this-component">When to use this component</h2>
@@ -121,18 +121,95 @@ $(function(){
 								<h2>Default button</h2>
 								<p>Use a default button for the main call to action on a page.</p>
 								<p>Avoid using multiple default buttons on a single page. Having more than one main call to action reduces their impact, and makes it harder for users to know what to do next.</p>
-								<div class="exampleDisplay">
-									<button class="btn-lg btn-default">Default button</button>
-								</div>
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleDefaultButtonEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlDefaultButtonEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleDefaultButtonFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlDefaultButtonFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>										
+
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleDefaultButtonEnglish">
+												<button class="btn-lg btn-default">Default button</button>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlDefaultButtonEnglish">
+												<textarea rows="1" aria-labelledby="htmlTabBack">
+<button class="btn-lg btn-default">Default button</button>
+												</textarea>													
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleDefaultButtonFrench" lang="fr">
+												<button class="btn-lg btn-default">Bouton par défaut</button>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlDefaultButtonFrench" lang="fr">
+												<textarea rows="1" aria-labelledby="htmlTabBack">
+<button class="btn-lg btn-default">Bouton par défaut</button></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+					
 							</div><!-- / example col -->
+								
 							<div class="col-md-12 col-xs-12">
 								<h2>Link as a button</h2>
 								<p>Use a link button when a button is needed as part of a flow, but the button itself does not sumbit data as part of a form. Links are used for navigation, link button should serve the same purpose.</p>
-								<div class="exampleDisplay">
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleLinkButtonEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlLinkButtonEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleLinkButtonFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlLinkButtonFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleLinkButtonEnglish">
 									<a href="#" role="button" draggable="false" class="btn-lg btn-default ns-link-button">
 									  Link button
 									</a>
-								</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlLinkButtonEnglish">
+												<textarea rows="3" aria-labelledby="htmlTabBack">
+<a href="#" role="button" draggable="false" class="btn-lg btn-default ns-link-button">
+  Link button
+</a></textarea>													
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleLinkButtonFrench" lang="fr">
+												<a href="#" role="button" draggable="false" class="btn-lg btn-default ns-link-button">
+													 Un lien comme bouton
+												</a>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlLinkButtonFrench" lang="fr">
+												<textarea rows="3" aria-labelledby="htmlTabBack">
+<a href="#" role="button" draggable="false" class="btn-lg btn-default ns-link-button">
+  Un lien comme bouton
+</a></textarea>		
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
@@ -140,27 +217,114 @@ $(function(){
 								<h3 id="secondary-buttons">Secondary buttons</h3>
 								<p>Use secondary buttons for secondary calls to action on a page.</p>
 								<p>Pages with too many calls to action make it hard for users to know what to do next. Before adding lots of secondary buttons, try to simplify the page or break the content down across multiple pages. Secondary buttons work great for cancel buttons.</p>
-								<div class="exampleDisplay">
-									<button class="btn-lg ns-btn-2nd">Secondary button</button>
-								</div>
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleSecondaryButtonEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlSecondaryButtonEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+										
+										<li class="nav-item">
+									        <a class="nav-link" href="#exampleSecondaryButtonFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlSecondaryButtonFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>								</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleSecondaryButtonEnglish">
+												<button class="btn-lg ns-btn-2nd">Secondary button</button>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlSecondaryButtonEnglish">
+												<textarea rows="1" aria-labelledby="htmlTabBack">
+<button class="btn-lg ns-btn-2nd">Secondary button</button><</textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+												
+											<div role="tabpanel" class="tab-pane fade" id="exampleSecondaryButtonFrench" lang="fr">
+												<button class="btn-lg ns-btn-2nd">Bouton secondaire</button>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlSecondaryButtonFrench" lang="fr">
+												<textarea rows="1" aria-labelledby="htmlTabBack">
+<button class="btn-lg ns-btn-2nd">Bouton secondaire</button></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+										
+
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Combination default and secondary buttons</h2>
 								<p>You can use secondary buttons in combination with default buttons.</p>
-								<div class="exampleDisplay">
-								<section class="row">
-									<div class="col-auto">
-										<button class="btn-lg btn-default" type="button">Continue</button>
-									</div>
-									<div class="col-auto">
-										<button class="btn-lg ns-btn-2nd" type="button">Cancel</button>
-									</div>
-								</section>
-								</div>
-							</div><!-- / example col -->
-						</section><!--/row-->
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleComboEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlComboEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleComboFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlComboFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleComboEnglish">
+												
+												
+												<div class="col-auto">
+													<button class="btn-lg btn-default" type="button">Continue</button>
+												</div>
+												<div class="col-auto">
+													<button class="btn-lg ns-btn-2nd" type="button">Cancel</button>
+												</div>
+								
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlComboEnglish">
+												<textarea rows="6" aria-labelledby="htmlTabBack">
+<div class="col-auto">
+  <button class="btn-lg btn-default" type="button">Continue</button>
+</div>
+<div class="col-auto">
+  <button class="btn-lg ns-btn-2nd" type="button">Cancel</button>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleComboFrench" lang="fr">
+												<div class="col-auto">
+													<button class="btn-lg btn-default" type="button" lang="fr">Continuer</button>
+												</div>
+												<div class="col-auto">
+													<button class="btn-lg ns-btn-2nd" type="button" lang="fr">Annuler</button>
+												</div>										
+
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlComboFrench" lang="fr">
+												<textarea rows="6" aria-labelledby="htmlTabBack">
+<div class="col-auto">
+  <button class="btn-lg btn-default" type="button">Continuer</button>
+</div>
+<div class="col-auto">
+  <button class="btn-lg ns-btn-2nd" type="button">Annuler</button>
+</div></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+							</section><!--/row -->
+
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Disabled buttons</h2>
@@ -168,17 +332,68 @@ $(function(){
 								<p>When possible use an active button and, if clicked, display an error explaining why clicking the button won't work. If users are often triggering this error there may be an issue with your interface, consider completing user research to determine the exact reason for the problem.</p>
 								<p>Only use disabled buttons if research shows it makes the user interface easier to understand.</p>
 								<p>If you are including a disabled button, be sure to code it correctly so that visually impaired users will be able to perceive that there is a button but it's not active. You can do this by including the aria-disabled="true"</p>
-								<div class="exampleDisplay">
-									<button class="btn-lg btn-disabled" type="button">Disabled button</button>
-								</div>
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleDisabledButtonEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlDisabledButtonEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleDisabledButtonFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlDisabledButtonFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleDisabledButtonEnglish">
+												<button class="btn-lg btn-disabled" type="button">Disabled button</button>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlDisabledButtonEnglish">
+												<textarea rows="1" aria-labelledby="htmlTabBack">
+<button class="btn-lg btn-disabled" type="button">Disabled button</button></textarea>	
+									        </div><!-- / tabpanel htmlDisabledButtonEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleDisabledButtonFrench" lang="fr">
+												<button class="btn-lg btn-disabled" type="button">Bouton désactivé</button>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlDisabledButtonFrench" lang="fr">
+												<textarea rows="1" aria-labelledby="htmlTabBack">
+<button class="btn-lg btn-disabled" type="button">Bouton désactivé</button></textarea>	
+											</div> <!-- / tabpanel htmlFrench -->											
+
+										</div><!-- / tab-content -->
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2 id="error-messages">Button error message</h2>
 								<p>Button errors can be used instead of disabled buttons. This allows gudiance to be given at the time it's needed. You must link the errors in the button error to the answer they relate to. For questions that require a user to answer using a single field, like a file upload, select, textarea, or text input, link directly to the field. The field or answer linked to the button error must also display a matching error message.</p>
-								<div class="exampleDisplay">
-								
+
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleButtonErrorMessageEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlButtonErrorMessageEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleButtonErrorMessageFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlButtonErrorMessageFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleButtonErrorMessageEnglish">
 									<section class="row">
 										<div class="col-auto">
 											<button class="btn-lg btn-default" type="button">Continue</button>
@@ -191,19 +406,104 @@ $(function(){
 										  <span class="ns-visually-hidden">Error:</span><strong>Before continuing:</strong> <a href="#" class="ns-error-link">enter a first name</a>
 										</span>
 									</section>
-
-								</div>
+											</div><!-- / tabpanel exampleButtonErrorMessageEnglish -->
+											
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlButtonErrorMessageEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<section class="row">
+ <div class="col-auto">
+  <button class="btn-lg btn-default" type="button">Continue</button>
+  <i class="fa fa-exclamation-circle error-indicator ns-error-indicator errorAlert" aria-hidden="true"></i>
+ </div>
+ <div class="col-auto">
+  <button class="btn-lg ns-btn-2nd" type="button">Cancel</button>
+ </div>								
+ <span id="date-field-error" class="ns--message ns-error-message col-md-12">
+  <span class="ns-visually-hidden">Error:</span><strong>Before continuing:</strong> <a href="#" class="ns-error-link">enter a first name</a>
+ </span>
+</section></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleButtonErrorMessageFrench" lang="fr">
+									<section class="row">									
+										<div class="col-auto">
+											<button class="btn-lg btn-default" type="button" lang="fr">Continuer</button>
+											<i class="fa fa-exclamation-circle error-indicator ns-error-indicator errorAlert" aria-hidden="true"></i>
+										</div>
+										
+										<div class="col-auto">
+											<button class="btn-lg ns-btn-2nd" type="button" lang="fr">Annuler</button>
+										</div>								
+										<span id="date-field-error" class="ns--message ns-error-message col-md-12">
+										  <span class="ns-visually-hidden" lang="fr">Erreur&nbsp;: </span><strong>Avant de continuer,</strong> <a href="#" class="ns-error-link">entrez votre prénom.</a>
+										</span>
+								
+										</section>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlButtonErrorMessageFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<section class="row">
+ <div class="col-auto">
+  <button class="btn-lg btn-default" type="button">Continuer</button>
+  <i class="fa fa-exclamation-circle error-indicator ns-error-indicator errorAlert" aria-hidden="true"></i>
+ </div>
+ <div class="col-auto">
+  <button class="btn-lg ns-btn-2nd" type="button">Annuler</button>
+ </div>								
+ <span id="date-field-error" class="ns--message ns-error-message col-md-12">
+  <span class="ns-visually-hidden">Erreur&#38;nbsp&#59;: </span><strong>Avant de continuer,</strong> <a href="#" class="ns-error-link">entrez votre prénom.</a>
+ </span>
+</section></textarea>		
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Action buttons</h2>
 								<p>Use an action button for buttons that will tigger an irreversable action such as a ‘Confirm and submit’ or ‘Pay now’ button. These buttons usually appear at the bottom of a review page.</p>
-								<div class="exampleDisplay">
-									<a class="btn-lg btn-success mt-4 mb-4">Confirm and submit</a>
-								</div>
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleActionButtonEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlActionButtonEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleActionButtonFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlActionButtonFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleEnglish">
+												<a class="btn-lg btn-success mt-4 mb-4">Confirm and submit</a>
+											</div><!-- / tabpanel exampleActionButtonEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlActionButtonEnglish">
+												<textarea rows="1" aria-labelledby="htmlTabBack">
+<a class="btn-lg btn-success mt-4 mb-4">Confirm and submit</a></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleActionButtonFrench" lang="fr">
+												<a class="btn-lg btn-success mt-4 mb-4" lang="fr">Confirmez et soumettez</a>
+											</div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlActionButtonFrench" lang="fr">
+												<textarea rows="1" aria-labelledby="htmlTabBack">
+<a class="btn-lg btn-success mt-4 mb-4" lang="fr">Confirmez et soumettez</a></textarea>		
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+										
 							</div><!-- / example col -->
-						</section><!--/row-->
+						</section><!--/row-->				
+						
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Warning buttons</h2>
@@ -212,16 +512,69 @@ $(function(){
 								<p>When letting users carry out an action like this, it’s a good idea to include an additional step which asks them to confirm it.</p>
 								<p>In this instance, use another style of button for the initial call to action, and a warning button for the final confirmation.</p>
 								<p>Do not only rely on the red colour of a warning button to communicate the serious nature of the action. This is because not all users will be able to see the colour or will understand what it signifies. Make sure the context and button text make clear what will happen if the user selects it.</p>
-								<div class="exampleDisplay">
-									<button class="btn-lg btn-warning" type="button">Delete account</button>
-								</div>
+
+				
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleWarningButtonEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlWarningButtonEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleWarningButtonFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlWarningButtonFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleEnglish">
+												<button class="btn-lg btn-warning" type="button">Delete account</button>
+											</div><!-- / tabpanel exampleWarningButtonEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlWarningButtonEnglish">
+												<textarea rows="1" aria-labelledby="htmlTabBack">
+<button class="btn-lg btn-warning" type="button">Delete account</button></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleWarningButtonFrench" lang="fr">
+												<button class="btn-lg btn-warning" type="button" lang="fr">Supprimer compte</button>
+											</div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlWarningButtonFrench" lang="fr">
+												<textarea rows="1" aria-labelledby="htmlTabBack">
+<button class="btn-lg btn-warning" type="button" lang="fr">Supprimer compte</button></textarea>		
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
 							</div><!-- / example col -->
 						</section><!--/row-->
+							
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Button sizes</h2>
 								<p>There are three different sizes of buttons available. The large button should be used in almost all cases. Only use smaller buttons if it has been shown to improve usability.</p>
-								<div class="exampleDisplay" >
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleButtonSizesEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlButtonSizesEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleButtonSizesFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlButtonSizesFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleButtonSizesEnglish">
 									<section class="row align-items-center">
 										<div class="col-auto">
 											<button class="btn-lg btn-default">Large button</button>
@@ -245,14 +598,111 @@ $(function(){
 											<button class="btn-xs ns-btn-2nd">Extra small button</button>
 										</div>
 									</section>
-								</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlButtonSizesEnglish">
+												<textarea rows="15" aria-labelledby="htmlTabBack">
+<section class="row align-items-center">
+ <div class="col-auto">
+  <button class="btn-lg btn-default">Large button</button>
+ </div>
+ <div class="col-auto">
+  <button class="btn-sm btn-default">Small button</button>
+ </div>
+ <div class="col-auto">
+  <button class="btn-xs btn-default">Extra small button</button>
+ </div>
+</section>
+<section class="row align-items-center">
+ <div class="col-auto">
+  <button class="btn-lg ns-btn-2nd">Large button</button>
+ </div>
+ <div class="col-auto">
+  <button class="btn-sm ns-btn-2nd">Small button</button>
+ </div>
+ <div class="col-auto">
+  <button class="btn-xs ns-btn-2nd">Extra small button</button>
+ </div>
+</section></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleButtonSizesFrench" lang="fr">
+									<section class="row align-items-center">
+										<div class="col-auto">
+											<button class="btn-lg btn-default">Gros bouton</button>
+										</div>
+										<div class="col-auto">
+											<button class="btn-sm btn-default">Petit bouton</button>
+										</div>
+										<div class="col-auto">
+											<button class="btn-xs btn-default">Extra-petit bouton</button>
+										</div>
+									</section>
+
+									<section class="row align-items-center">
+										<div class="col-auto">
+											<button class="btn-lg ns-btn-2nd">Gros bouton</button>
+										</div>
+										<div class="col-auto">
+											<button class="btn-sm ns-btn-2nd">Petit bouton</button>
+										</div>
+										<div class="col-auto">
+											<button class="btn-xs ns-btn-2nd">Extra-petit bouton</button>
+										</div>
+									</section>
+											</div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlButtonSizesFrench" lang="fr">
+												<textarea rows="12" aria-labelledby="htmlTabBack">
+<section class="row align-items-center">
+ <div class="col-auto">
+  <button class="btn-lg btn-default">Gros bouton</button>
+ </div>
+ <div class="col-auto">
+  <button class="btn-sm btn-default">Petit bouton</button>
+ </div>
+ <div class="col-auto">
+  <button class="btn-xs btn-default">Extra-petit bouton</button>
+ </div>
+</section>
+<section class="row align-items-center">
+ <div class="col-auto">
+  <button class="btn-lg ns-btn-2nd">Gros bouton</button>
+ </div>
+ <div class="col-auto">
+  <button class="btn-sm ns-btn-2nd">Petit bouton</button>
+ </div>
+ <div class="col-auto">
+  <button class="btn-xs ns-btn-2nd">Extra-petit bouton</button>
+ </div>
+</section></textarea>		
+											</div> <!-- / tabpanel htmlFrench -->											
+
+										</div><!-- / tab-content -->
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>A / B option buttons</h2>
 								<p>Use A / B option buttons when asking simple questions that have clear and straightforward answers. They help, for example, to determine a user's eligibility for a service. See <a href="basic-page.html">question page templates</a> for when and how to use A / B option pages and other types of question pages. The order of A / B option buttons (should yes or no come first?) matters less than the clarity of the question. If the question is simple and well written, which button comes first won't matter. User testing will help you figure out which questions need work and if you need to change the order of your buttons.</p>
-								<div class="exampleDisplay">
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleOptionButtonsEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlOptionButtonsEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleOptionButtonsFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlOptionButtonsFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleOptionButtonsEnglish">
 									<section class="row">
 										<div class="col-auto">
 											<button class="ns-btn-yes-no btn-default" type="button">Yes</button>
@@ -261,7 +711,43 @@ $(function(){
 											<button class="ns-btn-yes-no btn-default" type="button">No</button>
 										</div>
 									</section>
-								</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlOptionButtonsEnglish">
+												<textarea rows="8" aria-labelledby="htmlTabBack">
+<section class="row">
+ <div class="col-auto">
+  <button class="ns-btn-yes-no btn-default" type="button">Yes</button>
+ </div>
+ <div class="col-auto">
+  <button class="ns-btn-yes-no btn-default" type="button">No</button>
+ </div>
+</section></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleOptionButtonsFrench" lang="fr">
+									<section class="row">
+										<div class="col-auto">
+											<button class="ns-btn-yes-no btn-default" type="button">Oui</button>
+										</div>
+										<div class="col-auto">
+											<button class="ns-btn-yes-no btn-default" type="button">Non</button>
+										</div>
+									</section>
+											</div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlOptionButtonsFrench" lang="fr">
+												<textarea rows="8" aria-labelledby="htmlTabBack">
+<section class="row">
+ <div class="col-auto">
+  <button class="ns-btn-yes-no btn-default" type="button">Oui</button>
+ </div>
+ <div class="col-auto">
+  <button class="ns-btn-yes-no btn-default" type="button">Non</button>
+ </div>
+</section></textarea>		
+											</div> <!-- / tabpanel htmlFrench -->											
+
+										</div><!-- / tab-content -->
 							</div><!-- / example col -->
 						</section><!--/row-->
 <!-- 						<section class="row">

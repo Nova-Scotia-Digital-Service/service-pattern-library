@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortlink" href="https://beta.novascotia.ca/">
 	
-	<title>Select - Forms & Services Building Blocks - Government of Nova Scotia</title>
+	<title>Selects - Forms & Services Building Blocks - Government of Nova Scotia</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Include in all head tags -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><!-- Include in all head tags -->	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script><!-- Include in all head tags -->
@@ -99,7 +99,7 @@ $(function(){
 						</script>
 					</div>
 					<div class="col-sm-9 col-xs-12">
-						<h1>Select examples</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
+						<h1>Selects</h1><!-- SEMANTIC H1 TAG TO RELAY PAGE TITLE ONLY 1 PER PAGE-->
 						<p>The select component should only be used as a last resort in public-facing services because research shows that some users find selects very difficult to use.</p>
 						<p>The select component allows users to choose an option from a long list. Before using the select component, try asking users questions which will allow you to present them with fewer options.</p>
 						<p>Asking questions means you’re less likely to need to use the select component, and can consider using a different solution, such as radios.</p>
@@ -107,22 +107,100 @@ $(function(){
 							<div class="col-md-12 col-xs-12">
 								<h2>Select with header as a Label</h2>
 								<p>If you’re asking just one question per page as recommended, you can set the contents of the label as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group">
-									  <h3 class="ns-label-wrapper">
-										<label class="ns-label" for="select1">
-										  What would you like to select?
-										</label>
-									  </h3>
-										<div class="select fw-20">
-											<select id="select1" name="select1">
-											  <option>Aw yeah.</option>
-											  <option>You should pick me instead.</option>
-											  <option>I think I'm the better option!</option>
-											</select>
-										 </div>
-									</div>
-								</div>
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleSelectHeaderLabelEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlSelectHeaderLabelEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleSelectHeaderLabelFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlSelectHeaderLabelFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleSelectHeaderLabelEnglish">
+												<div class="ns-form-group">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="select1">
+													  What would you like to select?
+													</label>
+												  </h3>
+													<div class="select fw-20">
+														<select id="select1" name="select1">
+														  <option>Aw yeah.</option>
+														  <option>You should pick me instead.</option>
+														  <option>I think I'm the better option!</option>
+														</select>
+													 </div>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlSelectHeaderLabelEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+ <h3 class="ns-label-wrapper">
+  <label class="ns-label" for="select1">
+   What would you like to select?
+  </label>
+ </h3>
+ <div class="select fw-20">
+  <select id="select1" name="select1">
+   <option>Aw yeah.</option>
+   <option>You should pick me instead.</option>
+   <option>I think I'm the better option!</option>
+  </select>
+ </div>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleSelectHeaderLabelFrench" lang="fr">
+												<div class="ns-form-group">
+												  <h3 class="ns-label-wrapper">
+													<label class="ns-label" for="select1">
+													  Que voudriez-vous sélectionner?
+													</label>
+												  </h3>
+													<div class="select fw-20">
+														<select id="select1" name="select1">
+														  <option>Ouais</option>
+														  <option>Au lieu des autres, vous devriez me choisir.</option>
+														  <option>Je pense que je suis la meilleure option!</option>
+														</select>
+													 </div>
+												</div>
+												
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlSelectHeaderLabelFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+ <h3 class="ns-label-wrapper">
+  <label class="ns-label" for="select1">
+   Que voudriez-vous sélectionner?
+  </label>
+ </h3>
+ <div class="select fw-20">
+  <select id="select1" name="select1">
+   <option>Ouais</option>
+   <option>Au lieu des autres, vous devriez me choisir.</option>
+   <option>Je pense que je suis la meilleure option!</option>
+  </select>
+ </div>
+</div></textarea>	
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+								
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
@@ -130,27 +208,124 @@ $(function(){
 								<h2>Typeahead searchable dropdown</h2>
 								<p>As a general practice searchable dropdowns are used when there are a lot of dropdown options or the options are categorized.</p>
 								<p>Another thing to consider is the context of the user, typeahead in dropdown menus are good if the user knows what he is searching for. It makes it easier to search and select the Option required.</p>
-								<div class="exampleDisplay">
-									<div class="ns-form-group">
-										<label class="ns-label" for="typeahead1">
-										  Type something to narrow down options
-										</label>
-										<div class="select fw-20">
-											<input type="list" id="typeahead1" list="typeahead1List" name="typeahead1">
-												<datalist id="typeahead1List">
-												  <option>Aw yeah.</option>
-												  <option>You should pick me instead.</option>
-												  <option>I think I'm the better option!</option>
-												</datalist>	
-										 </div>
-									</div>
-								</div>
+
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleTypeaheadSearchableDropdownEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlTypeaheadSearchableDropdownEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleTypeaheadSearchableDropdownFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlTypeaheadSearchableDropdownFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleTypeaheadSearchableDropdownEnglish">
+												<div class="ns-form-group">
+													<label class="ns-label" for="typeahead1">
+													  Type something to narrow down options
+													</label>
+													<div class="select fw-20">
+														<input type="list" id="typeahead1" list="typeahead1List" name="typeahead1">
+															<datalist id="typeahead1List">
+															  <option>Aw yeah.</option>
+															  <option>You should pick me instead.</option>
+															  <option>I think I'm the better option!</option>
+															</datalist>	
+													 </div>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlTypeaheadSearchableDropdownEnglish">
+												<textarea rows="13" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+ <label class="ns-label" for="typeahead1">
+  Type something to narrow down options
+ </label>
+ <div class="select fw-20">
+  <input type="list" id="typeahead1" list="typeahead1List" name="typeahead1">
+  <datalist id="typeahead1List">
+   <option>Aw yeah.</option>
+   <option>You should pick me instead.</option>
+   <option>I think I'm the better option!</option>
+  </datalist>	
+ </div>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleTypeaheadSearchableDropdownFrench" lang="fr">
+												<div class="ns-form-group">
+													<label class="ns-label" for="typeahead1FR">
+													  Tapez quelque chose pour affiner les options
+													</label>
+													<div class="select fw-20">
+														<input type="list" id="typeahead1FR" list="typeahead1ListFR" name="typeahead1FR">
+															<datalist id="typeahead1ListFR">
+														  		<option>Ouais</option>
+																<option>Au lieu des autres, vous devriez me choisir.</option>
+														  		<option>Je pense que je suis la meilleure option!</option>
+															</datalist>	
+													 </div>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlTypeaheadSearchableDropdownFrench" lang="fr">
+												<textarea rows="13" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+ <label class="ns-label" for="typeahead1">
+  Tapez quelque chose pour affiner les options
+ </label>
+ <div class="select fw-20">
+  <input type="list" id="typeahead1FR" list="typeahead1ListFR" name="typeahead1FR">
+  <datalist id="typeahead1ListFR">
+   <option>Ouais</option>
+   <option>Au lieu des autres, vous devriez me choisir.</option>
+   <option>Je pense que je suis la meilleure option!</option>
+  </datalist>	
+ </div>
+</div></textarea>	
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+	
+								
 							</div><!-- / example col -->
 						</section><!--/row-->		
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2 id="error-messages">Typeahead searchable dropdown with errors</h2>
-								<div class="exampleDisplay">
+
+								
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleTypeaheadSearchableDropdownErrorsEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlTypeaheadSearchableDropdownErrorsEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleTypeaheadSearchableDropdownErrorsFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlTypeaheadSearchableDropdownErrorsFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleTypeaheadSearchableDropdownErrorsEnglish">
 									<div class="ns-form-group ns-form-group-message-error">
 										<h3 class="ns-label-wrapper">
 											<label class="ns-label" for="typeahead2">
@@ -170,11 +345,87 @@ $(function(){
 												</datalist>	
 										 </div>
 									</div>
-								</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlTypeaheadSearchableDropdownErrorsEnglish">
+												<textarea rows="12" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-form-group-message-error">
+ <h3 class="ns-label-wrapper">
+  <label class="ns-label" for="typeahead2">
+   What would you like to select?
+  </label>
+ </h3>
+ <span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+  <span class="ns-visually-hidden">Error:</span> Select an option
+ </span>
+ <div class="select fw-20">
+  <input type="list" id="typeahead2" list="typeahead1List2" name="typeahead2" class="ns-input--error">
+  <datalist id="typeahead1List2">
+   <option>Aw yeah.</option>
+   <option>You should pick me instead.</option>
+   <option>I think I'm the better option!</option>
+  </datalist>	
+ </div>
+</div></textarea>	
+									        </div><!-- / tabpanel htmlEnglish-->
+											
+											<div role="tabpanel" class="tab-pane fade" id="exampleTypeaheadSearchableDropdownErrorsFrench" lang="fr">
+									<div class="ns-form-group ns-form-group-message-error">
+										<h3 class="ns-label-wrapper">
+											<label class="ns-label" for="typeahead2FR">
+											 Que voudriez-vous sélectionner ?
+											</label>
+										</h3>
+										<span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+										  <span class="ns-visually-hidden">Erreur&nbsp;: </span>Sélectionner une option.
+										</span>
+										<div class="select fw-20">
+											<input type="list" id="typeahead2Fr" list="typeahead1List2Fr" name="typeahead2Fr" class="ns-input--error">
+												<datalist id="typeahead1List2Fr">
+												 	<option>Ouais.</option>
+												  	<option>Au lieu des autres, vous devriez me choisir.</option>
+													<option>Je pense que je suis la meilleure option!</option>
+												</datalist>	
+										 </div>
+									</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlTypeaheadSearchableDropdownErrorsFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-form-group-message-error">
+ <h3 class="ns-label-wrapper">
+  <label class="ns-label" for="typeahead2FR">
+   Que voudriez-vous sélectionner?
+  </label>
+ </h3>
+ <span id="changed-name-error" class="ns--message ns-error-message field-validation-error">
+  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+  <span class="ns-visually-hidden">Erreur&#38;nbsp&#59;: </span>Sélectionner une option.
+ </span>
+ <div class="select fw-20">
+  <input type="list" id="typeahead2Fr" list="typeahead1List2Fr" name="typeahead2Fr" class="ns-input--error">
+   <datalist id="typeahead1List2Fr">
+    <option>Ouais.</option>
+    <option>Au lieu des autres, vous devriez me choisir.</option>
+    <option>Je pense que je suis la meilleure option!</option>
+   </datalist>	
+ </div>
+</div></textarea>	
+				
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+								
+									
 							</div><!-- / example col -->
-						</section><!--/row-->						
+							</section><!--/row-->	
+					
 					</div><!-- /col-xs-8 -->
 				</div><!--/row-->
+							
+						
 			</form>
 		</article>
 	</main>

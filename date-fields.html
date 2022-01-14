@@ -113,8 +113,26 @@ $(function(){
 								<p>Make sure that any example dates you use in hint text are valid for the question being asked.</p>
 								<p>Never automatically tab users between the fields of the date input because this can be confusing and may clash with normal keyboard controls.</p>
 								<h2>Example date fields with legend as a title</h2>
-								<div class="exampleDisplay">
-									<div class="ns-form-group">
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleDatefieldsLegendTitleEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlDatefieldsLegendTitleEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleDatefieldsLegendTitleFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlDatefieldsLegendTitleFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleDatefieldsLegendTitleEnglish">									<div class="ns-form-group">			
 										<fieldset class="ns-form-group" aria-describedby="fieldset-hint">
 											<legend class="ns-fieldset__legend noBorder">
 											  <h3 class="ns-fieldset__heading h3">
@@ -131,15 +149,115 @@ $(function(){
 												<div class="col-auto"><label class="ns-label" for="year">YYYY</label><input type="text" id="year" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input></div>
 											</div>
 										</fieldset>
-									</div>
 								</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlDatefieldsLegendTitleEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="tab-content">
+<fieldset class="ns-form-group" aria-describedby="fieldset-hint">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading h3">When was your passport issued?</h3>
+ </legend>
+ <div id="fieldset-hint" class="ns-hint">
+  Enter Day Month Year. For example, 17 11 2007.
+ </div>
+ <div class="row">
+  <div class="col-auto pr-0">
+   <label class="ns-label" for="day">DD</label>
+   <input type="text" id="day" name="day" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+  </div>
+  <div class="col-auto pr-0">
+   <label class="ns-label" for="month">MM</label>
+   <input type="text" id="month" name="month" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+  </div>
+  <div class="col-auto">
+   <label class="ns-label" for="year">YYYY</label>
+   <input type="text" id="year" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
+  </div>
+ </div>
+</fieldset>
+</div></textarea>
+
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleDatefieldsLegendTitleFrench" lang="fr">
+<div class="tab-content">
+	<fieldset class="ns-form-group" aria-describedby="fieldset-hint">
+											<legend class="ns-fieldset__legend noBorder">
+											  <h3 class="ns-fieldset__heading h3">
+												Quand votre passeport a-t-il été délivré?
+											  </h3>
+											</legend>
+
+											<div id="fieldset-hint" class="ns-hint">
+											  Entrez Jour Mois Année. Par exemple, 17 11 2007.
+											</div>
+											<div class="row">
+												<div class="col-auto pr-0"><label class="ns-label" for="day">JJ</label><input type="text" id="day" name="day" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+												<div class="col-auto pr-0"><label class="ns-label" for="month">MM</label><input type="text" id="month" name="month" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+												<div class="col-auto"><label class="ns-label" for="year">AAAA</label><input type="text" id="year" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input></div>
+											</div>
+										</fieldset>
+			</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlDatefieldsLegendTitleFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+<fieldset class="ns-form-group" aria-describedby="fieldset-hint">
+ <legend class="ns-fieldset__legend noBorder">
+  <h3 class="ns-fieldset__heading h3">Quand votre passeport a-t-il été délivré?</h3>
+ </legend>
+ <div id="fieldset-hint" class="ns-hint">
+  Entrez Jour Mois Année. Par exemple, 17 11 2007.
+ </div>
+ <div class="row">
+  <div class="col-auto pr-0">
+   <label class="ns-label" for="day">JJ</label>
+   <input type="text" id="day" name="day" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+  </div>
+  <div class="col-auto pr-0">
+   <label class="ns-label" for="month">MM</label>
+   <input type="text" id="month" name="month" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+  </div>
+  <div class="col-auto">
+   <label class="ns-label" for="year">AAAA</label>
+   <input type="text" id="year" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
+  </div>
+ </div>
+</fieldset>
+</div></textarea>
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									
 							</div><!-- / example col -->
 						</section><!--/row-->
+
+
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2>Example date fields with legend as a label</h2>
-								<p>Sometime when a date fields are part of a larger form you may want to make the legend blend in with the surounding form. In this case you can apply a <code>.label</code> class to the legend.
-								<div class="exampleDisplay">
+								<p>Sometime when a date fields are part of a larger form you may want to make the legend blend in with the surounding form. In this case you can apply a <code>.label</code> class to the legend.</p>
+		
+								<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleDatefieldsLegendLabelEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlDatefieldsLegendLabelEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleDatefieldsLegendLabelFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlDatefieldsLegendLabelFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleDatefieldsLegendLabelEnglish">	
 									<div class="ns-form-group">
 										<fieldset aria-describedby="fieldset-hint2">
 											<legend class="ns-fieldset__legend noBorder label">
@@ -156,7 +274,78 @@ $(function(){
 											</div>
 										</fieldset>
 									</div>
-								</div>
+
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlDatefieldsLegendLabelEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+ <fieldset aria-describedby="fieldset-hint2">
+  <legend class="ns-fieldset__legend noBorder label">Date recieved</legend>
+  <div id="fieldset-hint2" class="ns-hint">Enter Day Month Year. For example, 17 11 2020.</div>
+  <div class="row">
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="day2">DD</label>
+    <input type="text" id="day2" name="day" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="month2">MM</label>
+    <input type="text" id="month2" name="month" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto">
+    <label class="ns-label" for="year2">YYYY</label>
+    <input type="text" id="year2" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+  </div>
+ </fieldset>
+</div></textarea>
+
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleDatefieldsLegendLabelFrench" lang="fr">
+									<div class="ns-form-group">
+										<fieldset aria-describedby="fieldset-hint2">
+											<legend class="ns-fieldset__legend noBorder label">
+												Date de délivrance
+											</legend>
+
+											<div id="fieldset-hint2" class="ns-hint">
+											  Entrez Jour Mois Année. Par exemple, 17 11 2007.
+											</div>
+											<div class="row">
+												<div class="col-auto pr-0"><label class="ns-label" for="day2">JJ</label><input type="text" id="day2" name="day" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+												<div class="col-auto pr-0"><label class="ns-label" for="month2">MM</label><input type="text" id="month2" name="month" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+												<div class="col-auto"><label class="ns-label" for="year2">AAAA</label><input type="text" id="year2" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input></div>
+											</div>
+										</fieldset>
+									</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlDatefieldsLegendLabelFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group">
+ <fieldset aria-describedby="fieldset-hint2">
+  <legend class="ns-fieldset__legend noBorder label">Date de délivrance</legend>
+  <div id="fieldset-hint2" class="ns-hint">Entrez Jour Mois Année. Par exemple, 17 11 2007.</div>
+  <div class="row">
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="day2">JJ</label>
+    <input type="text" id="day2" name="day" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="month2">MM</label>
+    <input type="text" id="month2" name="month" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto">
+    <label class="ns-label" for="year2">AAAA</label>
+    <input type="text" id="year2" name="year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+  </div>
+ </fieldset>
+</div></textarea>
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									
+
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
@@ -164,70 +353,396 @@ $(function(){
 								<h2 id="use-the-autocomplete-attribute-for-a-date-of-birth">Use the autocomplete attribute for a date of birth</h2>
 								<p>Use the <code>autocomplete</code> attribute on the date input component when you’re asking for a date of birth. This lets browsers autofill the information on a user’s behalf if they’ve entered it previously.</p>
 								<p>To do this, set the <code>autocomplete</code> attribute on the 3 fields to <code>bday-day</code>, <code>bday-month</code> and <code>bday-year</code>. See how to do this in the HTML in the following example. Read more about useful <code>autocomplete</code> attributes at <a href="https://www.w3.org/TR/WCAG21/#input-purposes"><abbr  title="Web Content Accessibility Guidelines">WCAG 2.1</abbr></a></p>
-								<div class="exampleDisplay">
 
-								<pre><code><textarea rows="10" readonly="readonly">
+								
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleAutocompleteEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlAutocompleteEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleAutocompleteFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlAutocompleteFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleAutocompleteEnglish">	
+												<div class="row">
+													<div class="col-auto pr-0">
+														<label class="ns-label" for="bday-day">DD</label>
+														<input type="text" id="bday-day" name="bday-day" class="ns-input fw-2" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric"></input>
+													</div>
+													<div class="col-auto pr-0">
+														<label class="ns-label" for="bday-month">MM</label>
+														<input type="text" id="bday-month" name="bday-month" class="ns-input fw-2" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric"></input>
+													</div>
+													<div class="col-auto">
+														<label class="ns-label" for="bday-year">YYYY</label>
+														<input type="text" id="bday-year" name="bday-year" autocomplete="bday-year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
+													</div>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlAutocompleteEnglish">
+												<textarea rows="17" aria-labelledby="htmlTabBack">
 <div class="row">
-	<div class="col-auto pr-0"><label class="ns-label" for="bday-day">DD</label><input type="text" id="bday-day" name="bday-day" class="ns-input fw-2" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric"></input></div>
-	<div class="col-auto pr-0"><label class="ns-label" for="bday-month">MM</label><input type="text" id="bday-month" name="bday-month" class="ns-input fw-2" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric"></input></div>
-	<div class="col-auto"><label class="ns-label" for="bday-year">YYYY</label><input type="text" id="bday-year" name="bday-year" autocomplete="bday-year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input></div>
+ <div class="col-auto pr-0">
+  <label class="ns-label" for="bday-day">DD</label>
+  <input type="text" id="bday-day" name="bday-day" class="ns-input fw-2" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric"></input>
+ </div>
+ <div class="col-auto pr-0">
+  <label class="ns-label" for="bday-month">MM</label>
+  <input type="text" id="bday-month" name="bday-month" class="ns-input fw-2" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric"></input>
+ </div>
+ <div class="col-auto">
+  <label class="ns-label" for="bday-year">YYYY</label>
+  <input type="text" id="bday-year" name="bday-year" autocomplete="bday-year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
 </div>
-								</textarea></code></pre>
+</div></textarea>
+
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleAutocompleteFrench" lang="fr">
+												<div class="row">
+													<div class="col-auto pr-0">
+														<label class="ns-label" for="bday-day">JJ</label>
+														<input type="text" id="bday-day" name="bday-day" class="ns-input fw-2" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric"></input>
+													</div>
+													<div class="col-auto pr-0">
+														<label class="ns-label" for="bday-month">MM</label>
+														<input type="text" id="bday-month" name="bday-month" class="ns-input fw-2" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric"></input>
+													</div>
+													<div class="col-auto">
+														<label class="ns-label" for="bday-year">AAAA</label>
+														<input type="text" id="bday-year" name="bday-year" autocomplete="bday-year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
+													</div>
+												</div>
+
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlAutocompleteFrench" lang="fr">
+												<textarea rows="17" aria-labelledby="htmlTabBack">
+<div class="row">
+ <div class="col-auto pr-0">
+  <label class="ns-label" for="bday-day">JJ</label>
+  <input type="text" id="bday-day" name="bday-day" class="ns-input fw-2" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric"></input>
+ </div>
+ <div class="col-auto pr-0">
+  <label class="ns-label" for="bday-month">MM</label>
+  <input type="text" id="bday-month" name="bday-month" class="ns-input fw-2" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric"></input>
+ </div>
+ <div class="col-auto">
+  <label class="ns-label" for="bday-year">AAAA</label>
+  <input type="text" id="bday-year" name="bday-year" autocomplete="bday-year" class="ns-input fw-4" pattern="[0-9]*" inputmode="numeric"></input>
+</div>
+</div></textarea>
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->		
+
+									
 
 							</div><!-- / example col -->
 						</section><!--/row-->
 						<section class="row">
 							<div class="col-md-12 col-xs-12">
 								<h2 id="error-messages">Error messages</h2>
+								<h3>Highlighting all date fields</h3>
 								<p>If you’re highlighting the whole date, style all the fields like this</p>
-							<div class="exampleDisplay">
-								<div class="ns-form-group ns-fieldset-message-error">
-									<fieldset aria-describedby="fieldset-hint2">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading h3">
-											When was your passport issued?
-										  </h3>
-										</legend>
+									<!-- Tab nav -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleHighlightingAllDateFieldsEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlHighlightingAllDateFieldsEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleHighlightingAllDateFieldsFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlHighlightingAllDateFieldsFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
 
-										<div id="fieldset-hint2" class="ns-hint">
-										  For example, 17 11 2007
-										</div>
-										<span id="changed-name-error" class="ns--message ns-error-message">
-										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Error:</span> The date your passport was issued must be in the past
-										</span>
-										<div class="row">
-											<div class="col-auto pr-0"><label class="ns-label" for="day2">DD</label><input type="text" id="day2" name="day" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
-											<div class="col-auto pr-0"><label class="ns-label" for="month2">MM</label><input type="text" id="month2" name="month" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
-											<div class="col-auto"><label class="ns-label" for="year2">YYYY</label><input type="text" id="year2" name="year" class="ns-input fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
-										</div>
-									</fieldset>
-								</div>
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleHighlightingAllDateFieldsEnglish">	
+												<div class="ns-form-group ns-fieldset-message-error">
+													<fieldset aria-describedby="fieldset-hint2">
+														<legend class="ns-fieldset__legend noBorder">
+															<h3 class="ns-fieldset__heading h3">When was your passport issued?</h3>
+														</legend>
+														<div id="fieldset-hint2" class="ns-hint">
+															For example, 17 11 2007
+														</div>
+														<span id="changed-name-error" class="ns--message ns-error-message">
+															<i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+															<span class="ns-visually-hidden">Error:</span> The date your passport was issued must be in the past
+														</span>
+														<div class="row">
+															<div class="col-auto pr-0">
+																<label class="ns-label" for="day2">DD</label>
+																<input type="text" id="day2" name="day" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+															</div>
+															<div class="col-auto pr-0">
+																<label class="ns-label" for="month2">MM</label>
+																<input type="text" id="month2" name="month" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+															</div>
+															<div class="col-auto">
+																<label class="ns-label" for="year2">YYYY</label>
+																<input type="text" id="year2" name="year" class="ns-input fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlHighlightingAllDateFieldsEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-fieldset-message-error">
+ <fieldset aria-describedby="fieldset-hint2">
+  <legend class="ns-fieldset__legend noBorder">
+   <h3 class="ns-fieldset__heading h3">When was your passport issued?</h3>
+  </legend>
+  <div id="fieldset-hint2" class="ns-hint">
+   For example, 17 11 2007
+  </div>
+  <span id="changed-name-error" class="ns--message ns-error-message">
+   <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+   <span class="ns-visually-hidden">Error:</span> The date your passport was issued must be in the past
+  </span>
+  <div class="row">
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="day2">DD</label>
+    <input type="text" id="day2" name="day" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="month2">MM</label>
+    <input type="text" id="month2" name="month" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto">
+    <label class="ns-label" for="year2">YYYY</label>
+    <input type="text" id="year2" name="year" class="ns-input fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+  </div>
+ </fieldset>
+</div></textarea>
+
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleHighlightingAllDateFieldsFrench" lang="fr">
+												<div class="ns-form-group ns-fieldset-message-error">
+													<fieldset aria-describedby="fieldset-hint2">
+														<legend class="ns-fieldset__legend noBorder">
+															<h3 class="ns-fieldset__heading h3">Quand votre passeport a-t-il été délivré?</h3>
+														</legend>
+														<div id="fieldset-hint2" class="ns-hint">
+															Entrez Jour Mois Année. Par exemple, 17 11 2007.
+														</div>
+														<span id="changed-name-error" class="ns--message ns-error-message">
+															<i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+															<span class="ns-visually-hidden">Erreur&nbsp;: </span>La date de délivrance de votre passeport doit être antérieure.
+														</span>
+														<div class="row">
+															<div class="col-auto pr-0">
+																<label class="ns-label" for="day2">JJ</label>
+																<input type="text" id="day2" name="day" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+															</div>
+															<div class="col-auto pr-0">
+																<label class="ns-label" for="month2">MM</label>
+																<input type="text" id="month2" name="month" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+															</div>
+															<div class="col-auto">
+																<label class="ns-label" for="year2">AAAA</label>
+																<input type="text" id="year2" name="year" class="ns-input fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlHighlightingAllDateFieldsFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-fieldset-message-error">
+ <fieldset aria-describedby="fieldset-hint2">
+  <legend class="ns-fieldset__legend noBorder">
+   <h3 class="ns-fieldset__heading h3">Quand votre passeport a-t-il été délivré?</h3>
+  </legend>
+  <div id="fieldset-hint2" class="ns-hint">
+   Entrez Jour Mois Année. Par exemple, 17 11 2007.
+  </div>
+  <span id="changed-name-error" class="ns--message ns-error-message">
+   <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+   <span class="ns-visually-hidden">Erreur&#38;nbsp&#59;: </span>La date de délivrance de votre passeport doit être antérieure.
+  </span>
+  <div class="row">
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="day2">JJ</label>
+    <input type="text" id="day2" name="day" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="month2">MM</label>
+    <input type="text" id="month2" name="month" class="ns-input fw-2 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto">
+    <label class="ns-label" for="year2">AAAA</label>
+    <input type="text" id="year2" name="year" class="ns-input fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+  </div>
+ </fieldset>
+</div></textarea>
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+
+
+								<h3>Highlighting one of the date fields</h3>
 								<p>If you’re highlighting just one field - either the day, month or year - only style the field that has an error. The error message must say which field has an error, like this:</p>
-								<div class="ns-form-group ns-fieldset-message-error">
-									<fieldset aria-describedby="fieldset-hint3">
-										<legend class="ns-fieldset__legend noBorder">
-										  <h3 class="ns-fieldset__heading h3">
-											When was your passport issued?
-										  </h3>
-										</legend>
 
-										<div id="fieldset-hint3" class="ns-hint">
-										  For example, 17 11 2007
-										</div>
-										<span id="date-field-error" class="ns--message ns-error-message">
-										  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
-										  <span class="ns-visually-hidden">Error:</span> The date your passport was issued must include a year (YYYY)
-										</span>
-										<div class="row">
-											<div class="col-auto pr-0"><label class="ns-label" for="day3">DD</label><input type="text" id="day3" name="day3" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
-											<div class="col-auto pr-0"><label class="ns-label" for="month3">MM</label><input type="text" id="month3" name="month3" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
-											<div class="col-auto"><label class="ns-label" for="year3">YYYY</label><input type="text" id="year3" name="year3" class="ns-input fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
-										</div>
-									</fieldset>
-								</div>
 
-							</div><!-- / example col -->
+
+									<ul class="nav nav-tabs" role="tablist">
+									    <li class="nav-item">
+									        <a class="nav-link active" href="#exampleHighlightingOneDateFieldEnglish" role="tab" data-toggle="tab">English Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlHighlightingOneDateFieldEnglish" role="tab" data-toggle="tab">English HTML</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="#exampleHighlightingOneDateFieldFrench" role="tab" data-toggle="tab">French Example</a>
+									    </li>
+									    <li class="nav-item">
+									        <a id="htmlTabBack" class="nav-link" href="#htmlHighlightingOneDateFieldFrench" role="tab" data-toggle="tab">French HTML</a>
+									    </li>
+									</ul>
+
+									<div class="exampleDisplay">
+									    <div class="tab-content">
+									        <div role="tabpanel" class="tab-pane fade in active show" id="exampleHighlightingOneDateFieldEnglish">	
+												<div class="ns-form-group ns-fieldset-message-error">
+													<fieldset aria-describedby="fieldset-hint3">
+														<legend class="ns-fieldset__legend noBorder">
+														  <h3 class="ns-fieldset__heading h3">
+															When was your passport issued?
+														  </h3>
+														</legend>
+
+														<div id="fieldset-hint3" class="ns-hint">
+														  For example, 17 11 2007
+														</div>
+														<span id="date-field-error" class="ns--message ns-error-message">
+														  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+														  <span class="ns-visually-hidden">Error:</span> The date your passport was issued must include a year (YYYY)
+														</span>
+														<div class="row">
+															<div class="col-auto pr-0"><label class="ns-label" for="day3">DD</label><input type="text" id="day3" name="day3" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+															<div class="col-auto pr-0"><label class="ns-label" for="month3">MM</label><input type="text" id="month3" name="month3" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+															<div class="col-auto"><label class="ns-label" for="year3">YYYY</label><input type="text" id="year3" name="year3" class="ns-input fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
+														</div>
+													</fieldset>
+												</div>
+											</div><!-- / tabpanel exampleEnglish -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="htmlHighlightingOneDateFieldEnglish">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-fieldset-message-error">
+ <fieldset aria-describedby="fieldset-hint3">
+  <legend class="ns-fieldset__legend noBorder">
+   <h3 class="ns-fieldset__heading h3">When was your passport issued?</h3>
+  </legend>
+  <div id="fieldset-hint3" class="ns-hint">
+   For example, 17 11 2007
+  </div>
+  <span id="date-field-error" class="ns--message ns-error-message">
+   <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+   <span class="ns-visually-hidden">Error:</span> The date your passport was issued must include a year (YYYY)
+  </span>
+  <div class="row">
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="day3">DD</label>
+    <input type="text" id="day3" name="day3" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="month3">MM</label>
+    <input type="text" id="month3" name="month3" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto">
+    <label class="ns-label" for="year3">YYYY</label>
+    <input type="text" id="year3" name="year3" class="ns-input fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+  </div>
+ </fieldset>
+</div></textarea>
+
+									        </div><!-- / tabpanel htmlEnglish-->
+											<div role="tabpanel" class="tab-pane fade" id="exampleHighlightingOneDateFieldFrench" lang="fr">
+												<div class="ns-form-group ns-fieldset-message-error">
+													<fieldset aria-describedby="fieldset-hint3">
+														<legend class="ns-fieldset__legend noBorder">
+														  <h3 class="ns-fieldset__heading h3">
+															Quand votre passeport a-t-il été délivré?
+														  </h3>
+														</legend>
+
+														<div id="fieldset-hint3" class="ns-hint">
+														  For example, 17 11 2007
+														</div>
+														<span id="date-field-error" class="ns--message ns-error-message">
+														  <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+														  <span class="ns-visually-hidden">Erreur&nbsp;:</span>La date de délivrance de votre passeport doit être antérieure.
+														</span>
+														<div class="row">
+															<div class="col-auto pr-0"><label class="ns-label" for="day3">JJ</label><input type="text" id="day3" name="day3" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+															<div class="col-auto pr-0"><label class="ns-label" for="month3">MM</label><input type="text" id="month3" name="month3" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input></div>
+															<div class="col-auto"><label class="ns-label" for="year3">AAAA</label><input type="text" id="year3" name="year3" class="ns-input fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input></div>
+														</div>
+													</fieldset>
+												</div>
+									        </div><!-- / tabpanel exampleFrench -->
+											
+									        <div role="tabpanel" class="tab-pane fade" id="htmlHighlightingOneDateFieldFrench" lang="fr">
+												<textarea rows="14" aria-labelledby="htmlTabBack">
+<div class="ns-form-group ns-fieldset-message-error">
+ <fieldset aria-describedby="fieldset-hint3">
+  <legend class="ns-fieldset__legend noBorder">
+   <h3 class="ns-fieldset__heading h3">Quand votre passeport a-t-il été délivré?</h3>
+  </legend>
+  <div id="fieldset-hint3" class="ns-hint">
+   Entrez Jour Mois Année. Par exemple, 17 11 2007.
+  </div>
+  <span id="date-field-error" class="ns--message ns-error-message">
+   <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+   <span class="ns-visually-hidden">Erreur&#38;nbsp&#59;: </span>La date de délivrance de votre passeport doit être antérieure.
+  </span>
+  <div class="row">
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="day3">JJ</label>
+    <input type="text" id="day3" name="day3" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto pr-0">
+    <label class="ns-label" for="month3">MM</label>
+    <input type="text" id="month3" name="month3" class="ns-input fw-2" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+   <div class="col-auto">
+    <label class="ns-label" for="year3">AAAA</label>
+    <input type="text" id="year3" name="year3" class="ns-input fw-4 ns-input--error" pattern="[0-9]*" inputmode="numeric"></input>
+   </div>
+  </div>
+ </fieldset>
+</div></textarea>
+											</div> <!-- / tabpanel htmlFrench -->
+										</div><!-- / tab-content -->
+									</div><!-- / example col -->
+
+
+
+
 							<p>Make sure errors follow the guidance in <a href="error-message.html">error message</a> and have specific error messages for specific error states.</p>
 							<p>If there’s more than one error, show the highest priority error message. In order of priority, show error messages about:</p>
 							<ul>
